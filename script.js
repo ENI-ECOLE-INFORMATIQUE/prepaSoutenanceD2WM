@@ -196,6 +196,12 @@
             showPage('results');
         }
 
+        function escapeHTML(str) {
+            const div = document.createElement("div");
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
         // === LISTE DES QUESTIONS ===
         function displayQuestionsList() {
             const container = document.getElementById('questions-container');
@@ -222,7 +228,7 @@
                     questionItem.innerHTML = `
                         <div class="question-text">${index + 1}. ${question.question}</div>
                         <div class="question-answer">
-                            <div class="correct-answer">✓ Réponse : ${question.answers[question.correct]}</div>
+                            <div class="correct-answer">✓ Réponse : ${escapeHTML(question.answers[question.correct])}</div>
                             <div>${question.explanation}</div>
                         </div>
                     `;
