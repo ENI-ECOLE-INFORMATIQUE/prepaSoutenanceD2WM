@@ -229,7 +229,7 @@
                         <div class="question-text">${index + 1}. ${question.question}</div>
                         <div class="question-answer">
                             <div class="correct-answer">✓ Réponse : ${escapeHTML(question.answers[question.correct])}</div>
-                            <div>${question.explanation}</div>
+                            <div>${escapeHTML(question.explanation)}</div>
                         </div>
                     `;
                     
