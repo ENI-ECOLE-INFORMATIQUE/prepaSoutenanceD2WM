@@ -162,7 +162,7 @@
             
             // Afficher l'explication
             const explanationElement = document.getElementById('explanation');
-            explanationElement.innerHTML = `<strong>Explication :</strong> ${question.explanation}`;
+            explanationElement.innerHTML = `<strong>Explication :</strong> ${escapeHTML(question.explanation)}`;
             explanationElement.classList.add('show');
             
             // Afficher le bouton suivant
