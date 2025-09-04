@@ -43,6 +43,11 @@
             text-decoration: none;
         }
 
+        .text-header{
+            vertical-align: middle;
+            padding-left: 10px;
+        }
+
         /* === NAVIGATION === */
         nav ul {
             list-style: none;
@@ -68,7 +73,7 @@
         /* === MAIN CONTENT === */
         main {
             padding: 2rem 0;
-            min-height: calc(100vh - 140px);
+            min-height: calc(100vh - 205px);
         }
 
         .page {
@@ -143,6 +148,10 @@
 
         .menu-card p {
             opacity: 0.9;
+        }
+
+        .welcome-text-card{
+            color: white;
         }
 
         /* === FORMULAIRE QUIZ === */
