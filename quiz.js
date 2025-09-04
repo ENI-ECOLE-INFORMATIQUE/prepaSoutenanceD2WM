@@ -67,5 +67,90 @@
                     correct: 2,
                     explanation: "Quick Sort a une complexité moyenne de O(n log n), ce qui en fait l'un des algorithmes de tri les plus efficaces en moyenne."
                 }
+            ],
+            "Les IDE": [
+                {
+                    question: "Qu'est-ce qu'un environnement de développement intégré (IDE) ?",
+                    answers: [
+                        "Un simple éditeur de texte",
+                        "Un logiciel qui fournit des outils complets (éditeur, compilateur, débogueur, gestion de projet)",
+                        "Un gestionnaire de fichiers",
+                        "Un navigateur web spécialisé"
+                    ],
+                    correct: 1,
+                    explanation: "Un IDE combine un éditeur de code, un compilateur/interpréteur, un débogueur et des outils de gestion de projet. Il facilite le développement avec des fonctionnalités comme l’autocomplétion et l’intégration Git."
+                },
+                {
+                    question: "Citez des IDE couramment utilisés.",
+                    answers: [
+                        "Notepad, Paint, Chrome",
+                        "JetBrains (IntelliJ IDEA, WebStorm, PyCharm, PHPStorm), VS Code, Eclipse, NetBeans",
+                        "Google Docs et Excel",
+                        "Uniquement Visual Studio"
+                    ],
+                    correct: 1,
+                    explanation: "Les IDE populaires incluent la suite JetBrains, Visual Studio Code, Eclipse et NetBeans. Chacun est adapté à différents langages."
+                },
+                {
+                    question: "Quelles sont les principales fonctionnalités dans un IDE ?",
+                    answers: [
+                        "Uniquement écrire du texte",
+                        "Complétion de code, débogage, gestion de versions, support multi-langage, tests intégrés",
+                        "Lecture de PDF",
+                        "Exécution de scripts sans écrire de code"
+                    ],
+                    correct: 1,
+                    explanation: "Un IDE moderne intègre des outils de complétion, débogage, gestion Git, support multi-langage, tests et extensions."
+                }
+            ],
+
+            "L'environnement": [
+                {
+                    question: "Comment configurer les variables d'environnement sur votre système ?",
+                    answers: [
+                        "On ne peut pas configurer de variables d'environnement",
+                        "Uniquement via un logiciel externe",
+                        "Windows : via le Panneau de configuration ; macOS/Linux : dans ~/.bashrc ou ~/.bash_profile",
+                        "Elles se configurent directement dans le code"
+                    ],
+                    correct: 2,
+                    explanation: "Sous Windows, elles se définissent dans les paramètres système avancés. Sous macOS/Linux, dans les fichiers de configuration du shell."
+                },
+                {
+                    question: "Qu'est-ce qu'un serveur web local ?",
+                    answers: [
+                        "Un serveur installé sur une machine distante",
+                        "Un logiciel qui simule un serveur web sur votre ordinateur pour tester vos applications",
+                        "Un hébergeur gratuit en ligne",
+                        "Un service cloud obligatoire"
+                    ],
+                    correct: 1,
+                    explanation: "Un serveur web local permet de tester des applications web sur sa machine (ex : WAMP, MAMP, XAMPP, ou Live Server de VS Code)."
+                    }
+            ],
+
+            "Le versioning": [
+                {
+                    question: "Qu'est-ce qu'un logiciel de versioning et pourquoi est-il important ?",
+                    answers: [
+                        "Un logiciel qui fait des sauvegardes automatiques",
+                        "Un outil qui gère les différentes versions de fichiers et facilite la collaboration",
+                        "Un programme pour compiler du code",
+                        "Un système de chat pour développeurs"
+                    ],
+                    correct: 1,
+                    explanation: "Le versioning (Git, SVN, etc.) permet de suivre les modifications, revenir en arrière, travailler en équipe et gérer les conflits."
+                },
+                {
+                    question: "Comment installer Git sur votre système ?",
+                    answers: [
+                        "Télécharger depuis git-scm.com et suivre les instructions selon l’OS",
+                        "Il est déjà installé sur tous les PC",
+                        "Depuis le Microsoft Store uniquement",
+                        "Uniquement via Docker"
+                    ],
+                    correct: 0,
+                    explanation: "On télécharge Git sur git-scm.com, on installe selon l’OS, puis on vérifie avec `git --version`."
+                }
             ]
         };
