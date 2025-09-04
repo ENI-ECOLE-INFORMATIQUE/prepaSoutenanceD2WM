@@ -42,17 +42,18 @@ Il est conçu pour préparer une **soutenance** devant des étudiants de niveau 
 📁 prepasoutenanceD2WM\
 │── index.html # Contient tout le code HTML\
 |── img\
-|────── capture-quizz-v1.png\
-|── question.js # contient l'ensemble des questions du quizz\
-|── quiz.js # contient les scripts js pour gérer le timer, les questions, les boutons etc.\
+|────── capture-quiz-v1.png\
+|────── logo_eni.png\
+|── quiz.js # contient l'ensemble des questions du quiz\
+|── script.js # contient les scripts js pour gérer le timer, les questions, les boutons etc.\
 │── README.md # Documentation du projet\
 |── style.css # CSS du projet\
-
+|── license.txt #contient la license du projet\
 
 ---
 
 ## 🖼 Aperçu visuel
-**[Cliquez ici pour accéder à une capture d'écran du quizz](https://eni-ecole-informatique.github.io/prepaSoutenanceD2WM/img/capture-quizz-v1.png?text=Apercu+du+Quiz)**
+**[Cliquez ici pour accéder à une capture d'écran du quizz](https://eni-ecole-informatique.github.io/prepaSoutenanceD2WM/img/capture-quiz-v1.png?text=Apercu+du+Quiz)**
 
 
 ---
