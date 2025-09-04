@@ -151,7 +151,7 @@
         }
 
         .welcome-text-card{
-            color: #f8f9fa;
+            color: #f8f9fa !important;
         }
 
         /* === FORMULAIRE QUIZ === */
