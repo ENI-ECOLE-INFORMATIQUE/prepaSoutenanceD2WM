@@ -5,7 +5,7 @@
                     question: "Quelle balise HTML5 est utilisée pour définir un contenu principal d'une page ?",
                     answers: ["<main>", "<content>", "<primary>", "<section>"],
                     correct: 0,
-                    explanation: "La balise <main> est spécifiquement conçue en HTML5 pour marquer le contenu principal d'un document, celui qui est directement lié au sujet central de la page."
+                    explanation: "La balise \"<main>\" est spécifiquement conçue en HTML5 pour marquer le contenu principal d'un document, celui qui est directement lié au sujet central de la page."
                 },
                 {
                     question: "Comment centrer un élément horizontalement avec CSS Flexbox ?",
