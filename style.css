@@ -73,7 +73,7 @@
         /* === MAIN CONTENT === */
         main {
             padding: 2rem 0;
-            min-height: calc(100vh - 205px);
+            min-height: calc(100vh - 207px);
         }
 
         .page {
