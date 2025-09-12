@@ -203,11 +203,18 @@
         }
 
         // === LISTE DES QUESTIONS ===
-        function displayQuestionsList() {
+       function displayQuestionsList() {
             const container = document.getElementById('questions-container');
             container.innerHTML = '';
             
-            Object.entries(questionsData).forEach(([theme, questions]) => {
+            // Trier les thèmes par ordre alphabétique
+            const sortedThemes = Object.keys(questionsData).sort((a, b) => 
+                a.toLowerCase().localeCompare(b.toLowerCase())
+            );
+            
+            sortedThemes.forEach(theme => {
+                const questions = questionsData[theme];
+                
                 // Créer la section du thème
                 const themeSection = document.createElement('div');
                 themeSection.className = 'theme-section';
@@ -228,8 +235,8 @@
                     questionItem.innerHTML = `
                         <div class="question-text">${index + 1}. ${question.question}</div>
                         <div class="question-answer">
-                            <div class="correct-answer">✓ Réponse : ${escapeHTML(question.answers[question.correct])}</div>
-                            <div>${escapeHTML(question.explanation)}</div>
+                            <div class="correct-answer">✓ Réponse : ${question.answers[question.correct]}</div>
+                            <div>${question.explanation}</div>
                         </div>
                     `;
                     
