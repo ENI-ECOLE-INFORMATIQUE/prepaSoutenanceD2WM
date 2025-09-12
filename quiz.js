@@ -1,25 +1,5 @@
 // === DONNÉES ===
 const questionsData = {
-    "HTML/CSS": [
-        {
-            question: "Quelle balise HTML5 est utilisée pour définir un contenu principal d'une page ?",
-            answers: ["<main>", "<content>", "<primary>", "<section>"],
-            correct: 0,
-            explanation: "La balise <main> est spécifiquement conçue en HTML5 pour marquer le contenu principal d'un document, celui qui est directement lié au sujet central de la page."
-        },
-        {
-            question: "Comment centrer un élément horizontalement avec CSS Flexbox ?",
-            answers: ["justify-content: center", "align-items: center", "text-align: center", "margin: auto"],
-            correct: 0,
-            explanation: "justify-content: center permet de centrer les éléments flex horizontalement le long de l'axe principal du conteneur flex."
-        },
-        {
-            question: "Quelle propriété CSS permet de créer des colonnes égales dans une grille ?",
-            answers: ["grid-template-columns: 1fr 1fr", "display: grid", "grid-gap: 10px", "grid-auto-rows: 1fr"],
-            correct: 0,
-            explanation: "grid-template-columns: 1fr 1fr crée deux colonnes de taille égale, où 1fr représente une fraction de l'espace disponible."
-        }
-    ],
     "JavaScript": [
         {
             question: "Comment déclarer une variable constante en JavaScript ES6+ ?",
@@ -784,6 +764,12 @@ const questionsData = {
             correct: 2,
             explanation: "HTML (HyperText Markup Language) est le langage standard utilisé pour créer des pages web. Il sert à structurer le contenu sur le web, en utilisant des balises pour définir des éléments comme des titres, des paragraphes, des images et des liens. HTML a été créé par Tim Berners-Lee en 1989 au CERN (Organisation européenne pour la recherche nuclefaire)."
         },
+         {
+            question: "Quelle balise HTML5 est utilisée pour définir un contenu principal d'une page ?",
+            answers: ["<main>", "<content>", "<primary>", "<section>"],
+            correct: 0,
+            explanation: "La balise <main> est spécifiquement conçue en HTML5 pour marquer le contenu principal d'un document, celui qui est directement lié au sujet central de la page."
+        },
         {
             question: "Quelle est la différence entre HTML et XHTML ?",
             answers: [
@@ -950,6 +936,18 @@ const questionsData = {
             ],
             correct: 0,
             explanation: "CSS (Cascading Style Sheets) est un langage de feuilles de style utilisé pour décrire la présentation d'un document structuré en HTML. Il permet de contrôler l'apparence et la mise en forme des éléments sur une page web, comme les couleurs, les polices, les tailles, les positionnements, etc."
+        },
+         {
+            question: "Comment centrer un élément horizontalement avec CSS Flexbox ?",
+            answers: ["justify-content: center", "align-items: center", "text-align: center", "margin: auto"],
+            correct: 0,
+            explanation: "justify-content: center permet de centrer les éléments flex horizontalement le long de l'axe principal du conteneur flex."
+        },
+        {
+            question: "Quelle propriété CSS permet de créer des colonnes égales dans une grille ?",
+            answers: ["grid-template-columns: 1fr 1fr", "display: grid", "grid-gap: 10px", "grid-auto-rows: 1fr"],
+            correct: 0,
+            explanation: "grid-template-columns: 1fr 1fr crée deux colonnes de taille égale, où 1fr représente une fraction de l'espace disponible."
         },
         {
             question: "Qu'est-ce qu'un sélecteur ?",
