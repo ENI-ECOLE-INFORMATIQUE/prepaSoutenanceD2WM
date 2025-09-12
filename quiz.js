@@ -66,6 +66,193 @@ const questionsData = {
             answers: ["Bubble Sort", "Insertion Sort", "Quick Sort", "Selection Sort"],
             correct: 2,
             explanation: "Quick Sort a une complexité moyenne de O(n log n), ce qui en fait l'un des algorithmes de tri les plus efficaces en moyenne."
+        },
+         {
+            question: "Qu'est-ce que l'algorithmie ?",
+            answers: [
+                "L'algorithmie est le domaine d'étude de la résolution de problèmes par la mise en œuvre de suites d'opérations élémentaires selon un processus défini aboutissant à une solution",
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire B",
+                "Une réponse aléatoire A"
+            ],
+            correct: 0,
+            explanation: "L'algorithmie est le domaine d'étude de la résolution de problèmes par la mise en œuvre de suites d'opérations élémentaires selon un processus défini aboutissant à une solution. Elle ne doit pas être confondue avec la programmation informatique qui est sa mise en application. Historiquement, les premiers ouvrages d'algorithmie ont été rédigés au IXe siècle par le mathématicien perse Al-Khwârizmî, qui étudia de manière systématique la résolution des équations linéaires et quadratiques. L'algorithmie s'est surtout développée dans la deuxième moitié du XXe siècle, comme support conceptuel de la programmation des ordinateurs, dans le cadre du développement de l'informatique pendant cette période. Le tri des livres d'une bibliothèque par ordre alphabétique est un problème étudié en algorithmie, et plus généralement le tri d'un ensemble en respectant un certain ordre"
+        },
+        {
+            question: "Expliquez ce qu'est une boucle",
+            answers: [
+                "Une boucle est une structure de contrôle qui permet d'exécuter un bloc de code de manière répétée tant qu'une condition spécifiée est vraie",
+                "Une réponse aléatoire B",
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire A"
+            ],
+            correct: 0,
+            explanation: "Une boucle est une structure de contrôle qui permet d'exécuter un bloc de code de manière répétée tant qu'une condition spécifiée est vraie. Les boucles sont essentielles en programmation pour automatiser des tâches répétitives et traiter des collections de données. Il existe plusieurs types de boucles. Boucle while : // En JavaScript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n} // En PHP\n$i = 0;\nwhile ($i < 5) {\n    echo $i;\n    $i++;\n} # En Python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1 Boucle do while : // En JavaScript\nlet j = 0;\ndo {\n    console.log(j);\n    j++;\n} while (j < 5); // En PHP\n$j = 0;\ndo {\n    echo $j;\n    $j++;\n} while ($j < 5); Boucle for : // En JavaScript\nfor (let k = 0; k < 5; k++) {\n    console.log(k);\n} // En PHP\nfor ($k = 0; $k < 5; $k++) {\n    echo $k;\n} // En Python\nfor k in range(5):\n    print(k) Boucle foreach : // En JavaScript (pour les tableaux avec for...of)\nconst arr = [1, 2, 3, 4, 5];\nfor (const value of arr) {\n    console.log(value);\n} // En PHP\n$arr = [1, 2, 3, 4, 5];\nforeach ($arr as $value) {\n    echo $value;\n} # En Python\narr = [1, 2, 3, 4, 5]\nfor value in arr:\n    print(value) Boucle map (pour les tableaux) : // En JavaScript\nconst numbers = [1, 2, 3, 4, 5];\nconst doubled = numbers.map(num => num * 2);\nconsole.log(doubled); # En Python\nnumbers = [1, 2, 3, 4, 5]\ndoubled = list(map(lambda x: x * 2, numbers))\nprint(doubled)"
+        },
+        {
+            question: "Quelles sont les différences entre les structures de données linéaires et non linéaires ?",
+            answers: [
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire B",
+                "Les structures de données linéaires organisent les éléments de manière séquentielle, où chaque élément a un prédécesseur et un successeur, formant une séquence unique"
+            ],
+            correct: 3,
+            explanation: "Les structures de données linéaires organisent les éléments de manière séquentielle, où chaque élément a un prédécesseur et un successeur, formant une séquence unique. Les exemples incluent les tableaux, les listes chaînées et les files d'attente. En revanche, les structures de données non linéaires organisent les éléments de manière hiérarchique ou en réseau, où chaque élément peut avoir plusieurs prédécesseurs et successeurs. Les exemples incluent les arbres et les graphes. Voici un tableau comparatif des caractéristiques : | Caractéristique | Linéaire         | Non linéaire    |\n|-----------------|------------------|-----------------|\n| Organisation    | Séquentielle     | Hiérarchique au |\n|                 |                  | ou réseau       |\n| Accès           | Direct (indexé)  | Indirect        |\n| Complexité      | Moins complexe   | Plus complexe   |\n| Exemples        | Tableaux, listes | Arbres, graphes |"
+        },
+        {
+            question: "Qu'est-ce qu'un tableau/liste ?",
+            answers: [
+                "Une réponse aléatoire B",
+                "Un tableau ou une liste est une structure de données qui stocke une collection ordonnée d'éléments, généralement du même type, accessibles par un index numérique",
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire A"
+            ],
+            correct: 1,
+            explanation: "Un tableau ou une liste est une structure de données qui stocke une collection ordonnée d'éléments, généralement du même type, accessibles par un index numérique. En Java, les tableaux ont une taille fixe, tandis que les listes (comme ArrayList) sont dynamiques. int[] tableau = {1, 2, 3, 4, 5};\nSystem.out.println(tableau[0]); List<String> liste = new ArrayList<>(Arrays.asList(\"a\", \"b\", \"c\"));\nSystem.out.println(liste.get(0)); En JavaScript, les tableaux sont dynamiques et peuvent contenir des éléments de différents types. let tableau = [1, 2, 3, 4, 5]; En PHP, les tableaux peuvent être indexés numériquement ou associatifs. $tableau = array(1, 2, 3, 4, 5); $tableau = [1, 2, 3, 4, 5]; En Python, les listes sont dynamiques et peuvent contenir des éléments de différents types. liste = [1, 2, 3, 4, 5]"
+        },
+        {
+            question: "Qu'est-ce qu'une map et un dictionnaire ?",
+            answers: [
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire B",
+                "Une map ou un dictionnaire est une structure de données qui stocke des paires clé-valeur , permettant un accès rapide aux valeurs via leurs clés uniques"
+            ],
+            correct: 3,
+            explanation: "Une map ou un dictionnaire est une structure de données qui stocke des paires clé-valeur , permettant un accès rapide aux valeurs via leurs clés uniques. En Java : Map<String, Integer> map = new HashMap<>();\nmap.put(\"un\", 1);\nSystem.out.println(map.get(\"un\")); JavaScript offre à la fois l'objet Map et les objets littéraux comme dictionnaires. let map = new Map();\nmap.set(\"un\", 1);\nconsole.log(map.get(\"un\")); let dict = {\"un\": 1};\nconsole.log(dict[\"un\"]); En PHP : $dictionnaire = array(\"un\" => 1, \"deux\" => 2);\necho $dictionnaire[\"un\"]; $dictionnaire = [\"un\" => 1, \"deux\" => 2];\necho $dictionnaire[\"un\"]; En Python : dictionnaire = {\"un\": 1, \"deux\": 2}\nprint(dictionnaire[\"un\"])"
+        },
+        {
+            question: "Qu'est-ce qu'un hashmap ?",
+            answers: [
+                "Une réponse aléatoire C",
+                "Une hashmap est une implémentation spécifique de map/dictionnaire qui utilise une fonction de hachage pour stocker et accéder rapidement aux données",
+                "Une réponse aléatoire B",
+                "Une réponse aléatoire A"
+            ],
+            correct: 1,
+            explanation: "Une hashmap est une implémentation spécifique de map/dictionnaire qui utilise une fonction de hachage pour stocker et accéder rapidement aux données. En Java, HashMap est une implémentation spécifique de l'interface Map. HashMap<String, Integer> hashMap = new HashMap<>();\nhashMap.put(\"un\", 1); Dans les autres langages (JavaScript, PHP, Python), le concept de hashmap est généralement intégré dans leurs implémentations standard de dictionnaires ou d'objets."
+        },
+        {
+            question: "Qu'est-ce qu'un objet ?",
+            answers: [
+                "Une réponse aléatoire B",
+                "Une réponse aléatoire C",
+                "Un objet est une instance d'une classe qui encapsule des attributs (autrement dit des données) et des méthodes (autrement dit des comportements)",
+                "Une réponse aléatoire A"
+            ],
+            correct: 2,
+            explanation: "Un objet est une instance d'une classe qui encapsule des attributs (autrement dit des données) et des méthodes (autrement dit des comportements). Dans certains langages, il peut aussi être utilisé comme une structure de données similaire à un dictionnaire. En Java : public class Personne {\n    String nom;\n    int age;\n}\nPersonne p = new Personne();\np.nom = \"Alice\";\nSystem.out.println(p.nom); En JavaScript, il y a deux méthodes pour construire des objets : let alice = {nom: \"Alice\", age: 30};\nconsole.log(alice.nom); class Personne {\n    constructor(nom, age) {\n        this.nom = nom;\n        this.age = age;\n    }\n}\nlet p = new Personne(\"Alice\", 30);\nconsole.log(p.nom); En PHP : class Personne {\n    public $nom;\n    public $age;\n}\n$p = new Personne();\n$p->nom = \"Alice\";\necho $p->nom; $objet = (object)[\"nom\" => \"Alice\", \"age\" => 30];\necho $objet->nom; En Python : class Personne:\n    def __init__(self, nom, age):\n        self.nom = nom\n        self.age = age\n\np = Personne(\"Alice\", 30)\nprint(p.nom)"
+        },
+        {
+            question: "Qu'est-ce qu'un JSON ?",
+            answers: [
+                "Une réponse aléatoire C",
+                "La JavaScript Object Notation (JSON) est un format de données textuelles léger, fondée sur la syntaxe des objets JavaScript, utilisé pour l'échange de données",
+                "Une réponse aléatoire B",
+                "Une réponse aléatoire A"
+            ],
+            correct: 1,
+            explanation: "La JavaScript Object Notation (JSON) est un format de données textuelles léger, fondée sur la syntaxe des objets JavaScript, utilisé pour l'échange de données. {\n    \"nom\": \"Alice\",\n    \"age\": 30,\n    \"ville\": \"Paris\"\n}"
+        },
+        {
+            question: "Quels sont les différents paradigmes ?",
+            answers: [
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire B",
+                "En programmation et conception de systèmes, plusieurs paradigmes importants coexistent"
+            ],
+            correct: 3,
+            explanation: "En programmation et conception de systèmes, plusieurs paradigmes importants coexistent. - La programmation impérative se concentre sur la description des étapes pour accomplir une tâche. - La programmation orientée objet organise le code en objets contenant données et méthodes - La programmation fonctionnelle traite le calcul comme l'évaluation de fonctions mathématiques sans état ni données mutables. - La programmation déclarative décrit le résultat souhaité sans spécifier explicitement les étapes pour y parvenir. - La programmation événementielle base le flux du programme sur des événements comme les actions utilisateur. - La programmation parallèle permet l'exécution simultanée de plusieurs tâches. - Enfin, la programmation réactive se concentre sur les flux de données et la propagation des changements. Chaque paradigme a ses forces et ses faiblesses, et le choix dépend souvent du problème à résoudre et du contexte d'application."
+        },
+        {
+            question: "Expliquez le concept de closure",
+            answers: [
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire A",
+                "Une closure (ou fermeture) est une fonction qui capture et conserve l'accès aux variables de son environnement lexical, même lorsqu'elle est exécutée en dehors de cet environnement",
+                "Une réponse aléatoire B"
+            ],
+            correct: 2,
+            explanation: "Une closure (ou fermeture) est une fonction qui capture et conserve l'accès aux variables de son environnement lexical, même lorsqu'elle est exécutée en dehors de cet environnement. En d'autres termes, une closure \"se souvient\" du contexte dans lequel elle a été créée. Ce concept permet de créer des fonctions avec un état privé, d'implémenter des fonctions de fabrique, et de gérer des variables privées en programmation orientée objet. En Java : public interface Incrementer {\n    int increment();\n}\n\npublic static Incrementer createIncrementer() {\n    final int[] count = {0};\n    return new Incrementer() {\n        @Override\n        public int increment() {\n            return ++count[0];\n        }\n    };\n} En PHP : function createIncrementer() {\n    $count = 0;\n    return function() use (&$count) {\n        return ++$count;\n    };\n} En Python : def create_incrementer():\n    count = 0\n    def increment():\n        nonlocal count\n        count += 1\n        return count\n    return increment En JavaScript : function createIncrementer() {\n    let count = 0;\n    return function() {\n        return ++count;\n    };\n}"
+        },
+        {
+            question: "Qu'est-ce qu'une expression lambda ?",
+            answers: [
+                "Une expression lambda , également appelée fonction anonyme , est une fonction brève et sans nom qui peut être définie et utilisée immédiatement",
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire B"
+            ],
+            correct: 0,
+            explanation: "Une expression lambda , également appelée fonction anonyme , est une fonction brève et sans nom qui peut être définie et utilisée immédiatement. Elle est particulièrement utile pour créer des fonctions simples à la volée, souvent comme arguments d'autres fonctions. Les expressions lambda sont un concept clé de la programmation fonctionnelle et sont présentes dans de nombreux langages modernes. Elles permettent d'écrire du code plus concis et expressif, en évitant la nécessité de définir des fonctions complètes pour des opérations simples et ponctuelles. Les lambda sont fréquemment utilisées avec des fonctions de haut niveau comme map, filter, ou reduce. En PHP : // Déclaration d'une variable\n$multiplier = 2;\n\n// Expression lambda pour doubler un nombre\n$doubleValue = fn($x) => $x * $multiplier;\n\n// Utilisation de la lambda\necho $doubleValue(5); // Affiche: 10 En Python : # Déclaration d'une variable\nmultiplier = 2\n\n# Expression lambda pour doubler un nombre\ndouble_value = lambda x: x * multiplier\n\n# Utilisation de la lambda\nprint(double_value(5)) En JavaScript : // Déclaration d'une variable\nconst multiplier = 2;\n\n// Expression lambda pour doubler un nombre\nconst doubleValue = (x) => x * multiplier;\n\n// Utilisation de la lambda\nconsole.log(doubleValue(5));"
+        },
+        {
+            question: "Qu'est-ce que la complexité temporelle ?",
+            answers: [
+                "La complexité temporelle est une mesure de la quantité de temps qu'un algorithme prend pour s'exécuter en fonction de la taille de son entrée",
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire B",
+                "Une réponse aléatoire A"
+            ],
+            correct: 0,
+            explanation: "La complexité temporelle est une mesure de la quantité de temps qu'un algorithme prend pour s'exécuter en fonction de la taille de son entrée. Elle permet d'évaluer l'efficacité d'un algorithme et de comparer différents algorithmes entre eux. On utilise couramment la notamment grand O pour exprimer la complexité temporelle. - O(1) ou temps constant : l'algorithme prend le même temps d'exécution quelle que soit la taille de l'entrée. C'est l'exemple de l'accès à un élément d'un tableau - O(log n) ou temps logarithmique : l'algorithme réduit la taille de l'entrée de manière exponentielle à chaque étape, comme dans la recherche binaire. C'est par exemple le cas de la recherche binaire. - O(n) ou temps linéaire : l'algorithme prend un temps proportionnel à la taille de l'entrée. On rencontre cette complexité en parcourant un tableau - O(n log n) ou temps quasi-linéaire : souvent rencontré dans les algorithmes de tri efficaces, comme le tri par fusion. - O(n²) ou temps quadratique : l'algorithme prend un temps proportionnel au carré de la taille de l'entrée, comme dans le tri à bulles. - O(2^n) ou temps exponentiel : l'algorithme prend un temps qui double avec chaque augmentation de la taille de l'entrée, souvent associé à des algorithmes de force brute. On appelle cette notation, la notation de Landau ."
+        },
+        {
+            question: "Qu'est-ce que la complexité spatiale ?",
+            answers: [
+                "La complexité spatiale est une mesure de la quantité de mémoire qu'un algorithme utilise en fonction de la taille de son entrée",
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire B"
+            ],
+            correct: 0,
+            explanation: "La complexité spatiale est une mesure de la quantité de mémoire qu'un algorithme utilise en fonction de la taille de son entrée. Elle permet d'évaluer l'efficacité d'un algorithme en termes de ressources mémoire et de comparer différents algorithmes entre eux. On utilise couramment la notamment grand O pour exprimer la complexité spatiale. - O(1) ou espace constant : l'algorithme utilise une quantité fixe de mémoire, indépendamment de la taille de l'entrée. C'est l'exemple d'un algorithme qui utilise un nombre constant de variables. - O(log n) ou espace logarithmique : l'algorithme utilise une quantité de mémoire qui augmente logarithmiquement avec la taille de l'entrée, souvent rencontré dans les algorithmes de recherche récursive. - O(n) ou espace linéaire : l'algorithme utilise une quantité de mémoire proportionnelle à la taille de l'entrée, comme lors de la création d'un tableau pour stocker des éléments. - O(n log n) : l'algorithme utilise une quantité de mémoire proportionnelle à n log n, comme dans certains algorithmes de tri. - O(n²) ou espace quadratique : l'algorithme utilise une quantité de mémoire proportionnelle au carré de la taille de l'entrée, comme dans le cas d'une matrice d'adjacence pour représenter un graphe. - O(2^n) ou espace exponentiel : l'algorithme utilise une quantité de mémoire qui double avec chaque augmentation de la taille de l'entrée, souvent associé à des algorithmes de force brute. On appelle cette notation, la notation de Landau ."
+        },
+        {
+            question: "Que sont les algorithmes de tri ?",
+            answers: [
+                "Les algorithmes de tri sont des méthodes utilisées pour réorganiser les éléments d'un tableau ou d'une liste dans un ordre spécifique, généralement croissant ou décroissant",
+                "Une réponse aléatoire B",
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire C"
+            ],
+            correct: 0,
+            explanation: "Les algorithmes de tri sont des méthodes utilisées pour réorganiser les éléments d'un tableau ou d'une liste dans un ordre spécifique, généralement croissant ou décroissant. Voici quelques algorithmes de tri courants et leur fonctionnement : Le tri à bulles ou Bubble Sort fonctionne en comparant chaque paire d'éléments adjacents et en les échangeant si nécessaire. Ce processus est répété jusqu'à ce que le tableau soit trié. C'est un algorithme simple mais inefficace pour de grandes listes. def bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\n# Exemple d'utilisation\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Tableau trié par tri à bulles :')\nfor i in range(len(arr)):\n    print('%d' % arr[i], end=' ') Le tri par insertion ou Insertion Sort consiste à construire un tableau trié un élément à la fois. Il prend chaque élément du tableau et le place à sa position correcte dans la partie déjà triée. C'est efficace pour les petites listes. def insertion_sort(arr):\n    for i in range(1, len(arr)):\n        key = arr[i]\n        j = i-1\n        while j >= 0 and key < arr[j]:\n            arr[j+1] = arr[j]\n            j -= 1\n        arr[j+1] = key\n\n# Exemple d'utilisation\narr = [12, 11, 13, 5, 6]\ninsertion_sort(arr)\nprint('Tableau trié par tri par insertion :')\nfor i in range(len(arr)):\n    print('%d' % arr[i], end=' ') Le tri par sélection ou Selection Sort fonctionne en trouvant le plus petit élément dans le tableau non trié et en l'échangeant avec le premier élément non trié. Ce processus est répété pour chaque élément du tableau. def selection_sort(arr):\n    for i in range(len(arr)):\n        min_idx = i\n        for j in range(i+1, len(arr)):\n            if arr[min_idx] > arr[j]:\n                min_idx = j\n        arr[i], arr[min_idx] = arr[min_idx], arr[i]\n\n# Exemple d'utilisation\narr = [64, 25, 12, 22, 11]\nselection_sort(arr)\nprint('Tableau trié par tri par sélection :')\nfor i in range(len(arr)):\n    print('%d' % arr[i], end=' ') Le tri fusion ou Merge Sort est un algorithme de tri par division qui divise le tableau en deux moitiés, les trie de manière récursive et les fusionne ensuite. C'est un algorithme efficace avec une complexité de O(n log n). def merge_sort(arr):\n    if len(arr) > 1:\n        mid = len(arr) // 2\n        left_half = arr[:mid]\n        right_half = arr[mid:]\n\n        merge_sort(left_half)\n        merge_sort(right_half)\n\n        i = j = k = 0\n\n        while i < len(left_half) and j < len(right_half):\n            if left_half[i] < right_half[j]:\n                arr[k] = left_half[i]\n                i += 1\n            else:\n                arr[k] = right_half[j]\n                j += 1\n            k += 1\n\n        while i < len(left_half):\n            arr[k] = left_half[i]\n            i += 1\n            k += 1\n\n        while j < len(right_half):\n            arr[k] = right_half[j]\n            j += 1\n            k += 1\n\n# Exemple d'utilisation\narr = [12, 11, 13, 5, 6, 7]\nmerge_sort(arr)\nprint('Tableau trié par tri fusion :')\nfor i in range(len(arr)):\n    print('%d' % arr[i], end=' ')"
+        },
+        {
+            question: "Expliquez le concept divide and conquer",
+            answers: [
+                "Une réponse aléatoire A",
+                "Le concept de divide and conquer (diviser pour régner) est une stratégie algorithmique utilisée pour résoudre des problèmes complexes en les décomposant en sous-problèmes plus simples",
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire B"
+            ],
+            correct: 1,
+            explanation: "Le concept de divide and conquer (diviser pour régner) est une stratégie algorithmique utilisée pour résoudre des problèmes complexes en les décomposant en sous-problèmes plus simples. Ce processus se déroule en trois étapes. - Diviser - Le problème initial est divisé en plusieurs sous-problèmes plus petits. - Conquérir - Chaque sous-problème est résolu individuellement, souvent de manière récursive. - Combiner - Les solutions des sous-problèmes sont ensuite combinées pour obtenir la solution du problème original. Cette approche est particulièrement efficace pour des problèmes tels que le tri, la recherche, et divers calculs mathématiques."
+        },
+        {
+            question: "Qu'est-ce que le concept de récursion ?",
+            answers: [
+                "Une réponse aléatoire C",
+                "La récursion est un concept en programmation où une fonction s'appelle elle-même pour résoudre un problème",
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire B"
+            ],
+            correct: 1,
+            explanation: "La récursion est un concept en programmation où une fonction s'appelle elle-même pour résoudre un problème. La récursion est souvent utilisée pour simplifier des problèmes complexes en les décomposant en sous-problèmes plus simples. Il existe deux types de récursion : - La Récursion directe où une fonction s'appelle elle-même. - La Récursion indirecte où deux ou plusieurs fonctions s'appellent mutuellement. Exemple de récursion directe avec la suite de Fibonacci : def fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n\n# Exemple d'utilisation\nn = 10\nprint('Le', n, 'ème nombre de Fibonacci est :', fibonacci(n)) Exemple de récursion indirecte avec deux fonctions qui s'appellent l'une l'autre : def fonction_a(n):\n    if n > 0:\n        print('Fonction A, n =', n)\n        fonction_b(n - 1)\n\ndef fonction_b(n):\n    if n > 0:\n        print('Fonction B, n =', n)\n        fonction_a(n - 1)\n\n# Exemple d'utilisation\nfonction_a(3)\n\n# Affiche :\n# Fonction A, n = 3\n# Fonction B, n = 2\n# Fonction A, n = 1"
+        },
+        {
+            question: "Quelles sont les différences entre les types primitifs et types par référence en Java ?",
+            answers: [
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire B",
+                "Les types primitifs en Java représentent des valeurs élémentaires telles que les entiers, les flottants, les caractères et les booléens",
+                "Une réponse aléatoire C"
+            ],
+            correct: 2,
+            explanation: "Les types primitifs en Java représentent des valeurs élémentaires telles que les entiers, les flottants, les caractères et les booléens. Ils sont stockés directement en mémoire (sur la pile) et ne possèdent pas de méthodes ou d'attributs associés. On peut citer les exemples de int , double , char , et boolean . Les types par référence , en revanche, représentent des objets complexes. Ils sont stockés dans le tas (heap) et sont référencés par une adresse mémoire. Contrairement aux types primitifs, les types par référence peuvent avoir des méthodes et des attributs. On peut citer les exemples de String , Date , et ArrayList . Tableau d'association types primitifs / classes enveloppes : | Type primitif | Classe enveloppe |\n|---------------|------------------|\n| byte          | Byte             |\n| short         | Short            |\n| int           | Integer          |\n| long          | Long             |\n| float         | Float            |\n| double        | Double           |\n| char          | Character        |\n| boolean       | Boolean          |"
         }
     ],
     "Les IDE": [
@@ -101,98 +288,12 @@ const questionsData = {
             ],
             correct: 1,
             explanation: "Un IDE moderne intègre des outils de complétion, débogage, gestion Git, support multi-langage, tests et extensions."
-        }
-    ],
-
-    "L'environnement": [
-        {
-            question: "Comment configurer les variables d'environnement sur votre système ?",
-            answers: [
-                "On ne peut pas configurer de variables d'environnement",
-                "Uniquement via un logiciel externe",
-                "Windows : via le Panneau de configuration ; macOS/Linux : dans ~/.bashrc ou ~/.bash_profile",
-                "Elles se configurent directement dans le code"
-            ],
-            correct: 2,
-            explanation: "Sous Windows, elles se définissent dans les paramètres système avancés. Sous macOS/Linux, dans les fichiers de configuration du shell."
-        },
-        {
-            question: "Qu'est-ce qu'un serveur web local ?",
-            answers: [
-                "Un serveur installé sur une machine distante",
-                "Un logiciel qui simule un serveur web sur votre ordinateur pour tester vos applications",
-                "Un hébergeur gratuit en ligne",
-                "Un service cloud obligatoire"
-            ],
-            correct: 1,
-            explanation: "Un serveur web local permet de tester des applications web sur sa machine (ex : WAMP, MAMP, XAMPP, ou Live Server de VS Code)."
-        }
-    ],
-
-    "Le versioning": [
-        {
-            question: "Qu'est-ce qu'un logiciel de versioning et pourquoi est-il important ?",
-            answers: [
-                "Un logiciel qui fait des sauvegardes automatiques",
-                "Un outil qui gère les différentes versions de fichiers et facilite la collaboration",
-                "Un programme pour compiler du code",
-                "Un système de chat pour développeurs"
-            ],
-            correct: 1,
-            explanation: "Le versioning (Git, SVN, etc.) permet de suivre les modifications, revenir en arrière, travailler en équipe et gérer les conflits."
-        },
-        {
-            question: "Comment installer Git sur votre système ?",
-            answers: [
-                "Télécharger depuis git-scm.com et suivre les instructions selon l’OS",
-                "Il est déjà installé sur tous les PC",
-                "Depuis le Microsoft Store uniquement",
-                "Uniquement via Docker"
-            ],
-            correct: 0,
-            explanation: "On télécharge Git sur git-scm.com, on installe selon l’OS, puis on vérifie avec `git --version`."
-        }
-    ],
-   
-    "Les IDE": [
-        {
-            question: "Qu'est-ce qu'un environnement de développement intégré (IDE) ?",
-            answers: [
-                "Un tableur pour gérer le code",
-                "Un simple éditeur de texte sans compilation",
-                "Un navigateur spécialisé pour développeurs",
-                "Un environnement de développement intégré (IDE) est un logiciel qui fournit des outils complets pour le développement de logiciels"
-            ],
-            correct: 3,
-            explanation: "Un environnement de développement intégré (IDE) est un logiciel qui fournit des outils complets pour le développement de logiciels. Il combine généralement un éditeur de code , un compilateur ou un interpréteur , un débogueur , et des outils de gestion de projet . Les IDE facilitent le processus de développement en offrant des fonctionnalités telles que la coloration syntaxique, l'autocomplétion, la gestion de versions, et l'intégration avec des systèmes de contrôle de version comme Git."
-        },
-        {
-            question: "Citez des IDE couramment utilisés ?",
-            answers: [
-                "Un tableur pour gérer le code",
-                "Un navigateur spécialisé pour développeurs",
-                "On peut citer plusieurs IDE",
-                "Un simple éditeur de texte sans compilation"
-            ],
-            correct: 2,
-            explanation: "On peut citer plusieurs IDE. - Jet Brains : C'est une suite d'applications. IntelliJ IDEA est utilisé notamment pour les projets Java. WebStorm est dédié au développement JavaScript et TypeScript, offrant des outils avancés pour le développement d'applications web. PyCharm est dédié au développement Python, offrant des outils de débogage, de test et de gestion de versions intégrés. PHPStorm est fait pour le développement PHP. - Visual Studio Code : Éditeur de code léger et extensible, idéal pour le développement web et le support de plusieurs langages. - Eclipse : IDE open-source principalement utilisé pour le développement Java, mais extensible à d'autres langages via des plugins. - NetBeans : IDE open-source pour le développement Java, PHP et HTML5, avec des outils de gestion de projet intégrés."
-        },
-        {
-            question: "Quelles sont les principales fonctionnalités dans un IDE ?",
-            answers: [
-                "Un tableur pour gérer le code",
-                "Un simple éditeur de texte sans compilation",
-                "Un navigateur spécialisé pour développeurs",
-                "Les principales fonctionnalités à rechercher dans un IDE"
-            ],
-            correct: 3,
-            explanation: "Les principales fonctionnalités à rechercher dans un IDE... - La complétion de code : Aide à écrire du code plus rapidement en suggérant des complétions. - Le Débogage intégré : Permet de tester et de déboguer le code directement dans l'IDE. - contrôle de version : Intégration avec des systèmes comme Git pour gérer les versions du code. - support multi-langage : Capacité à travailler avec plusieurs langages de programmation (HTML, CSS, JavaScript, etc.). - outils de test : Intégration d'outils de tests unitaires et fonctionnels pour assurer la qualité du code. - Personnalisation et extensions : Possibilité d'ajouter des plugins ou des extensions pour étendre les fonctionnalités de l'IDE. - Interface utilisateur intuitive : Une interface facile à utiliser qui améliore l'expérience de développement."
         },
         {
             question: "Quelles extensions pouvez-vous utiliser dans VSC ?",
             answers: [
                 "Un simple éditeur de texte sans compilation",
-                "Voici quelques plugins et extensions recommandés",
+                "Prettier, ESLint, Live Server",
                 "Un tableur pour gérer le code",
                 "Un navigateur spécialisé pour développeurs"
             ],
@@ -255,48 +356,62 @@ const questionsData = {
             explanation: "Gulp est un outil d'automatisation des tâches de construction (task runner) basé sur Node.js. Il permet d'automatiser et d'optimiser les étapes répétitives du workflow de développement web, comme la minification, la concaténation, les tests unitaires, l'optimisation des images, etc. Gulp fonctionne sur le principe de pipelines. Vous définissez des tâches qui prennent des fichiers en entrée, appliquent une série de transformations à l'aide de plugins, puis écrivent les fichiers résultants à un endroit spécifié. Par exemple, une tâche pourrait récupérer tous les fichiers Sass, les compiler en CSS, ajouter les préfixes vendeurs, puis écrire le CSS final dans un dossier de distribution. L'avantage de Gulp est qu'il vous permet d'automatiser ces tâches répétitives et chronophages, vous faisant gagner un temps précieux. De plus, en définissant ces étapes dans un fichier de configuration, votre workflow devient reproductible et partageable au sein d'une équipe."
         }
     ],
+
     "L'environnement": [
         {
-            question: "Comment configurer les variables d'environnement sur votre système ?",
+            question: "Comment configurer les variables d'environnement sur votre système ?",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Pour configurer les variables d'environnement sur votre système : - Sur Windows : Accédez à `Panneau de configuration > Système > Paramètres système avancés > Variables d'environnement` et ajoutez ou modifiez les variables nécessaires",
-                "Une réponse aléatoire B"
+                "On ne peut pas configurer de variables d'environnement",
+                "Uniquement via un logiciel externe",
+                "Windows : via le Panneau de configuration ; macOS/Linux : dans ~/.bashrc ou ~/.bash_profile",
+                "Elles se configurent directement dans le code"
             ],
             correct: 2,
-            explanation: "Pour configurer les variables d'environnement sur votre système : - Sur Windows : Accédez à `Panneau de configuration > Système > Paramètres système avancés > Variables d'environnement` et ajoutez ou modifiez les variables nécessaires. - Sur macOS/Linux : Ouvrez le terminal et éditez le fichier `~/.bash_profile` ou `~/.bashrc` pour ajouter des variables d'environnement, par exemple : export VARIABLE_NAME=value"
+            explanation: "Sous Windows, elles se définissent dans les paramètres système avancés. Sous macOS/Linux, dans les fichiers de configuration du shell."
         },
         {
-            question: "Qu'est-ce qu'un serveur web local ?",
+            question: "Qu'est-ce qu'un serveur web local ?",
             answers: [
-                "Une réponse aléatoire C",
-                "Un serveur web local est un logiciel qui simule un serveur web sur votre machine pour tester des applications web",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "Un serveur installé sur une machine distante",
+                "Un logiciel qui simule un serveur web sur votre ordinateur pour tester vos applications",
+                "Un hébergeur gratuit en ligne",
+                "Un service cloud obligatoire"
             ],
             correct: 1,
-            explanation: "Un serveur web local est un logiciel qui simule un serveur web sur votre machine pour tester des applications web. Il permet de : - Tester des applications web en conditions réelles sans les déployer. - Développer et déboguer des fonctionnalités avant de les mettre en production. - Travailler avec des bases de données et des langages côté serveur comme PHP. On peut utiliser des extensions comme Live Server sur VSC, ou des solutions plus complexes, comme XAMPP, WAMP ou MAMP."
+            explanation: "Un serveur web local permet de tester des applications web sur sa machine (ex : WAMP, MAMP, XAMPP, ou Live Server de VS Code)."
         }
     ],
+
     "Le versioning": [
         {
-            question: "Qu'est-ce qu'un logiciel de versioning ? Pourquoi est-il important ?",
+            question: "Qu'est-ce qu'un logiciel de versioning et pourquoi est-il important ?",
             answers: [
-                "Un logiciel de bureautique",
-                "Un langage de programmation",
-                "Un serveur web",
-                "Un logiciel de versioning est un outil qui permet de suivre, gérer et enregistrer les modifications apportées à des fichiers ou à un ensemble de fichiers au fil du temps"
+                "Un logiciel qui fait des sauvegardes automatiques",
+                "Un outil qui gère les différentes versions de fichiers et facilite la collaboration",
+                "Un programme pour compiler du code",
+                "Un système de chat pour développeurs"
             ],
-            correct: 3,
-            explanation: "Un logiciel de versioning est un outil qui permet de suivre, gérer et enregistrer les modifications apportées à des fichiers ou à un ensemble de fichiers au fil du temps. Il facilite la gestion des versions de code source, permettant aux développeurs de maintenir un historique clair des modifications. L'importance d'un logiciel de versioning réside dans plusieurs aspects clefs : - La possibilité de revenir facilement à une version antérieure d'un fichier, ce qui aide à corriger les erreurs, - La facilitation de la collaboration entre développeurs, permettant à plusieurs personnes de travailler simultanément sur le même projet sans écraser les modifications des autres, - La gestion efficace des modifications et des conflits dans le code, garantissant ainsi que les intégrations se déroulent sans heurts et que le code reste stable."
+            correct: 1,
+            explanation: "Le versioning (Git, SVN, etc.) permet de suivre les modifications, revenir en arrière, travailler en équipe et gérer les conflits."
         },
+        {
+            question: "Comment installer Git sur votre système ?",
+            answers: [
+                "Télécharger depuis git-scm.com et suivre les instructions selon l’OS",
+                "Il est déjà installé sur tous les PC",
+                "Depuis le Microsoft Store uniquement",
+                "Uniquement via Docker"
+            ],
+            correct: 0,
+            explanation: "On télécharge Git sur git-scm.com, on installe selon l’OS, puis on vérifie avec `git --version`."
+        },
+       
         {
             question: "Comment installer Git sur votre système d'exploitation ?",
             answers: [
-                "Un langage de programmation",
-                "Un logiciel de bureautique",
-                "Un serveur web",
+                "C'est installé par défaut sur toutes les machines",
+                "Installer Docker Desktop",
+                "Installer obligatoirement Linux",
                 "Pour installer Git sur votre système d'exploitation : - Téléchargez la dernière version de Git depuis le site officiel : https://git-scm"
             ],
             correct: 3,
@@ -305,7 +420,7 @@ const questionsData = {
         {
             question: "Comment configurer Git avec vos informations personnelles ?",
             answers: [
-                "Un langage de programmation",
+                "C'est impossible",
                 "Un serveur web",
                 "Pour configurer Git avec vos informations personnelles, vous pouvez exécuter les commandes suivantes dans le terminal : git config --global user",
                 "Un logiciel de bureautique"
@@ -1382,195 +1497,6 @@ const questionsData = {
             ],
             correct: 1,
             explanation: "Un cookie est un petit fichier texte stocké par un site web sur l'appareil de l'utilisateur. Il contient des informations sur la navigation et est renvoyé au site lors des visites ultérieures. Les cookies servent à mémoriser les préférences de l'utilisateur, maintenir une session, et suivre le comportement à des fins d'analyse ou de publicité. Il existe deux types principaux : les cookies first-party créés par le site visité, et les cookies third-party créés par d'autres domaines, souvent pour la publicité. Les cookies peuvent être persistants (conservés après la fermeture du navigateur) ou de session (supprimés à la fin de la session). Leur utilisation est réglementée dans de nombreux pays pour protéger la vie privée des utilisateurs. Les cookies sont souvent nécessaires dans la personnalisation de l'expérience web, mais soulèvent également des questions de confidentialité et de sécurité."
-        }
-    ],
-    "L'algorithmie": [
-        {
-            question: "Qu'est-ce que l'algorithmie ?",
-            answers: [
-                "L'algorithmie est le domaine d'étude de la résolution de problèmes par la mise en œuvre de suites d'opérations élémentaires selon un processus défini aboutissant à une solution",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
-            ],
-            correct: 0,
-            explanation: "L'algorithmie est le domaine d'étude de la résolution de problèmes par la mise en œuvre de suites d'opérations élémentaires selon un processus défini aboutissant à une solution. Elle ne doit pas être confondue avec la programmation informatique qui est sa mise en application. Historiquement, les premiers ouvrages d'algorithmie ont été rédigés au IXe siècle par le mathématicien perse Al-Khwârizmî, qui étudia de manière systématique la résolution des équations linéaires et quadratiques. L'algorithmie s'est surtout développée dans la deuxième moitié du XXe siècle, comme support conceptuel de la programmation des ordinateurs, dans le cadre du développement de l'informatique pendant cette période. Le tri des livres d'une bibliothèque par ordre alphabétique est un problème étudié en algorithmie, et plus généralement le tri d'un ensemble en respectant un certain ordre"
-        },
-        {
-            question: "Expliquez ce qu'est une boucle",
-            answers: [
-                "Une boucle est une structure de contrôle qui permet d'exécuter un bloc de code de manière répétée tant qu'une condition spécifiée est vraie",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
-            ],
-            correct: 0,
-            explanation: "Une boucle est une structure de contrôle qui permet d'exécuter un bloc de code de manière répétée tant qu'une condition spécifiée est vraie. Les boucles sont essentielles en programmation pour automatiser des tâches répétitives et traiter des collections de données. Il existe plusieurs types de boucles. Boucle while : // En JavaScript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n} // En PHP\n$i = 0;\nwhile ($i < 5) {\n    echo $i;\n    $i++;\n} # En Python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1 Boucle do while : // En JavaScript\nlet j = 0;\ndo {\n    console.log(j);\n    j++;\n} while (j < 5); // En PHP\n$j = 0;\ndo {\n    echo $j;\n    $j++;\n} while ($j < 5); Boucle for : // En JavaScript\nfor (let k = 0; k < 5; k++) {\n    console.log(k);\n} // En PHP\nfor ($k = 0; $k < 5; $k++) {\n    echo $k;\n} // En Python\nfor k in range(5):\n    print(k) Boucle foreach : // En JavaScript (pour les tableaux avec for...of)\nconst arr = [1, 2, 3, 4, 5];\nfor (const value of arr) {\n    console.log(value);\n} // En PHP\n$arr = [1, 2, 3, 4, 5];\nforeach ($arr as $value) {\n    echo $value;\n} # En Python\narr = [1, 2, 3, 4, 5]\nfor value in arr:\n    print(value) Boucle map (pour les tableaux) : // En JavaScript\nconst numbers = [1, 2, 3, 4, 5];\nconst doubled = numbers.map(num => num * 2);\nconsole.log(doubled); # En Python\nnumbers = [1, 2, 3, 4, 5]\ndoubled = list(map(lambda x: x * 2, numbers))\nprint(doubled)"
-        },
-        {
-            question: "Quelles sont les différences entre les structures de données linéaires et non linéaires ?",
-            answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "Les structures de données linéaires organisent les éléments de manière séquentielle, où chaque élément a un prédécesseur et un successeur, formant une séquence unique"
-            ],
-            correct: 3,
-            explanation: "Les structures de données linéaires organisent les éléments de manière séquentielle, où chaque élément a un prédécesseur et un successeur, formant une séquence unique. Les exemples incluent les tableaux, les listes chaînées et les files d'attente. En revanche, les structures de données non linéaires organisent les éléments de manière hiérarchique ou en réseau, où chaque élément peut avoir plusieurs prédécesseurs et successeurs. Les exemples incluent les arbres et les graphes. Voici un tableau comparatif des caractéristiques : | Caractéristique | Linéaire         | Non linéaire    |\n|-----------------|------------------|-----------------|\n| Organisation    | Séquentielle     | Hiérarchique au |\n|                 |                  | ou réseau       |\n| Accès           | Direct (indexé)  | Indirect        |\n| Complexité      | Moins complexe   | Plus complexe   |\n| Exemples        | Tableaux, listes | Arbres, graphes |"
-        },
-        {
-            question: "Qu'est-ce qu'un tableau/liste ?",
-            answers: [
-                "Une réponse aléatoire B",
-                "Un tableau ou une liste est une structure de données qui stocke une collection ordonnée d'éléments, généralement du même type, accessibles par un index numérique",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
-            ],
-            correct: 1,
-            explanation: "Un tableau ou une liste est une structure de données qui stocke une collection ordonnée d'éléments, généralement du même type, accessibles par un index numérique. En Java, les tableaux ont une taille fixe, tandis que les listes (comme ArrayList) sont dynamiques. int[] tableau = {1, 2, 3, 4, 5};\nSystem.out.println(tableau[0]); List<String> liste = new ArrayList<>(Arrays.asList(\"a\", \"b\", \"c\"));\nSystem.out.println(liste.get(0)); En JavaScript, les tableaux sont dynamiques et peuvent contenir des éléments de différents types. let tableau = [1, 2, 3, 4, 5]; En PHP, les tableaux peuvent être indexés numériquement ou associatifs. $tableau = array(1, 2, 3, 4, 5); $tableau = [1, 2, 3, 4, 5]; En Python, les listes sont dynamiques et peuvent contenir des éléments de différents types. liste = [1, 2, 3, 4, 5]"
-        },
-        {
-            question: "Qu'est-ce qu'une map et un dictionnaire ?",
-            answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une map ou un dictionnaire est une structure de données qui stocke des paires clé-valeur , permettant un accès rapide aux valeurs via leurs clés uniques"
-            ],
-            correct: 3,
-            explanation: "Une map ou un dictionnaire est une structure de données qui stocke des paires clé-valeur , permettant un accès rapide aux valeurs via leurs clés uniques. En Java : Map<String, Integer> map = new HashMap<>();\nmap.put(\"un\", 1);\nSystem.out.println(map.get(\"un\")); JavaScript offre à la fois l'objet Map et les objets littéraux comme dictionnaires. let map = new Map();\nmap.set(\"un\", 1);\nconsole.log(map.get(\"un\")); let dict = {\"un\": 1};\nconsole.log(dict[\"un\"]); En PHP : $dictionnaire = array(\"un\" => 1, \"deux\" => 2);\necho $dictionnaire[\"un\"]; $dictionnaire = [\"un\" => 1, \"deux\" => 2];\necho $dictionnaire[\"un\"]; En Python : dictionnaire = {\"un\": 1, \"deux\": 2}\nprint(dictionnaire[\"un\"])"
-        },
-        {
-            question: "Qu'est-ce qu'un hashmap ?",
-            answers: [
-                "Une réponse aléatoire C",
-                "Une hashmap est une implémentation spécifique de map/dictionnaire qui utilise une fonction de hachage pour stocker et accéder rapidement aux données",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
-            ],
-            correct: 1,
-            explanation: "Une hashmap est une implémentation spécifique de map/dictionnaire qui utilise une fonction de hachage pour stocker et accéder rapidement aux données. En Java, HashMap est une implémentation spécifique de l'interface Map. HashMap<String, Integer> hashMap = new HashMap<>();\nhashMap.put(\"un\", 1); Dans les autres langages (JavaScript, PHP, Python), le concept de hashmap est généralement intégré dans leurs implémentations standard de dictionnaires ou d'objets."
-        },
-        {
-            question: "Qu'est-ce qu'un objet ?",
-            answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
-                "Un objet est une instance d'une classe qui encapsule des attributs (autrement dit des données) et des méthodes (autrement dit des comportements)",
-                "Une réponse aléatoire A"
-            ],
-            correct: 2,
-            explanation: "Un objet est une instance d'une classe qui encapsule des attributs (autrement dit des données) et des méthodes (autrement dit des comportements). Dans certains langages, il peut aussi être utilisé comme une structure de données similaire à un dictionnaire. En Java : public class Personne {\n    String nom;\n    int age;\n}\nPersonne p = new Personne();\np.nom = \"Alice\";\nSystem.out.println(p.nom); En JavaScript, il y a deux méthodes pour construire des objets : let alice = {nom: \"Alice\", age: 30};\nconsole.log(alice.nom); class Personne {\n    constructor(nom, age) {\n        this.nom = nom;\n        this.age = age;\n    }\n}\nlet p = new Personne(\"Alice\", 30);\nconsole.log(p.nom); En PHP : class Personne {\n    public $nom;\n    public $age;\n}\n$p = new Personne();\n$p->nom = \"Alice\";\necho $p->nom; $objet = (object)[\"nom\" => \"Alice\", \"age\" => 30];\necho $objet->nom; En Python : class Personne:\n    def __init__(self, nom, age):\n        self.nom = nom\n        self.age = age\n\np = Personne(\"Alice\", 30)\nprint(p.nom)"
-        },
-        {
-            question: "Qu'est-ce qu'un JSON ?",
-            answers: [
-                "Une réponse aléatoire C",
-                "La JavaScript Object Notation (JSON) est un format de données textuelles léger, fondée sur la syntaxe des objets JavaScript, utilisé pour l'échange de données",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
-            ],
-            correct: 1,
-            explanation: "La JavaScript Object Notation (JSON) est un format de données textuelles léger, fondée sur la syntaxe des objets JavaScript, utilisé pour l'échange de données. {\n    \"nom\": \"Alice\",\n    \"age\": 30,\n    \"ville\": \"Paris\"\n}"
-        },
-        {
-            question: "Quels sont les différents paradigmes ?",
-            answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "En programmation et conception de systèmes, plusieurs paradigmes importants coexistent"
-            ],
-            correct: 3,
-            explanation: "En programmation et conception de systèmes, plusieurs paradigmes importants coexistent. - La programmation impérative se concentre sur la description des étapes pour accomplir une tâche. - La programmation orientée objet organise le code en objets contenant données et méthodes - La programmation fonctionnelle traite le calcul comme l'évaluation de fonctions mathématiques sans état ni données mutables. - La programmation déclarative décrit le résultat souhaité sans spécifier explicitement les étapes pour y parvenir. - La programmation événementielle base le flux du programme sur des événements comme les actions utilisateur. - La programmation parallèle permet l'exécution simultanée de plusieurs tâches. - Enfin, la programmation réactive se concentre sur les flux de données et la propagation des changements. Chaque paradigme a ses forces et ses faiblesses, et le choix dépend souvent du problème à résoudre et du contexte d'application."
-        },
-        {
-            question: "Expliquez le concept de closure",
-            answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une closure (ou fermeture) est une fonction qui capture et conserve l'accès aux variables de son environnement lexical, même lorsqu'elle est exécutée en dehors de cet environnement",
-                "Une réponse aléatoire B"
-            ],
-            correct: 2,
-            explanation: "Une closure (ou fermeture) est une fonction qui capture et conserve l'accès aux variables de son environnement lexical, même lorsqu'elle est exécutée en dehors de cet environnement. En d'autres termes, une closure \"se souvient\" du contexte dans lequel elle a été créée. Ce concept permet de créer des fonctions avec un état privé, d'implémenter des fonctions de fabrique, et de gérer des variables privées en programmation orientée objet. En Java : public interface Incrementer {\n    int increment();\n}\n\npublic static Incrementer createIncrementer() {\n    final int[] count = {0};\n    return new Incrementer() {\n        @Override\n        public int increment() {\n            return ++count[0];\n        }\n    };\n} En PHP : function createIncrementer() {\n    $count = 0;\n    return function() use (&$count) {\n        return ++$count;\n    };\n} En Python : def create_incrementer():\n    count = 0\n    def increment():\n        nonlocal count\n        count += 1\n        return count\n    return increment En JavaScript : function createIncrementer() {\n    let count = 0;\n    return function() {\n        return ++count;\n    };\n}"
-        },
-        {
-            question: "Qu'est-ce qu'une expression lambda ?",
-            answers: [
-                "Une expression lambda , également appelée fonction anonyme , est une fonction brève et sans nom qui peut être définie et utilisée immédiatement",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
-            ],
-            correct: 0,
-            explanation: "Une expression lambda , également appelée fonction anonyme , est une fonction brève et sans nom qui peut être définie et utilisée immédiatement. Elle est particulièrement utile pour créer des fonctions simples à la volée, souvent comme arguments d'autres fonctions. Les expressions lambda sont un concept clé de la programmation fonctionnelle et sont présentes dans de nombreux langages modernes. Elles permettent d'écrire du code plus concis et expressif, en évitant la nécessité de définir des fonctions complètes pour des opérations simples et ponctuelles. Les lambda sont fréquemment utilisées avec des fonctions de haut niveau comme map, filter, ou reduce. En PHP : // Déclaration d'une variable\n$multiplier = 2;\n\n// Expression lambda pour doubler un nombre\n$doubleValue = fn($x) => $x * $multiplier;\n\n// Utilisation de la lambda\necho $doubleValue(5); // Affiche: 10 En Python : # Déclaration d'une variable\nmultiplier = 2\n\n# Expression lambda pour doubler un nombre\ndouble_value = lambda x: x * multiplier\n\n# Utilisation de la lambda\nprint(double_value(5)) En JavaScript : // Déclaration d'une variable\nconst multiplier = 2;\n\n// Expression lambda pour doubler un nombre\nconst doubleValue = (x) => x * multiplier;\n\n// Utilisation de la lambda\nconsole.log(doubleValue(5));"
-        },
-        {
-            question: "Qu'est-ce que la complexité temporelle ?",
-            answers: [
-                "La complexité temporelle est une mesure de la quantité de temps qu'un algorithme prend pour s'exécuter en fonction de la taille de son entrée",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
-            ],
-            correct: 0,
-            explanation: "La complexité temporelle est une mesure de la quantité de temps qu'un algorithme prend pour s'exécuter en fonction de la taille de son entrée. Elle permet d'évaluer l'efficacité d'un algorithme et de comparer différents algorithmes entre eux. On utilise couramment la notamment grand O pour exprimer la complexité temporelle. - O(1) ou temps constant : l'algorithme prend le même temps d'exécution quelle que soit la taille de l'entrée. C'est l'exemple de l'accès à un élément d'un tableau - O(log n) ou temps logarithmique : l'algorithme réduit la taille de l'entrée de manière exponentielle à chaque étape, comme dans la recherche binaire. C'est par exemple le cas de la recherche binaire. - O(n) ou temps linéaire : l'algorithme prend un temps proportionnel à la taille de l'entrée. On rencontre cette complexité en parcourant un tableau - O(n log n) ou temps quasi-linéaire : souvent rencontré dans les algorithmes de tri efficaces, comme le tri par fusion. - O(n²) ou temps quadratique : l'algorithme prend un temps proportionnel au carré de la taille de l'entrée, comme dans le tri à bulles. - O(2^n) ou temps exponentiel : l'algorithme prend un temps qui double avec chaque augmentation de la taille de l'entrée, souvent associé à des algorithmes de force brute. On appelle cette notation, la notation de Landau ."
-        },
-        {
-            question: "Qu'est-ce que la complexité spatiale ?",
-            answers: [
-                "La complexité spatiale est une mesure de la quantité de mémoire qu'un algorithme utilise en fonction de la taille de son entrée",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
-            ],
-            correct: 0,
-            explanation: "La complexité spatiale est une mesure de la quantité de mémoire qu'un algorithme utilise en fonction de la taille de son entrée. Elle permet d'évaluer l'efficacité d'un algorithme en termes de ressources mémoire et de comparer différents algorithmes entre eux. On utilise couramment la notamment grand O pour exprimer la complexité spatiale. - O(1) ou espace constant : l'algorithme utilise une quantité fixe de mémoire, indépendamment de la taille de l'entrée. C'est l'exemple d'un algorithme qui utilise un nombre constant de variables. - O(log n) ou espace logarithmique : l'algorithme utilise une quantité de mémoire qui augmente logarithmiquement avec la taille de l'entrée, souvent rencontré dans les algorithmes de recherche récursive. - O(n) ou espace linéaire : l'algorithme utilise une quantité de mémoire proportionnelle à la taille de l'entrée, comme lors de la création d'un tableau pour stocker des éléments. - O(n log n) : l'algorithme utilise une quantité de mémoire proportionnelle à n log n, comme dans certains algorithmes de tri. - O(n²) ou espace quadratique : l'algorithme utilise une quantité de mémoire proportionnelle au carré de la taille de l'entrée, comme dans le cas d'une matrice d'adjacence pour représenter un graphe. - O(2^n) ou espace exponentiel : l'algorithme utilise une quantité de mémoire qui double avec chaque augmentation de la taille de l'entrée, souvent associé à des algorithmes de force brute. On appelle cette notation, la notation de Landau ."
-        },
-        {
-            question: "Que sont les algorithmes de tri ?",
-            answers: [
-                "Les algorithmes de tri sont des méthodes utilisées pour réorganiser les éléments d'un tableau ou d'une liste dans un ordre spécifique, généralement croissant ou décroissant",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C"
-            ],
-            correct: 0,
-            explanation: "Les algorithmes de tri sont des méthodes utilisées pour réorganiser les éléments d'un tableau ou d'une liste dans un ordre spécifique, généralement croissant ou décroissant. Voici quelques algorithmes de tri courants et leur fonctionnement : Le tri à bulles ou Bubble Sort fonctionne en comparant chaque paire d'éléments adjacents et en les échangeant si nécessaire. Ce processus est répété jusqu'à ce que le tableau soit trié. C'est un algorithme simple mais inefficace pour de grandes listes. def bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\n# Exemple d'utilisation\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Tableau trié par tri à bulles :')\nfor i in range(len(arr)):\n    print('%d' % arr[i], end=' ') Le tri par insertion ou Insertion Sort consiste à construire un tableau trié un élément à la fois. Il prend chaque élément du tableau et le place à sa position correcte dans la partie déjà triée. C'est efficace pour les petites listes. def insertion_sort(arr):\n    for i in range(1, len(arr)):\n        key = arr[i]\n        j = i-1\n        while j >= 0 and key < arr[j]:\n            arr[j+1] = arr[j]\n            j -= 1\n        arr[j+1] = key\n\n# Exemple d'utilisation\narr = [12, 11, 13, 5, 6]\ninsertion_sort(arr)\nprint('Tableau trié par tri par insertion :')\nfor i in range(len(arr)):\n    print('%d' % arr[i], end=' ') Le tri par sélection ou Selection Sort fonctionne en trouvant le plus petit élément dans le tableau non trié et en l'échangeant avec le premier élément non trié. Ce processus est répété pour chaque élément du tableau. def selection_sort(arr):\n    for i in range(len(arr)):\n        min_idx = i\n        for j in range(i+1, len(arr)):\n            if arr[min_idx] > arr[j]:\n                min_idx = j\n        arr[i], arr[min_idx] = arr[min_idx], arr[i]\n\n# Exemple d'utilisation\narr = [64, 25, 12, 22, 11]\nselection_sort(arr)\nprint('Tableau trié par tri par sélection :')\nfor i in range(len(arr)):\n    print('%d' % arr[i], end=' ') Le tri fusion ou Merge Sort est un algorithme de tri par division qui divise le tableau en deux moitiés, les trie de manière récursive et les fusionne ensuite. C'est un algorithme efficace avec une complexité de O(n log n). def merge_sort(arr):\n    if len(arr) > 1:\n        mid = len(arr) // 2\n        left_half = arr[:mid]\n        right_half = arr[mid:]\n\n        merge_sort(left_half)\n        merge_sort(right_half)\n\n        i = j = k = 0\n\n        while i < len(left_half) and j < len(right_half):\n            if left_half[i] < right_half[j]:\n                arr[k] = left_half[i]\n                i += 1\n            else:\n                arr[k] = right_half[j]\n                j += 1\n            k += 1\n\n        while i < len(left_half):\n            arr[k] = left_half[i]\n            i += 1\n            k += 1\n\n        while j < len(right_half):\n            arr[k] = right_half[j]\n            j += 1\n            k += 1\n\n# Exemple d'utilisation\narr = [12, 11, 13, 5, 6, 7]\nmerge_sort(arr)\nprint('Tableau trié par tri fusion :')\nfor i in range(len(arr)):\n    print('%d' % arr[i], end=' ')"
-        },
-        {
-            question: "Expliquez le concept divide and conquer",
-            answers: [
-                "Une réponse aléatoire A",
-                "Le concept de divide and conquer (diviser pour régner) est une stratégie algorithmique utilisée pour résoudre des problèmes complexes en les décomposant en sous-problèmes plus simples",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
-            ],
-            correct: 1,
-            explanation: "Le concept de divide and conquer (diviser pour régner) est une stratégie algorithmique utilisée pour résoudre des problèmes complexes en les décomposant en sous-problèmes plus simples. Ce processus se déroule en trois étapes. - Diviser - Le problème initial est divisé en plusieurs sous-problèmes plus petits. - Conquérir - Chaque sous-problème est résolu individuellement, souvent de manière récursive. - Combiner - Les solutions des sous-problèmes sont ensuite combinées pour obtenir la solution du problème original. Cette approche est particulièrement efficace pour des problèmes tels que le tri, la recherche, et divers calculs mathématiques."
-        },
-        {
-            question: "Qu'est-ce que le concept de récursion ?",
-            answers: [
-                "Une réponse aléatoire C",
-                "La récursion est un concept en programmation où une fonction s'appelle elle-même pour résoudre un problème",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
-            ],
-            correct: 1,
-            explanation: "La récursion est un concept en programmation où une fonction s'appelle elle-même pour résoudre un problème. La récursion est souvent utilisée pour simplifier des problèmes complexes en les décomposant en sous-problèmes plus simples. Il existe deux types de récursion : - La Récursion directe où une fonction s'appelle elle-même. - La Récursion indirecte où deux ou plusieurs fonctions s'appellent mutuellement. Exemple de récursion directe avec la suite de Fibonacci : def fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n\n# Exemple d'utilisation\nn = 10\nprint('Le', n, 'ème nombre de Fibonacci est :', fibonacci(n)) Exemple de récursion indirecte avec deux fonctions qui s'appellent l'une l'autre : def fonction_a(n):\n    if n > 0:\n        print('Fonction A, n =', n)\n        fonction_b(n - 1)\n\ndef fonction_b(n):\n    if n > 0:\n        print('Fonction B, n =', n)\n        fonction_a(n - 1)\n\n# Exemple d'utilisation\nfonction_a(3)\n\n# Affiche :\n# Fonction A, n = 3\n# Fonction B, n = 2\n# Fonction A, n = 1"
-        },
-        {
-            question: "Quelles sont les différences entre les types primitifs et types par référence en Java ?",
-            answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "Les types primitifs en Java représentent des valeurs élémentaires telles que les entiers, les flottants, les caractères et les booléens",
-                "Une réponse aléatoire C"
-            ],
-            correct: 2,
-            explanation: "Les types primitifs en Java représentent des valeurs élémentaires telles que les entiers, les flottants, les caractères et les booléens. Ils sont stockés directement en mémoire (sur la pile) et ne possèdent pas de méthodes ou d'attributs associés. On peut citer les exemples de int , double , char , et boolean . Les types par référence , en revanche, représentent des objets complexes. Ils sont stockés dans le tas (heap) et sont référencés par une adresse mémoire. Contrairement aux types primitifs, les types par référence peuvent avoir des méthodes et des attributs. On peut citer les exemples de String , Date , et ArrayList . Tableau d'association types primitifs / classes enveloppes : | Type primitif | Classe enveloppe |\n|---------------|------------------|\n| byte          | Byte             |\n| short         | Short            |\n| int           | Integer          |\n| long          | Long             |\n| float         | Float            |\n| double        | Double           |\n| char          | Character        |\n| boolean       | Boolean          |"
         }
     ],
     "L'architecture": [
