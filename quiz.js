@@ -52,6 +52,204 @@ const questionsData = {
             answers: ["Un index sur une colonne", "Un identifiant unique pour chaque ligne", "Une contrainte de validation", "Une relation entre tables"],
             correct: 1,
             explanation: "Une clé primaire est un identifiant unique pour chaque ligne d'une table, elle ne peut pas être nulle et doit être unique."
+        },
+         {
+            question: "Qu'est-ce qu'une base de données ?",
+            answers: [
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire B",
+                "Une réponse aléatoire A",
+                "Une base de données est un système organisé qui permet de stocker, gérer et récupérer des données de manière efficace"
+            ],
+            correct: 3,
+            explanation: "Une base de données est un système organisé qui permet de stocker, gérer et récupérer des données de manière efficace. Elle est conçue pour faciliter l'accès et la manipulation des informations, garantissant ainsi leur intégrité et leur sécurité. Les bases de données peuvent être classées en plusieurs types, notamment les bases de données relationnelles, qui utilisent des tables pour structurer les données, et les bases de données NoSQL, qui offrent une flexibilité accrue pour le stockage de données non structurées."
+        },
+        {
+            question: "Qu'est-ce qu'un SGBD ?",
+            answers: [
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire C",
+                "Un Système de Gestion de Base de Données (SGBD) est un ensemble de logiciels qui permet de créer, gérer et manipuler des bases de données",
+                "Une réponse aléatoire B"
+            ],
+            correct: 2,
+            explanation: "Un Système de Gestion de Base de Données (SGBD) est un ensemble de logiciels qui permet de créer, gérer et manipuler des bases de données. Il fournit des outils essentiels pour stocker, récupérer, modifier et supprimer des données, facilitant ainsi l'accès aux informations pour les utilisateurs et les applications. Les SGBD garantissent l'intégrité et la sécurité des données en appliquant des règles de validation et en contrôlant les accès. Ils sont utilisés dans divers domaines, allant des applications web aux systèmes d'entreprise, et sont essentiels pour assurer une gestion efficace des informations. Parmi les exemples de SGBD populaires, on trouve : - MySQL est un SGBD relationnel open source, largement utilisé pour les applications web. - PostgreSQL est un SGBD relationnel open source qui supporte des fonctionnalités avancées et est connu pour sa robustesse. - Microsoft SQL Server est un SGBD commercial qui offre des outils puissants pour la gestion de bases de données dans les environnements d'entreprise. - MongoDB est un SGBD NoSQL qui permet de stocker des données sous forme de documents JSON, offrant une grande flexibilité pour les applications modernes."
+        },
+        {
+            question: "Quelles sont les principales fonctionnalités d'un SGBD ?",
+            answers: [
+                "Une réponse aléatoire C",
+                "Un Système de Gestion de Base de Données (SGBD) fournit au moins cinq types de fonctionnalités",
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire B"
+            ],
+            correct: 1,
+            explanation: "Un Système de Gestion de Base de Données (SGBD) fournit au moins cinq types de fonctionnalités. - Gestion des données : il permet en cela de structurer, organiser et stocker les données de manière efficace, facilitant leur accès et leur manipulation. - Manipulation des données (CRUD) : il comprend les opérations du CRUD, c'est-à-dire de création (Create), lecture (Read), mise à jour (Update) et suppression (Delete) des données, essentielles pour la gestion dynamique des informations. - Sécurité des données : il assure ainsi la protection des informations sensibles en contrôlant l'accès aux données et en appliquant des règles de sécurité pour prévenir les accès non autorisés. - Gestion des transactions : il permet d'exécuter des opérations de manière atomique, garantissant que les transactions sont complètes ou annulées en cas d'erreur, ce qui préserve l'intégrité des données. - Création de rapports : il offre enfin des outils pour générer des rapports et des analyses basées sur les données, facilitant la prise de décision et le suivi des performances."
+        },
+        {
+            question: "Qu'est-ce que le SQL ?",
+            answers: [
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire B",
+                "Le Structured Query Language (SQL) est un langage standard utilisé pour interagir avec les bases de données relationnelles"
+            ],
+            correct: 3,
+            explanation: "Le Structured Query Language (SQL) est un langage standard utilisé pour interagir avec les bases de données relationnelles. Il permet aux utilisateurs de créer, lire, mettre à jour et supprimer des données, un ensemble d'opérations couramment désigné sous le terme CRUD (Create, Read, Update, Delete). SQL offre une syntaxe claire et structurée, facilitant l'écriture de requêtes pour extraire des informations spécifiques, modifier des enregistrements ou gérer la structure des bases de données. Il comprend également des fonctionnalités avancées telles que la gestion des transactions, les jointures entre tables, et les fonctions d'agrégation, permettant ainsi des analyses complexes et des manipulations de données efficaces. En raison de sa puissance et de sa flexibilité, SQL est devenu le langage de référence pour la gestion des données dans de nombreuses applications, allant des systèmes de gestion d'entreprise aux plateformes de données analytiques."
+        },
+        {
+            question: "Qu'est-ce qu'une table dans une base de données ?",
+            answers: [
+                "Une réponse aléatoire B",
+                "Une réponse aléatoire A",
+                "Une table est une collection de données organisées en lignes et en colonnes, qui constitue la structure fondamentale d'une base de données relationnelle",
+                "Une réponse aléatoire C"
+            ],
+            correct: 2,
+            explanation: "Une table est une collection de données organisées en lignes et en colonnes, qui constitue la structure fondamentale d'une base de données relationnelle. Chaque ligne de la table représente un enregistrement , correspondant à une instance unique d'un objet ou d'une entité, tandis que chaque colonne représente un attribut de cet enregistrement, définissant les caractéristiques de l'objet. Les tables sont liées entre elles par des relations, ce qui permet de structurer les données de manière logique et de faciliter les opérations de recherche et de manipulation. Par exemple, une table 'Clients' peut contenir des informations telles que le nom, l'adresse et le numéro de téléphone, tandis qu'une table 'Commandes' peut enregistrer les achats effectués par ces clients. Cette organisation permet d'effectuer des requêtes complexes et d'obtenir des informations précises à partir de plusieurs tables."
+        },
+        {
+            question: "Qu'est-ce qu'une requête SQL ?",
+            answers: [
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire B",
+                "Une requête SQL est une instruction utilisée pour interroger, manipuler ou gérer des données dans une base de données",
+                "Une réponse aléatoire A"
+            ],
+            correct: 2,
+            explanation: "Une requête SQL est une instruction utilisée pour interroger, manipuler ou gérer des données dans une base de données. Elle permet aux utilisateurs d'extraire des informations spécifiques, de modifier des enregistrements existants, d'ajouter de nouvelles données ou de supprimer des données non nécessaires. Les requêtes SQL peuvent varier en complexité, allant des simples instructions de sélection, comme SELECT , qui récupèrent des données d'une ou plusieurs tables, à des requêtes plus complexes utilisant des jointures, des sous-requêtes et des fonctions d'agrégation. Par exemple, une requête peut être formulée pour obtenir la liste des clients ayant passé des commandes au cours du dernier mois, en combinant les tables 'Clients' et 'Commandes'. Grâce à sa flexibilité et sa puissance, SQL est un outil essentiel pour l'analyse et la gestion des données dans les systèmes de gestion de bases de données ."
+        },
+        {
+            question: "Quelles sont les principales clauses en SQL ?",
+            answers: [
+                "On utilise plusieurs clauses en SQL",
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire B",
+                "Une réponse aléatoire A"
+            ],
+            correct: 0,
+            explanation: "On utilise plusieurs clauses en SQL. En voici quelques unes. La clause SELECT permet de sélectionner des enregistrements. Ci-dessous, on sélectionne toutes les colonnes de la table utilisateurs. SELECT * FROM utilisateurs; La clause INSERT permet d'insérer des enregistrements. Ci-dessous, on insère un nouvel enregistrement dans la table utilisateurs INSERT INTO utilisateurs (nom, age)\nVALUES ('Alice', 30); La clause UPDATE permet de mettre à jour des enregistrements. Ci-dessous, on met à jour l'âge de l'utilisateur 'Alice' UPDATE utilisateurs\nSET age = 31\nWHERE nom = 'Alice'; La clause DELETE permet de supprimer des enregistrements. Ci-dessous, on supprime l'enregistrement de l'utilisateur 'Alice' DELETE FROM utilisateurs\nWHERE nom = 'Alice'; La clause CREATE permet de créer une table. Ci-dessous, on crée une nouvelle table utilisateurs CREATE TABLE utilisateurs (\n  id INT PRIMARY KEY,\n  nom VARCHAR(100),\n  age INT\n); La clause DROP permet de supprimer une table. Ci-dessous, on supprime la table utilisateurs DROP TABLE utilisateurs;"
+        },
+        {
+            question: "Qu'est-ce qu'une clé primaire ?",
+            answers: [
+                "Une clé primaire est un champ ou un ensemble de champs dans une table de base de données qui identifie de manière unique chaque enregistrement",
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire B",
+                "Une réponse aléatoire C"
+            ],
+            correct: 0,
+            explanation: "Une clé primaire est un champ ou un ensemble de champs dans une table de base de données qui identifie de manière unique chaque enregistrement. Elle garantit que chaque ligne de la table est distincte, empêchant ainsi la duplication des données. La clé primaire joue un rôle essentiel dans la structuration des données et l'établissement de relations entre les tables. Par exemple, dans une table 'Clients', un champ comme 'ID_Client' pourrait être utilisé comme clé primaire pour identifier chaque client de manière unique. De plus, une clé primaire peut également être utilisée comme clé étrangère dans d'autres tables, permettant ainsi de créer des relations entre les données. En résumé, la clé primaire est essentielle pour maintenir l'intégrité des données et faciliter les opérations de recherche et de manipulation dans une base de données."
+        },
+        {
+            question: "Qu'est-ce qu'une clé étrangère ?",
+            answers: [
+                "Une clé étrangère est un champ dans une table qui fait référence à la clé primaire d'une autre table, établissant ainsi une relation entre les deux tables",
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire B"
+            ],
+            correct: 0,
+            explanation: "Une clé étrangère est un champ dans une table qui fait référence à la clé primaire d'une autre table, établissant ainsi une relation entre les deux tables. Cette relation permet de lier des données connexes et de maintenir l'intégrité référentielle au sein de la base de données. Par exemple, dans une base de données de gestion de commandes, une table 'Commandes' peut contenir une clé étrangère appelée 'ID_Client' qui fait référence à la clé primaire 'ID_Client' dans la table 'Clients'. Cela permet d'associer chaque commande à un client spécifique. L'utilisation de clés étrangères permet non seulement d'organiser les données de manière logique, mais aussi de garantir que les relations entre les tables sont cohérentes, empêchant ainsi l'insertion de données orphelines qui ne correspondraient à aucun enregistrement dans la table référencée."
+        },
+        {
+            question: "Qu'est-ce qu'une relation one-to-one ?",
+            answers: [
+                "Une réponse aléatoire C",
+                "Une relation one-to-one (ou un-à-un) est une relation qui unit deux tables",
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire B"
+            ],
+            correct: 1,
+            explanation: "Une relation one-to-one (ou un-à-un) est une relation qui unit deux tables. Un enregistrement dans une table est alors relié à un seul enregistrement dans une autre table. Exemple : Table Utilisateur :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Profil :\n| id | age | id_user |\n|----|-----|---------|\n| 1  | 30  | 1       |\n| 2  | 25  | 2       |"
+        },
+        {
+            question: "Qu'est-ce qu'une relation one-to-many ?",
+            answers: [
+                "Une relation one-to-many (ou un-à-plusieurs) est une relation qui unit deux tables",
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire B"
+            ],
+            correct: 0,
+            explanation: "Une relation one-to-many (ou un-à-plusieurs) est une relation qui unit deux tables. Un enregistrement dans une table peut être relié à plusieurs enregistrements dans une autre table. Il existe à l'inverse une relation many-to-one . Plusieurs enregistrements dans une table sont reliés à un seul enregistrement dans une autre table. Exemple : Table Auteur :\n| id | prénom  | nom      |\n|----|---------|----------|\n| 1  | Victor  | Hugo     |\n| 2  | Gustave | Flaubert |\n\nTable Livre :\n| id | titre          | id_aut |\n|----|----------------|--------|\n| 1  | Les Misérables | 1      |\n| 2  | Ruy-Blas       | 1      |\n| 3  | Madame Bovary  | 2      |"
+        },
+        {
+            question: "Qu'est-ce qu'une relation many-to-many ?",
+            answers: [
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire B",
+                "Une relation many-to-many (ou plusieurs-à-plusieurs) est une relation qui unit deux tables",
+                "Une réponse aléatoire C"
+            ],
+            correct: 2,
+            explanation: "Une relation many-to-many (ou plusieurs-à-plusieurs) est une relation qui unit deux tables. Un enregistrement dans une table peut être relié à plusieurs enregistrements dans une autre table, et vice versa. Cela se traduit par une table d'association , où l'on insère pour chaque ligne, la référence à un enregistrement de chaque table. Table Étudiant :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Cours :\n| id | titre      |\n|----|------------|\n| 1  | Maths      |\n| 2  | Histoire   |\n\nTable Étudiant_Cours :\n| id_etud | id_cours |\n|---------|----------|\n| 1       | 1        |\n| 1       | 2        |\n| 2       | 1        |"
+        },
+        {
+            question: "Qu'est-ce qu'une table d'association ?",
+            answers: [
+                "Une réponse aléatoire C",
+                "La table d'association est table utilisée dans le cadre d'une relation many-to-many ",
+                "Une réponse aléatoire B",
+                "Une réponse aléatoire A"
+            ],
+            correct: 1,
+            explanation: "La table d'association est table utilisée dans le cadre d'une relation many-to-many . Elle contient des clefs étrangères qui font référence aux clefs primaires des deux tables impliquées dans la relation. Dans l'exemple ci-dessus, la table Étudiant_Cours associe les étudiants aux cours qu'ils suivent. Table Étudiant :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Cours :\n| id | titre         |\n|----|---------------|\n| 1  | Mathématiques |\n| 2  | Histoire      |\n\nTable Étudiant_Cours :\n| id_etud  | id_cours |\n|----------|----------|\n| 1        | 1        |\n| 1        | 2        |\n| 2        | 1        |"
+        },
+        {
+            question: "Qu'est-ce qu'une jointure ?",
+            answers: [
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire A",
+                "Une jointure (JOIN en SQL) est une opération qui combine des enregistrements de deux ou plusieurs tables en fonction d'une condition liée à une clef",
+                "Une réponse aléatoire B"
+            ],
+            correct: 2,
+            explanation: "Une jointure (JOIN en SQL) est une opération qui combine des enregistrements de deux ou plusieurs tables en fonction d'une condition liée à une clef. Voici les différents types de jointures et leur utilité : - L' INNER JOIN retourne les enregistrements lorsque la condition est vraie dans les deux tables. Utilisé pour obtenir uniquement les lignes correspondantes. - Le LEFT JOIN retourne tous les enregistrements de la table de gauche et les enregistrements correspondants de la table de droite. Si aucune correspondance, les résultats de la table de droite seront NULL. - Le RIGHT JOIN retourne tous les enregistrements de la table de droite et les enregistrements correspondants de la table de gauche. Si aucune correspondance, les résultats de la table de gauche seront NULL. - Le FULL JOIN retourne tous les enregistrements des deux tables, même s'il n'y a pas de correspondance. Les valeurs manquantes sont définies à NULL. - Le CROSS JOIN retourne le produit cartésien des deux tables, c'est-à-dire toutes les combinaisons possibles d'enregistrements."
+        },
+        {
+            question: "Qu'est-ce que le CRUD dans une base de données ?",
+            answers: [
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire A",
+                "Une réponse aléatoire B",
+                "Les opérations CRUD représentent les quatre fonctions fondamentales pour la gestion des données dans une base de données"
+            ],
+            correct: 3,
+            explanation: "Les opérations CRUD représentent les quatre fonctions fondamentales pour la gestion des données dans une base de données. Ces opérations sont essentielles pour créer, lire, mettre à jour et supprimer des enregistrements, et elles sont réalisées à l'aide des clauses SQL suivantes : - CREATE est utilisée pour ajouter de nouveaux enregistrements dans une table. Par exemple, une requête SQL pour créer un nouvel utilisateur dans une table 'Utilisateurs'. - SELECT permet de lire ou d'extraire des données d'une ou plusieurs tables. Par exemple, une requête pour récupérer tous les enregistrements des clients d'une table 'Clients'. - UPDATE est utilisée pour modifier les enregistrements existants dans une table. Par exemple, une requête pour mettre à jour l'adresse d'un client dans la table 'Clients'. - DELETE permet de supprimer des enregistrements d'une table. Par exemple, une requête pour supprimer un utilisateur de la table 'Utilisateurs'. Ces opérations CRUD sont fondamentales pour toute application utilisant une base de données, car elles permettent de gérer efficacement les données tout au long de leur cycle de vie."
+        },
+        {
+            question: "Qu'est-ce que la normalisation ?",
+            answers: [
+                "La normalisation est le processus de structuration d'une base de données afin de réduire la redondance des données et d'améliorer leur intégrité",
+                "Une réponse aléatoire B",
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire A"
+            ],
+            correct: 0,
+            explanation: "La normalisation est le processus de structuration d'une base de données afin de réduire la redondance des données et d'améliorer leur intégrité. Ce processus implique la division des données en tables distinctes et la définition de relations entre elles, ce qui permet d'éviter la duplication d'informations et de garantir que les données restent cohérentes. La normalisation est généralement réalisée en suivant plusieurs formes normales , qui sont des règles définies pour organiser les données. Par exemple, la première forme normale (1NF) exige que chaque colonne d'une table contienne des valeurs atomiques, tandis que la deuxième forme normale (2NF) vise à éliminer les dépendances partielles entre les colonnes. En appliquant ces principes, les concepteurs de bases de données peuvent créer des structures qui facilitent la mise à jour, la recherche et la gestion des données tout en minimisant les anomalies."
+        },
+        {
+            question: "Quelles sont les trois formes normales en conception de base de données ?",
+            answers: [
+                "Une réponse aléatoire A",
+                "Il existe trois formes normales",
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire B"
+            ],
+            correct: 1,
+            explanation: "Il existe trois formes normales. Une table est en première forme normale si tous les attributs contiennent des valeurs atomiques, c'est-à-dire que chaque colonne doit contenir une seule valeur et ne doit pas avoir de valeurs multivaluées ou composites. // Avant 1NF :\n| produit | fournisseur         |\n|---------|---------------------|\n| TV      | VIDEO SA, HITEK LTD |\n\n// Après 1NF :\n| produit | fournisseur |\n|---------|-------------|\n| TV      | VIDEO SA    |\n| TV      | HITEK LTD   | Une table est en deuxième forme normale si elle est en première forme normale et si tous les attributs non clefs dépendent entièrement de la clef primaire. Cela signifie qu'aucun attribut ne doit dépendre d'une partie de la clef primaire. // Avant 2NF :\n| id  | nom   | cours     |\n|-----|-------|-----------|\n| 1   | Alice | Maths     |\n| 2   | Alice | Histoire  |\n| 3   | Bob   | Maths     |\n\n// Après 2NF :\n| id_etudiant | Nom    |\n|-------------|--------|\n| 1           | Alice  |\n| 2           | Bob    |\n\n| id_cours   | Cours      |\n|------------|------------|\n| 1          | Maths      |\n| 2          | Histoire   | Une table est en troisième forme normale si elle est en deuxième forme normale  et si aucun attribut non clef ne dépend d'un autre attribut non clef. Cela signifie qu'il ne doit pas y avoir de dépendances transitives. // Avant 3NF :\n| id_etud | Nom   | id_cons | nom        |\n|---------|-------|---------|------------|\n| 1       | Alice | 101     | M. Dupont  |\n| 2       | Bob   | 102     | M. Martin  |\n\n// Après 3NF :\n| id_etud | nom   | id_cons |\n|---------|-------|---------|\n| 1       | Alice | 101     |\n| 2       | Bob   | 102     |\n\n| id_cons  | nom         |\n|----------|-------------|\n| 101      | M. Dupont   |\n| 102      | M. Martin   |"
+        },
+        {
+            question: "Quelles sont les principales contraintes d'intégrité à appliquer dans une base de données ?",
+            answers: [
+                "Une réponse aléatoire C",
+                "Une réponse aléatoire A",
+                "Il existe au moins trois contraintes d'intégrité à appliquer dans une base de données",
+                "Une réponse aléatoire B"
+            ],
+            correct: 2,
+            explanation: "Il existe au moins trois contraintes d'intégrité à appliquer dans une base de données. - L' Intégrité de domaine garantit que les valeurs des attributs d'une colonne respectent un ensemble de règles prédéfini, comme le type de données, la plage de valeurs ou les formats. Par exemple, une colonne 'Âge' ne peut contenir que des valeurs numériques comprises entre 0 et 120. - L' Intégrité d'entité assure que chaque enregistrement dans une table est unique et identifiable. Cela est généralement réalisé par l'utilisation d'une clé primaire, qui empêche la duplication des enregistrements au sein de la table. - L' Intégrité référentielle maintient la cohérence entre les tables en s'assurant que les valeurs d'une clé étrangère dans une table correspondent à des valeurs existantes dans la clé primaire d'une autre table. Par exemple, si une table 'Commandes' contient une clé étrangère 'ID_Client', cette valeur doit correspondre à un 'ID_Client' valide dans la table 'Clients'. Ces contraintes d'intégrité sont essentielles pour garantir la fiabilité et la cohérence des données dans une base de données, facilitant ainsi la gestion et l'analyse des informations."
         }
     ],
     "Algorithmes": [
@@ -2031,206 +2229,6 @@ const questionsData = {
             ],
             correct: 1,
             explanation: "Le principe You Aren't Gonna Need It (YAGNI) (ou 'tu n'en auras pas besoin') suggère que les développeurs ne doivent pas ajouter de fonctionnalités tant qu'elles ne sont pas nécessaires. Cela aide à éviter la surcharge de fonctionnalités et à se concentrer sur les besoins réels du projet. Exemple non-YAGNI (surengineering) : class UserProfile:\n    def __init__(self, name, email):\n        self.name = name\n        self.email = email\n\n        # Pour les préférences\n        self.preferences = {}\n\n        # Pour les liens\n        self.social_media = []\n\n        # Pour des récompenses\n        self.achievements = [] Exemple YAGNI (simple et suffisant) : class UserProfile:\n    def __init__(self, name, email):\n        self.name = name\n        self.email = email"
-        }
-    ],
-    "Les bases de données": [
-        {
-            question: "Qu'est-ce qu'une base de données ?",
-            answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une base de données est un système organisé qui permet de stocker, gérer et récupérer des données de manière efficace"
-            ],
-            correct: 3,
-            explanation: "Une base de données est un système organisé qui permet de stocker, gérer et récupérer des données de manière efficace. Elle est conçue pour faciliter l'accès et la manipulation des informations, garantissant ainsi leur intégrité et leur sécurité. Les bases de données peuvent être classées en plusieurs types, notamment les bases de données relationnelles, qui utilisent des tables pour structurer les données, et les bases de données NoSQL, qui offrent une flexibilité accrue pour le stockage de données non structurées."
-        },
-        {
-            question: "Qu'est-ce qu'un SGBD ?",
-            answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Un Système de Gestion de Base de Données (SGBD) est un ensemble de logiciels qui permet de créer, gérer et manipuler des bases de données",
-                "Une réponse aléatoire B"
-            ],
-            correct: 2,
-            explanation: "Un Système de Gestion de Base de Données (SGBD) est un ensemble de logiciels qui permet de créer, gérer et manipuler des bases de données. Il fournit des outils essentiels pour stocker, récupérer, modifier et supprimer des données, facilitant ainsi l'accès aux informations pour les utilisateurs et les applications. Les SGBD garantissent l'intégrité et la sécurité des données en appliquant des règles de validation et en contrôlant les accès. Ils sont utilisés dans divers domaines, allant des applications web aux systèmes d'entreprise, et sont essentiels pour assurer une gestion efficace des informations. Parmi les exemples de SGBD populaires, on trouve : - MySQL est un SGBD relationnel open source, largement utilisé pour les applications web. - PostgreSQL est un SGBD relationnel open source qui supporte des fonctionnalités avancées et est connu pour sa robustesse. - Microsoft SQL Server est un SGBD commercial qui offre des outils puissants pour la gestion de bases de données dans les environnements d'entreprise. - MongoDB est un SGBD NoSQL qui permet de stocker des données sous forme de documents JSON, offrant une grande flexibilité pour les applications modernes."
-        },
-        {
-            question: "Quelles sont les principales fonctionnalités d'un SGBD ?",
-            answers: [
-                "Une réponse aléatoire C",
-                "Un Système de Gestion de Base de Données (SGBD) fournit au moins cinq types de fonctionnalités",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
-            ],
-            correct: 1,
-            explanation: "Un Système de Gestion de Base de Données (SGBD) fournit au moins cinq types de fonctionnalités. - Gestion des données : il permet en cela de structurer, organiser et stocker les données de manière efficace, facilitant leur accès et leur manipulation. - Manipulation des données (CRUD) : il comprend les opérations du CRUD, c'est-à-dire de création (Create), lecture (Read), mise à jour (Update) et suppression (Delete) des données, essentielles pour la gestion dynamique des informations. - Sécurité des données : il assure ainsi la protection des informations sensibles en contrôlant l'accès aux données et en appliquant des règles de sécurité pour prévenir les accès non autorisés. - Gestion des transactions : il permet d'exécuter des opérations de manière atomique, garantissant que les transactions sont complètes ou annulées en cas d'erreur, ce qui préserve l'intégrité des données. - Création de rapports : il offre enfin des outils pour générer des rapports et des analyses basées sur les données, facilitant la prise de décision et le suivi des performances."
-        },
-        {
-            question: "Qu'est-ce que le SQL ?",
-            answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Le Structured Query Language (SQL) est un langage standard utilisé pour interagir avec les bases de données relationnelles"
-            ],
-            correct: 3,
-            explanation: "Le Structured Query Language (SQL) est un langage standard utilisé pour interagir avec les bases de données relationnelles. Il permet aux utilisateurs de créer, lire, mettre à jour et supprimer des données, un ensemble d'opérations couramment désigné sous le terme CRUD (Create, Read, Update, Delete). SQL offre une syntaxe claire et structurée, facilitant l'écriture de requêtes pour extraire des informations spécifiques, modifier des enregistrements ou gérer la structure des bases de données. Il comprend également des fonctionnalités avancées telles que la gestion des transactions, les jointures entre tables, et les fonctions d'agrégation, permettant ainsi des analyses complexes et des manipulations de données efficaces. En raison de sa puissance et de sa flexibilité, SQL est devenu le langage de référence pour la gestion des données dans de nombreuses applications, allant des systèmes de gestion d'entreprise aux plateformes de données analytiques."
-        },
-        {
-            question: "Qu'est-ce qu'une table dans une base de données ?",
-            answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une table est une collection de données organisées en lignes et en colonnes, qui constitue la structure fondamentale d'une base de données relationnelle",
-                "Une réponse aléatoire C"
-            ],
-            correct: 2,
-            explanation: "Une table est une collection de données organisées en lignes et en colonnes, qui constitue la structure fondamentale d'une base de données relationnelle. Chaque ligne de la table représente un enregistrement , correspondant à une instance unique d'un objet ou d'une entité, tandis que chaque colonne représente un attribut de cet enregistrement, définissant les caractéristiques de l'objet. Les tables sont liées entre elles par des relations, ce qui permet de structurer les données de manière logique et de faciliter les opérations de recherche et de manipulation. Par exemple, une table 'Clients' peut contenir des informations telles que le nom, l'adresse et le numéro de téléphone, tandis qu'une table 'Commandes' peut enregistrer les achats effectués par ces clients. Cette organisation permet d'effectuer des requêtes complexes et d'obtenir des informations précises à partir de plusieurs tables."
-        },
-        {
-            question: "Qu'est-ce qu'une requête SQL ?",
-            answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une requête SQL est une instruction utilisée pour interroger, manipuler ou gérer des données dans une base de données",
-                "Une réponse aléatoire A"
-            ],
-            correct: 2,
-            explanation: "Une requête SQL est une instruction utilisée pour interroger, manipuler ou gérer des données dans une base de données. Elle permet aux utilisateurs d'extraire des informations spécifiques, de modifier des enregistrements existants, d'ajouter de nouvelles données ou de supprimer des données non nécessaires. Les requêtes SQL peuvent varier en complexité, allant des simples instructions de sélection, comme SELECT , qui récupèrent des données d'une ou plusieurs tables, à des requêtes plus complexes utilisant des jointures, des sous-requêtes et des fonctions d'agrégation. Par exemple, une requête peut être formulée pour obtenir la liste des clients ayant passé des commandes au cours du dernier mois, en combinant les tables 'Clients' et 'Commandes'. Grâce à sa flexibilité et sa puissance, SQL est un outil essentiel pour l'analyse et la gestion des données dans les systèmes de gestion de bases de données ."
-        },
-        {
-            question: "Quelles sont les principales clauses en SQL ?",
-            answers: [
-                "On utilise plusieurs clauses en SQL",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
-            ],
-            correct: 0,
-            explanation: "On utilise plusieurs clauses en SQL. En voici quelques unes. La clause SELECT permet de sélectionner des enregistrements. Ci-dessous, on sélectionne toutes les colonnes de la table utilisateurs. SELECT * FROM utilisateurs; La clause INSERT permet d'insérer des enregistrements. Ci-dessous, on insère un nouvel enregistrement dans la table utilisateurs INSERT INTO utilisateurs (nom, age)\nVALUES ('Alice', 30); La clause UPDATE permet de mettre à jour des enregistrements. Ci-dessous, on met à jour l'âge de l'utilisateur 'Alice' UPDATE utilisateurs\nSET age = 31\nWHERE nom = 'Alice'; La clause DELETE permet de supprimer des enregistrements. Ci-dessous, on supprime l'enregistrement de l'utilisateur 'Alice' DELETE FROM utilisateurs\nWHERE nom = 'Alice'; La clause CREATE permet de créer une table. Ci-dessous, on crée une nouvelle table utilisateurs CREATE TABLE utilisateurs (\n  id INT PRIMARY KEY,\n  nom VARCHAR(100),\n  age INT\n); La clause DROP permet de supprimer une table. Ci-dessous, on supprime la table utilisateurs DROP TABLE utilisateurs;"
-        },
-        {
-            question: "Qu'est-ce qu'une clé primaire ?",
-            answers: [
-                "Une clé primaire est un champ ou un ensemble de champs dans une table de base de données qui identifie de manière unique chaque enregistrement",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C"
-            ],
-            correct: 0,
-            explanation: "Une clé primaire est un champ ou un ensemble de champs dans une table de base de données qui identifie de manière unique chaque enregistrement. Elle garantit que chaque ligne de la table est distincte, empêchant ainsi la duplication des données. La clé primaire joue un rôle essentiel dans la structuration des données et l'établissement de relations entre les tables. Par exemple, dans une table 'Clients', un champ comme 'ID_Client' pourrait être utilisé comme clé primaire pour identifier chaque client de manière unique. De plus, une clé primaire peut également être utilisée comme clé étrangère dans d'autres tables, permettant ainsi de créer des relations entre les données. En résumé, la clé primaire est essentielle pour maintenir l'intégrité des données et faciliter les opérations de recherche et de manipulation dans une base de données."
-        },
-        {
-            question: "Qu'est-ce qu'une clé étrangère ?",
-            answers: [
-                "Une clé étrangère est un champ dans une table qui fait référence à la clé primaire d'une autre table, établissant ainsi une relation entre les deux tables",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
-            ],
-            correct: 0,
-            explanation: "Une clé étrangère est un champ dans une table qui fait référence à la clé primaire d'une autre table, établissant ainsi une relation entre les deux tables. Cette relation permet de lier des données connexes et de maintenir l'intégrité référentielle au sein de la base de données. Par exemple, dans une base de données de gestion de commandes, une table 'Commandes' peut contenir une clé étrangère appelée 'ID_Client' qui fait référence à la clé primaire 'ID_Client' dans la table 'Clients'. Cela permet d'associer chaque commande à un client spécifique. L'utilisation de clés étrangères permet non seulement d'organiser les données de manière logique, mais aussi de garantir que les relations entre les tables sont cohérentes, empêchant ainsi l'insertion de données orphelines qui ne correspondraient à aucun enregistrement dans la table référencée."
-        },
-        {
-            question: "Qu'est-ce qu'une relation one-to-one ?",
-            answers: [
-                "Une réponse aléatoire C",
-                "Une relation one-to-one (ou un-à-un) est une relation qui unit deux tables",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
-            ],
-            correct: 1,
-            explanation: "Une relation one-to-one (ou un-à-un) est une relation qui unit deux tables. Un enregistrement dans une table est alors relié à un seul enregistrement dans une autre table. Exemple : Table Utilisateur :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Profil :\n| id | age | id_user |\n|----|-----|---------|\n| 1  | 30  | 1       |\n| 2  | 25  | 2       |"
-        },
-        {
-            question: "Qu'est-ce qu'une relation one-to-many ?",
-            answers: [
-                "Une relation one-to-many (ou un-à-plusieurs) est une relation qui unit deux tables",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
-            ],
-            correct: 0,
-            explanation: "Une relation one-to-many (ou un-à-plusieurs) est une relation qui unit deux tables. Un enregistrement dans une table peut être relié à plusieurs enregistrements dans une autre table. Il existe à l'inverse une relation many-to-one . Plusieurs enregistrements dans une table sont reliés à un seul enregistrement dans une autre table. Exemple : Table Auteur :\n| id | prénom  | nom      |\n|----|---------|----------|\n| 1  | Victor  | Hugo     |\n| 2  | Gustave | Flaubert |\n\nTable Livre :\n| id | titre          | id_aut |\n|----|----------------|--------|\n| 1  | Les Misérables | 1      |\n| 2  | Ruy-Blas       | 1      |\n| 3  | Madame Bovary  | 2      |"
-        },
-        {
-            question: "Qu'est-ce qu'une relation many-to-many ?",
-            answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "Une relation many-to-many (ou plusieurs-à-plusieurs) est une relation qui unit deux tables",
-                "Une réponse aléatoire C"
-            ],
-            correct: 2,
-            explanation: "Une relation many-to-many (ou plusieurs-à-plusieurs) est une relation qui unit deux tables. Un enregistrement dans une table peut être relié à plusieurs enregistrements dans une autre table, et vice versa. Cela se traduit par une table d'association , où l'on insère pour chaque ligne, la référence à un enregistrement de chaque table. Table Étudiant :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Cours :\n| id | titre      |\n|----|------------|\n| 1  | Maths      |\n| 2  | Histoire   |\n\nTable Étudiant_Cours :\n| id_etud | id_cours |\n|---------|----------|\n| 1       | 1        |\n| 1       | 2        |\n| 2       | 1        |"
-        },
-        {
-            question: "Qu'est-ce qu'une table d'association ?",
-            answers: [
-                "Une réponse aléatoire C",
-                "La table d'association est table utilisée dans le cadre d'une relation many-to-many ",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
-            ],
-            correct: 1,
-            explanation: "La table d'association est table utilisée dans le cadre d'une relation many-to-many . Elle contient des clefs étrangères qui font référence aux clefs primaires des deux tables impliquées dans la relation. Dans l'exemple ci-dessus, la table Étudiant_Cours associe les étudiants aux cours qu'ils suivent. Table Étudiant :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Cours :\n| id | titre         |\n|----|---------------|\n| 1  | Mathématiques |\n| 2  | Histoire      |\n\nTable Étudiant_Cours :\n| id_etud  | id_cours |\n|----------|----------|\n| 1        | 1        |\n| 1        | 2        |\n| 2        | 1        |"
-        },
-        {
-            question: "Qu'est-ce qu'une jointure ?",
-            answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une jointure (JOIN en SQL) est une opération qui combine des enregistrements de deux ou plusieurs tables en fonction d'une condition liée à une clef",
-                "Une réponse aléatoire B"
-            ],
-            correct: 2,
-            explanation: "Une jointure (JOIN en SQL) est une opération qui combine des enregistrements de deux ou plusieurs tables en fonction d'une condition liée à une clef. Voici les différents types de jointures et leur utilité : - L' INNER JOIN retourne les enregistrements lorsque la condition est vraie dans les deux tables. Utilisé pour obtenir uniquement les lignes correspondantes. - Le LEFT JOIN retourne tous les enregistrements de la table de gauche et les enregistrements correspondants de la table de droite. Si aucune correspondance, les résultats de la table de droite seront NULL. - Le RIGHT JOIN retourne tous les enregistrements de la table de droite et les enregistrements correspondants de la table de gauche. Si aucune correspondance, les résultats de la table de gauche seront NULL. - Le FULL JOIN retourne tous les enregistrements des deux tables, même s'il n'y a pas de correspondance. Les valeurs manquantes sont définies à NULL. - Le CROSS JOIN retourne le produit cartésien des deux tables, c'est-à-dire toutes les combinaisons possibles d'enregistrements."
-        },
-        {
-            question: "Qu'est-ce que le CRUD dans une base de données ?",
-            answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "Les opérations CRUD représentent les quatre fonctions fondamentales pour la gestion des données dans une base de données"
-            ],
-            correct: 3,
-            explanation: "Les opérations CRUD représentent les quatre fonctions fondamentales pour la gestion des données dans une base de données. Ces opérations sont essentielles pour créer, lire, mettre à jour et supprimer des enregistrements, et elles sont réalisées à l'aide des clauses SQL suivantes : - CREATE est utilisée pour ajouter de nouveaux enregistrements dans une table. Par exemple, une requête SQL pour créer un nouvel utilisateur dans une table 'Utilisateurs'. - SELECT permet de lire ou d'extraire des données d'une ou plusieurs tables. Par exemple, une requête pour récupérer tous les enregistrements des clients d'une table 'Clients'. - UPDATE est utilisée pour modifier les enregistrements existants dans une table. Par exemple, une requête pour mettre à jour l'adresse d'un client dans la table 'Clients'. - DELETE permet de supprimer des enregistrements d'une table. Par exemple, une requête pour supprimer un utilisateur de la table 'Utilisateurs'. Ces opérations CRUD sont fondamentales pour toute application utilisant une base de données, car elles permettent de gérer efficacement les données tout au long de leur cycle de vie."
-        },
-        {
-            question: "Qu'est-ce que la normalisation ?",
-            answers: [
-                "La normalisation est le processus de structuration d'une base de données afin de réduire la redondance des données et d'améliorer leur intégrité",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
-            ],
-            correct: 0,
-            explanation: "La normalisation est le processus de structuration d'une base de données afin de réduire la redondance des données et d'améliorer leur intégrité. Ce processus implique la division des données en tables distinctes et la définition de relations entre elles, ce qui permet d'éviter la duplication d'informations et de garantir que les données restent cohérentes. La normalisation est généralement réalisée en suivant plusieurs formes normales , qui sont des règles définies pour organiser les données. Par exemple, la première forme normale (1NF) exige que chaque colonne d'une table contienne des valeurs atomiques, tandis que la deuxième forme normale (2NF) vise à éliminer les dépendances partielles entre les colonnes. En appliquant ces principes, les concepteurs de bases de données peuvent créer des structures qui facilitent la mise à jour, la recherche et la gestion des données tout en minimisant les anomalies."
-        },
-        {
-            question: "Quelles sont les trois formes normales en conception de base de données ?",
-            answers: [
-                "Une réponse aléatoire A",
-                "Il existe trois formes normales",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
-            ],
-            correct: 1,
-            explanation: "Il existe trois formes normales. Une table est en première forme normale si tous les attributs contiennent des valeurs atomiques, c'est-à-dire que chaque colonne doit contenir une seule valeur et ne doit pas avoir de valeurs multivaluées ou composites. // Avant 1NF :\n| produit | fournisseur         |\n|---------|---------------------|\n| TV      | VIDEO SA, HITEK LTD |\n\n// Après 1NF :\n| produit | fournisseur |\n|---------|-------------|\n| TV      | VIDEO SA    |\n| TV      | HITEK LTD   | Une table est en deuxième forme normale si elle est en première forme normale et si tous les attributs non clefs dépendent entièrement de la clef primaire. Cela signifie qu'aucun attribut ne doit dépendre d'une partie de la clef primaire. // Avant 2NF :\n| id  | nom   | cours     |\n|-----|-------|-----------|\n| 1   | Alice | Maths     |\n| 2   | Alice | Histoire  |\n| 3   | Bob   | Maths     |\n\n// Après 2NF :\n| id_etudiant | Nom    |\n|-------------|--------|\n| 1           | Alice  |\n| 2           | Bob    |\n\n| id_cours   | Cours      |\n|------------|------------|\n| 1          | Maths      |\n| 2          | Histoire   | Une table est en troisième forme normale si elle est en deuxième forme normale  et si aucun attribut non clef ne dépend d'un autre attribut non clef. Cela signifie qu'il ne doit pas y avoir de dépendances transitives. // Avant 3NF :\n| id_etud | Nom   | id_cons | nom        |\n|---------|-------|---------|------------|\n| 1       | Alice | 101     | M. Dupont  |\n| 2       | Bob   | 102     | M. Martin  |\n\n// Après 3NF :\n| id_etud | nom   | id_cons |\n|---------|-------|---------|\n| 1       | Alice | 101     |\n| 2       | Bob   | 102     |\n\n| id_cons  | nom         |\n|----------|-------------|\n| 101      | M. Dupont   |\n| 102      | M. Martin   |"
-        },
-        {
-            question: "Quelles sont les principales contraintes d'intégrité à appliquer dans une base de données ?",
-            answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Il existe au moins trois contraintes d'intégrité à appliquer dans une base de données",
-                "Une réponse aléatoire B"
-            ],
-            correct: 2,
-            explanation: "Il existe au moins trois contraintes d'intégrité à appliquer dans une base de données. - L' Intégrité de domaine garantit que les valeurs des attributs d'une colonne respectent un ensemble de règles prédéfini, comme le type de données, la plage de valeurs ou les formats. Par exemple, une colonne 'Âge' ne peut contenir que des valeurs numériques comprises entre 0 et 120. - L' Intégrité d'entité assure que chaque enregistrement dans une table est unique et identifiable. Cela est généralement réalisé par l'utilisation d'une clé primaire, qui empêche la duplication des enregistrements au sein de la table. - L' Intégrité référentielle maintient la cohérence entre les tables en s'assurant que les valeurs d'une clé étrangère dans une table correspondent à des valeurs existantes dans la clé primaire d'une autre table. Par exemple, si une table 'Commandes' contient une clé étrangère 'ID_Client', cette valeur doit correspondre à un 'ID_Client' valide dans la table 'Clients'. Ces contraintes d'intégrité sont essentielles pour garantir la fiabilité et la cohérence des données dans une base de données, facilitant ainsi la gestion et l'analyse des informations."
         }
     ],
     "Le projet et les méthodes": [
