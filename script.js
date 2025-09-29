@@ -10,6 +10,7 @@
         // === INITIALISATION ===
         document.addEventListener('DOMContentLoaded', function() {
             initializeThemeSelect();
+            initializeNiveauSelect();
             displayQuestionsList();
         });
 
