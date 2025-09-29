@@ -30,9 +30,9 @@
 
         function initializeNiveauSelect() {
             const select = document.getElementById('niveau-select');
-            const themes = Object.keys(questionsData);
+            const niveaux = Object.keys(questionsData);
             
-            themes.forEach(level => {
+            niveaux.forEach(level => {
                 const option = document.createElement('option');
                 option.value = level;
                 option.textContent = level;
