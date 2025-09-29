@@ -33,7 +33,19 @@
             <div id="accueil" class="page active">
                 <div class="welcome">
                     <h1>Révision D2WM</h1>
-                    <p>Plateforme de révision interactive pour les stagiaires en Développement logiciel BAC+2</p>
+                    <p>Plateforme de révision interactive pour les stagiaires en Développement logiciel BAC+2 D2WM</p>
+                    <p>Deux modes complémentaires sont à votre disposition :</p>
+                    <ul>
+                        <li>Quiz interactif pour vous évaluer rapidement.</li>
+                        <li>Révisions pour parcourir les questions avec leur réponse et explication.</li>
+                    </ul>
+
+                    <h2>Conseils d’utilisation</h2>
+                    <ol>
+                        <li>Commencez par les Révisions pour (re)voir les concepts clés avec explications.</li>
+                        <li>Enchaînez avec le Quiz pour évaluer votre niveau et cibler les thèmes à renforcer.</li>
+                        <li>Utilisez les filtres par thème et niveau, ainsi que la recherche dans les révisions pour aller à l’essentiel.</li>
+                    </ol>
                     
                     <div class="menu-cards">
                         <div class="menu-card" onclick="showPage('quiz-setup')">
@@ -56,6 +68,12 @@
                         <label for="theme-select">Choisir un thème :</label>
                         <select id="theme-select">
                             <option value="all">Tous les thèmes</option>
+                        </select>
+                    </div>
+                     <div class="form-group">
+                        <label for="niveau-select">Choisir un niveau :</label>
+                        <select id="niveau-select">
+                            <option value="all">Tous les niveaux</option>
                         </select>
                     </div>
                     

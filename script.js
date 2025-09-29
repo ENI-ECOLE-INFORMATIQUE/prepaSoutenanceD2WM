@@ -25,6 +25,18 @@
             });
         }
 
+        function initializeNiveauSelect() {
+            const select = document.getElementById('niveau-select');
+            const themes = Object.keys(questionsData);
+            
+            themes.forEach(level => {
+                const option = document.createElement('option');
+                option.value = level;
+                option.textContent = level;
+                select.appendChild(option);
+            });
+        }
+
         // === NAVIGATION ===
         function showPage(pageId) {
             // Masquer toutes les pages
@@ -51,6 +63,7 @@
         // === QUIZ ===
         function startQuiz() {
             const selectedTheme = document.getElementById('theme-select').value;
+            const selectedNiveau = document.getElementById('niveau-select').value;
             const questionCount = parseInt(document.getElementById('question-count').value);
             timePerQuestion = parseInt(document.getElementById('time-limit').value);
             
