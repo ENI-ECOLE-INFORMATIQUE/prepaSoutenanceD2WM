@@ -7,10 +7,12 @@
         let totalTime = 0;
         let questionStartTime = 0;
 
+
         // === INITIALISATION ===
         document.addEventListener('DOMContentLoaded', function() {
             initializeThemeSelect();
             initializeNiveauSelect();
+            nombreDeQuestions();
             displayQuestionsList();
         });
 
@@ -36,6 +38,12 @@
                 option.textContent = level;
                 select.appendChild(option);
             });
+        }
+
+        function nombreDeQuestions(){
+            const nbreDeQuestions = document.getElementById('nombreDeQuestions');
+            nbreDeQuestions.value=10;
+
         }
 
         // === NAVIGATION ===
@@ -391,6 +399,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             preloadData();
             setupAccessibility();
+            
             
             // Ajouter une classe pour indiquer que JS est chargé
             document.body.classList.add('js-loaded');
