@@ -42,7 +42,7 @@
 
         function nombreDeQuestions(){
             const nbreDeQuestions = document.getElementById('nombreDeQuestions');
-            nbreDeQuestions.value=10;
+            nbreDeQuestions.textContent= questionsData.length;
 
         }
 
