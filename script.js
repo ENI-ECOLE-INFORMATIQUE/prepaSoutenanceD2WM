@@ -133,6 +133,7 @@
 
         function displayQuestion() {
             const question = currentQuiz[currentQuestionIndex];
+            console.log(question);
             
             // Mettre à jour l'en-tête
             document.getElementById('current-question').textContent = currentQuestionIndex + 1;
