@@ -222,7 +222,12 @@
             
             // Afficher l'explication
             const explanationElement = document.getElementById('explanation');
-            explanationElement.innerHTML = `<strong>Explication :</strong> ${escapeHTML(question.explanation)}`;
+            explanationElement.innerHTML = `<strong>Explication :</strong> 
+                <div class="explanation-container">
+                    <div class="explanation-content">
+                        <pre class="pre-display">${question.explanation.replace("/\n\g","<br>")}</pre>
+                    </div>
+                </div>`;
             explanationElement.classList.add('show');
             
             // Afficher le bouton suivant
