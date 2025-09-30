@@ -427,6 +427,10 @@
             line-height: 1.6;
         }
 
+        .question-meta{
+            margin-bottom: 1.5rem;
+        }
+
         .question-answer {
             background: #f0f8f0;
             border: 2px solid #006600;
