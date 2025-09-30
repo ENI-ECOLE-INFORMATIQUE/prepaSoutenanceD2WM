@@ -137,7 +137,7 @@ const questionsData = {
         {
             question: "Qu'est-ce qu'une clé primaire ?",
             theme: "Base de données",
-            level: "Facile",
+            level: "Intermédiaire",
             answers: [
                 "Une clé primaire est un champ ou un ensemble de champs dans une table de base de données qui identifie de manière unique chaque enregistrement",
                 "Une réponse aléatoire A",
@@ -150,7 +150,7 @@ const questionsData = {
         {
             question: "Qu'est-ce qu'une clé étrangère ?",
             theme: "Base de données",
-            level: "Facile",
+            level: "Intermédiaire",
             answers: [
                 "Une clé étrangère est un champ dans une table qui fait référence à la clé primaire d'une autre table, établissant ainsi une relation entre les deux tables",
                 "Une réponse aléatoire C",
@@ -163,7 +163,7 @@ const questionsData = {
         {
             question: "Qu'est-ce qu'une relation one-to-one ?",
             theme: "Base de données",
-            level: "Facile",
+            level: "Intermédiaire",
             answers: [
                 "Une réponse aléatoire C",
                 "Une relation one-to-one (ou un-à-un) est une relation qui unit deux tables",
@@ -176,7 +176,7 @@ const questionsData = {
         {
             question: "Qu'est-ce qu'une relation one-to-many ?",
             theme: "Base de données",
-            level: "Facile",
+            level: "Intermédiaire",
             answers: [
                 "Une relation one-to-many (ou un-à-plusieurs) est une relation qui unit deux tables",
                 "Une réponse aléatoire C",
@@ -189,7 +189,7 @@ const questionsData = {
         {
             question: "Qu'est-ce qu'une relation many-to-many ?",
             theme: "Base de données",
-            level: "Facile",
+            level: "Intermédiaire",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire B",
@@ -202,7 +202,7 @@ const questionsData = {
         {
             question: "Qu'est-ce qu'une table d'association ?",
             theme: "Base de données",
-            level: "Facile",
+            level: "Intermédiaire",
             answers: [
                 "Une réponse aléatoire C",
                 "La table d'association est table utilisée dans le cadre d'une relation many-to-many ",
@@ -215,7 +215,7 @@ const questionsData = {
         {
             question: "Qu'est-ce qu'une jointure ?",
             theme: "Base de données",
-            level: "Facile",
+            level: "Intermédiaire",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -241,7 +241,7 @@ const questionsData = {
         {
             question: "Qu'est-ce que la normalisation ?",
             theme: "Base de données",
-            level: "Facile",
+            level: "Avancé",
             answers: [
                 "La normalisation est le processus de structuration d'une base de données afin de réduire la redondance des données et d'améliorer leur intégrité",
                 "Une réponse aléatoire B",
@@ -254,7 +254,7 @@ const questionsData = {
         {
             question: "Quelles sont les trois formes normales en conception de base de données ?",
             theme: "Base de données",
-            level: "Facile",
+            level: "Avancé",
             answers: [
                 "Une réponse aléatoire A",
                 "Il existe trois formes normales",
@@ -267,7 +267,7 @@ const questionsData = {
         {
             question: "Quelles sont les principales contraintes d'intégrité à appliquer dans une base de données ?",
             theme: "Base de données",
-            level: "Facile",
+            level: "Avancé",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -282,7 +282,7 @@ const questionsData = {
         {
             question: "Quelle est la complexité temporelle d'une recherche dans un tableau trié avec la recherche binaire ?",
             theme: "Algorithmes",
-            level: "Facile",
+            level: "Avancé",
             answers: ["O(n)", "O(log n)", "O(n²)", "O(1)"],
             correct: 1,
             explanation: "La recherche binaire a une complexité O(log n) car elle divise l'espace de recherche par 2 à chaque itération."
@@ -290,7 +290,7 @@ const questionsData = {
         {
             question: "Quel algorithme de tri a la meilleure complexité temporelle dans le cas moyen ?",
             theme: "Algorithmes",
-            level: "Facile",
+            level: "Avancé",
             answers: ["Bubble Sort", "Insertion Sort", "Quick Sort", "Selection Sort"],
             correct: 2,
             explanation: "Quick Sort a une complexité moyenne de O(n log n), ce qui en fait l'un des algorithmes de tri les plus efficaces en moyenne."
@@ -324,7 +324,7 @@ const questionsData = {
         {
             question: "Quelles sont les différences entre les structures de données linéaires et non linéaires ?",
             theme: "Algorithmes",
-            level: "Facile",
+            level: "Avancé",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -350,7 +350,7 @@ const questionsData = {
         {
             question: "Qu'est-ce qu'une map et un dictionnaire ?",
             theme: "Algorithmes",
-            level: "Facile",
+            level: "Intermédiaire",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -363,7 +363,7 @@ const questionsData = {
         {
             question: "Qu'est-ce qu'un hashmap ?",
             theme: "Algorithmes",
-            level: "Facile",
+            level: "Intermédiaire",
             answers: [
                 "Une réponse aléatoire C",
                 "Une hashmap est une implémentation spécifique de map/dictionnaire qui utilise une fonction de hachage pour stocker et accéder rapidement aux données",
@@ -402,7 +402,7 @@ const questionsData = {
         {
             question: "Quels sont les différents paradigmes ?",
             theme: "Algorithmes",
-            level: "Facile",
+            level: "Intermédiaire",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -415,7 +415,7 @@ const questionsData = {
         {
             question: "Expliquez le concept de closure",
             theme: "Algorithmes",
-            level: "Facile",
+            level: "Avancé",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -428,7 +428,7 @@ const questionsData = {
         {
             question: "Qu'est-ce qu'une expression lambda ?",
             theme: "Algorithmes",
-            level: "Facile",
+            level: "Avancé",
             answers: [
                 "Une expression lambda , également appelée fonction anonyme , est une fonction brève et sans nom qui peut être définie et utilisée immédiatement",
                 "Une réponse aléatoire A",
@@ -454,7 +454,7 @@ const questionsData = {
         {
             question: "Qu'est-ce que la complexité spatiale ?",
             theme: "Algorithmes",
-            level: "Facile",
+            level: "Avancé",
             answers: [
                 "La complexité spatiale est une mesure de la quantité de mémoire qu'un algorithme utilise en fonction de la taille de son entrée",
                 "Une réponse aléatoire C",
@@ -480,7 +480,7 @@ const questionsData = {
         {
             question: "Expliquez le concept divide and conquer",
             theme: "Algorithmes",
-            level: "Facile",
+            level: "Avancé",
             answers: [
                 "Une réponse aléatoire A",
                 "Le concept de divide and conquer (diviser pour régner) est une stratégie algorithmique utilisée pour résoudre des problèmes complexes en les décomposant en sous-problèmes plus simples",
@@ -493,7 +493,7 @@ const questionsData = {
         {
             question: "Qu'est-ce que le concept de récursion ?",
             theme: "Algorithmes",
-            level: "Facile",
+            level: "Intermédiaire",
             answers: [
                 "Une réponse aléatoire C",
                 "La récursion est un concept en programmation où une fonction s'appelle elle-même pour résoudre un problème",
@@ -506,7 +506,7 @@ const questionsData = {
         {
             question: "Quelles sont les différences entre les types primitifs et types par référence en Java ?",
             theme: "Algorithmes",
-            level: "Facile",
+            level: "Avancé",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire B",
