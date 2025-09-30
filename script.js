@@ -301,7 +301,7 @@
                         <strong>Niveau :</strong> ${question.level}</div>
                         <div class="question-answer">
                             <div class="correct-answer">✓ Réponse : ${question.answers[question.correct]}</div>
-                            <div>${question.explanation.replace("/\n\g","<br>")}</div>
+                            <pre>${question.explanation.replace("/\n\g","<br>")}</pre>
                         </div>
                     `;
                     
