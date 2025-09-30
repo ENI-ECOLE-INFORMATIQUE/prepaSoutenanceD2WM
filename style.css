@@ -533,9 +533,6 @@
 
 
        .explanation-container {
-            container-type: inline-size;
-            width: 100%;
-            max-width: 600px; /* Taille maximale du conteneur */
             margin: 0 auto;
             border: 1px solid #ccc;
             padding: 10px;
