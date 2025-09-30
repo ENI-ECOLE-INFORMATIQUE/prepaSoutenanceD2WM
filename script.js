@@ -29,14 +29,29 @@
         }
 
         function initializeNiveauSelect() {
-            const select = document.getElementById('niveau-select');
-            const niveaux = Object.keys(questionsData);
+            const niveauSelect = document.getElementById('niveau-select');
+            if (!niveauSelect) return;
+
+            // Récupération de tous les niveaux uniques
+            const niveaux = new Set();
+
+            for (const theme in questionsData) {
+                questionsData[theme].forEach(q => {
+                    if (q.level) {
+                        niveaux.add(q.level);
+                    }
+                });
+            }
             
-            niveaux.forEach(level => {
+             // Nettoyer la liste (on garde "Tous les niveaux")
+            niveauSelect.innerHTML = '<option value="all">Tous les niveaux</option>';
+
+            // Ajouter les niveaux triés alphabétiquement
+            Array.from(niveaux).sort().forEach(niveau => {
                 const option = document.createElement('option');
-                option.value = level;
-                option.textContent = level;
-                select.appendChild(option);
+                option.value = niveau;
+                option.textContent = niveau;
+                niveauSelect.appendChild(option);
             });
         }
 
