@@ -107,8 +107,8 @@
             }
             
             // Filtrer selon le niveau
-            if (niveau !== "all") {
-                availableQuestions = availableQuestions.filter(q => q.level === niveau);
+            if (selectedNiveau !== "all") {
+                availableQuestions = availableQuestions.filter(q => q.level === selectedNiveau);
             }       
 
             // Mélanger et sélectionner les questions
