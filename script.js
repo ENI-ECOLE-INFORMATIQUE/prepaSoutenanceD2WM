@@ -282,7 +282,7 @@
                 // En-tête du thème
                 const themeHeader = document.createElement('div');
                 themeHeader.className = 'theme-header';
-                themeHeader.innerHTML = `<h3>${theme} <small>(${questions.length} questions)</small></h3>`;
+                themeHeader.innerHTML = `<h3 title="(Cliquer pour afficher/cacher la liste des questions)">${theme} <small>(${questions.length} questions)</small></h3>`;
                 
 
 
