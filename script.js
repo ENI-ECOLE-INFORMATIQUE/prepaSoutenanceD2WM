@@ -140,6 +140,12 @@
             
             // Afficher la question
             document.getElementById('question-text').textContent = question.question;
+
+            // Affichage du thème et du niveau au-dessus de la question
+            document.getElementById("question-meta").innerHTML = `
+                <strong>Thème :</strong> ${question.theme} &nbsp; | &nbsp; 
+                <strong>Niveau :</strong> ${question.level}
+            `;
             
             // Afficher les réponses
             const answersContainer = document.getElementById('answers-container');
