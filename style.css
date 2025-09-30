@@ -530,3 +530,36 @@
             padding: 8px;
             border-top: 1px solid #ddd;
         }
+
+
+       .explanation-container {
+            container-type: inline-size;
+            width: 100%;
+            max-width: 600px; /* Taille maximale du conteneur */
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .pre-display {
+            white-space: pre-wrap;
+            font-family: monospace;
+            margin: 0;
+            min-height: 100px; /* Taille minimale */
+        }
+
+        /* Si le conteneur est trop étroit, on garde le <pre> */
+        @container (max-width: 400px) {
+            .pre-display {
+                display: block;
+            }
+        }
+
+        /* Si le conteneur est assez large, on affiche comme une liste */
+        @container (min-width: 401px) {
+            .pre-display {
+                white-space: normal;
+                font-family: inherit;
+                display: block;
+            }
+        }
