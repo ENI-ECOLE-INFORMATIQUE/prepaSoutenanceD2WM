@@ -12,7 +12,7 @@ const questionsData = {
         {
             question: "Quelle méthode permet d'ajouter un élément à la fin d'un tableau ?",
             theme: "JavaScript",
-            level: "medium",
+            level: "Intermédiaire",
             answers: ["array.add()", "array.push()", "array.append()", "array.insert()"],
             correct: 1,
             explanation: "La méthode push() ajoute un ou plusieurs éléments à la fin d'un tableau et retourne la nouvelle longueur du tableau."
@@ -20,7 +20,7 @@ const questionsData = {
         {
             question: "Comment vérifier si une variable est de type 'string' ?",
             theme: "JavaScript",
-            level: "hard",
+            level: "Avancé",
             answers: ["typeof variable === 'string'", "variable.isString()", "variable instanceof String", "String.isString(variable)"],
             correct: 0,
             explanation: "L'opérateur typeof retourne le type de la variable sous forme de chaîne. Pour vérifier si c'est une string, on compare avec 'string'."
