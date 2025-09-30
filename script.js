@@ -12,7 +12,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             initializeThemeSelect();
             initializeNiveauSelect();
-            nombreDeQuestions();
+            afficherTotalQuestions();;
             displayQuestionsList();
         });
 
@@ -40,10 +40,15 @@
             });
         }
 
-        function nombreDeQuestions(){
-            const nbreDeQuestions = document.getElementById('nombreDeQuestions');
-            nbreDeQuestions.textContent= questionsData.length;
-
+        function afficherTotalQuestions() {
+            let total = 0;
+            for (const theme in questionsData) {
+                total += questionsData[theme].length;
+            }
+            const infoElement = document.getElementById('total-questions-info');
+            if (infoElement) {
+                infoElement.textContent = `Nombre total de questions disponibles : ${total}`;
+            }
         }
 
         // === NAVIGATION ===
