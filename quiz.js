@@ -3,13 +3,15 @@ const questionsData = {
     "JavaScript": [
         {
             question: "Comment déclarer une variable constante en JavaScript ES6+ ?",
-            level: "easy",
+            theme: "JavaScript",
+            level: "Facile",
             answers: ["var myVar", "let myVar", "const myVar", "constant myVar"],
             correct: 2,
             explanation: "Le mot-clé 'const' permet de déclarer une variable constante qui ne peut pas être réassignée après sa déclaration initiale."
         },
         {
             question: "Quelle méthode permet d'ajouter un élément à la fin d'un tableau ?",
+            theme: "JavaScript",
             level: "medium",
             answers: ["array.add()", "array.push()", "array.append()", "array.insert()"],
             correct: 1,
@@ -17,6 +19,7 @@ const questionsData = {
         },
         {
             question: "Comment vérifier si une variable est de type 'string' ?",
+            theme: "JavaScript",
             level: "hard",
             answers: ["typeof variable === 'string'", "variable.isString()", "variable instanceof String", "String.isString(variable)"],
             correct: 0,
@@ -26,21 +29,24 @@ const questionsData = {
     "Base de données": [
         {
             question: "Quelle commande SQL permet de récupérer tous les enregistrements d'une table ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: ["GET * FROM table", "SELECT * FROM table", "FETCH * FROM table", "RETRIEVE * FROM table"],
             correct: 1,
             explanation: "SELECT * FROM table est la syntaxe standard SQL pour récupérer tous les enregistrements (toutes les colonnes) d'une table donnée."
         },
         {
             question: "Qu'est-ce qu'une clé primaire en base de données ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: ["Un index sur une colonne", "Un identifiant unique pour chaque ligne", "Une contrainte de validation", "Une relation entre tables"],
             correct: 1,
             explanation: "Une clé primaire est un identifiant unique pour chaque ligne d'une table, elle ne peut pas être nulle et doit être unique."
         },
          {
             question: "Qu'est-ce qu'une base de données ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -52,7 +58,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un SGBD ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -64,7 +71,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les principales fonctionnalités d'un SGBD ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Un Système de Gestion de Base de Données (SGBD) fournit au moins cinq types de fonctionnalités",
@@ -76,7 +84,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le SQL ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -88,7 +97,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une table dans une base de données ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire A",
@@ -100,7 +110,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une requête SQL ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -112,7 +123,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les principales clauses en SQL ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "On utilise plusieurs clauses en SQL",
                 "Une réponse aléatoire C",
@@ -124,7 +136,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une clé primaire ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une clé primaire est un champ ou un ensemble de champs dans une table de base de données qui identifie de manière unique chaque enregistrement",
                 "Une réponse aléatoire A",
@@ -136,7 +149,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une clé étrangère ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une clé étrangère est un champ dans une table qui fait référence à la clé primaire d'une autre table, établissant ainsi une relation entre les deux tables",
                 "Une réponse aléatoire C",
@@ -148,7 +162,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une relation one-to-one ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une relation one-to-one (ou un-à-un) est une relation qui unit deux tables",
@@ -160,7 +175,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une relation one-to-many ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une relation one-to-many (ou un-à-plusieurs) est une relation qui unit deux tables",
                 "Une réponse aléatoire C",
@@ -172,7 +188,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une relation many-to-many ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire B",
@@ -184,7 +201,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une table d'association ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "La table d'association est table utilisée dans le cadre d'une relation many-to-many ",
@@ -196,7 +214,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une jointure ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -208,7 +227,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le CRUD dans une base de données ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -220,7 +240,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que la normalisation ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "La normalisation est le processus de structuration d'une base de données afin de réduire la redondance des données et d'améliorer leur intégrité",
                 "Une réponse aléatoire B",
@@ -232,7 +253,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les trois formes normales en conception de base de données ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Il existe trois formes normales",
@@ -244,7 +266,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les principales contraintes d'intégrité à appliquer dans une base de données ?",
-            level: "easy",
+            theme: "Base de données",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -258,21 +281,24 @@ const questionsData = {
     "Algorithmes": [
         {
             question: "Quelle est la complexité temporelle d'une recherche dans un tableau trié avec la recherche binaire ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: ["O(n)", "O(log n)", "O(n²)", "O(1)"],
             correct: 1,
             explanation: "La recherche binaire a une complexité O(log n) car elle divise l'espace de recherche par 2 à chaque itération."
         },
         {
             question: "Quel algorithme de tri a la meilleure complexité temporelle dans le cas moyen ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: ["Bubble Sort", "Insertion Sort", "Quick Sort", "Selection Sort"],
             correct: 2,
             explanation: "Quick Sort a une complexité moyenne de O(n log n), ce qui en fait l'un des algorithmes de tri les plus efficaces en moyenne."
         },
          {
             question: "Qu'est-ce que l'algorithmie ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "L'algorithmie est le domaine d'étude de la résolution de problèmes par la mise en œuvre de suites d'opérations élémentaires selon un processus défini aboutissant à une solution",
                 "Une réponse aléatoire C",
@@ -284,7 +310,8 @@ const questionsData = {
         },
         {
             question: "Expliquez ce qu'est une boucle",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "Une boucle est une structure de contrôle qui permet d'exécuter un bloc de code de manière répétée tant qu'une condition spécifiée est vraie",
                 "Une réponse aléatoire B",
@@ -296,7 +323,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les différences entre les structures de données linéaires et non linéaires ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -308,7 +336,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un tableau/liste ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Un tableau ou une liste est une structure de données qui stocke une collection ordonnée d'éléments, généralement du même type, accessibles par un index numérique",
@@ -320,7 +349,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une map et un dictionnaire ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -332,7 +362,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un hashmap ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une hashmap est une implémentation spécifique de map/dictionnaire qui utilise une fonction de hachage pour stocker et accéder rapidement aux données",
@@ -344,7 +375,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un objet ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire C",
@@ -356,7 +388,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un JSON ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "La JavaScript Object Notation (JSON) est un format de données textuelles léger, fondée sur la syntaxe des objets JavaScript, utilisé pour l'échange de données",
@@ -368,7 +401,8 @@ const questionsData = {
         },
         {
             question: "Quels sont les différents paradigmes ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -380,7 +414,8 @@ const questionsData = {
         },
         {
             question: "Expliquez le concept de closure",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -392,7 +427,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une expression lambda ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "Une expression lambda , également appelée fonction anonyme , est une fonction brève et sans nom qui peut être définie et utilisée immédiatement",
                 "Une réponse aléatoire A",
@@ -404,7 +440,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que la complexité temporelle ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "La complexité temporelle est une mesure de la quantité de temps qu'un algorithme prend pour s'exécuter en fonction de la taille de son entrée",
                 "Une réponse aléatoire C",
@@ -416,7 +453,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que la complexité spatiale ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "La complexité spatiale est une mesure de la quantité de mémoire qu'un algorithme utilise en fonction de la taille de son entrée",
                 "Une réponse aléatoire C",
@@ -428,7 +466,8 @@ const questionsData = {
         },
         {
             question: "Que sont les algorithmes de tri ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "Les algorithmes de tri sont des méthodes utilisées pour réorganiser les éléments d'un tableau ou d'une liste dans un ordre spécifique, généralement croissant ou décroissant",
                 "Une réponse aléatoire B",
@@ -440,7 +479,8 @@ const questionsData = {
         },
         {
             question: "Expliquez le concept divide and conquer",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Le concept de divide and conquer (diviser pour régner) est une stratégie algorithmique utilisée pour résoudre des problèmes complexes en les décomposant en sous-problèmes plus simples",
@@ -452,7 +492,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le concept de récursion ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "La récursion est un concept en programmation où une fonction s'appelle elle-même pour résoudre un problème",
@@ -464,7 +505,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les différences entre les types primitifs et types par référence en Java ?",
-            level: "easy",
+            theme: "Algorithmes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire B",
@@ -478,7 +520,8 @@ const questionsData = {
     "Les IDE": [
         {
             question: "Qu'est-ce qu'un environnement de développement intégré (IDE) ?",
-            level: "easy",
+            theme: "Les IDE",
+            level: "Facile",
             answers: [
                 "Un simple éditeur de texte",
                 "Un logiciel qui fournit des outils complets (éditeur, compilateur, débogueur, gestion de projet)",
@@ -490,7 +533,8 @@ const questionsData = {
         },
         {
             question: "Citez des IDE couramment utilisés.",
-            level: "easy",
+            theme: "Les IDE",
+            level: "Facile",
             answers: [
                 "Notepad, Paint, Chrome",
                 "JetBrains (IntelliJ IDEA, WebStorm, PyCharm, PHPStorm), VS Code, Eclipse, NetBeans",
@@ -502,7 +546,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les principales fonctionnalités dans un IDE ?",
-            level: "easy",
+            theme: "Les IDE",
+            level: "Facile",
             answers: [
                 "Uniquement écrire du texte",
                 "Complétion de code, débogage, gestion de versions, support multi-langage, tests intégrés",
@@ -514,7 +559,8 @@ const questionsData = {
         },
         {
             question: "Quelles extensions pouvez-vous utiliser dans VSC ?",
-            level: "easy",
+            theme: "Les IDE",
+            level: "Facile",
             answers: [
                 "Un simple éditeur de texte sans compilation",
                 "Prettier, ESLint, Live Server",
@@ -526,7 +572,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'Emmet ?",
-            level: "easy",
+            theme: "Les IDE",
+            level: "Facile",
             answers: [
                 "Un navigateur spécialisé pour développeurs",
                 "Emmet est un outil de productivité pour les développeurs web qui permet d'écrire du code HTML et CSS de manière plus rapide et efficace",
@@ -538,7 +585,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un gestionnaire de paquets ? Donnez des exemples.",
-            level: "easy",
+            theme: "Les IDE",
+            level: "Facile",
             answers: [
                 "Un tableur pour gérer le code",
                 "Un gestionnaire de paquets est un outil qui automatise l'installation, la mise à jour et la gestion des dépendances d'un projet",
@@ -550,7 +598,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un outil de gestion de tâches ?",
-            level: "easy",
+            theme: "Les IDE",
+            level: "Facile",
             answers: [
                 "Un navigateur spécialisé pour développeurs",
                 "Un outil de gestion de tâches est un logiciel qui automatise les tâches répétitives dans le processus de développement, permettant ainsi aux développeurs de se concentrer sur des tâches plus créatives et stratégiques",
@@ -562,7 +611,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que Webpack ?",
-            level: "easy",
+            theme: "Les IDE",
+            level: "Facile",
             answers: [
                 "Webpack est un module bundler open-source pour JavaScript, conçu pour gérer et optimiser les ressources d'applications web modernes",
                 "Un tableur pour gérer le code",
@@ -574,7 +624,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que Gulp ?",
-            level: "easy",
+            theme: "Les IDE",
+            level: "Facile",
             answers: [
                 "Un navigateur spécialisé pour développeurs",
                 "Gulp est un outil d'automatisation des tâches de construction (task runner) basé sur Node",
@@ -589,7 +640,8 @@ const questionsData = {
     "L'environnement": [
         {
             question: "Comment configurer les variables d'environnement sur votre système ?",
-            level: "easy",
+            theme: "L'environnement",
+            level: "Facile",
             answers: [
                 "On ne peut pas configurer de variables d'environnement",
                 "Uniquement via un logiciel externe",
@@ -601,7 +653,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un serveur web local ?",
-            level: "easy",
+            theme: "L'environnement",
+            level: "Facile",
             answers: [
                 "Un serveur installé sur une machine distante",
                 "Un logiciel qui simule un serveur web sur votre ordinateur pour tester vos applications",
@@ -616,7 +669,8 @@ const questionsData = {
     "Le versioning": [
         {
             question: "Qu'est-ce qu'un logiciel de versioning et pourquoi est-il important ?",
-            level: "easy",
+            theme: "Le versioning",
+            level: "Facile",
             answers: [
                 "Un logiciel qui fait des sauvegardes automatiques",
                 "Un outil qui gère les différentes versions de fichiers et facilite la collaboration",
@@ -628,7 +682,8 @@ const questionsData = {
         },
         {
             question: "Comment installer Git sur votre système ?",
-            level: "easy",
+            theme: "Le versioning",
+            level: "Facile",
             answers: [
                 "Télécharger depuis git-scm.com et suivre les instructions selon l’OS",
                 "Il est déjà installé sur tous les PC",
@@ -641,7 +696,8 @@ const questionsData = {
        
         {
             question: "Comment installer Git sur votre système d'exploitation ?",
-            level: "easy",
+            theme: "Le versioning",
+            level: "Facile",
             answers: [
                 "C'est installé par défaut sur toutes les machines",
                 "Installer Docker Desktop",
@@ -653,7 +709,8 @@ const questionsData = {
         },
         {
             question: "Comment configurer Git avec vos informations personnelles ?",
-            level: "easy",
+            theme: "Le versioning",
+            level: "Facile",
             answers: [
                 "C'est impossible",
                 "Un serveur web",
@@ -665,7 +722,8 @@ const questionsData = {
         },
         {
             question: "Quels sont les avantages d'utiliser un gestionnaire de versions comme Git ?",
-            level: "easy",
+            theme: "Le versioning",
+            level: "Facile",
             answers: [
                 "Utiliser un gestionnaire de versions comme Git offre de nombreux avantages pour le développement de projets logiciels",
                 "Un serveur web",
@@ -677,7 +735,8 @@ const questionsData = {
         },
         {
             question: "Quelle est la différence entre Git, GitHub et GitLab ?",
-            level: "easy",
+            theme: "Le versioning",
+            level: "Facile",
             answers: [
                 "Un logiciel de bureautique",
                 "- Git est un système de contrôle de version distribué qui fonctionne localement sur votre machine",
@@ -689,7 +748,8 @@ const questionsData = {
         },
         {
             question: "Comment cloner un dépôt Git existant sur votre machine locale ?",
-            level: "easy",
+            theme: "Le versioning",
+            level: "Facile",
             answers: [
                 "Un logiciel de bureautique",
                 "Un langage de programmation",
@@ -701,7 +761,8 @@ const questionsData = {
         },
         {
             question: "Comment résoudre un conflit de fusion dans Git ?",
-            level: "easy",
+            theme: "Le versioning",
+            level: "Facile",
             answers: [
                 "Pour résoudre un conflit de fusion dans Git : - Identifiez les fichiers en conflit en utilisant `git status`",
                 "Un serveur web",
@@ -713,7 +774,8 @@ const questionsData = {
         },
         {
             question: "Expliquez le concept de branches dans Git",
-            level: "easy",
+            theme: "Le versioning",
+            level: "Facile",
             answers: [
                 "Un langage de programmation",
                 "Un logiciel de bureautique",
@@ -725,7 +787,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un fichier .gitignore et à quoi sert-il ? Comment le créer ?",
-            level: "easy",
+            theme: "Le versioning",
+            level: "Facile",
             answers: [
                 "Un langage de programmation",
                 "Un serveur web",
@@ -739,7 +802,8 @@ const questionsData = {
     "Les maquettes": [
         {
             question: "Qu'est-ce que l'UX et l'UI et quelles sont les différences ?",
-            level: "easy",
+            theme: "Les maquettes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -751,7 +815,8 @@ const questionsData = {
         },
         {
             question: "Comment créer des maquettes ?",
-            level: "easy",
+            theme: "Les maquettes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Pour créer des maquettes efficacement, il faut suivre plusieurs étapes : - clarifier le but et les objectifs du projet ; - comprendre le public cible et les tendances du marché ; - créer des wireframes et établir la structure de base ; - élaborer des maquettes détaillées avec couleurs et typographie ; - développer des versions interactives et simuler l'expérience utilisateur ; - recueillir des retours et itérer sur le design ; - documenter avec des guides de style et des spécifications pour les développeurs",
@@ -763,7 +828,8 @@ const questionsData = {
         },
         {
             question: "Quels outils utiliser pour créer des maquettes ?",
-            level: "easy",
+            theme: "Les maquettes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Voici une liste d'outils populaires pour créer des maquettes : - Figma est un outil collaboratif en ligne pour le design d'interfaces et le prototypage",
@@ -775,7 +841,8 @@ const questionsData = {
         },
         {
             question: "Comment créer un schéma de flux utilisateur ?",
-            level: "easy",
+            theme: "Les maquettes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire A",
@@ -787,7 +854,8 @@ const questionsData = {
         },
         {
             question: "Comment définir les critères d'acceptation pour une fonctionnalité ?",
-            level: "easy",
+            theme: "Les maquettes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Pour définir efficacement les critères d'acceptation d'une fonctionnalité, suivez ces étapes : - Comprendre clairement l'objectif et la valeur de la fonctionnalité pour l'utilisateur ; - Identifier les comportements attendus et les résultats souhaités ; - Utiliser un format clair et concis, comme la structure GIVEN-WHEN-THEN ; - Rester focalisé sur le 'quoi' plutôt que sur le 'comment' ; - S'assurer que les critères sont testables et mesurables ; - Inclure à la fois les scénarios positifs et négatifs ; - Collaborer avec l'équipe de développement et les parties prenantes ; - Limiter le nombre de critères (idéalement entre 3 et 7) ; - Valider les critères avec l'équipe avant le début du développement ; - Rester ouvert aux ajustements si de nouvelles informations émergent pendant le développement",
@@ -799,7 +867,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les différences entre une maquette et un prototype ?",
-            level: "easy",
+            theme: "Les maquettes",
+            level: "Facile",
             answers: [
                 "On peut identifier entre une maquette et un prototype huit différences",
                 "Une réponse aléatoire B",
@@ -811,7 +880,8 @@ const questionsData = {
         },
         {
             question: "Comment rédiger un cahier des charges fonctionnel ?",
-            level: "easy",
+            theme: "Les maquettes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Pour rédiger un cahier des charges fonctionnel efficace, suivez ces étapes : - Définir clairement l'objectif et le contexte du projet ; - Réaliser une analyse fonctionnelle pour identifier les besoins et les fonctions attendues ; - Structurer le document de manière logique et concise ; - Décrire les fonctionnalités attendues en termes de résultats mesurables ; - Hiérarchiser les fonctions (principales, secondaires, contraintes) ; - Inclure les contraintes techniques, réglementaires et budgétaires ; - Spécifier les critères d'acceptation pour chaque fonction ; - Éviter de mentionner des solutions techniques spécifiques ; - Utiliser un langage clair, simple et sans ambiguïté ; - Impliquer toutes les parties prenantes dans la rédaction et la validation du document",
@@ -825,7 +895,8 @@ const questionsData = {
     "Le HTML": [
         {
             question: "Qu'est-ce que HTML ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Un protocole réseau",
                 "Un langage de programmation",
@@ -837,14 +908,16 @@ const questionsData = {
         },
          {
             question: "Quelle balise HTML5 est utilisée pour définir un contenu principal d'une page ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: ["<main>", "<content>", "<primary>", "<section>"],
             correct: 0,
             explanation: "La balise <main> est spécifiquement conçue en HTML5 pour marquer le contenu principal d'un document, celui qui est directement lié au sujet central de la page."
         },
         {
             question: "Quelle est la différence entre HTML et XHTML ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Un protocole réseau",
                 "Un logiciel de design graphique",
@@ -856,7 +929,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les principales versions de HTML et quelles sont leurs différences ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Un protocole réseau",
                 "Un langage de programmation",
@@ -868,7 +942,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une balise HTML ? Comment est-elle structurée ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Un logiciel de design graphique",
                 "Une balise HTML est un élément de base qui définit le contenu d'une page web",
@@ -880,7 +955,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un attribut dans une balise HTML ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Un protocole réseau",
                 "Un langage de programmation",
@@ -892,7 +968,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le DOCTYPE en HTML ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Le DOCTYPE est une déclaration qui informe le navigateur du type de document et de la version de HTML utilisée",
                 "Un logiciel de design graphique",
@@ -904,7 +981,8 @@ const questionsData = {
         },
         {
             question: "Quelle est la structure de base d'un fichier HTML ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Un langage de programmation",
                 "La structure de base d'un fichier HTML comprend les éléments suivants : - La déclaration DOCTYPE ; - L'élément <html> avec l'attribut de langue ; - La section <head> contenant les métadonnées ; - La section <body> contenant le contenu visible de la page",
@@ -916,7 +994,8 @@ const questionsData = {
         },
         {
             question: "Comment le HTML interagit-il avec le CSS et le JavaScript ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Le HTML structure le contenu d'une page, tandis que le CSS (Cascading Style Sheets) est utilisé pour la mise en forme et le style",
                 "Un langage de programmation",
@@ -928,7 +1007,8 @@ const questionsData = {
         },
         {
             question: "Comment les métadonnées sont-elles utilisées dans une page HTML ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Un protocole réseau",
                 "Un langage de programmation",
@@ -940,7 +1020,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le HTML sémantique ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Le HTML sémantique désigne l'utilisation de balises HTML qui transmettent la signification du contenu qu'elles renferment",
                 "Un langage de programmation",
@@ -952,7 +1033,8 @@ const questionsData = {
         },
         {
             question: "Comment créer des liens internes et externes en HTML ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Un langage de programmation",
                 "Un logiciel de design graphique",
@@ -964,7 +1046,8 @@ const questionsData = {
         },
         {
             question: "Comment utiliser les commentaires dans le code HTML ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Un langage de programmation",
                 "Un logiciel de design graphique",
@@ -976,7 +1059,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que l'attribut data-* en HTML ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Un protocole réseau",
                 "L'attribut data- * est un attribut personnalisé qui permet de stocker des données supplémentaires sur un élément HTML",
@@ -988,7 +1072,8 @@ const questionsData = {
         },
         {
             question: "Comment éviter les erreurs dans l'écriture du HTML ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Un logiciel de design graphique",
                 "Il est important de valider le code HTML avec des outils comme le validateur W3C pour détecter les erreurs de syntaxe",
@@ -1000,7 +1085,8 @@ const questionsData = {
         },
         {
             question: "Comment optimiser le chargement des ressources en HTML ?",
-            level: "easy",
+            theme: "Le HTML",
+            level: "Facile",
             answers: [
                 "Un langage de programmation",
                 "Pour optimiser le chargement des ressources en HTML, vous pouvez : - Utiliser des balises <link> et <script> avec l'attribut defer ou async pour charger les scripts de manière asynchrone",
@@ -1014,7 +1100,8 @@ const questionsData = {
     "Le CSS": [
         {
             question: "Qu'est-ce que CSS ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "CSS (Cascading Style Sheets) est un langage de feuilles de style utilisé pour décrire la présentation d'un document structuré en HTML",
                 "Un gestionnaire de base de données",
@@ -1026,21 +1113,24 @@ const questionsData = {
         },
          {
             question: "Comment centrer un élément horizontalement avec CSS Flexbox ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: ["justify-content: center", "align-items: center", "text-align: center", "margin: auto"],
             correct: 0,
             explanation: "justify-content: center permet de centrer les éléments flex horizontalement le long de l'axe principal du conteneur flex."
         },
         {
             question: "Quelle propriété CSS permet de créer des colonnes égales dans une grille ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: ["grid-template-columns: 1fr 1fr", "display: grid", "grid-gap: 10px", "grid-auto-rows: 1fr"],
             correct: 0,
             explanation: "grid-template-columns: 1fr 1fr crée deux colonnes de taille égale, où 1fr représente une fraction de l'espace disponible."
         },
         {
             question: "Qu'est-ce qu'un sélecteur ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un gestionnaire de base de données",
                 "Un compilateur",
@@ -1052,7 +1142,8 @@ const questionsData = {
         },
         {
             question: "Quelle est la différence entre les sélecteurs de classes et d'identifiants en CSS ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un gestionnaire de base de données",
                 "Les sélecteurs de classes en CSS permettent d'appliquer des styles à des éléments en fonction de leur classe, par exemple : ",
@@ -1064,7 +1155,8 @@ const questionsData = {
         },
         {
             question: "Comment appliquer des styles CSS à un document HTML ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un compilateur",
                 "Il existe trois façons d'appliquer des styles CSS à un document HTML : - Styles en ligne : <p style=\"color: red;\">Texte rouge</p> - Balise <style> dans l'en-tête : <style> p { color: red; } </style> - Feuille de style externe : <link rel=\"stylesheet\" href=\"styles",
@@ -1076,7 +1168,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le modèle de boîte en CSS ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un compilateur",
                 "Le modèle de boîte en HTML et en CSS décrit la façon dont les éléments sont affichés et dimensionnés sur une page",
@@ -1088,7 +1181,8 @@ const questionsData = {
         },
         {
             question: "Comment fonctionne le positionnement en CSS (static, relative, absolute, fixed) ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un compilateur",
                 "Un langage de programmation orienté objet",
@@ -1100,7 +1194,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que Flexbox ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un langage de programmation orienté objet",
                 "Un gestionnaire de base de données",
@@ -1112,7 +1207,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que CSS Grid ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un compilateur",
                 "Un gestionnaire de base de données",
@@ -1124,7 +1220,8 @@ const questionsData = {
         },
         {
             question: "Comment gérer les polices et les typographies en CSS ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un gestionnaire de base de données",
                 "Un langage de programmation orienté objet",
@@ -1136,7 +1233,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une pseudo-classe et comment l'utiliser ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un gestionnaire de base de données",
                 "Un langage de programmation orienté objet",
@@ -1148,7 +1246,8 @@ const questionsData = {
         },
         {
             question: "Comment créer des animations et des transitions en CSS ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un gestionnaire de base de données",
                 "Le CSS permet de créer des animations et des transitions de différentes manières",
@@ -1160,7 +1259,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que la spécificité en CSS ? Comment fonctionne-t-elle ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un gestionnaire de base de données",
                 "Un langage de programmation orienté objet",
@@ -1172,7 +1272,8 @@ const questionsData = {
         },
         {
             question: "Comment utiliser les variables CSS ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un langage de programmation orienté objet",
                 "Les variables CSS , également connues sous le nom de Custom Properties , permettent de stocker et de réutiliser des valeurs dans une feuille de style",
@@ -1184,7 +1285,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un préprocesseur CSS ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un compilateur",
                 "Un préprocesseur CSS est un langage qui étend les fonctionnalités de CSS, permettant d'utiliser des fonctionnalités avancées comme les variables, les mixins, les fonctions et l'imbrication",
@@ -1196,7 +1298,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un framework CSS ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un framework CSS est une bibliothèque de styles préconçus qui facilite le développement de sites web en fournissant des composants et des styles réutilisables",
                 "Un gestionnaire de base de données",
@@ -1208,7 +1311,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les principales conventions de nommage CSS ?",
-            level: "easy",
+            theme: "Le CSS",
+            level: "Facile",
             answers: [
                 "Un compilateur",
                 "Lorsqu'un projet web prend de l'ampleur et que les fichiers CSS deviennent volumineux, il est souvent recommandé d'adopter une convention de nommage précise pour maintenir la cohérence et la lisibilité du code",
@@ -1222,7 +1326,8 @@ const questionsData = {
     "Le responsive design": [
         {
             question: "Qu'est-ce que le responsive design en CSS et comment l'implémenter ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Le responsive design en CSS permet de créer des mises en page adaptables à différentes tailles d'écran",
                 "Une réponse aléatoire A",
@@ -1234,7 +1339,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les techniques CSS couramment utilisées pour créer un design responsive ?",
-            level: "easy",
+            level: "Facile",
+            theme: "Le responsive design",
             answers: [
                 "Une réponse aléatoire C",
                 "Pour créer un design responsive, plusieurs techniques CSS couramment utilisées existent",
@@ -1246,7 +1352,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les principales caractéristiques prises en charge dans les médias queries ?",
-            level: "easy",
+            level: "Facile",
+            theme: "Le responsive design",
             answers: [
                 "Les médias queries permettent de cibler diverses caractéristiques des appareils",
                 "Une réponse aléatoire A",
@@ -1258,7 +1365,8 @@ const questionsData = {
         },
         {
             question: "Quels sont les différents médias pris en compte par les médias queries ?",
-            level: "easy",
+            level: "Facile",
+            theme: "Le responsive design",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -1270,7 +1378,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un breakpoint en responsive design ?",
-            level: "easy",
+            level: "Facile",
+            theme: "Le responsive design",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire A",
@@ -1282,7 +1391,8 @@ const questionsData = {
         },
         {
             question: "Quels sont les différents breakpoints et les écrans qui leur sont associés ?",
-            level: "easy",
+            level: "Facile",
+            theme: "Le responsive design",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire A",
@@ -1294,7 +1404,8 @@ const questionsData = {
         },
         {
             question: "Pourquoi est-il important de définir des breakpoints adaptés ?",
-            level: "easy",
+            level: "Facile",
+            theme: "Le responsive design",
             answers: [
                 "Une réponse aléatoire C",
                 "Définir des breakpoints adaptés lors dès le début de la conception du site permet d'assurer que le contenu est lisible et accessible sur tous les appareils",
@@ -1306,7 +1417,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les meilleures pratiques pour choisir des breakpoints efficaces ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -1318,7 +1430,8 @@ const questionsData = {
         },
         {
             question: "Comment les media queries sont-elles utilisées pour gérer le responsive design ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Les media queries sont des règles CSS qui appliquent des styles spécifiques en fonction des caractéristiques de l'appareil, comme la largeur de l'écran",
                 "Une réponse aléatoire B",
@@ -1330,7 +1443,8 @@ const questionsData = {
         },
         {
             question: "Comment tester l'affichage d'un site web sur différents appareils et tailles d'écran ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Pour tester l'affichage d'un site web sur différents appareils et tailles d'écran, vous pouvez utiliser plusieurs méthodes",
                 "Une réponse aléatoire A",
@@ -1342,7 +1456,8 @@ const questionsData = {
         },
         {
             question: "Comment le responsive design améliore-t-il l'expérience utilisateur ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire A",
@@ -1354,7 +1469,8 @@ const questionsData = {
         },
         {
             question: "Quels outils peuvent aider à créer des designs responsives ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire B",
@@ -1366,7 +1482,8 @@ const questionsData = {
         },
         {
             question: "Quelle est la différence entre le design adaptatif et le responsive design ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -1378,7 +1495,8 @@ const questionsData = {
         },
         {
             question: "Comment la balise meta viewport influence-t-elle le responsive design ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire A",
@@ -1390,7 +1508,8 @@ const questionsData = {
         },
         {
             question: "Comment Bootstrap facilite-il le responsive design ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Bootstrap facilite grandement la création de designs responsives grâce à plusieurs fonctionnalités clefs",
@@ -1402,7 +1521,8 @@ const questionsData = {
         },
         {
             question: "Quels sont les défis courants lors de la mise en œuvre du responsive design ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Lors de la mise en œuvre du responsive design, plusieurs défis courants peuvent survenir",
                 "Une réponse aléatoire C",
@@ -1414,7 +1534,8 @@ const questionsData = {
         },
         {
             question: "Comment le responsive design impacte-t-il le référencement naturel (SEO) d'un site web ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Le responsive design a un impact positif sur le SEO d'un site web pour plusieurs raisons : - les sites optimisés sont privilégiés par Google ; - cela fluidifie la navigation sur mobile diminuant ainsi le taux de rebond ; - les utilisateurs passant plus de temps sur un site qui s'adapte, cela renforce l'indicateur de qualité pris en compte par les algorithmes",
                 "Une réponse aléatoire A",
@@ -1426,7 +1547,8 @@ const questionsData = {
         },
         {
             question: "Comment le responsive design peut-il améliorer l'accessibilité d'un site web ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Le responsive design améliore l'accessibilité d'un site web de plusieurs manières : - La Lisibilité sur tous les appareils garantit que le contenu reste lisible et navigable sur une variété d'appareils, y compris les mobiles",
                 "Une réponse aléatoire B",
@@ -1438,7 +1560,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les meilleures pratiques pour concevoir des formulaires responsives ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Il est conseiller d'utiliser des champs de formulaire flexibles, l'étiquetage clair des champs, et la création de boutons de soumission adaptés",
                 "Une réponse aléatoire C",
@@ -1450,7 +1573,8 @@ const questionsData = {
         },
         {
             question: "Comment gérer les images et les médias dans un design responsive ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Pour gérer les images dans un design responsive, utilisez des images adaptatives avec des attributs srcset et sizes pour charger des images appropriées en fonction de la taille de l'écran",
                 "Une réponse aléatoire A",
@@ -1462,7 +1586,8 @@ const questionsData = {
         },
         {
             question: "Comment gérer les polices et la typographie dans un design responsive ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire C",
@@ -1474,7 +1599,8 @@ const questionsData = {
         },
         {
             question: "Quel rôle jouent les images adaptatives dans le responsive design ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Les images adaptatives permettent de charger des images optimisées en fonction de la taille de l'écran, réduisant ainsi le temps de chargement et améliorant les performances",
@@ -1486,7 +1612,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que l'UX et l'UI et quelles sont les différences ?",
-            level: "easy",
+            theme: "Le responsive design",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -1500,7 +1627,8 @@ const questionsData = {
     "L'accessibilité": [
         {
             question: "Qu'est-ce que l'accessibilité numérique ?",
-            level: "easy",
+            theme: "L'accessibilité",
+            level: "Facile",
             answers: [
                 "L' accessibilité numérique désigne le fait de rendre les contenus et les services en ligne utilisables par tous, y compris les personnes en situation de handicap",
                 "Une réponse aléatoire A",
@@ -1512,7 +1640,8 @@ const questionsData = {
         },
         {
             question: "Pourquoi l'accessibilité est-elle importante ?",
-            level: "easy",
+            theme: "L'accessibilité",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire C",
@@ -1524,7 +1653,8 @@ const questionsData = {
         },
         {
             question: "Quels sont les principaux standards et référentiels d'accessibilité ?",
-            level: "easy",
+            theme: "L'accessibilité",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -1536,7 +1666,8 @@ const questionsData = {
         },
         {
             question: "Comment intégrer l'accessibilité dès la phase de conception d'un site web ?",
-            level: "easy",
+            theme: "L'accessibilité",
+            level: "Facile",
             answers: [
                 "Pour intégrer l'accessibilité dès la phase de conception, il est essentiel de suivre une approche centrée sur l'utilisateur et de considérer les besoins des utilisateurs en situation de handicap",
                 "Une réponse aléatoire C",
@@ -1548,7 +1679,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les erreurs courantes à éviter ?",
-            level: "easy",
+            theme: "L'accessibilité",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire C",
@@ -1560,7 +1692,8 @@ const questionsData = {
         },
         {
             question: "Comment les technologies d'assistance interagissent-elles avec le contenu web ?",
-            level: "easy",
+            theme: "L'accessibilité",
+            level: "Facile",
             answers: [
                 "Les technologies d'assistance , comme les lecteurs d'écran , interprètent le contenu HTML et le convertissent en audio ou en braille pour les utilisateurs",
                 "Une réponse aléatoire B",
@@ -1572,7 +1705,8 @@ const questionsData = {
         },
         {
             question: "Quelles pratiques de design peuvent améliorer l'accessibilité d'un site web ?",
-            level: "easy",
+            theme: "L'accessibilité",
+            level: "Facile",
             answers: [
                 "Les pratiques de design qui améliorent l'accessibilité comprennent : - l'utilisation de polices lisibles (sans-serif), - le choix de couleurs avec un bon contraste, - la création de mises en page flexibles, - l'utilisation de balises sémantiques, - la structuration logique du contenu",
                 "Une réponse aléatoire B",
@@ -1584,7 +1718,8 @@ const questionsData = {
         },
         {
             question: "Comment tester l'accessibilité d'un site web ?",
-            level: "easy",
+            theme: "L'accessibilité",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire A",
@@ -1596,7 +1731,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les obligations légales pour les entreprises ?",
-            level: "easy",
+            theme: "L'accessibilité",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Les entreprises doivent respecter des lois sur l'accessibilité, telles que le RGAA en France ou l' ADA aux États-Unis",
@@ -1610,7 +1746,8 @@ const questionsData = {
     "Le DOM": [
         {
             question: "Que signifie DOM ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire A",
@@ -1622,7 +1759,8 @@ const questionsData = {
         },
         {
             question: "Comment le DOM représente-t-il la structure d'un document HTML ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire B",
@@ -1634,7 +1772,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un nœud dans le contexte du DOM ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire A",
@@ -1646,7 +1785,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un élément dans le DOM ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Dans le DOM, chaque balise HTML forme un élément, qui est un type de nœud",
                 "Une réponse aléatoire C",
@@ -1658,7 +1798,8 @@ const questionsData = {
         },
         {
             question: "Quelles sont les principales méthodes pour accéder au DOM ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -1670,7 +1811,8 @@ const questionsData = {
         },
         {
             question: "Comment modifier le contenu d'un élément ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Pour modifier le contenu d'un élément dans le DOM, vous pouvez utiliser des propriétés comme innerHTML ou textContent , ou des méthodes comme appendChild() et removeChild() ",
@@ -1682,7 +1824,8 @@ const questionsData = {
         },
         {
             question: "Comment ajouter un nouvel élément ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire C",
@@ -1694,7 +1837,8 @@ const questionsData = {
         },
         {
             question: "Comment supprimer un élément ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Pour supprimer un élément du DOM, vous pouvez utiliser la méthode removeChild() sur le nœud parent de l'élément à supprimer",
                 "Une réponse aléatoire A",
@@ -1706,7 +1850,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un événement ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire B",
@@ -1718,7 +1863,8 @@ const questionsData = {
         },
         {
             question: "Comment ajouter un événement ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire C",
@@ -1730,7 +1876,8 @@ const questionsData = {
         },
         {
             question: "Comment supprimer un événement ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Pour supprimer un événements dans le DOM, vous pouvez utiliser la méthode removeEventListener() ",
@@ -1742,7 +1889,8 @@ const questionsData = {
         },
         {
             question: "Quels sont les différents événements que l'on peut gérer ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire B",
@@ -1754,7 +1902,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que la propagation d'événements ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "La propagation d'événements dans le DOM fait référence au comportement par défaut des événements qui remonte dans l'arbre du DOM à partir de l'élément cible jusqu'à l'élément racine",
@@ -1766,7 +1915,8 @@ const questionsData = {
         },
         {
             question: "Comment manipuler les styles CSS d'un élément ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire C",
@@ -1778,7 +1928,8 @@ const questionsData = {
         },
         {
             question: "Comment peut-on naviguer dans le DOM ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Pour naviguer dans le DOM (Document Object Model), plusieurs propriétés JavaScript peuvent être utilisées",
@@ -1790,7 +1941,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le DOM virtuel et comment est-il utilisé dans des bibliothèques comme React ?",
-            level: "easy",
+            theme: "Le DOM",
+            level: "Facile",
             answers: [
                 "Le DOM virtuel est une représentation en mémoire de l'arbre du DOM, utilisée par des bibliothèques comme React pour optimiser les mises à jour du DOM réel",
                 "Une réponse aléatoire C",
@@ -1804,7 +1956,8 @@ const questionsData = {
     "JS": [
         {
             question: "Qu'est-ce que le lazy loading ? Comment l'implémenter dans une application web ?",
-            level: "easy",
+            theme: "JS",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -1816,7 +1969,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le localStorage ?",
-            level: "easy",
+            theme: "JS",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Le localStorage est une API web qui permet de stocker des données sous forme de paires clé-valeur dans le navigateur de l'utilisateur",
@@ -1828,7 +1982,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le sessionStorage ?",
-            level: "easy",
+            theme: "JS",
+            level: "Facile",
             answers: [
                 "Le sessionStorage est un mécanisme de stockage web côté client, similaire au localStorage, mais avec une durée de vie limitée à la session de navigation",
                 "Une réponse aléatoire C",
@@ -1840,7 +1995,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un cookie ?",
-            level: "easy",
+            theme: "JS",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Un cookie est un petit fichier texte stocké par un site web sur l'appareil de l'utilisateur",
@@ -1854,7 +2010,8 @@ const questionsData = {
     "L'architecture": [
         {
             question: "Qu'est-ce que le MVC ?",
-            level: "easy",
+            theme: "L'architecture",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire B",
@@ -1866,7 +2023,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le MVT ?",
-            level: "easy",
+            theme: "L'architecture",
+            level: "Facile",
             answers: [
                 "Le modèle Model-View-Template (MVT) est un pattern architectural utilisé principalement dans le framework Django pour le développement web",
                 "Une réponse aléatoire B",
@@ -1878,7 +2036,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le MVVM ?",
-            level: "easy",
+            theme: "L'architecture",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire C",
@@ -1890,7 +2049,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un design pattern ?",
-            level: "easy",
+            theme: "L'architecture",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -1902,7 +2062,8 @@ const questionsData = {
         },
         {
             question: "Donnez des exemples de design patterns connus ?",
-            level: "easy",
+            theme: "L'architecture",
+            level: "Facile",
             answers: [
                 "Voici quelques exemples de design patterns couramment utilisés : CREATIONAL PATTERNS - La Factory Method (ou fabrique) crée une classe mère, tout en délégant le choix de l'instanciation aux classes filles",
                 "Une réponse aléatoire C",
@@ -1914,7 +2075,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une factory method ?",
-            level: "easy",
+            theme: "L'architecture",
+            level: "Facile",
             answers: [
                 "Une factory method est un design pattern qui permet de créer des objets sans spécifier explicitement leur classe exacte",
                 "Une réponse aléatoire B",
@@ -1926,7 +2088,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le singleton ?",
-            level: "easy",
+            theme: "L'architecture",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Le singleton est un design pattern créationnel qui garantit qu'une classe n'a qu'une seule instance et fournit un point d'accès global à cette instance",
@@ -1938,7 +2101,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le couplage fort ?",
-            level: "easy",
+            theme: "L'architecture",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -1950,7 +2114,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le couplage faible ?",
-            level: "easy",
+            theme: "L'architecture",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Le couplage faible est un principe de conception qui vise à réduire les dépendances entre les composants d'un système",
@@ -1962,7 +2127,8 @@ const questionsData = {
         },
         {
             question: "Quelle est la différence entre le couplage fort et faible ?",
-            level: "easy",
+            theme: "L'architecture",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -1976,7 +2142,8 @@ const questionsData = {
     "La POO": [
         {
             question: "Qu'est-ce que la POO ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -1988,7 +2155,8 @@ const questionsData = {
         },
         {
             question: "Quels sont les quatre piliers fondamentaux de la POO ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Les quatre piliers fondamentaux de la Programmation Orientée Objet sont : - L' Abstraction consiste à se concentrer sur les informations essentielles et à ignorer les détails non pertinents",
                 "Une réponse aléatoire A",
@@ -2000,7 +2168,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que l'abstraction ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -2012,7 +2181,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que l'encapsulation ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "L' encapsulation est un principe de la POO qui consiste à regrouper les données (attributs) et les méthodes qui les manipulent au sein d'une même unité (la classe), tout en restreignant l'accès direct à ces données",
                 "Une réponse aléatoire A",
@@ -2024,7 +2194,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que l'héritage ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -2036,7 +2207,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le polymorphisme ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -2048,7 +2220,8 @@ const questionsData = {
         },
         {
             question: "Quelle est la différence entre une classe et un objet ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une classe est un modèle ou un plan pour créer des objets, tandis qu'un objet est une instance concrète de cette classe",
                 "Une réponse aléatoire B",
@@ -2060,7 +2233,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une méthode abstraite ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -2072,7 +2246,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'une interface ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une interface en POO est un contrat qui spécifie un ensemble de méthodes qu'une classe doit implémenter",
@@ -2084,7 +2259,8 @@ const questionsData = {
         },
         {
             question: "Quelle est la différence entre une classe abstraite et une interface ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Les principales différences sont : - Une classe abstraite peut avoir des méthodes concrètes et abstraites, une interface n'a que des méthodes abstraites sous la forme de signature",
@@ -2096,7 +2272,8 @@ const questionsData = {
         },
         {
             question: "Quelle est la différence entre une méthode de classe et une méthode d'instance ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une méthode de classe (statique) appartient à la classe et peut être appelée sans instance",
@@ -2108,7 +2285,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le \"getter\" et le \"setter\" ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -2120,7 +2298,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le concept de constructeur ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire C",
@@ -2132,7 +2311,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le concept de 'this'/'self' ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -2144,7 +2324,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que la surcharge de méthode ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -2156,7 +2337,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que la surcharge d'opérateur ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -2168,7 +2350,8 @@ const questionsData = {
         },
         {
             question: "Comment la POO améliore-t-elle la réutilisabilité du code ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -2180,7 +2363,8 @@ const questionsData = {
         },
         {
             question: "Comment la POO facilite-t-elle la maintenance du code ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire A",
@@ -2192,7 +2376,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que la composition ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -2204,7 +2389,8 @@ const questionsData = {
         },
         {
             question: "Quelle est la différence entre l'agrégation et la composition ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire C",
@@ -2216,7 +2402,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que l'héritage multiple et quelles sont ses implications ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "L' héritage multiple est un mécanisme de POO qui permet à une classe de dériver de plusieurs classes parentes",
                 "Une réponse aléatoire C",
@@ -2228,7 +2415,8 @@ const questionsData = {
         },
         {
             question: "Comment la POO gère-t-elle les exceptions et les erreurs ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "La POO gère les exceptions et les erreurs en utilisant une hiérarchie de classes d'exceptions",
                 "Une réponse aléatoire C",
@@ -2240,7 +2428,8 @@ const questionsData = {
         },
         {
             question: "Comment les objets immuables sont-ils utilisés ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -2252,7 +2441,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que la sérialisation ?",
-            level: "easy",
+            theme: "La POO",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "La sérialisation est le processus qui consiste à convertir un objet en une séquence de bits qui peut être stockée ou transmise, et à le désérialiser pour recréer l'objet original",
@@ -2266,7 +2456,8 @@ const questionsData = {
     "Le Clean Code": [
         {
             question: "Qu'est-ce que le Clean Code ?",
-            level: "easy",
+            theme: "Le Clean Code",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -2278,7 +2469,8 @@ const questionsData = {
         },
         {
             question: "Comment nommer des variables et des fonctions en Python ?",
-            level: "easy",
+            theme: "Le Clean Code",
+            level: "Facile",
             answers: [
                 "Pour garantir un code propre en Python, il est essentiel de donner des noms explicites aux variables et aux fonctions",
                 "Une réponse aléatoire A",
@@ -2290,7 +2482,8 @@ const questionsData = {
         },
         {
             question: "Comment garder des fonctions propres ?",
-            level: "easy",
+            theme: "Le Clean Code",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -2302,7 +2495,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le concept SOLID ?",
-            level: "easy",
+            theme: "Le Clean Code",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire C",
@@ -2314,7 +2508,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le Single Responsibility Principle (SRP) ?",
-            level: "easy",
+            theme: "Le Clean Code",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire C",
@@ -2326,7 +2521,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que l'Open/Closed Principle (OCP) ?",
-            level: "easy",
+            theme: "Le Clean Code",
+            level: "Facile",
             answers: [
                 "L' Open/Closed Principle (OCP) (ou ouvert/fermé) stipule qu'une classe doit être ouverte à l'extension , mais fermée à la modification ",
                 "Une réponse aléatoire A",
@@ -2338,7 +2534,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le Liskov Substitution Principle (LSP) ?",
-            level: "easy",
+            theme: "Le Clean Code",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Le Liskov Substitution Principle (LSP) (ou le principe de substitution de Liskov) stipule que les objets d'une classe dérivée doivent pouvoir remplacer les objets de la classe de base sans altérer le fonctionnement du programme",
@@ -2350,7 +2547,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que l'Interface Segregation Principle (ISP) ?",
-            level: "easy",
+            theme: "Le Clean Code",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire A",
@@ -2362,7 +2560,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le Dependency Inversion Principle ?",
-            level: "easy",
+            theme: "Le Clean Code",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -2374,7 +2573,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que l'Inversion of Control ?",
-            level: "easy",
+            theme: "Le Clean Code",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -2386,7 +2586,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le principe de Separation of Concern (SoC) ?",
-            level: "easy",
+            theme: "Le Clean Code",
+            level: "Facile",
             answers: [
                 "Le principe de Separation of Concern (SoC) (ou séparation des préoccupations) stipule qu'un programme doit être divisé en sections distinctes, chacune gérant une préoccupation ou une fonctionnalité spécifique",
                 "Une réponse aléatoire C",
@@ -2398,7 +2599,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le principe DRY ?",
-            level: "easy",
+            theme: "Le Clean Code",
+            level: "Facile",
             answers: [
                 "Le principe Don't Repeat Yourself (DRY) (ou 'ne te répète pas) stipule qu'une information ou une logique ne doit pas être répétée dans le code",
                 "Une réponse aléatoire A",
@@ -2410,7 +2612,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le principe KISS ?",
-            level: "easy",
+            theme: "Le Clean Code",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -2422,7 +2625,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le principe YAGNI ?",
-            level: "easy",
+            theme: "Le Clean Code",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Le principe You Aren't Gonna Need It (YAGNI) (ou 'tu n'en auras pas besoin') suggère que les développeurs ne doivent pas ajouter de fonctionnalités tant qu'elles ne sont pas nécessaires",
@@ -2436,7 +2640,8 @@ const questionsData = {
     "Le projet et les méthodes": [
         {
             question: "Qu'est-ce qu'un diagramme de Gantt et comment l'utiliser ?",
-            level: "easy",
+            theme: "Le projet et les méthodes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire B",
@@ -2448,7 +2653,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un tableau Kanban ?",
-            level: "easy",
+            theme: "Le projet et les méthodes",
+            level: "Facile",
             answers: [
                 "Un tableau Kanban est un outil visuel de gestion de projet qui permet de visualiser le flux de travail et d'optimiser la productivité",
                 "Une réponse aléatoire B",
@@ -2460,7 +2666,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que la méthode Agile ?",
-            level: "easy",
+            theme: "Le projet et les méthodes",
+            level: "Facile",
             answers: [
                 "La méthode Agile est une approche itérative et collaborative de gestion de projet, particulièrement utilisée dans le développement logiciel",
                 "Une réponse aléatoire A",
@@ -2472,7 +2679,8 @@ const questionsData = {
         },
         {
             question: "Quels sont les 12 principes de la méthode Agile ?",
-            level: "easy",
+            theme: "Le projet et les méthodes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire B",
                 "Une réponse aléatoire C",
@@ -2484,7 +2692,8 @@ const questionsData = {
         },
         {
             question: "Comment fonctionne la méthode en V dans la gestion de projet ?",
-            level: "easy",
+            theme: "Le projet et les méthodes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
@@ -2496,7 +2705,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que la méthode Merise ?",
-            level: "easy",
+            theme: "Le projet et les méthodes",
+            level: "Facile",
             answers: [
                 "La méthode Merise est une méthode d'analyse, de conception et de gestion de projets informatiques, développée en France dans les années 70",
                 "Une réponse aléatoire B",
@@ -2508,7 +2718,8 @@ const questionsData = {
         },
         {
             question: "Expliquez le concept d'architectures monolithiques",
-            level: "easy",
+            theme: "Le projet et les méthodes",
+            level: "Facile",
             answers: [
                 "Une architecture monolithique est un modèle traditionnel de développement logiciel où l'application est conçue comme une unité unifiée et autonome",
                 "Une réponse aléatoire B",
@@ -2520,7 +2731,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le refactoring ?",
-            level: "easy",
+            theme: "Le projet et les méthodes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire B",
@@ -2532,7 +2744,8 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un microservice ?",
-            level: "easy",
+            theme: "Le projet et les méthodes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
                 "Une réponse aléatoire B",
@@ -2544,7 +2757,8 @@ const questionsData = {
         },
         {
             question: "Les différents types d'architectures logicielles",
-            level: "easy",
+            theme: "Le projet et les méthodes",
+            level: "Facile",
             answers: [
                 "Une réponse aléatoire C",
                 "Une réponse aléatoire A",
