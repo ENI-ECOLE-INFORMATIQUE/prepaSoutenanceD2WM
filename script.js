@@ -307,7 +307,7 @@
                     `;
                     
                     themeContent.appendChild(questionItem);
-                    const questionsList = card.querySelector(".questions-list");
+                    const questionsList = questionItem.querySelector(".questions-list");
                       themeHeader.querySelector("h3").addEventListener("click", () => {
                             if (questionsList.style.display === "none") {
                                 questionsList.style.display = "block";
