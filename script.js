@@ -106,9 +106,20 @@
                 availableQuestions = [...questionsData[selectedTheme]];
             }
             
+            // Filtrer selon le niveau
+            if (niveau !== "all") {
+                availableQuestions = availableQuestions.filter(q => q.level === niveau);
+            }       
+
             // Mélanger et sélectionner les questions
             availableQuestions.sort(() => Math.random() - 0.5);
             currentQuiz = availableQuestions.slice(0, Math.min(questionCount, availableQuestions.length));
+
+            // Vérifier si pas assez de questions
+            if (currentQuiz.length === 0) {
+                alert("Aucune question trouvée pour ce thème et ce niveau.");
+                return;
+            }
             
             // Réinitialiser les variables
             currentQuestionIndex = 0;
