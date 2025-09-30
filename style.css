@@ -500,3 +500,32 @@
         .text-center { text-align: center; }
         .mt-2 { margin-top: 1rem; }
         .mb-2 { margin-bottom: 1rem; }
+
+        /* === Carte Questions ==== */
+        .themes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .theme-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 12px;
+            background: #f9f9f9;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .theme-card:hover {
+            transform: scale(1.02);
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .question-item {
+            margin: 8px 0;
+            padding: 8px;
+            border-top: 1px solid #ddd;
+        }

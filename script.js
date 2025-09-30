@@ -444,3 +444,45 @@
             // Ajouter une classe pour indiquer que JS est chargé
             document.body.classList.add('js-loaded');
         });
+
+    //Ajout carte dans affichage des questions
+    document.addEventListener("DOMContentLoaded", () => {
+    const themesContainer = document.getElementById("themes-container");
+
+    // Récupère les thèmes à partir de la banque de questions
+    const themes = Object.keys(questionsData);
+
+    themes.forEach(theme => {
+        // Crée la carte
+        const card = document.createElement("div");
+        card.classList.add("theme-card");
+        card.innerHTML = `
+            <h3>${theme}</h3>
+            <div class="questions-list" style="display:none;"></div>
+        `;
+
+        // Ajoute les questions de ce thème
+        const questionsList = card.querySelector(".questions-list");
+        questionsData[theme].forEach(q => {
+            const qItem = document.createElement("div");
+            qItem.classList.add("question-item");
+            qItem.innerHTML = `
+                <p><strong>${q.question}</strong></p>
+                <p><em>Réponse :</em> ${q.correctAnswer}</p>
+            `;
+            questionsList.appendChild(qItem);
+        });
+
+        // Toggle au clic : afficher/masquer les questions
+        card.querySelector("h3").addEventListener("click", () => {
+            if (questionsList.style.display === "none") {
+                questionsList.style.display = "block";
+            } else {
+                questionsList.style.display = "none";
+            }
+        });
+
+        // Ajoute la carte au conteneur
+        themesContainer.appendChild(card);
+    });
+});
