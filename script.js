@@ -293,9 +293,9 @@
                 questions.forEach((question, index) => {
                     const questionItem = document.createElement('div');
                     questionItem.className = 'question-item';
+                    questionItem.style ='display:none';
                     
                     questionItem.innerHTML = `
-                    <div class="questions-list" style="display:none;">
                         <div class="question-text">${index + 1}. ${question.question}</div>
                         <div class="question-meta"> <strong>Thème :</strong> ${question.theme} &nbsp; | &nbsp; 
                         <strong>Niveau :</strong> ${question.level}</div>
@@ -303,19 +303,16 @@
                             <div class="correct-answer">✓ Réponse : ${question.answers[question.correct]}</div>
                             <div>${question.explanation.replace("/\n\g","<br>")}</div>
                         </div>
-                    </div>    
                     `;
                     
                     themeContent.appendChild(questionItem);
-                    const questionsList = questionItem.querySelector(".questions-list");
-                      themeHeader.querySelector("h3").addEventListener("click", () => {
-                            if (questionsList.style.display === "none") {
-                                questionsList.style.display = "block";
-                            } else {
-                                questionsList.style.display = "none";
-                            }
-                        });
-
+                    themeHeader.querySelector("h3").addEventListener("click", () => {
+                        if (questionItem.style.display === "none") {
+                            questionItem.style.display = "block";
+                        } else {
+                            questionItem.style.display = "none";
+                        }
+                    });
                 });
                 
                 themeSection.appendChild(themeHeader);
