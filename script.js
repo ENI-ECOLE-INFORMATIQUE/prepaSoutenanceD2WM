@@ -294,7 +294,8 @@
                     
                     questionItem.innerHTML = `
                         <div class="question-text">${index + 1}. ${question.question}</div>
-                        <div class="question-meta" id="question-meta"></div>
+                        <div class="question-meta"> <strong>Thème :</strong> ${question.theme} &nbsp; | &nbsp; 
+                        <strong>Niveau :</strong> ${question.level}</div>
                         <div class="question-answer">
                             <div class="correct-answer">✓ Réponse : ${question.answers[question.correct]}</div>
                             <div>${question.explanation.replace("/\n\g","<br>")}</div>
