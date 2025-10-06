@@ -48,9 +48,9 @@ const questionsData = {
             theme: "Base de données",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
+                "Un programme qui permet uniquement d'afficher des données à l'écran sans les stocker",
+                "Un langage de programmation utilisé pour créer des sites web dynamiques",
+                "Un outil qui sert à crypter les connexions entre les applications et les serveurs",
                 "Une base de données est un système organisé qui permet de stocker, gérer et récupérer des données de manière efficace"
             ],
             correct: 3,
@@ -61,10 +61,10 @@ const questionsData = {
             theme: "Base de données",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
+                "Un logiciel utilisé uniquement pour afficher des résultats de recherche sans stocker de données",
+                "Un outil graphique servant à représenter les données sous forme de diagrammes UML",
                 "Un Système de Gestion de Base de Données (SGBD) est un ensemble de logiciels qui permet de créer, gérer et manipuler des bases de données",
-                "Une réponse aléatoire B"
+                "Un serveur web permettant d'héberger des applications web"
             ],
             correct: 2,
             explanation: "Un Système de Gestion de Base de Données (SGBD) est un ensemble de logiciels qui permet de créer, gérer et manipuler des bases de données.\n Il fournit des outils essentiels pour stocker, récupérer, modifier et supprimer des données, facilitant ainsi l'accès aux informations pour les utilisateurs et les applications.\n Les SGBD garantissent l'intégrité et la sécurité des données en appliquant des règles de validation et en contrôlant les accès.\n Ils sont utilisés dans divers domaines, allant des applications web aux systèmes d'entreprise, et sont essentiels pour assurer une gestion efficace des informations.\n Parmi les exemples de SGBD populaires, on trouve :\n - MySQL est un SGBD relationnel open source, largement utilisé pour les applications web.\n - PostgreSQL est un SGBD relationnel open source qui supporte des fonctionnalités avancées et est connu pour sa robustesse.\n - Microsoft SQL Server est un SGBD commercial qui offre des outils puissants pour la gestion de bases de données dans les environnements d'entreprise.\n - MongoDB est un SGBD NoSQL qui permet de stocker des données sous forme de documents JSON, offrant une grande flexibilité pour les applications modernes."
@@ -74,27 +74,29 @@ const questionsData = {
             theme: "Base de données",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
+                "Gérer les fichiers de configuration des serveurs web",
                 "Un Système de Gestion de Base de Données (SGBD) fournit au moins cinq types de fonctionnalités",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
+                "Assurer la mise à jour automatique du système d'exploitation",
+                "Envoyer des courriels de notification à chaque modification du site web"
             ],
             correct: 1,
             explanation: "Un Système de Gestion de Base de Données (SGBD) fournit au moins cinq types de fonctionnalités.\n - Gestion des données : il permet en cela de structurer, organiser et stocker les données de manière efficace, facilitant leur accès et leur manipulation.\n - Manipulation des données (CRUD) : il comprend les opérations du CRUD, c'est-à-dire de création (Create), lecture (Read), mise à jour (Update) et suppression (Delete) des données, essentielles pour la gestion dynamique des informations.\n - Sécurité des données : il assure ainsi la protection des informations sensibles en contrôlant l'accès aux données et en appliquant des règles de sécurité pour prévenir les accès non autorisés.\n - Gestion des transactions : il permet d'exécuter des opérations de manière atomique, garantissant que les transactions sont complètes ou annulées en cas d'erreur, ce qui préserve l'intégrité des données.\n - Création de rapports : il offre enfin des outils pour générer des rapports et des analyses basées sur les données, facilitant la prise de décision et le suivi des performances."
         },
+
         {
             question: "Qu'est-ce que le SQL ?",
             theme: "Base de données",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
+                "Un protocole de communication entre serveurs web",
+                "Une technologie de virtualisation utilisée pour exécuter des systèmes d’exploitation",
+                "Un langage utilisé pour développer des interfaces utilisateur graphiques",
                 "Le Structured Query Language (SQL) est un langage standard utilisé pour interagir avec les bases de données relationnelles"
             ],
             correct: 3,
             explanation: "Le Structured Query Language (SQL) est un langage standard utilisé pour interagir avec les bases de données relationnelles.\n Il permet aux utilisateurs de créer, lire, mettre à jour et supprimer des données, un ensemble d'opérations couramment désigné sous le terme CRUD (Create, Read, Update, Delete).\n SQL offre une syntaxe claire et structurée, facilitant l'écriture de requêtes pour extraire des informations spécifiques, modifier des enregistrements ou gérer la structure des bases de données.\n Il comprend également des fonctionnalités avancées telles que la gestion des transactions, les jointures entre tables, et les fonctions d'agrégation, permettant ainsi des analyses complexes et des manipulations de données efficaces.\n En raison de sa puissance et de sa flexibilité, SQL est devenu le langage de référence pour la gestion des données dans de nombreuses applications, allant des systèmes de gestion d'entreprise aux plateformes de données analytiques."
         },
+
         {
             question: "Qu'est-ce qu'une table dans une base de données ?",
             theme: "Base de données",
