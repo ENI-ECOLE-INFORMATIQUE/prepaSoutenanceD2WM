@@ -304,12 +304,12 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "L'algorithmie est le domaine d'étude de la résolution de problèmes par la mise en œuvre de suites d'opérations élémentaires selon un processus défini aboutissant à une solution",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "L'algorithmie consiste à écrire du code directement dans un langage de programmation",
+                "L'algorithmie est une méthode de chiffrement des données informatiques",
+                "L'algorithmie est un ensemble de règles esthétiques pour présenter un programme"
             ],
             correct: 0,
-            explanation: "L'algorithmie est le domaine d'étude de la résolution de problèmes par la mise en œuvre de suites d'opérations élémentaires selon un processus défini aboutissant à une solution. Elle ne doit pas être confondue avec la programmation informatique qui est sa mise en application. Historiquement, les premiers ouvrages d'algorithmie ont été rédigés au IXe siècle par le mathématicien perse Al-Khwârizmî, qui étudia de manière systématique la résolution des équations linéaires et quadratiques. L'algorithmie s'est surtout développée dans la deuxième moitié du XXe siècle, comme support conceptuel de la programmation des ordinateurs, dans le cadre du développement de l'informatique pendant cette période. Le tri des livres d'une bibliothèque par ordre alphabétique est un problème étudié en algorithmie, et plus généralement le tri d'un ensemble en respectant un certain ordre"
+            explanation: "L'algorithmie est le domaine d'étude de la résolution de problèmes par la mise en œuvre de suites d'opérations élémentaires selon un processus défini aboutissant à une solution.\n Elle ne doit pas être confondue avec la programmation informatique qui est sa mise en application.\n Historiquement, les premiers ouvrages d'algorithmie ont été rédigés au IXe siècle par le mathématicien perse Al-Khwârizmî, qui étudia de manière systématique la résolution des équations linéaires et quadratiques.\nL'algorithmie s'est surtout développée dans la deuxième moitié du XXe siècle, comme support conceptuel de la programmation des ordinateurs, dans le cadre du développement de l'informatique pendant cette période.\n Le tri des livres d'une bibliothèque par ordre alphabétique est un problème étudié en algorithmie, et plus généralement le tri d'un ensemble en respectant un certain ordre"
         },
         {
             question: "Expliquez ce qu'est une boucle",
@@ -317,35 +317,35 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "Une boucle est une structure de contrôle qui permet d'exécuter un bloc de code de manière répétée tant qu'une condition spécifiée est vraie",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
+                "Une boucle est un type de variable utilisée pour stocker plusieurs valeurs",
+                "Une boucle est un algorithme qui se répète à l'infini sans condition d'arrêt",
+                "Une boucle est un commentaire dans le code pour indiquer une répétition"
             ],
             correct: 0,
-            explanation: "Une boucle est une structure de contrôle qui permet d'exécuter un bloc de code de manière répétée tant qu'une condition spécifiée est vraie. Les boucles sont essentielles en programmation pour automatiser des tâches répétitives et traiter des collections de données. Il existe plusieurs types de boucles. Boucle while : // En JavaScript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n} // En PHP\n$i = 0;\nwhile ($i < 5) {\n    echo $i;\n    $i++;\n} # En Python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1 Boucle do while : // En JavaScript\nlet j = 0;\ndo {\n    console.log(j);\n    j++;\n} while (j < 5); // En PHP\n$j = 0;\ndo {\n    echo $j;\n    $j++;\n} while ($j < 5); Boucle for : // En JavaScript\nfor (let k = 0; k < 5; k++) {\n    console.log(k);\n} // En PHP\nfor ($k = 0; $k < 5; $k++) {\n    echo $k;\n} // En Python\nfor k in range(5):\n    print(k) Boucle foreach\n: // En JavaScript (pour les tableaux avec for...of)\nconst arr = [1, 2, 3, 4, 5];\nfor (const value of arr) {\n    console.log(value);\n} // En PHP\n$arr = [1, 2, 3, 4, 5];\nforeach ($arr as $value) {\n    echo $value;\n} # En Python\narr = [1, 2, 3, 4, 5]\nfor value in arr:\n    print(value) Boucle map (pour les tableaux)\n: // En JavaScript\nconst numbers = [1, 2, 3, 4, 5];\nconst doubled = numbers.map(num => num * 2);\nconsole.log(doubled); # En Python\nnumbers = [1, 2, 3, 4, 5]\ndoubled = list(map(lambda x: x * 2, numbers))\nprint(doubled)"
+            explanation: "Une boucle est une structure de contrôle qui permet d'exécuter un bloc de code de manière répétée tant qu'une condition spécifiée est vraie.\n Les boucles sont essentielles en programmation pour automatiser des tâches répétitives et traiter des collections de données.\n Il existe plusieurs types de boucles.\n Boucle while :\n // En JavaScript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n} \n// En PHP\n$i = 0;\nwhile ($i < 5) {\n    echo $i;\n    $i++;\n} \n# En Python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1 \nBoucle do while :\n // En JavaScript\nlet j = 0;\ndo {\n    console.log(j);\n    j++;\n} while (j < 5); \n// En PHP\n$j = 0;\ndo {\n    echo $j;\n    $j++;\n} while ($j < 5); \nBoucle for : // En JavaScript\nfor (let k = 0; k < 5; k++) {\n    console.log(k);\n} \n// En PHP\nfor ($k = 0; $k < 5; $k++) {\n    echo $k;\n} \n// En Python\nfor k in range(5):\n    print(k) \nBoucle foreach :\n // En JavaScript (pour les tableaux avec for...of)\nconst arr = [1, 2, 3, 4, 5];\nfor (const value of arr) {\n    console.log(value);\n} \n// En PHP\n$arr = [1, 2, 3, 4, 5];\nforeach ($arr as $value) {\n    echo $value;\n} \n# En Python\narr = [1, 2, 3, 4, 5]\nfor value in arr:\n    print(value) \nBoucle map (pour les tableaux):\n // En JavaScript\nconst numbers = [1, 2, 3, 4, 5];\nconst doubled = numbers.map(num => num * 2);\nconsole.log(doubled); \n# En Python\nnumbers = [1, 2, 3, 4, 5]\ndoubled = list(map(lambda x: x * 2, numbers))\nprint(doubled)"
         },
         {
             question: "Quelles sont les différences entre les structures de données linéaires et non linéaires ?",
             theme: "Algorithmes",
             level: "Avancé",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
+                "Les structures linéaires sont toujours triées par ordre alphabétique alors que les non linéaires ne le sont pas",
+                "Les structures linéaires sont utilisées uniquement pour les chaînes de caractères",
+                "Les structures non linéaires ne peuvent contenir que des nombres",
                 "Les structures de données linéaires organisent les éléments de manière séquentielle, où chaque élément a un prédécesseur et un successeur, formant une séquence unique"
             ],
             correct: 3,
-            explanation: "Les structures de données linéaires organisent les éléments de manière séquentielle, où chaque élément a un prédécesseur et un successeur, formant une séquence unique. Les exemples incluent les tableaux, les listes chaînées et les files d'attente.\n En revanche, les structures de données non linéaires organisent les éléments de manière hiérarchique ou en réseau, où chaque élément peut avoir plusieurs prédécesseurs et successeurs.\n Les exemples incluent les arbres et les graphes.\n Voici un tableau comparatif des caractéristiques :\n | Caractéristique | Linéaire         | Non linéaire    |\n|-----------------|------------------|-----------------|\n| Organisation    | Séquentielle     | Hiérarchique au |\n|                 |                  | ou réseau       |\n| Accès           | Direct (indexé)  | Indirect        |\n| Complexité      | Moins complexe   | Plus complexe   |\n| Exemples        | Tableaux, listes | Arbres, graphes |"
+            explanation: "Les structures de données linéaires organisent les éléments de manière séquentielle, où chaque élément a un prédécesseur et un successeur, formant une séquence unique.\n Les exemples incluent les tableaux, les listes chaînées et les files d'attente.\n En revanche, les structures de données non linéaires organisent les éléments de manière hiérarchique ou en réseau, où chaque élément peut avoir plusieurs prédécesseurs et successeurs.\n Les exemples incluent les arbres et les graphes.\n Voici un tableau comparatif des caractéristiques :\n | Caractéristique | Linéaire         | Non linéaire    |\n|-----------------|------------------|-----------------|\n| Organisation    | Séquentielle     | Hiérarchique au |\n|                 |                  | ou réseau       |\n| Accès           | Direct (indexé)  | Indirect        |\n| Complexité      | Moins complexe   | Plus complexe   |\n| Exemples        | Tableaux, listes | Arbres, graphes |"
         },
         {
             question: "Qu'est-ce qu'un tableau/liste ?",
             theme: "Algorithmes",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
+                "Un tableau est une simple variable qui ne peut contenir qu'une seule valeur",
                 "Un tableau ou une liste est une structure de données qui stocke une collection ordonnée d'éléments, généralement du même type, accessibles par un index numérique",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
+                "Un tableau est une fonction qui permet d'afficher des données sur la console",
+                "Un tableau est une boucle spéciale utilisée pour répéter des instructions"
             ],
             correct: 1,
             explanation: "Un tableau ou une liste est une structure de données qui stocke une collection ordonnée d'éléments, généralement du même type, accessibles par un index numérique. En Java, les tableaux ont une taille fixe, tandis que les listes (comme ArrayList) sont dynamiques. int[] tableau = {1, 2, 3, 4, 5};\nSystem.out.println(tableau[0]); List<String> liste = new ArrayList<>(Arrays.asList(\"a\", \"b\", \"c\"));\nSystem.out.println(liste.get(0)); En JavaScript, les tableaux sont dynamiques et peuvent contenir des éléments de différents types. let tableau = [1, 2, 3, 4, 5]; En PHP, les tableaux peuvent être indexés numériquement ou associatifs. $tableau = array(1, 2, 3, 4, 5); $tableau = [1, 2, 3, 4, 5]; En Python, les listes sont dynamiques et peuvent contenir des éléments de différents types. liste = [1, 2, 3, 4, 5]"
@@ -355,9 +355,9 @@ const questionsData = {
             theme: "Algorithmes",
             level: "Intermédiaire",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
+                "Une map est une liste de valeurs triées automatiquement par ordre alphabétique",
+                "Une map ou un dictionnaire est un tableau qui ne peut contenir que des nombres entiers",
+                "Une map est une fonction mathématique utilisée pour tracer des graphiques",
                 "Une map ou un dictionnaire est une structure de données qui stocke des paires clé-valeur , permettant un accès rapide aux valeurs via leurs clés uniques"
             ],
             correct: 3,
@@ -368,10 +368,10 @@ const questionsData = {
             theme: "Algorithmes",
             level: "Intermédiaire",
             answers: [
-                "Une réponse aléatoire C",
+                "Un hashmap est un algorithme de tri de chaînes de caractères",
                 "Une hashmap est une implémentation spécifique de map/dictionnaire qui utilise une fonction de hachage pour stocker et accéder rapidement aux données",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "Un hashmap est une structure qui enregistre les valeurs en double pour chaque clé",
+                "Un hashmap est un tableau ordonné d’objets avec des identifiants uniques"
             ],
             correct: 1,
             explanation: "Une hashmap est une implémentation spécifique de map/dictionnaire qui utilise une fonction de hachage pour stocker et accéder rapidement aux données. En Java, HashMap est une implémentation spécifique de l'interface Map. HashMap<String, Integer> hashMap = new HashMap<>();\nhashMap.put(\"un\", 1); Dans les autres langages (JavaScript, PHP, Python), le concept de hashmap est généralement intégré dans leurs implémentations standard de dictionnaires ou d'objets."
@@ -381,10 +381,10 @@ const questionsData = {
             theme: "Algorithmes",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
+                "Un objet est un type de boucle permettant de stocker plusieurs valeurs",
+                "Un objet est un fichier qui contient uniquement du texte brut",
                 "Un objet est une instance d'une classe qui encapsule des attributs (autrement dit des données) et des méthodes (autrement dit des comportements)",
-                "Une réponse aléatoire A"
+                "Un objet est un tableau contenant uniquement des fonctions"
             ],
             correct: 2,
             explanation: "Un objet est une instance d'une classe qui encapsule des attributs (autrement dit des données) et des méthodes (autrement dit des comportements). Dans certains langages, il peut aussi être utilisé comme une structure de données similaire à un dictionnaire. En Java :\n public class Personne {\n    String nom;\n    int age;\n}\nPersonne p = new Personne();\np.nom = \"Alice\";\nSystem.out.println(p.nom); En JavaScript, il y a deux méthodes pour construire des objets :\n let alice = {nom: \"Alice\", age: 30};\nconsole.log(alice.nom); class Personne {\n    constructor(nom, age) {\n        this.nom = nom;\n        this.age = age;\n    }\n}\nlet p = new Personne(\"Alice\", 30);\nconsole.log(p.nom); En PHP :\n class Personne {\n    public $nom;\n    public $age;\n}\n$p = new Personne();\n$p->nom = \"Alice\";\necho $p->nom; $objet = (object)[\"nom\" => \"Alice\", \"age\" => 30];\necho $objet->nom; En Python :\n class Personne:\n    def __init__(self, nom, age):\n        self.nom = nom\n        self.age = age\n\np = Personne(\"Alice\", 30)\nprint(p.nom)"
@@ -394,10 +394,10 @@ const questionsData = {
             theme: "Algorithmes",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
+                "Le JSON est un langage de programmation dérivé du Java",
                 "La JavaScript Object Notation (JSON) est un format de données textuelles léger, fondée sur la syntaxe des objets JavaScript, utilisé pour l'échange de données",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "Le JSON est une bibliothèque Python pour créer des objets dynamiques",
+                "Le JSON est un protocole réseau pour transférer des fichiers binaires"
             ],
             correct: 1,
             explanation: "La JavaScript Object Notation (JSON) est un format de données textuelles léger, fondée sur la syntaxe des objets JavaScript, utilisé pour l'échange de données. {\n    \"nom\": \"Alice\",\n    \"age\": 30,\n    \"ville\": \"Paris\"\n}"
@@ -407,9 +407,9 @@ const questionsData = {
             theme: "Algorithmes",
             level: "Intermédiaire",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
+                "Les paradigmes sont uniquement liés à la programmation orientée objet",
+                "Les paradigmes définissent la vitesse d'exécution d'un programme",
+                "Les paradigmes sont des modèles de représentation graphique de code",
                 "En programmation et conception de systèmes, plusieurs paradigmes importants coexistent"
             ],
             correct: 3,
@@ -420,10 +420,10 @@ const questionsData = {
             theme: "Algorithmes",
             level: "Avancé",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
+                "Une closure est une boucle qui se répète indéfiniment",
+                "Une closure est une variable qui garde la dernière valeur utilisée dans une fonction",
                 "Une closure (ou fermeture) est une fonction qui capture et conserve l'accès aux variables de son environnement lexical, même lorsqu'elle est exécutée en dehors de cet environnement",
-                "Une réponse aléatoire B"
+                "Une closure est un objet qui permet de compiler du code automatiquement"
             ],
             correct: 2,
             explanation: "Une closure (ou fermeture) est une fonction qui capture et conserve l'accès aux variables de son environnement lexical, même lorsqu'elle est exécutée en dehors de cet environnement. En d'autres termes, une closure \"se souvient\" du contexte dans lequel elle a été créée. Ce concept permet de créer des fonctions avec un état privé, d'implémenter des fonctions de fabrique, et de gérer des variables privées en programmation orientée objet. En Java :\n public interface Incrementer {\n    int increment();\n}\n\npublic static Incrementer createIncrementer() {\n    final int[] count = {0};\n    return new Incrementer() {\n        @Override\n        public int increment() {\n            return ++count[0];\n        }\n    };\n} En PHP :\n function createIncrementer() {\n    $count = 0;\n    return function() use (&$count) {\n        return ++$count;\n    };\n} En Python :\n def create_incrementer():\n    count = 0\n    def increment():\n        nonlocal count\n        count += 1\n        return count\n    return increment \nEn JavaScript :\n function createIncrementer() {\n    let count = 0;\n    return function() {\n        return ++count;\n    };\n}"
@@ -434,9 +434,9 @@ const questionsData = {
             level: "Avancé",
             answers: [
                 "Une expression lambda , également appelée fonction anonyme , est une fonction brève et sans nom qui peut être définie et utilisée immédiatement",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
+                "Une expression lambda est un type de variable globale",
+                "Une expression lambda est une méthode de chiffrement des données",
+                "Une expression lambda est une classe spéciale pour créer des objets"
             ],
             correct: 0,
             explanation: "Une expression lambda , également appelée fonction anonyme , est une fonction brève et sans nom qui peut être définie et utilisée immédiatement. Elle est particulièrement utile pour créer des fonctions simples à la volée, souvent comme arguments d'autres fonctions. Les expressions lambda sont un concept clé de la programmation fonctionnelle et sont présentes dans de nombreux langages modernes. Elles permettent d'écrire du code plus concis et expressif, en évitant la nécessité de définir des fonctions complètes pour des opérations simples et ponctuelles. Les lambda sont fréquemment utilisées avec des fonctions de haut niveau comme map, filter, ou reduce.\n En PHP :\n // Déclaration d'une variable\n$multiplier = 2;\n\n// Expression lambda pour doubler un nombre\n$doubleValue = fn($x) => $x * $multiplier;\n\n// Utilisation de la lambda\necho $doubleValue(5); // Affiche: 10 En Python :\n # Déclaration d'une variable\nmultiplier = 2\n\n# Expression lambda pour doubler un nombre\ndouble_value = lambda x: x * multiplier\n\n# Utilisation de la lambda\nprint(double_value(5)) \nEn JavaScript :\n // Déclaration d'une variable\nconst multiplier = 2;\n\n// Expression lambda pour doubler un nombre\nconst doubleValue = (x) => x * multiplier;\n\n// Utilisation de la lambda\nconsole.log(doubleValue(5));"
@@ -447,9 +447,9 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "La complexité temporelle est une mesure de la quantité de temps qu'un algorithme prend pour s'exécuter en fonction de la taille de son entrée",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "La complexité temporelle indique la quantité de mémoire utilisée par un programme",
+                "La complexité temporelle est le nombre total de fonctions écrites dans un programme",
+                "La complexité temporelle mesure le temps nécessaire à la compilation d’un programme"
             ],
             correct: 0,
             explanation: "La complexité temporelle est une mesure de la quantité de temps qu'un algorithme prend pour s'exécuter en fonction de la taille de son entrée. Elle permet d'évaluer l'efficacité d'un algorithme et de comparer différents algorithmes entre eux. On utilise couramment la notamment grand O pour exprimer la complexité temporelle. - O(1) ou temps constant : l'algorithme prend le même temps d'exécution quelle que soit la taille de l'entrée. C'est l'exemple de l'accès à un élément d'un tableau - O(log n) ou temps logarithmique : l'algorithme réduit la taille de l'entrée de manière exponentielle à chaque étape, comme dans la recherche binaire. C'est par exemple le cas de la recherche binaire. - O(n) ou temps linéaire : l'algorithme prend un temps proportionnel à la taille de l'entrée. On rencontre cette complexité en parcourant un tableau - O(n log n) ou temps quasi-linéaire : souvent rencontré dans les algorithmes de tri efficaces, comme le tri par fusion. - O(n²) ou temps quadratique : l'algorithme prend un temps proportionnel au carré de la taille de l'entrée, comme dans le tri à bulles. - O(2^n) ou temps exponentiel : l'algorithme prend un temps qui double avec chaque augmentation de la taille de l'entrée, souvent associé à des algorithmes de force brute. On appelle cette notation, la notation de Landau ."
@@ -460,9 +460,9 @@ const questionsData = {
             level: "Avancé",
             answers: [
                 "La complexité spatiale est une mesure de la quantité de mémoire qu'un algorithme utilise en fonction de la taille de son entrée",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
+                "La complexité spatiale évalue le temps d’exécution d’un programme",
+                "La complexité spatiale mesure la taille du code source",
+                "La complexité spatiale indique la profondeur des boucles imbriquées"
             ],
             correct: 0,
             explanation: "La complexité spatiale est une mesure de la quantité de mémoire qu'un algorithme utilise en fonction de la taille de son entrée. Elle permet d'évaluer l'efficacité d'un algorithme en termes de ressources mémoire et de comparer différents algorithmes entre eux. On utilise couramment la notamment grand O pour exprimer la complexité spatiale. - O(1) ou espace constant : l'algorithme utilise une quantité fixe de mémoire, indépendamment de la taille de l'entrée. C'est l'exemple d'un algorithme qui utilise un nombre constant de variables. - O(log n) ou espace logarithmique : l'algorithme utilise une quantité de mémoire qui augmente logarithmiquement avec la taille de l'entrée, souvent rencontré dans les algorithmes de recherche récursive. - O(n) ou espace linéaire : l'algorithme utilise une quantité de mémoire proportionnelle à la taille de l'entrée, comme lors de la création d'un tableau pour stocker des éléments. - O(n log n) : l'algorithme utilise une quantité de mémoire proportionnelle à n log n, comme dans certains algorithmes de tri. - O(n²) ou espace quadratique : l'algorithme utilise une quantité de mémoire proportionnelle au carré de la taille de l'entrée, comme dans le cas d'une matrice d'adjacence pour représenter un graphe. - O(2^n) ou espace exponentiel : l'algorithme utilise une quantité de mémoire qui double avec chaque augmentation de la taille de l'entrée, souvent associé à des algorithmes de force brute. On appelle cette notation, la notation de Landau ."
@@ -473,9 +473,9 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "Les algorithmes de tri sont des méthodes utilisées pour réorganiser les éléments d'un tableau ou d'une liste dans un ordre spécifique, généralement croissant ou décroissant",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C"
+                "Les algorithmes de tri servent à supprimer les doublons d’une liste",
+                "Les algorithmes de tri comparent les données binaires entre deux fichiers",
+                "Les algorithmes de tri sont des fonctions qui mélangent les éléments aléatoirement"
             ],
             correct: 0,
             explanation: "Les algorithmes de tri sont des méthodes utilisées pour réorganiser les éléments d'un tableau ou d'une liste dans un ordre spécifique, généralement croissant ou décroissant.\n Voici quelques algorithmes de tri courants et leur fonctionnement :\n Le tri à bulles ou Bubble Sort fonctionne en comparant chaque paire d'éléments adjacents et en les échangeant si nécessaire. Ce processus est répété jusqu'à ce que le tableau soit trié. C'est un algorithme simple mais inefficace pour de grandes listes. def bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\n# Exemple d'utilisation\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Tableau trié par tri à bulles :')\nfor i in range(len(arr)):\n    print('%d' % arr[i], end=' ') Le tri par insertion ou Insertion Sort consiste à construire un tableau trié un élément à la fois. Il prend chaque élément du tableau et le place à sa position correcte dans la partie déjà triée. C'est efficace pour les petites listes. def insertion_sort(arr):\n    for i in range(1, len(arr)):\n        key = arr[i]\n        j = i-1\n        while j >= 0 and key < arr[j]:\n            arr[j+1] = arr[j]\n            j -= 1\n        arr[j+1] = key\n\n# Exemple d'utilisation\narr = [12, 11, 13, 5, 6]\ninsertion_sort(arr)\nprint('Tableau trié par tri par insertion :')\nfor i in range(len(arr)):\n    print('%d' % arr[i], end=' ') Le tri par sélection ou Selection Sort fonctionne en trouvant le plus petit élément dans le tableau non trié et en l'échangeant avec le premier élément non trié. Ce processus est répété pour chaque élément du tableau. def selection_sort(arr):\n    for i in range(len(arr)):\n        min_idx = i\n        for j in range(i+1, len(arr)):\n            if arr[min_idx] > arr[j]:\n                min_idx = j\n        arr[i], arr[min_idx] = arr[min_idx], arr[i]\n\n# Exemple d'utilisation\narr = [64, 25, 12, 22, 11]\nselection_sort(arr)\nprint('Tableau trié par tri par sélection :')\nfor i in range(len(arr)):\n    print('%d' % arr[i], end=' ') Le tri fusion ou Merge Sort est un algorithme de tri par division qui divise le tableau en deux moitiés, les trie de manière récursive et les fusionne ensuite. C'est un algorithme efficace avec une complexité de O(n log n). def merge_sort(arr):\n    if len(arr) > 1:\n        mid = len(arr) // 2\n        left_half = arr[:mid]\n        right_half = arr[mid:]\n\n        merge_sort(left_half)\n        merge_sort(right_half)\n\n        i = j = k = 0\n\n        while i < len(left_half) and j < len(right_half):\n            if left_half[i] < right_half[j]:\n                arr[k] = left_half[i]\n                i += 1\n            else:\n                arr[k] = right_half[j]\n                j += 1\n            k += 1\n\n        while i < len(left_half):\n            arr[k] = left_half[i]\n            i += 1\n            k += 1\n\n        while j < len(right_half):\n            arr[k] = right_half[j]\n            j += 1\n            k += 1\n\n# Exemple d'utilisation\narr = [12, 11, 13, 5, 6, 7]\nmerge_sort(arr)\nprint('Tableau trié par tri fusion :')\nfor i in range(len(arr)):\n    print('%d' % arr[i], end=' ')"
@@ -485,10 +485,10 @@ const questionsData = {
             theme: "Algorithmes",
             level: "Avancé",
             answers: [
-                "Une réponse aléatoire A",
+                "Une méthode consistant à exécuter plusieurs algorithmes en parallèle pour comparer leurs résultats",
                 "Le concept de divide and conquer (diviser pour régner) est une stratégie algorithmique utilisée pour résoudre des problèmes complexes en les décomposant en sous-problèmes plus simples",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
+                "Une technique pour éviter la récursion en divisant les boucles en plusieurs segments indépendants",
+                "Un algorithme qui utilise plusieurs threads pour réduire le temps d’exécution"
             ],
             correct: 1,
             explanation: "Le concept de divide and conquer (diviser pour régner) est une stratégie algorithmique utilisée pour résoudre des problèmes complexes en les décomposant en sous-problèmes plus simples. Ce processus se déroule en trois étapes. \n- Diviser - Le problème initial est divisé en plusieurs sous-problèmes plus petits.\n - Conquérir - Chaque sous-problème est résolu individuellement, souvent de manière récursive. \n- Combiner - Les solutions des sous-problèmes sont ensuite combinées pour obtenir la solution du problème original. \nCette approche est particulièrement efficace pour des problèmes tels que le tri, la recherche, et divers calculs mathématiques."
@@ -498,10 +498,10 @@ const questionsData = {
             theme: "Algorithmes",
             level: "Intermédiaire",
             answers: [
-                "Une réponse aléatoire C",
+                "Une méthode permettant d’éviter les boucles en utilisant des structures de données dynamiques",
                 "La récursion est un concept en programmation où une fonction s'appelle elle-même pour résoudre un problème",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
+                "Un procédé de compilation qui optimise les appels de fonctions imbriqués",
+                "Une technique utilisée uniquement pour les algorithmes de tri comme QuickSort"
             ],
             correct: 1,
             explanation: "La récursion est un concept en programmation où une fonction s'appelle elle-même pour résoudre un problème. La récursion est souvent utilisée pour simplifier des problèmes complexes en les décomposant en sous-problèmes plus simples.\n Il existe deux types de récursion :\n - La Récursion directe où une fonction s'appelle elle-même. - La Récursion indirecte où deux ou plusieurs fonctions s'appellent mutuellement. Exemple de récursion directe avec la suite de Fibonacci : def fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n\n# Exemple d'utilisation\nn = 10\nprint('Le', n, 'ème nombre de Fibonacci est :', fibonacci(n)) \nExemple de récursion indirecte avec deux fonctions qui s'appellent l'une l'autre :\n def fonction_a(n):\n    if n > 0:\n        print('Fonction A, n =', n)\n        fonction_b(n - 1)\n\ndef fonction_b(n):\n    if n > 0:\n        print('Fonction B, n =', n)\n        fonction_a(n - 1)\n\n# Exemple d'utilisation\nfonction_a(3)\n\n# Affiche :\n# Fonction A, n = 3\n# Fonction B, n = 2\n# Fonction A, n = 1"
@@ -511,10 +511,10 @@ const questionsData = {
             theme: "Algorithmes",
             level: "Avancé",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
+                "Les types primitifs peuvent contenir plusieurs valeurs simultanément contrairement aux types par référence",
+                "Les types par référence sont automatiquement convertis en types primitifs lors de l’exécution",
                 "Les types primitifs en Java représentent des valeurs élémentaires telles que les entiers, les flottants, les caractères et les booléens",
-                "Une réponse aléatoire C"
+                "Les types primitifs sont uniquement utilisés dans les interfaces graphiques tandis que les types par référence sont utilisés dans la logique métier"
             ],
             correct: 2,
             explanation: "Les types primitifs en Java représentent des valeurs élémentaires telles que les entiers, les flottants, les caractères et les booléens. Ils sont stockés directement en mémoire (sur la pile) et ne possèdent pas de méthodes ou d'attributs associés. On peut citer les exemples de int , double , char , et boolean . Les types par référence , en revanche, représentent des objets complexes. Ils sont stockés dans le tas (heap) et sont référencés par une adresse mémoire. Contrairement aux types primitifs, les types par référence peuvent avoir des méthodes et des attributs. On peut citer les exemples de String , Date , et ArrayList .\n Tableau d'association types primitifs / classes enveloppes :\n | Type primitif | Classe enveloppe |\n|---------------|------------------|\n| byte          | Byte             |\n| short         | Short            |\n| int           | Integer          |\n| long          | Long             |\n| float         | Float            |\n| double        | Double           |\n| char          | Character        |\n| boolean       | Boolean          |"
@@ -807,11 +807,11 @@ const questionsData = {
             question: "Qu'est-ce que l'UX et l'UI et quelles sont les différences ?",
             theme: "Les maquettes",
             level: "Facile",
-            answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "L' UX (User Experience) et l' UI (User Interface) sont deux aspects complémentaires du design numérique"
+            answers:  [
+                "L'UX concerne uniquement les couleurs et l'esthétique, tandis que l'UI gère la navigation et la structure du site",
+                "L'UX est un langage de programmation utilisé pour le design d'interface, et l'UI est une méthode de test d'expérience utilisateur",
+                "L'UX se limite à la création de maquettes basse fidélité, et l'UI à la programmation du front-end",
+                "L'UX (User Experience) et l'UI (User Interface) sont deux aspects complémentaires du design numérique"
             ],
             correct: 3,
             explanation: "L' UX (User Experience) et l' UI (User Interface) sont deux aspects complémentaires du design numérique.\n L'UX Design se concentre sur l'expérience globale de l'utilisateur, en analysant ses besoins et comportements, optimisant son parcours et sa satisfaction, et en travaillant sur la structure, la navigation et l'ergonomie du produit.\n L'UI Design, quant à lui, se focalise sur l'apparence visuelle de l'interface, créant les éléments graphiques et interactifs, définissant les couleurs, typographies et la mise en page, tout en assurant la cohérence visuelle et l'esthétique.\n Bien que distincts, ces deux domaines collaborent étroitement pour créer des produits numériques à la fois fonctionnels et attrayants, l'UX s'occupant du fonctionnement global et de la satisfaction de l'utilisateur, tandis que l'UI gère l'aspect visuel et l'interaction directe avec l'interface."
@@ -821,10 +821,10 @@ const questionsData = {
             theme: "Les maquettes",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Pour créer des maquettes efficacement, il faut suivre plusieurs étapes :\n - clarifier le but et les objectifs du projet;\n\n - comprendre le public cible et les tendances du marché;\n - créer des wireframes et établir la structure de base;\n - élaborer des maquettes détaillées avec couleurs et typographie;\n\n - développer des versions interactives et simuler l'expérience utilisateur;\n\n - recueillir des retours et itérer sur le design;\n\n - documenter avec des guides de style et des spécifications pour les développeurs",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "Il suffit d'utiliser un logiciel de traitement de texte et d’ajouter des captures d’écran du site final",
+                "Pour créer des maquettes efficacement, il faut suivre plusieurs étapes :\n - clarifier le but et les objectifs du projet;\n - comprendre le public cible et les tendances du marché;\n - créer des wireframes et établir la structure de base;\n - élaborer des maquettes détaillées avec couleurs et typographie;\n - développer des versions interactives et simuler l'expérience utilisateur;\n - recueillir des retours et itérer sur le design;\n - documenter avec des guides de style et des spécifications pour les développeurs",
+                "Créer des maquettes consiste à coder directement le site final pour voir à quoi il ressemble en production",
+                "Faire une maquette consiste seulement à choisir les couleurs principales et à ajouter le logo sur la page d’accueil"
             ],
             correct: 1,
             explanation: "Pour créer des maquettes efficacement, il faut suivre plusieurs étapes :\n - clarifier le but et les objectifs du projet;\n - comprendre le public cible et les tendances du marché;\n\n - créer des wireframes et établir la structure de base ;\n - élaborer des maquettes détaillées avec couleurs et typographie ;\n - développer des versions interactives et simuler l'expérience utilisateur ;\n - recueillir des retours et itérer sur le design ;\n - documenter avec des guides de style et des spécifications pour les développeurs."
@@ -834,10 +834,10 @@ const questionsData = {
             theme: "Les maquettes",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Voici une liste d'outils populaires pour créer des maquettes : - Figma est un outil collaboratif en ligne pour le design d'interfaces et le prototypage",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C"
+                "Des outils de gestion de base de données comme MySQL ou MongoDB",
+                "Voici une liste d'outils populaires pour créer des maquettes : - Figma est un outil collaboratif en ligne pour le design d'interfaces et le prototypage",
+                "Un éditeur de texte comme Notepad++ ou Visual Studio Code suffit largement pour créer des maquettes",
+                "Des outils d’analyse SEO comme Google Analytics ou SEMrush"
             ],
             correct: 1,
             explanation: "Voici une liste d'outils populaires pour créer des maquettes :\n - Figma est un outil collaboratif en ligne pour le design d'interfaces et le prototypage. \n- Adobe XD est une application de design d'expérience utilisateur pour le web et le mobile. - Sketch est un logiciel de design vectoriel pour Mac, idéal pour la conception d'interfaces. \n- Balsamiq est parfait pour créer rapidement des wireframes simples."
@@ -847,10 +847,10 @@ const questionsData = {
             theme: "Les maquettes",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Pour créer un schéma de flux utilisateur efficace, suivez ces étapes : \n- Identifier l'objectif principal du flux utilisateur ;\n - Définir le point de départ et le point d'arrivée du parcours ;\n - Lister toutes les étapes intermédiaires possibles ;\n - Organiser les étapes de manière logique et chronologique ;\n - Utiliser des formes et symboles standards (rectangles pour les actions, losanges pour les décisions, etc"
+                "Un schéma de flux utilisateur se crée en listant simplement toutes les pages du site sans ordre logique",
+                "Il suffit d’écrire le scénario utilisateur dans un document texte, sans utiliser de symboles visuels",
+                "On peut créer un flux utilisateur uniquement à la fin du développement pour tester la navigation finale",
+                "Pour créer un schéma de flux utilisateur efficace, suivez ces étapes : \n- Identifier l'objectif principal du flux utilisateur ;\n - Définir le point de départ et le point d'arrivée du parcours ;\n - Lister toutes les étapes intermédiaires possibles ;\n - Organiser les étapes de manière logique et chronologique ;\n - Utiliser des formes et symboles standards (rectangles pour les actions, losanges pour les décisions, etc.)"
             ],
             correct: 3,
             explanation: "Pour créer un schéma de flux utilisateur efficace, suivez ces étapes : \n- Identifier l'objectif principal du flux utilisateur ;\n - Définir le point de départ et le point d'arrivée du parcours ;\n - Lister toutes les étapes intermédiaires possibles ;\n - Organiser les étapes de manière logique et chronologique ;\n - Utiliser des formes et symboles standards (rectangles pour les actions, losanges pour les décisions, etc.) ;\n - Ajouter des flèches pour indiquer la direction du flux ;\n - Inclure des points de décision et des chemins alternatifs ;\n - Annoter le schéma avec des explications si nécessaire ;\n - Simplifier le schéma autant que possible pour une meilleure lisibilité ;\n - Valider le flux avec les parties prenantes et itérer si nécessaire."
@@ -860,10 +860,10 @@ const questionsData = {
             theme: "Les maquettes",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Pour définir efficacement les critères d'acceptation d'une fonctionnalité, suivez ces étapes :\n - Comprendre clairement l'objectif et la valeur de la fonctionnalité pour l'utilisateur ;\n - Identifier les comportements attendus et les résultats souhaités ;\n - Utiliser un format clair et concis, comme la structure GIVEN-WHEN-THEN ;\n - Rester focalisé sur le 'quoi' plutôt que sur le 'comment' ;\n - S'assurer que les critères sont testables et mesurables ;\n - Inclure à la fois les scénarios positifs et négatifs ;\n - Collaborer avec l'équipe de développement et les parties prenantes ;\n - Limiter le nombre de critères (idéalement entre 3 et 7) ;\n - Valider les critères avec l'équipe avant le début du développement ;\n - Rester ouvert aux ajustements si de nouvelles informations émergent pendant le développement",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
+                "Les critères d’acceptation sont rédigés uniquement après la mise en production du projet",
+                "Pour définir efficacement les critères d'acceptation d'une fonctionnalité, suivez ces étapes :\n - Comprendre clairement l'objectif et la valeur de la fonctionnalité pour l'utilisateur ;\n - Identifier les comportements attendus et les résultats souhaités ;\n - Utiliser un format clair et concis, comme la structure GIVEN-WHEN-THEN ;\n - S'assurer que les critères sont testables et mesurables ;\n - Collaborer avec l'équipe de développement et les parties prenantes ;\n - Limiter le nombre de critères ;\n - Valider les critères avant le développement.",
+                "Les critères d’acceptation servent uniquement à évaluer les performances techniques du code",
+                "Les critères d’acceptation doivent décrire la charte graphique et les couleurs utilisées"
             ],
             correct: 1,
             explanation: "Pour définir efficacement les critères d'acceptation d'une fonctionnalité, suivez ces étapes :\n - Comprendre clairement l'objectif et la valeur de la fonctionnalité pour l'utilisateur ;\n - Identifier les comportements attendus et les résultats souhaités ;\n - Utiliser un format clair et concis, comme la structure GIVEN-WHEN-THEN ;\n - Rester focalisé sur le 'quoi' plutôt que sur le 'comment' ;\n - S'assurer que les critères sont testables et mesurables ;\n - Inclure à la fois les scénarios positifs et négatifs ;\n - Collaborer avec l'équipe de développement et les parties prenantes ;\n - Limiter le nombre de critères (idéalement entre 3 et 7) ;\n - Valider les critères avec l'équipe avant le début du développement ;\n - Rester ouvert aux ajustements si de nouvelles informations émergent pendant le développement."
@@ -874,9 +874,9 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "On peut identifier entre une maquette et un prototype huit différences",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C"
+                "Une maquette et un prototype sont identiques, ils désignent tous deux un produit final développé",
+                "Un prototype est uniquement un dessin papier sans interactivité, tandis qu’une maquette est un modèle fonctionnel",
+                "Une maquette et un prototype ne sont utilisés que dans les projets matériels, jamais en design numérique"
             ],
             correct: 0,
             explanation: "On peut identifier entre une maquette et un prototype huit différences. \n- L' objectif : une maquette vise à visualiser l'aspect et l'ergonomie, tandis qu'un prototype teste le fonctionnement et les interactions. \n- La fidélité : une maquette est souvent de basse fidélité, alors que un prototype est généralement de haute fidélité. \n- L' interactivité : une maquette est statique ou peu interactive, le prototype offre une interaction plus complète. \n- Le stade de développement : une maquette est utilisée plus tôt dans le processus, le prototype intervient plus tard. \n- Le coût et temps : une maquette est généralement moins coûteuse et plus rapide à produire que le prototype. \n- Le détail : une maquette se concentre sur l'apparence visuelle, le prototype inclue plus de détails fonctionnels. \n- L' itération : une maquette est plus facile à modifier rapidement, le prototype demande plus d'effort pour les changements. \n- Le test utilisateur : une maquette sert à des tests de concept, le prototype permet des tests d'utilisabilité plus approfondis."
@@ -886,10 +886,10 @@ const questionsData = {
             theme: "Les maquettes",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Pour rédiger un cahier des charges fonctionnel efficace, suivez ces étapes :\n - Définir clairement l'objectif et le contexte du projet ;\n - Réaliser une analyse fonctionnelle pour identifier les besoins et les fonctions attendues ;\n - Structurer le document de manière logique et concise ; - Décrire les fonctionnalités attendues en termes de résultats mesurables ; - Hiérarchiser les fonctions (principales, secondaires, contraintes) ;\n - Inclure les contraintes techniques, réglementaires et budgétaires ;\n - Spécifier les critères d'acceptation pour chaque fonction ; - Éviter de mentionner des solutions techniques spécifiques ; - Utiliser un langage clair, simple et sans ambiguïté ; - Impliquer toutes les parties prenantes dans la rédaction et la validation du document",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
+                "Un cahier des charges fonctionnel doit uniquement détailler les aspects techniques du développement",
+                "Pour rédiger un cahier des charges fonctionnel efficace, suivez ces étapes :\n - Définir clairement l'objectif et le contexte du projet ;\n - Identifier les besoins et les fonctions attendues ;\n - Décrire les fonctionnalités attendues en termes de résultats mesurables ;\n - Inclure les contraintes techniques, réglementaires et budgétaires ;\n - Spécifier les critères d'acceptation pour chaque fonction ;\n - Utiliser un langage clair, simple et sans ambiguïté ;\n - Impliquer les parties prenantes dans la validation du document.",
+                "Il s'agit d’un document optionnel réservé aux projets informatiques de grande ampleur uniquement",
+                "Le cahier des charges fonctionnel décrit exclusivement la charte graphique et les maquettes visuelles"
             ],
             correct: 1,
             explanation: "Pour rédiger un cahier des charges fonctionnel efficace, suivez ces étapes :\n - Définir clairement l'objectif et le contexte du projet ;\n - Réaliser une analyse fonctionnelle pour identifier les besoins et les fonctions attendues ;\n - Structurer le document de manière logique et concise ; - Décrire les fonctionnalités attendues en termes de résultats mesurables ; - Hiérarchiser les fonctions (principales, secondaires, contraintes) ;\n - Inclure les contraintes techniques, réglementaires et budgétaires;\n - Spécifier les critères d'acceptation pour chaque fonction;\n - Éviter de mentionner des solutions techniques spécifiques;\n - Utiliser un langage clair, simple et sans ambiguïté;\n - Impliquer toutes les parties prenantes dans la rédaction et la validation du document."
