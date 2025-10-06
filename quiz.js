@@ -102,10 +102,10 @@ const questionsData = {
             theme: "Base de données",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
+                "Un fichier temporaire utilisé uniquement pour les calculs intermédiaires",
+                "Une structure de code utilisée pour stocker des fonctions dans une base de données",
                 "Une table est une collection de données organisées en lignes et en colonnes, qui constitue la structure fondamentale d'une base de données relationnelle",
-                "Une réponse aléatoire C"
+                "Un composant d'interface graphique utilisé pour afficher des données dans une application web"
             ],
             correct: 2,
             explanation: "Une table est une collection de données organisées en lignes et en colonnes, qui constitue la structure fondamentale d'une base de données relationnelle.\n Chaque ligne de la table représente un enregistrement , correspondant à une instance unique d'un objet ou d'une entité, tandis que chaque colonne représente un attribut de cet enregistrement, définissant les caractéristiques de l'objet.\n Les tables sont liées entre elles par des relations, ce qui permet de structurer les données de manière logique et de faciliter les opérations de recherche et de manipulation.\n Par exemple, une table 'Clients' peut contenir des informations telles que le nom, l'adresse et le numéro de téléphone, tandis qu'une table 'Commandes' peut enregistrer les achats effectués par ces clients.\n Cette organisation permet d'effectuer des requêtes complexes et d'obtenir des informations précises à partir de plusieurs tables."
@@ -115,10 +115,10 @@ const questionsData = {
             theme: "Base de données",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
+                "Un script JavaScript permettant de manipuler les données dans le navigateur",
+                "Une commande système utilisée pour lancer une base de données locale",
                 "Une requête SQL est une instruction utilisée pour interroger, manipuler ou gérer des données dans une base de données",
-                "Une réponse aléatoire A"
+                "Un format de fichier servant à sauvegarder une base de données complète"
             ],
             correct: 2,
             explanation: "Une requête SQL est une instruction utilisée pour interroger, manipuler ou gérer des données dans une base de données.\n Elle permet aux utilisateurs d'extraire des informations spécifiques, de modifier des enregistrements existants, d'ajouter de nouvelles données ou de supprimer des données non nécessaires.\nLes requêtes SQL peuvent varier en complexité, allant des simples instructions de sélection, comme SELECT , qui récupèrent des données d'une ou plusieurs tables, à des requêtes plus complexes utilisant des jointures, des sous-requêtes et des fonctions d'agrégation.\n Par exemple, une requête peut être formulée pour obtenir la liste des clients ayant passé des commandes au cours du dernier mois, en combinant les tables 'Clients' et 'Commandes'.\nGrâce à sa flexibilité et sa puissance, SQL est un outil essentiel pour l'analyse et la gestion des données dans les systèmes de gestion de bases de données ."
@@ -129,12 +129,12 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "On utilise plusieurs clauses en SQL",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "Une instruction utilisée pour créer une API REST en base de données",
+                "Un ensemble de balises HTML servant à formater l'affichage des résultats SQL",
+                "Un plugin installé sur un navigateur pour générer des données aléatoires"
             ],
             correct: 0,
-            explanation: "On utilise plusieurs clauses en SQL. En voici quelques unes. La clause SELECT permet de sélectionner des enregistrements. Ci-dessous, on sélectionne toutes les colonnes de la table utilisateurs. SELECT * FROM utilisateurs; La clause INSERT permet d'insérer des enregistrements. Ci-dessous, on insère un nouvel enregistrement dans la table utilisateurs INSERT INTO utilisateurs (nom, age)\nVALUES ('Alice', 30); La clause UPDATE permet de mettre à jour des enregistrements. Ci-dessous, on met à jour l'âge de l'utilisateur 'Alice' UPDATE utilisateurs\nSET age = 31\nWHERE nom = 'Alice'; La clause DELETE permet de supprimer des enregistrements. Ci-dessous, on supprime l'enregistrement de l'utilisateur 'Alice' DELETE FROM utilisateurs\nWHERE nom = 'Alice'; La clause CREATE permet de créer une table. Ci-dessous, on crée une nouvelle table utilisateurs CREATE TABLE utilisateurs (\n  id INT PRIMARY KEY,\n  nom VARCHAR(100),\n  age INT\n); La clause DROP permet de supprimer une table. Ci-dessous, on supprime la table utilisateurs DROP TABLE utilisateurs;"
+            explanation: "On utilise plusieurs clauses en SQL. En voici quelques unes.\n La clause SELECT permet de sélectionner des enregistrements.\nCi-dessous, on sélectionne toutes les colonnes de la table utilisateurs.\n SELECT * FROM utilisateurs;\n La clause INSERT permet d'insérer des enregistrements.\n Ci-dessous, on insère un nouvel enregistrement dans la table utilisateurs\n INSERT INTO utilisateurs (nom, age)\nVALUES ('Alice', 30);\n La clause UPDATE permet de mettre à jour des enregistrements.\n Ci-dessous, on met à jour l'âge de l'utilisateur 'Alice'\n UPDATE utilisateurs\nSET age = 31\nWHERE nom = 'Alice';\n La clause DELETE permet de supprimer des enregistrements.\n Ci-dessous, on supprime l'enregistrement de l'utilisateur 'Alice'\n DELETE FROM utilisateurs\nWHERE nom = 'Alice';\n La clause CREATE permet de créer une table.\n Ci-dessous, on crée une nouvelle table utilisateurs\n CREATE TABLE utilisateurs (\n  id INT PRIMARY KEY,\n  nom VARCHAR(100),\n  age INT\n);\n La clause DROP permet de supprimer une table. \nCi-dessous, on supprime la table utilisateurs\n DROP TABLE utilisateurs;"
         },
         {
             question: "Qu'est-ce qu'une clé primaire ?",
@@ -142,12 +142,12 @@ const questionsData = {
             level: "Intermédiaire",
             answers: [
                 "Une clé primaire est un champ ou un ensemble de champs dans une table de base de données qui identifie de manière unique chaque enregistrement",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C"
+                "Une méthode de chiffrement des données sensibles stockées dans une table",
+                "Un type de colonne utilisée uniquement pour les jointures externes",
+                "Un identifiant utilisé pour organiser les fichiers sur le disque dur"
             ],
             correct: 0,
-            explanation: "Une clé primaire est un champ ou un ensemble de champs dans une table de base de données qui identifie de manière unique chaque enregistrement. Elle garantit que chaque ligne de la table est distincte, empêchant ainsi la duplication des données. La clé primaire joue un rôle essentiel dans la structuration des données et l'établissement de relations entre les tables. Par exemple, dans une table 'Clients', un champ comme 'ID_Client' pourrait être utilisé comme clé primaire pour identifier chaque client de manière unique. De plus, une clé primaire peut également être utilisée comme clé étrangère dans d'autres tables, permettant ainsi de créer des relations entre les données. En résumé, la clé primaire est essentielle pour maintenir l'intégrité des données et faciliter les opérations de recherche et de manipulation dans une base de données."
+            explanation: "Une clé primaire est un champ ou un ensemble de champs dans une table de base de données qui identifie de manière unique chaque enregistrement.\n Elle garantit que chaque ligne de la table est distincte, empêchant ainsi la duplication des données.\n La clé primaire joue un rôle essentiel dans la structuration des données et l'établissement de relations entre les tables.\n Par exemple, dans une table 'Clients', un champ comme 'ID_Client' pourrait être utilisé comme clé primaire pour identifier chaque client de manière unique. De plus, une clé primaire peut également être utilisée comme clé étrangère dans d'autres tables, permettant ainsi de créer des relations entre les données.\n En résumé, la clé primaire est essentielle pour maintenir l'intégrité des données et faciliter les opérations de recherche et de manipulation dans une base de données."
         },
         {
             question: "Qu'est-ce qu'une clé étrangère ?",
@@ -155,25 +155,25 @@ const questionsData = {
             level: "Intermédiaire",
             answers: [
                 "Une clé étrangère est un champ dans une table qui fait référence à la clé primaire d'une autre table, établissant ainsi une relation entre les deux tables",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
+                "Un mot de passe utilisé pour accéder aux données sensibles d'une table",
+                "Une commande SQL permettant de chiffrer les données entre deux tables",
+                "Un identifiant interne généré par le SGBD pour trier automatiquement les enregistrements"
             ],
             correct: 0,
-            explanation: "Une clé étrangère est un champ dans une table qui fait référence à la clé primaire d'une autre table, établissant ainsi une relation entre les deux tables. Cette relation permet de lier des données connexes et de maintenir l'intégrité référentielle au sein de la base de données. Par exemple, dans une base de données de gestion de commandes, une table 'Commandes' peut contenir une clé étrangère appelée 'ID_Client' qui fait référence à la clé primaire 'ID_Client' dans la table 'Clients'. Cela permet d'associer chaque commande à un client spécifique. L'utilisation de clés étrangères permet non seulement d'organiser les données de manière logique, mais aussi de garantir que les relations entre les tables sont cohérentes, empêchant ainsi l'insertion de données orphelines qui ne correspondraient à aucun enregistrement dans la table référencée."
+            explanation: "Une clé étrangère est un champ dans une table qui fait référence à la clé primaire d'une autre table, établissant ainsi une relation entre les deux tables.\n Cette relation permet de lier des données connexes et de maintenir l'intégrité référentielle au sein de la base de données.\n Par exemple, dans une base de données de gestion de commandes, une table 'Commandes' peut contenir une clé étrangère appelée 'ID_Client' qui fait référence à la clé primaire 'ID_Client' dans la table 'Clients'.\n Cela permet d'associer chaque commande à un client spécifique.\n L'utilisation de clés étrangères permet non seulement d'organiser les données de manière logique, mais aussi de garantir que les relations entre les tables sont cohérentes, empêchant ainsi l'insertion de données orphelines qui ne correspondraient à aucun enregistrement dans la table référencée."
         },
         {
             question: "Qu'est-ce qu'une relation one-to-one ?",
             theme: "Base de données",
             level: "Intermédiaire",
             answers: [
-                "Une réponse aléatoire C",
+                "Une relation dans laquelle plusieurs enregistrements d’une table sont liés à plusieurs enregistrements d’une autre table",
                 "Une relation one-to-one (ou un-à-un) est une relation qui unit deux tables",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
+                "Une relation dans laquelle un enregistrement est lié à plusieurs colonnes dans la même table",
+                "Une jointure automatique entre deux vues stockées en base de données"
             ],
             correct: 1,
-            explanation: "Une relation one-to-one (ou un-à-un) est une relation qui unit deux tables. Un enregistrement dans une table est alors relié à un seul enregistrement dans une autre table. Exemple : Table Utilisateur :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Profil :\n| id | age | id_user |\n|----|-----|---------|\n| 1  | 30  | 1       |\n| 2  | 25  | 2       |"
+            explanation: "Une relation one-to-one (ou un-à-un) est une relation qui unit deux tables.\n Un enregistrement dans une table est alors relié à un seul enregistrement dans une autre table. \nExemple :\n Table Utilisateur :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Profil :\n| id | age | id_user |\n|----|-----|---------|\n| 1  | 30  | 1       |\n| 2  | 25  | 2       |"
         },
         {
             question: "Qu'est-ce qu'une relation one-to-many ?",
@@ -181,64 +181,64 @@ const questionsData = {
             level: "Intermédiaire",
             answers: [
                 "Une relation one-to-many (ou un-à-plusieurs) est une relation qui unit deux tables",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
+                "Une relation où plusieurs bases de données sont interconnectées dans un même serveur",
+                "Une relation utilisée exclusivement dans les systèmes NoSQL",
+                "Une relation entre deux tables qui empêche la duplication des données"
             ],
             correct: 0,
-            explanation: "Une relation one-to-many (ou un-à-plusieurs) est une relation qui unit deux tables. Un enregistrement dans une table peut être relié à plusieurs enregistrements dans une autre table. Il existe à l'inverse une relation many-to-one . Plusieurs enregistrements dans une table sont reliés à un seul enregistrement dans une autre table. Exemple : Table Auteur :\n| id | prénom  | nom      |\n|----|---------|----------|\n| 1  | Victor  | Hugo     |\n| 2  | Gustave | Flaubert |\n\nTable Livre :\n| id | titre          | id_aut |\n|----|----------------|--------|\n| 1  | Les Misérables | 1      |\n| 2  | Ruy-Blas       | 1      |\n| 3  | Madame Bovary  | 2      |"
+            explanation: "Une relation one-to-many (ou un-à-plusieurs) est une relation qui unit deux tables.\nUn enregistrement dans une table peut être relié à plusieurs enregistrements dans une autre table.\n Il existe à l'inverse une relation many-to-one . Plusieurs enregistrements dans une table sont reliés à un seul enregistrement dans une autre table. \nExemple :\n Table Auteur :\n| id | prénom  | nom      |\n|----|---------|----------|\n| 1  | Victor  | Hugo     |\n| 2  | Gustave | Flaubert |\n\nTable Livre :\n| id | titre          | id_aut |\n|----|----------------|--------|\n| 1  | Les Misérables | 1      |\n| 2  | Ruy-Blas       | 1      |\n| 3  | Madame Bovary  | 2      |"
         },
         {
             question: "Qu'est-ce qu'une relation many-to-many ?",
             theme: "Base de données",
             level: "Intermédiaire",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
+                "Une table temporaire utilisée pour les opérations de calcul avancées entre deux tables",
+                "Une relation entre deux bases de données stockées sur des serveurs différents",
                 "Une relation many-to-many (ou plusieurs-à-plusieurs) est une relation qui unit deux tables",
-                "Une réponse aléatoire C"
+                "Une jointure qui permet d’associer un utilisateur à plusieurs rôles dans une même colonne"
             ],
             correct: 2,
-            explanation: "Une relation many-to-many (ou plusieurs-à-plusieurs) est une relation qui unit deux tables. Un enregistrement dans une table peut être relié à plusieurs enregistrements dans une autre table, et vice versa. Cela se traduit par une table d'association , où l'on insère pour chaque ligne, la référence à un enregistrement de chaque table. Table Étudiant :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Cours :\n| id | titre      |\n|----|------------|\n| 1  | Maths      |\n| 2  | Histoire   |\n\nTable Étudiant_Cours :\n| id_etud | id_cours |\n|---------|----------|\n| 1       | 1        |\n| 1       | 2        |\n| 2       | 1        |"
+            explanation: "Une relation many-to-many (ou plusieurs-à-plusieurs) est une relation qui unit deux tables.\n Un enregistrement dans une table peut être relié à plusieurs enregistrements dans une autre table, et vice versa.\n Cela se traduit par une table d'association , où l'on insère pour chaque ligne, la référence à un enregistrement de chaque table.\n Table Étudiant :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Cours :\n| id | titre      |\n|----|------------|\n| 1  | Maths      |\n| 2  | Histoire   |\n\nTable Étudiant_Cours :\n| id_etud | id_cours |\n|---------|----------|\n| 1       | 1        |\n| 1       | 2        |\n| 2       | 1        |"
         },
-        {
+       {
             question: "Qu'est-ce qu'une table d'association ?",
             theme: "Base de données",
             level: "Intermédiaire",
             answers: [
-                "Une réponse aléatoire C",
+                "Une table utilisée pour générer automatiquement les clés primaires dans une base de données",
                 "La table d'association est table utilisée dans le cadre d'une relation many-to-many ",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "Une table contenant des données de configuration statiques",
+                "Une table temporaire générée à chaque exécution d'une requête complexe"
             ],
             correct: 1,
-            explanation: "La table d'association est table utilisée dans le cadre d'une relation many-to-many . Elle contient des clefs étrangères qui font référence aux clefs primaires des deux tables impliquées dans la relation. Dans l'exemple ci-dessus, la table Étudiant_Cours associe les étudiants aux cours qu'ils suivent. Table Étudiant :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Cours :\n| id | titre         |\n|----|---------------|\n| 1  | Mathématiques |\n| 2  | Histoire      |\n\nTable Étudiant_Cours :\n| id_etud  | id_cours |\n|----------|----------|\n| 1        | 1        |\n| 1        | 2        |\n| 2        | 1        |"
+            explanation: "La table d'association est table utilisée dans le cadre d'une relation many-to-many.\n Elle contient des clefs étrangères qui font référence aux clefs primaires des deux tables impliquées dans la relation.\n Dans l'exemple ci-dessus, la table Étudiant_Cours associe les étudiants aux cours qu'ils suivent.\n Table Étudiant :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Cours :\n| id | titre         |\n|----|---------------|\n| 1  | Mathématiques |\n| 2  | Histoire      |\n\nTable Étudiant_Cours :\n| id_etud  | id_cours |\n|----------|----------|\n| 1        | 1        |\n| 1        | 2        |\n| 2        | 1        |"
         },
         {
             question: "Qu'est-ce qu'une jointure ?",
             theme: "Base de données",
             level: "Intermédiaire",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
+                "Une commande SQL qui copie une table entière dans une autre sans condition",
+                "Un processus qui permet de fusionner deux serveurs de bases de données",
                 "Une jointure (JOIN en SQL) est une opération qui combine des enregistrements de deux ou plusieurs tables en fonction d'une condition liée à une clef",
-                "Une réponse aléatoire B"
+                "Une fonction automatique qui réindexe les données sur disque pour optimiser les performances"
             ],
             correct: 2,
-            explanation: "Une jointure (JOIN en SQL) est une opération qui combine des enregistrements de deux ou plusieurs tables en fonction d'une condition liée à une clef. Voici les différents types de jointures et leur utilité : - L' INNER JOIN retourne les enregistrements lorsque la condition est vraie dans les deux tables. Utilisé pour obtenir uniquement les lignes correspondantes. - Le LEFT JOIN retourne tous les enregistrements de la table de gauche et les enregistrements correspondants de la table de droite. Si aucune correspondance, les résultats de la table de droite seront NULL. - Le RIGHT JOIN retourne tous les enregistrements de la table de droite et les enregistrements correspondants de la table de gauche. Si aucune correspondance, les résultats de la table de gauche seront NULL. - Le FULL JOIN retourne tous les enregistrements des deux tables, même s'il n'y a pas de correspondance. Les valeurs manquantes sont définies à NULL. - Le CROSS JOIN retourne le produit cartésien des deux tables, c'est-à-dire toutes les combinaisons possibles d'enregistrements."
+            explanation: "Une jointure (JOIN en SQL) est une opération qui combine des enregistrements de deux ou plusieurs tables en fonction d'une condition liée à une clef.\n Voici les différents types de jointures et leur utilité : \n‑ **INNER JOIN** retourne les enregistrements lorsque la condition est vraie dans les deux tables. \n‑ **LEFT JOIN** retourne tous les enregistrements de la table de gauche et les enregistrements correspondants de la table de droite (NULL si pas de correspondance). \n‑ **RIGHT JOIN** fonctionne de façon symétrique : tous les enregistrements de la table de droite + matches dans la table de gauche. \n‑ **FULL JOIN** retourne tous les enregistrements des deux tables, avec NULL quand il n’y a pas de correspondance. \n‑ **CROSS JOIN** retourne le produit cartésien (toutes les combinaisons possibles)."
         },
         {
             question: "Qu'est-ce que le CRUD dans une base de données ?",
             theme: "Base de données",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
+                "Une suite de commandes de sauvegarde automatique de la base de données",
+                "Une librairie JavaScript pour gérer les interfaces utilisateur",
+                "Une API réseau pour synchroniser les bases de données entre plusieurs serveurs",
                 "Les opérations CRUD représentent les quatre fonctions fondamentales pour la gestion des données dans une base de données"
             ],
             correct: 3,
-            explanation: "Les opérations CRUD représentent les quatre fonctions fondamentales pour la gestion des données dans une base de données. Ces opérations sont essentielles pour créer, lire, mettre à jour et supprimer des enregistrements, et elles sont réalisées à l'aide des clauses SQL suivantes : - CREATE est utilisée pour ajouter de nouveaux enregistrements dans une table. Par exemple, une requête SQL pour créer un nouvel utilisateur dans une table 'Utilisateurs'. - SELECT permet de lire ou d'extraire des données d'une ou plusieurs tables. Par exemple, une requête pour récupérer tous les enregistrements des clients d'une table 'Clients'. - UPDATE est utilisée pour modifier les enregistrements existants dans une table. Par exemple, une requête pour mettre à jour l'adresse d'un client dans la table 'Clients'. - DELETE permet de supprimer des enregistrements d'une table. Par exemple, une requête pour supprimer un utilisateur de la table 'Utilisateurs'. Ces opérations CRUD sont fondamentales pour toute application utilisant une base de données, car elles permettent de gérer efficacement les données tout au long de leur cycle de vie."
+            explanation: "Les opérations CRUD représentent les quatre fonctions fondamentales pour la gestion des données dans une base de données.\n Ces opérations sont essentielles pour créer, lire, mettre à jour et supprimer des enregistrements, et elles sont réalisées à l'aide des clauses SQL suivantes : \n‑ **CREATE** est utilisée pour ajouter de nouveaux enregistrements dans une table. \n‑ **SELECT** permet de lire ou d'extraire des données. \n‑ **UPDATE** est utilisée pour modifier les enregistrements existants. \n‑ **DELETE** permet de supprimer des enregistrements d'une table. \nCes opérations CRUD sont fondamentales pour toute application utilisant une base de données, car elles permettent de gérer efficacement les données tout au long de leur cycle de vie."
         },
         {
             question: "Qu'est-ce que la normalisation ?",
@@ -246,39 +246,40 @@ const questionsData = {
             level: "Avancé",
             answers: [
                 "La normalisation est le processus de structuration d'une base de données afin de réduire la redondance des données et d'améliorer leur intégrité",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
+                "Une procédure de sauvegarde automatique des données sur des serveurs distants",
+                "Un algorithme de tri interne appliqué à chaque requête pour optimiser les résultats",
+                "Une méthode de compression des données stockées dans les tables"
             ],
             correct: 0,
-            explanation: "La normalisation est le processus de structuration d'une base de données afin de réduire la redondance des données et d'améliorer leur intégrité. Ce processus implique la division des données en tables distinctes et la définition de relations entre elles, ce qui permet d'éviter la duplication d'informations et de garantir que les données restent cohérentes. La normalisation est généralement réalisée en suivant plusieurs formes normales , qui sont des règles définies pour organiser les données. Par exemple, la première forme normale (1NF) exige que chaque colonne d'une table contienne des valeurs atomiques, tandis que la deuxième forme normale (2NF) vise à éliminer les dépendances partielles entre les colonnes. En appliquant ces principes, les concepteurs de bases de données peuvent créer des structures qui facilitent la mise à jour, la recherche et la gestion des données tout en minimisant les anomalies."
+            explanation: "La normalisation est le processus de structuration d'une base de données afin de réduire la redondance des données et d'améliorer leur intégrité.\n Ce processus implique la division des données en tables distinctes et la définition de relations entre elles, ce qui permet d’éviter la duplication d'informations et de garantir que les données restent cohérentes.\n La normalisation est généralement réalisée en suivant plusieurs formes normales, qui sont des règles définies pour organiser les données.\n Par exemple, la **1NF** exige que chaque colonne contienne des valeurs atomiques, la **2NF** vise à éliminer les dépendances partielles, et la **3NF** interdit les dépendances transitives entre attributs non clés."
         },
         {
             question: "Quelles sont les trois formes normales en conception de base de données ?",
             theme: "Base de données",
             level: "Avancé",
             answers: [
-                "Une réponse aléatoire A",
+                "Des modalités de chiffrement des données en base de données",
                 "Il existe trois formes normales",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
+                "Un protocole de communication entre bases de données réparties",
+                "Une méthode de partitionnement des zones de stockage"
             ],
             correct: 1,
-            explanation: "Il existe trois formes normales. Une table est en première forme normale si tous les attributs contiennent des valeurs atomiques, c'est-à-dire que chaque colonne doit contenir une seule valeur et ne doit pas avoir de valeurs multivaluées ou composites. // Avant 1NF :\n| produit | fournisseur         |\n|---------|---------------------|\n| TV      | VIDEO SA, HITEK LTD |\n\n// Après 1NF :\n| produit | fournisseur |\n|---------|-------------|\n| TV      | VIDEO SA    |\n| TV      | HITEK LTD   | Une table est en deuxième forme normale si elle est en première forme normale et si tous les attributs non clefs dépendent entièrement de la clef primaire. Cela signifie qu'aucun attribut ne doit dépendre d'une partie de la clef primaire. // Avant 2NF :\n| id  | nom   | cours     |\n|-----|-------|-----------|\n| 1   | Alice | Maths     |\n| 2   | Alice | Histoire  |\n| 3   | Bob   | Maths     |\n\n// Après 2NF :\n| id_etudiant | Nom    |\n|-------------|--------|\n| 1           | Alice  |\n| 2           | Bob    |\n\n| id_cours   | Cours      |\n|------------|------------|\n| 1          | Maths      |\n| 2          | Histoire   | Une table est en troisième forme normale si elle est en deuxième forme normale  et si aucun attribut non clef ne dépend d'un autre attribut non clef. Cela signifie qu'il ne doit pas y avoir de dépendances transitives. // Avant 3NF :\n| id_etud | Nom   | id_cons | nom        |\n|---------|-------|---------|------------|\n| 1       | Alice | 101     | M. Dupont  |\n| 2       | Bob   | 102     | M. Martin  |\n\n// Après 3NF :\n| id_etud | nom   | id_cons |\n|---------|-------|---------|\n| 1       | Alice | 101     |\n| 2       | Bob   | 102     |\n\n| id_cons  | nom         |\n|----------|-------------|\n| 101      | M. Dupont   |\n| 102      | M. Martin   |"
+            explanation: "Il existe trois formes normales.\n Une table est en première forme normale si tous les attributs contiennent des valeurs atomiques, c’est-à-dire que chaque colonne doit contenir une seule valeur et ne doit pas avoir de valeurs multivaluées ou composites. \nUne table est en deuxième forme normale si elle est en première forme normale et si tous les attributs non clés dépendent entièrement de la clé primaire (aucune dépendance partielle). \nUne table est en troisième forme normale si elle est en deuxième forme normale et si aucun attribut non clé ne dépend transitivement d’un autre attribut non clé (aucune dépendance transitive)."
         },
         {
-            question: "Quelles sont les principales contraintes d'intégrité à appliquer dans une base de données ?",
-            theme: "Base de données",
-            level: "Avancé",
-            answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Il existe au moins trois contraintes d'intégrité à appliquer dans une base de données",
-                "Une réponse aléatoire B"
-            ],
-            correct: 2,
-            explanation: "Il existe au moins trois contraintes d'intégrité à appliquer dans une base de données. - L' Intégrité de domaine garantit que les valeurs des attributs d'une colonne respectent un ensemble de règles prédéfini, comme le type de données, la plage de valeurs ou les formats. Par exemple, une colonne 'Âge' ne peut contenir que des valeurs numériques comprises entre 0 et 120. - L' Intégrité d'entité assure que chaque enregistrement dans une table est unique et identifiable. Cela est généralement réalisé par l'utilisation d'une clé primaire, qui empêche la duplication des enregistrements au sein de la table. - L' Intégrité référentielle maintient la cohérence entre les tables en s'assurant que les valeurs d'une clé étrangère dans une table correspondent à des valeurs existantes dans la clé primaire d'une autre table. Par exemple, si une table 'Commandes' contient une clé étrangère 'ID_Client', cette valeur doit correspondre à un 'ID_Client' valide dans la table 'Clients'. Ces contraintes d'intégrité sont essentielles pour garantir la fiabilité et la cohérence des données dans une base de données, facilitant ainsi la gestion et l'analyse des informations."
-        }
+        question: "Quelles sont les principales contraintes d'intégrité à appliquer dans une base de données ?",
+        theme: "Base de données",
+        level: "Avancé",
+        answers: [
+            "Un algorithme de tri des index, une fonction de sauvegarde, une stratégie de cache",
+            "Une règle de configuration du serveur, un trigger de rechargement automatique, un plugin SQL",
+            "Il existe au moins trois contraintes d'intégrité à appliquer dans une base de données",
+            "Un protocole de réplication, un script de nettoyage, une vérification périodique"
+        ],
+        correct: 2,
+        explanation: "Il existe au moins trois contraintes d'intégrité à appliquer dans une base de données. \n‑ **Intégrité de domaine** : garantit que les valeurs des attributs d’une colonne respectent un ensemble de règles définies (type, format, plage, etc.). \n‑ **Intégrité d’entité** : assure que chaque enregistrement est unique et identifiable, typiquement via une clé primaire. \n‑ **Intégrité référentielle** : s’assure que les valeurs des clés étrangères correspondent bien à des valeurs existantes dans la clé primaire d’une autre table. \nCes contraintes sont essentielles pour garantir la cohérence, la fiabilité et la validité des données stockées dans la base de données."
+    }
+
     ],
     "Algorithmes": [
         {
