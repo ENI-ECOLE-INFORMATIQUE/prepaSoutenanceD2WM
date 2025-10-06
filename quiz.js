@@ -1625,7 +1625,272 @@ const questionsData = {
             ],
             correct: 2,
             explanation: "L' UX (User Experience) et l' UI (User Interface) sont deux aspects complémentaires du design numérique. L'UX Design se concentre sur l'expérience globale de l'utilisateur, en analysant ses besoins et comportements, optimisant son parcours et sa satisfaction, et en travaillant sur la structure, la navigation et l'ergonomie du produit. L'UI Design, quant à lui, se focalise sur l'apparence visuelle de l'interface, créant les éléments graphiques et interactifs, définissant les couleurs, typographies et la mise en page, tout en assurant la cohérence visuelle et l'esthétique. Bien que distincts, ces deux domaines collaborent étroitement pour créer des produits numériques à la fois fonctionnels et attrayants, l'UX s'occupant du fonctionnement global et de la satisfaction de l'utilisateur, tandis que l'UI gère l'aspect visuel et l'interaction directe avec l'interface."
+        },
+
+        //ajout ---------------------------------
+        {
+            question: "Qu'est-ce que l'UX et l'UI et quelles sont les différences ?",
+            theme: "Le responsive design",
+            level: "Facile",
+            answers: [
+                "L'UX et l'UI sont deux frameworks CSS utilisés pour gérer le responsive design d'un site web",
+                "L'UX (User Experience) et l'UI (User Interface) sont deux aspects complémentaires du design numérique, mais ils ont des objectifs différents",
+                "L'UX se limite à la création graphique tandis que l'UI concerne uniquement le développement du code HTML et CSS",
+                "L'UI concerne l’expérience de navigation de l’utilisateur, tandis que l’UX concerne uniquement le choix des couleurs et des polices"
+            ],
+            correct: 1,
+            explanation: "L'UX (User Experience) et l'UI (User Interface) sont deux aspects complémentaires du design numérique. L'UX se concentre sur la facilité d'utilisation, la fluidité de la navigation et la satisfaction globale de l'utilisateur, tandis que l'UI concerne la conception visuelle, les éléments graphiques et l'interaction visuelle. En somme, l'UI façonne l'apparence du produit, tandis que l'UX en définit la qualité d'expérience."
+        },
+        {
+            question: "Quel est l’objectif principal du responsive design ?",
+            theme: "Le responsive design",
+            level: "Facile",
+            answers: [
+                "Permettre à un site web de s’afficher correctement sur tous les types d’appareils, quelle que soit leur taille d’écran",
+                "Augmenter la vitesse de chargement du site en réduisant le poids des images",
+                "Créer des versions différentes du site pour chaque appareil",
+                "Utiliser uniquement des unités fixes comme les pixels pour garantir une mise en page cohérente"
+            ],
+            correct: 0,
+            explanation: "Le responsive design a pour objectif principal de garantir qu’un site web s’adapte automatiquement à la taille et à la résolution de l’écran de l’utilisateur, qu’il s’agisse d’un smartphone, d’une tablette ou d’un ordinateur. Cela améliore la lisibilité et la navigation."
+        },
+        {
+            question: "Quelle unité est la plus recommandée pour créer des mises en page adaptatives ?",
+            theme: "Le responsive design",
+            level: "Facile",
+            answers: [
+                "Les unités relatives comme %, em, rem, vw, vh",
+                "Les pixels fixes (px) uniquement",
+                "Les centimètres (cm)",
+                "Les points (pt) utilisés en impression"
+            ],
+            correct: 0,
+            explanation: "Les unités relatives comme %, em, rem, vw et vh permettent de créer des mises en page flexibles qui s’adaptent à la taille de l’écran. Elles sont préférées aux unités fixes pour le responsive design."
+        },
+        {
+            question: "Quel attribut HTML permet d’adapter une page web à la taille de l’écran d’un appareil mobile ?",
+            theme: "Le responsive design",
+            level: "Facile",
+            answers: [
+                "L’attribut charset",
+                "La balise meta viewport avec l’attribut content=\"width=device-width, initial-scale=1.0\"",
+                "L’attribut responsive=\"true\" sur la balise body",
+                "L’attribut mobile-scale dans la balise head"
+            ],
+            correct: 1,
+            explanation: "La balise meta viewport permet de contrôler la mise à l’échelle et les dimensions d’une page sur les appareils mobiles. Par exemple : <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+        },
+        {
+            question: "Quelle propriété CSS permet de définir la flexibilité d’un élément dans un conteneur flexbox ?",
+            theme: "Le responsive design",
+            level: "Facile",
+            answers: [
+                "display: inline-block;",
+                "flex: 1;",
+                "float: left;",
+                "position: relative;"
+            ],
+            correct: 1,
+            explanation: "La propriété flex: 1; définit la flexibilité d’un élément dans un conteneur flexbox. Elle indique que l’élément peut grandir pour occuper l’espace disponible dans le conteneur."
+        },
+        {
+            question: "Quelle est la différence entre 'max-width' et 'min-width' dans une media query ?",
+            theme: "Le responsive design",
+            level: "Facile",
+            answers: [
+                "max-width s’applique lorsque la largeur de l’écran est supérieure à une valeur donnée",
+                "min-width s’applique pour les écrans plus petits que la valeur donnée",
+                "max-width s’applique lorsque la largeur de l’écran est inférieure à une valeur donnée, tandis que min-width s’applique lorsqu’elle est supérieure",
+                "Elles sont équivalentes et peuvent être utilisées indifféremment"
+            ],
+            correct: 2,
+            explanation: "max-width s’applique lorsque la largeur de l’écran est inférieure à une valeur donnée, tandis que min-width s’applique lorsqu’elle est supérieure. Elles permettent de cibler différents types d’appareils pour appliquer des styles adaptés."
+        },
+        {
+            question: "Pourquoi utiliser des images adaptatives dans le responsive design ?",
+            theme: "Le responsive design",
+            level: "Facile",
+            answers: [
+                "Pour charger automatiquement les images dans tous les formats possibles",
+                "Pour éviter d’utiliser des images sur mobile",
+                "Pour que les images s’adaptent à la taille de l’écran et se chargent plus rapidement sur les petits appareils",
+                "Pour changer les couleurs des images selon l’appareil"
+            ],
+            correct: 2,
+            explanation: "Les images adaptatives permettent de charger des versions plus légères ou plus grandes selon la taille de l’écran, améliorant ainsi la performance et l’expérience utilisateur."
+        },
+        {
+            question: "Quel framework est le plus connu pour créer des sites web responsives ?",
+            theme: "Le responsive design",
+            level: "Facile",
+            answers: [
+                "Bootstrap",
+                "jQuery",
+                "Laravel",
+                "React Native"
+            ],
+            correct: 0,
+            explanation: "Bootstrap est un framework CSS très populaire qui permet de créer rapidement des sites web responsives grâce à son système de grilles, ses composants et ses classes utilitaires."
+        },
+        {
+            question: "Quel avantage principal offre l’utilisation de Flexbox pour le responsive design ?",
+            theme: "Le responsive design",
+            level: "Facile",
+            answers: [
+                "Il permet de créer des mises en page dynamiques et alignées automatiquement, sans avoir recours au float",
+                "Il permet d’animer les éléments HTML",
+                "Il réduit la taille du code JavaScript nécessaire au design",
+                "Il force les éléments à s’aligner uniquement verticalement"
+            ],
+            correct: 0,
+            explanation: "Flexbox simplifie la création de mises en page adaptatives en facilitant l’alignement et la distribution de l’espace entre les éléments d’un conteneur, sans devoir gérer les flottants."
+        },
+        {
+            question: "Quel est le principal inconvénient du responsive design mal implémenté ?",
+            theme: "Le responsive design",
+            level: "Facile",
+            answers: [
+                "Une perte de visibilité sur les moteurs de recherche",
+                "Des problèmes d’affichage et de lisibilité sur certains appareils",
+                "Un temps de chargement réduit",
+                "Une compatibilité accrue entre les navigateurs"
+            ],
+            correct: 1,
+            explanation: "Un responsive design mal implémenté peut rendre la lecture difficile, provoquer des chevauchements d’éléments ou forcer l’utilisateur à zoomer. Cela dégrade l’expérience utilisateur."
+        },
+        //ajout intermediaire
+        {
+            question: "Quelle est la différence entre le responsive design et le design adaptatif ?",
+            theme: "Le responsive design",
+            level: "Intermédiaire",
+            answers: [
+                "Le responsive design utilise des grilles flexibles et s’adapte automatiquement à toutes les tailles d’écran, tandis que le design adaptatif repose sur des mises en page fixes prédéfinies pour certaines résolutions",
+                "Le design adaptatif est une version plus récente du responsive design utilisant uniquement JavaScript",
+                "Le responsive design s’utilise uniquement pour les sites mobiles, tandis que l’adaptatif est réservé aux ordinateurs",
+                "Il n’existe aucune différence, ce sont deux termes synonymes"
+            ],
+            correct: 0,
+            explanation: "Le responsive design repose sur des grilles et unités flexibles, ce qui permet une adaptation fluide à toute taille d’écran. Le design adaptatif, quant à lui, utilise plusieurs mises en page fixes pour différentes résolutions spécifiques. Le premier est fluide, le second est par paliers."
+        },
+        {
+            question: "Pourquoi utiliser la technique du 'mobile first' dans le responsive design ?",
+            theme: "Le responsive design",
+            level: "Intermédiaire",
+            answers: [
+                "Parce que la majorité des utilisateurs naviguent d'abord sur mobile, et cela permet d'optimiser les performances et la hiérarchisation du contenu",
+                "Parce que le développement mobile est plus simple que le développement desktop",
+                "Parce que les frameworks CSS imposent de commencer par le mobile",
+                "Parce que les navigateurs mobiles ne supportent pas les media queries inversées"
+            ],
+            correct: 0,
+            explanation: "La philosophie 'mobile first' consiste à concevoir d'abord la version mobile d’un site, puis à l’enrichir progressivement pour les écrans plus grands. Cela garantit une meilleure performance, une hiérarchisation claire du contenu et une compatibilité optimale sur les petits écrans."
+        },
+        {
+            question: "Quelle est la meilleure pratique pour gérer les typographies en responsive design ?",
+            theme: "Le responsive design",
+            level: "Intermédiaire",
+            answers: [
+                "Utiliser des unités relatives comme 'em', 'rem' ou 'vw' au lieu de pixels fixes pour une mise à l’échelle fluide",
+                "Utiliser exclusivement la taille de police en pixels pour garder la cohérence visuelle",
+                "Créer une feuille de style CSS distincte pour chaque taille d’écran",
+                "Limiter l’utilisation de polices aux systèmes d’exploitation mobiles uniquement"
+            ],
+            correct: 0,
+            explanation: "Les unités relatives comme 'em', 'rem', ou 'vw' permettent d’adapter la taille du texte proportionnellement à la taille de l’écran ou à la police racine. Cela améliore la lisibilité et l’adaptabilité du site."
+        },
+        {
+            question: "Quel rôle jouent les breakpoints dans le responsive design ?",
+            theme: "Le responsive design",
+            level: "Intermédiaire",
+            answers: [
+                "Les breakpoints définissent les points de rupture où la mise en page doit s’adapter à une nouvelle taille d’écran",
+                "Les breakpoints servent à limiter la vitesse d’un site web sur mobile",
+                "Les breakpoints sont des balises HTML spécifiques utilisées pour détecter les appareils",
+                "Les breakpoints permettent de forcer la rotation d’écran sur les appareils mobiles"
+            ],
+            correct: 0,
+            explanation: "Les breakpoints sont des seuils de largeur d’écran définis dans les media queries. Lorsqu’un écran franchit un de ces seuils, la mise en page s’ajuste pour rester lisible et fonctionnelle."
+        },
+        {
+            question: "Comment optimiser les performances d’un site responsive ?",
+            theme: "Le responsive design",
+            level: "Intermédiaire",
+            answers: [
+                "En réduisant le nombre de requêtes HTTP, en compressant les images, et en chargeant les ressources adaptées selon le périphérique",
+                "En désactivant le cache du navigateur",
+                "En augmentant la résolution des images pour tous les écrans",
+                "En forçant les scripts JavaScript à s’exécuter en priorité"
+            ],
+            correct: 0,
+            explanation: "Un site responsive performant limite les ressources lourdes et adapte le contenu selon l’appareil (images, vidéos, polices). Le lazy loading et la compression sont des techniques efficaces pour améliorer la vitesse de chargement."
+        },
+        {
+            question: "Quelle différence existe entre les propriétés CSS 'flexbox' et 'grid' ?",
+            theme: "Le responsive design",
+            level: "Avancé",
+            answers: [
+                "Flexbox est idéal pour aligner des éléments sur un axe (ligne ou colonne), tandis que Grid gère des mises en page bidimensionnelles avec lignes et colonnes",
+                "Grid est obsolète et a été remplacé par Flexbox",
+                "Flexbox ne fonctionne que pour les images, Grid pour les textes",
+                "Les deux systèmes sont identiques mais utilisent des syntaxes différentes"
+            ],
+            correct: 0,
+            explanation: "Flexbox se concentre sur l’alignement et la répartition des éléments sur un axe unique (horizontal ou vertical). CSS Grid, en revanche, permet une organisation sur deux axes, parfaite pour des mises en page complexes avec plusieurs zones."
+        },
+        {
+            question: "Quel est l’avantage principal d’utiliser les 'container queries' par rapport aux 'media queries' classiques ?",
+            theme: "Le responsive design",
+            level: "Avancé",
+            answers: [
+                "Elles permettent d’adapter le style d’un composant en fonction de la taille de son conteneur, plutôt que de la taille de la fenêtre du navigateur",
+                "Elles remplacent entièrement les media queries dans tous les navigateurs modernes",
+                "Elles servent uniquement à modifier la taille des images selon la bande passante",
+                "Elles sont utilisées pour rendre le site compatible avec les anciens navigateurs"
+            ],
+            correct: 0,
+            explanation: "Les container queries ajustent le style d’un élément selon la taille de son conteneur parent, contrairement aux media queries qui se basent sur la taille du viewport. Cela rend les composants plus modulaires et réutilisables."
+        },
+        {
+            question: "Quelle technique CSS permet de charger une image différente selon la résolution de l’écran ?",
+            theme: "Le responsive design",
+            level: "Avancé",
+            answers: [
+                "L’attribut 'srcset' dans la balise <img> combiné avec 'sizes'",
+                "La propriété 'background-repeat'",
+                "Le sélecteur ':responsive' dans le CSS",
+                "L’attribut 'media' directement sur la balise <div>"
+            ],
+            correct: 0,
+            explanation: "L’attribut 'srcset' permet de spécifier plusieurs sources d’images pour une même balise <img>. Combiné avec 'sizes', il indique au navigateur quelle version charger selon la résolution ou la densité de pixels de l’écran."
+        },
+        {
+            question: "Quelle approche est la plus efficace pour gérer un design responsive complexe dans une grande application web ?",
+            theme: "Le responsive design",
+            level: "Avancé",
+            answers: [
+                "Adopter une architecture en composants modulaires et réutilisables avec des styles encapsulés",
+                "Créer une feuille CSS géante avec toutes les media queries possibles",
+                "Utiliser uniquement JavaScript pour ajuster les tailles et positions",
+                "Empêcher les utilisateurs de redimensionner leur fenêtre"
+            ],
+            correct: 0,
+            explanation: "Dans les grandes applications, l’approche modulaire (par composants) permet d’assurer la maintenabilité, la réutilisation et la cohérence des styles. Chaque composant peut gérer sa propre adaptation responsive via des media ou container queries locales."
+        },
+        {
+            question: "Quels outils peuvent être utilisés pour tester l’affichage responsive d’un site web ?",
+            theme: "Le responsive design",
+            level: "Avancé",
+            answers: [
+                "Les outils de développement intégrés aux navigateurs (DevTools), BrowserStack, Responsinator",
+                "Uniquement Google Analytics",
+                "Les frameworks CSS comme Bootstrap",
+                "Les scripts PHP côté serveur"
+            ],
+            correct: 0,
+            explanation: "Les DevTools de Chrome, Firefox ou Safari permettent de simuler différents appareils et tailles d’écran. BrowserStack et Responsinator offrent des tests sur de vrais appareils et résolutions."
         }
+
+
     ],
     "L'accessibilité": [
         {
