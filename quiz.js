@@ -1328,148 +1328,150 @@ const questionsData = {
     ],
     "Le responsive design": [
         {
-            question: "Qu'est-ce que le responsive design en CSS et comment l'implémenter ?",
+            question: "Qu'est-ce que le responsive design en CSS et comment l'implémenter ?",
             theme: "Le responsive design",
             level: "Facile",
             answers: [
                 "Le responsive design en CSS permet de créer des mises en page adaptables à différentes tailles d'écran",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C"
+                "C’est une technique de compression des fichiers CSS pour accélérer le chargement du site",
+                "C’est une méthode pour rendre un site compatible uniquement avec les écrans 4K",
+                "C’est un framework JavaScript utilisé pour animer les éléments d’un site"
             ],
             correct: 0,
-            explanation: "Le responsive design en CSS permet de créer des mises en page adaptables à différentes tailles d'écran. Utilisez des unités de mesure flexibles (%, em, rem), des media queries et des grilles fluides pour créer des designs réactifs."
+            explanation: "Le responsive design en CSS permet de créer des mises en page adaptables à différentes tailles d'écran..."
         },
         {
-            question: "Quelles sont les techniques CSS couramment utilisées pour créer un design responsive ?",
+            question: "Quelles sont les techniques CSS couramment utilisées pour créer un design responsive ?",
             level: "Facile",
             theme: "Le responsive design",
             answers: [
-                "Une réponse aléatoire C",
+                "Utiliser uniquement des tableaux HTML pour structurer la page",
                 "Pour créer un design responsive, plusieurs techniques CSS couramment utilisées existent",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
+                "Employer des images fixes sans redimensionnement",
+                "Définir des tailles en pixels pour tous les éléments"
             ],
             correct: 1,
-            explanation: "Pour créer un design responsive, plusieurs techniques CSS couramment utilisées existent. - Le CSS Grid Layout ou (grilles CSS) permettent de créer des mises en page complexes et flexibles en définissant des lignes et des colonnes. Elles offrent un contrôle précis sur l'agencement des éléments, facilitant l'adaptation du contenu à différentes tailles d'écran. - Le Flexible Box Layout ou (modèle Flexbox) est idéal pour créer des mises en page unidimensionnelles. Il permet de distribuer l'espace entre les éléments d'une interface et d'aligner les éléments de manière efficace, même lorsque leur taille est inconnue ou dynamique. - Les Media Queries sont des règles CSS qui appliquent des styles spécifiques en fonction des caractéristiques du dispositif, telles que la largeur de l'écran, la résolution ou l'orientation. Cela permet d'adapter le design en fonction des différentes tailles d'écran, garantissant ainsi une expérience utilisateur optimale sur tous les appareils. - Les Unités relatives , comme les pourcentages (%), les unités viewport (vw, vh) et les unités relatives (rem, em) sont recommandées pour garantir que les éléments s'ajustent proportionnellement à la taille de l'écran, offrant ainsi une meilleure adaptabilité. En combinant ces techniques, les développeurs peuvent créer des sites web qui s'adaptent harmonieusement à une variété d'appareils, améliorant ainsi l'expérience utilisateur."
+            explanation: "Pour créer un design responsive, plusieurs techniques CSS couramment utilisées existent..."
         },
         {
-            question: "Quelles sont les principales caractéristiques prises en charge dans les médias queries ?",
+            question: "Quelles sont les principales caractéristiques prises en charge dans les médias queries ?",
             level: "Facile",
             theme: "Le responsive design",
             answers: [
                 "Les médias queries permettent de cibler diverses caractéristiques des appareils",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C"
+                "Elles servent à importer des polices externes dans le site",
+                "Elles définissent les animations CSS sur mobile",
+                "Elles permettent d’activer JavaScript selon la taille d’écran"
             ],
             correct: 0,
-            explanation: "Les médias queries permettent de cibler diverses caractéristiques des appareils. Les plus couramment utilisées sont : - width et height , qui représentent la largeur et la hauteur de la fenêtre du navigateur, - min-width et max-width pour la largeur minimale et maximale, - min-height et max-height pour la hauteur minimale et maximale, - orientation pour l'orientation de l'appareil (portrait ou paysage). Voici un exemple d'utilisation : @media (min-width: 768px) and (max-width: 1024px) {\n    .container {\n        width: 90%;\n    }\n}\n\n@media (orientation: landscape) {\n    .header {\n        height: 50px;\n    }\n}"
+            explanation: "Les médias queries permettent de cibler diverses caractéristiques des appareils..."
         },
         {
-            question: "Quels sont les différents médias pris en compte par les médias queries ?",
+            question: "Quels sont les différents médias pris en compte par les médias queries ?",
             level: "Facile",
             theme: "Le responsive design",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
+                "Uniquement les médias audio et vidéo",
+                "Les fichiers CSS compressés uniquement",
+                "Les images haute définition pour mobile",
                 "Les médias queries peuvent cibler différents types de médias, permettant d'adapter le contenu en fonction du dispositif d'affichage"
             ],
             correct: 3,
-            explanation: "Les médias queries peuvent cibler différents types de médias, permettant d'adapter le contenu en fonction du dispositif d'affichage. - all s'applique à tous les types de médias (valeur par défaut), - print cible les documents imprimés et les aperçus d'impression, - screen s'applique aux écrans d'ordinateurs, tablettes, smartphones, etc., - speech est destiné aux synthétiseurs vocaux. Voici un exemple d'utilisation : @media print {\n    body {\n        font-size: 12pt;\n        color: black;\n    }\n}\n\n@media screen and (max-width: 600px) {\n    .sidebar {\n        display: none;\n    }\n}"
+            explanation: "Les médias queries peuvent cibler différents types de médias..."
         },
         {
-            question: "Qu'est-ce qu'un breakpoint en responsive design ?",
+            question: "Qu'est-ce qu'un breakpoint en responsive design ?",
             level: "Facile",
             theme: "Le responsive design",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Un breakpoint est une valeur de largeur d'écran définie dans les media queries "
+                "Une valeur de contraste appliquée à une image",
+                "Un bug CSS qui provoque une coupure de ligne",
+                "Un point de débogage dans le code JavaScript",
+                "Un breakpoint est une valeur de largeur d'écran définie dans les media queries"
             ],
             correct: 3,
-            explanation: "Un breakpoint est une valeur de largeur d'écran définie dans les media queries . Il détermine à quel moment le design d'une page web doit changer pour s'adapter à une autre taille d'écran. Par exemple, un breakpoint peut être fixé à 768 pixels pour passer d'une mise en page en colonne unique à une mise en page en colonnes. En utilisant des breakpoints, les développeurs peuvent appliquer des styles CSS spécifiques qui garantissent que le contenu reste lisible et bien structuré. Cela permet d'offrir une expérience utilisateur optimale sur les smartphones, les tablettes et les ordinateurs de bureau."
+            explanation: "Un breakpoint est une valeur de largeur d'écran définie dans les media queries..."
         },
         {
-            question: "Quels sont les différents breakpoints et les écrans qui leur sont associés ?",
+            question: "Quels sont les différents breakpoints et les écrans qui leur sont associés ?",
             level: "Facile",
             theme: "Le responsive design",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Breakpoints avec 6 tailles : - < 576px : Petit smartphone - < 768px : Grand Smartphone - < 992px : Petite tablette - < 1200px : Grande tablette - < 1400px : Ecran PC standard - >1400px : Ecran PC large Breakpoints avec 4 tailles : - < 750px : Smartphone - < 970px : Tablette - < 1170px : Ecran PC standard - > 1170px : Ecran PC large Les breakpoints courants incluent : - 320px : Smartphones en mode portrait - 480px : Smartphones en mode paysage - 768px : Tablettes en mode portrait - 1024px : Tablettes en mode paysage - 1200px : Ordinateurs de bureau"
+                "Ce sont les points GPS d’un site web hébergé",
+                "Les breakpoints définissent les marges CSS par défaut",
+                "Ce sont des éléments de design présents uniquement sur mobile",
+                "Breakpoints avec 6 tailles : - < 576px : Petit smartphone ... 1200px : Ordinateurs de bureau"
             ],
             correct: 3,
-            explanation: "Breakpoints avec 6 tailles : - < 576px : Petit smartphone - < 768px : Grand Smartphone - < 992px : Petite tablette - < 1200px : Grande tablette - < 1400px : Ecran PC standard - >1400px : Ecran PC large Breakpoints avec 4 tailles : - < 750px : Smartphone - < 970px : Tablette - < 1170px : Ecran PC standard - > 1170px : Ecran PC large Les breakpoints courants incluent : - 320px : Smartphones en mode portrait - 480px : Smartphones en mode paysage - 768px : Tablettes en mode portrait - 1024px : Tablettes en mode paysage - 1200px : Ordinateurs de bureau"
+            explanation: "Breakpoints avec 6 tailles : ..."
         },
         {
-            question: "Pourquoi est-il important de définir des breakpoints adaptés ?",
+            question: "Pourquoi est-il important de définir des breakpoints adaptés ?",
             level: "Facile",
             theme: "Le responsive design",
             answers: [
-                "Une réponse aléatoire C",
+                "Parce qu’ils accélèrent le temps de chargement du site uniquement sur desktop",
                 "Définir des breakpoints adaptés lors dès le début de la conception du site permet d'assurer que le contenu est lisible et accessible sur tous les appareils",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
+                "Parce qu’ils permettent de masquer le contenu sur tous les petits écrans",
+                "Parce qu’ils réduisent automatiquement la taille des images"
             ],
             correct: 1,
-            explanation: "Définir des breakpoints adaptés lors dès le début de la conception du site permet d'assurer que le contenu est lisible et accessible sur tous les appareils. Cela améliore l'expérience utilisateur et réduit le taux de rebond."
+            explanation: "Définir des breakpoints adaptés..."
         },
         {
-            question: "Quelles sont les meilleures pratiques pour choisir des breakpoints efficaces ?",
+            question: "Quelles sont les meilleures pratiques pour choisir des breakpoints efficaces ?",
             theme: "Le responsive design",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
+                "Choisir uniquement les tailles des téléviseurs 4K",
+                "Utiliser les breakpoints fournis par défaut sans adaptation",
                 "Pour choisir des breakpoints efficaces, plusieurs pratiques sont à suivre",
-                "Une réponse aléatoire B"
+                "Définir un seul breakpoint pour tous les appareils"
             ],
             correct: 2,
-            explanation: "Pour choisir des breakpoints efficaces, plusieurs pratiques sont à suivre. - Analyser les données d'utilisation : il s'agit d'examinee les statistiques pour identifier les tailles d'écran les plus courantes parmi vos utilisateurs. - Tester sur différents appareils : il convient d'effectuer des tests sur une variété d'appareils pour déterminer les points de rupture nécessaires à une expérience utilisateur optimale. - Adapté au contenu : il est nécessaire d'utiliser des breakpoints fondés sur le contenu plutôt que sur des tailles d'écran fixes. Cela permet d'adapter le design en fonction de la structure et de la disposition du contenu."
+            explanation: "Pour choisir des breakpoints efficaces..."
         },
         {
-            question: "Comment les media queries sont-elles utilisées pour gérer le responsive design ?",
+            question: "Comment les media queries sont-elles utilisées pour gérer le responsive design ?",
             theme: "Le responsive design",
             level: "Facile",
             answers: [
                 "Les media queries sont des règles CSS qui appliquent des styles spécifiques en fonction des caractéristiques de l'appareil, comme la largeur de l'écran",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
+                "Elles servent à changer la couleur du texte uniquement sur mobile",
+                "Elles permettent de modifier les scripts PHP selon la taille d’écran",
+                "Elles ajustent les transitions CSS pour les navigateurs anciens"
             ],
             correct: 0,
-            explanation: "Les media queries sont des règles CSS qui appliquent des styles spécifiques en fonction des caractéristiques de l'appareil, comme la largeur de l'écran. Elles permettent de modifier la mise en page et le style en fonction des breakpoints définis."
+            explanation: "Les media queries sont des règles CSS..."
         },
         {
-            question: "Comment tester l'affichage d'un site web sur différents appareils et tailles d'écran ?",
+            question: "Comment tester l'affichage d'un site web sur différents appareils et tailles d'écran ?",
             theme: "Le responsive design",
             level: "Facile",
             answers: [
                 "Pour tester l'affichage d'un site web sur différents appareils et tailles d'écran, vous pouvez utiliser plusieurs méthodes",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
+                "En changeant manuellement la taille du fichier CSS",
+                "En réinstallant le navigateur à chaque test",
+                "En désactivant le JavaScript du site"
             ],
             correct: 0,
-            explanation: "Pour tester l'affichage d'un site web sur différents appareils et tailles d'écran, vous pouvez utiliser plusieurs méthodes. Tout d'abord, les outils de développement intégrés dans les navigateurs, comme ceux de Chrome ou Firefox , permettent de simuler différentes tailles d'écran et de tester la réactivité du design. Ensuite, des services en ligne tels que BrowserStack et Responsinator offrent des environnements de test variés, vous permettant de visualiser votre site sur une large gamme d'appareils. Enfin, il est recommandé de tester physiquement votre site sur une sélection d'appareils réels pour vérifier le rendu final et l'expérience utilisateur. Ces outils et méthodes facilitent l'évaluation de l'accessibilité et de la fonctionnalité de votre site sur différents dispositifs, garantissant ainsi une expérience utilisateur optimale pour tous."
+            explanation: "Pour tester l'affichage d'un site web..."
         },
         {
-            question: "Comment le responsive design améliore-t-il l'expérience utilisateur ?",
+            question: "Comment le responsive design améliore-t-il l'expérience utilisateur ?",
             theme: "Le responsive design",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
+                "En augmentant la taille de toutes les images",
+                "En supprimant le contenu sur les petits écrans",
+                "En forçant le zoom automatique du navigateur",
                 "Le responsive design améliore l'expérience utilisateur en garantissant que le contenu est accessible et facile à naviguer sur tous les appareils"
             ],
             correct: 3,
-            explanation: "Le responsive design améliore l'expérience utilisateur en garantissant que le contenu est accessible et facile à naviguer sur tous les appareils. Il réduit le besoin de zoomer ou de faire défiler horizontalement, rendant la navigation plus fluide."
+            explanation: "Le responsive design améliore l'expérience utilisateur..."
         },
+
+//------------------------------------
         {
             question: "Quels outils peuvent aider à créer des designs responsives ?",
             theme: "Le responsive design",
