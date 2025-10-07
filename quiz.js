@@ -1471,162 +1471,149 @@ const questionsData = {
             explanation: "Le responsive design améliore l'expérience utilisateur..."
         },
 
-//------------------------------------
-        {
-            question: "Quels outils peuvent aider à créer des designs responsives ?",
+       //------------------------------------
+       {
+            question: "Qu'est-ce que le responsive design en CSS et comment l'implémenter ?",
             theme: "Le responsive design",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
-                "Pour créer des designs responsives, plusieurs outils sont disponibles"
-            ],
-            correct: 3,
-            explanation: "Pour créer des designs responsives, plusieurs outils sont disponibles. Des logiciels de conception comme Figma , Adobe XD et Sketch permettent de concevoir des interfaces adaptatives avec des fonctionnalités de prototypage. De plus, des frameworks CSS tels que Bootstrap et Foundation offrent des grilles flexibles et des composants prêts à l'emploi, facilitant ainsi le développement de mises en page responsives. Enfin, des outils de test comme BrowserStack et Responsinator permettent de vérifier l'affichage de votre site sur divers appareils, garantissant une expérience utilisateur optimale."
-        },
-        {
-            question: "Quelle est la différence entre le design adaptatif et le responsive design ?",
-            theme: "Le responsive design",
-            level: "Facile",
-            answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Le design adaptatif et le responsive design sont deux approches pour créer des sites web qui s'adaptent à différentes tailles d'écran"
-            ],
-            correct: 3,
-            explanation: "Le design adaptatif et le responsive design sont deux approches pour créer des sites web qui s'adaptent à différentes tailles d'écran. Bien qu'elles partagent des objectifs similaires, ces deux méthodes diffèrent dans leur mise en œuvre. Le design adaptatif utilise des mises en page fixes qui s'adaptent à des tailles d'écran spécifiques. Les développeurs créent plusieurs versions du site, chacune optimisée pour une plage de tailles d'écran donnée. Par exemple, trois mises en page pour les smartphones,  les tablettes et les ordinateurs. Le contenu et la structure restent les mêmes, mais la mise en page est ajustée pour chaque intervalle de taille d'écran."
-        },
-        {
-            question: "Comment la balise meta viewport influence-t-elle le responsive design ?",
-            theme: "Le responsive design",
-            level: "Facile",
-            answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "La balise meta viewport permet de contrôler la mise à l'échelle et les dimensions de la page sur les appareils mobiles"
-            ],
-            correct: 3,
-            explanation: "La balise meta viewport permet de contrôler la mise à l'échelle et les dimensions de la page sur les appareils mobiles. Elle est essentielle pour garantir que le design responsive fonctionne correctement sur les écrans de différentes tailles."
-        },
-        {
-            question: "Comment Bootstrap facilite-il le responsive design ?",
-            theme: "Le responsive design",
-            level: "Facile",
-            answers: [
-                "Une réponse aléatoire C",
-                "Bootstrap facilite grandement la création de designs responsives grâce à plusieurs fonctionnalités clefs",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
-            ],
-            correct: 1,
-            explanation: "Bootstrap facilite grandement la création de designs responsives grâce à plusieurs fonctionnalités clefs. - Le Système de grille flexible : Bootstrap fournit un puissant système de grille à 12 colonnes qui s'adapte automatiquement aux différentes tailles d'écran. Les développeurs peuvent facilement créer des mises en page complexes en utilisant des lignes et des colonnes, sans avoir à écrire de code CSS personnalisé. - Les Classes utilitaires : cette technologie inclut de nombreuses classes CSS utilitaires qui permettent d'ajouter rapidement des propriétés comme les marges, les paddings, les couleurs de fond, etc. Ces classes sont souvent conçues pour être responsives, avec des variantes pour différents breakpoints. - Les Composants pré-stylés : le framework fournit une bibliothèque de composants d'interface utilisateur comme les barres de navigation, les boutons, les formulaires, etc. Ces composants sont conçus pour être responsifs et s'adaptent automatiquement à la taille d'écran. - Les Breakpoints prédéfinis : Bootstrap définit des breakpoints standards (sm, md, lg, xl, xxl) qui correspondent à des tailles d'écran courantes. Les développeurs peuvent facilement cibler ces breakpoints avec des media queries pour ajuster la mise en page en fonction de la taille d'affichage. En combinant ces fonctionnalités, Bootstrap permet aux développeurs de créer des designs responsives de manière efficace, en réduisant considérablement le temps et les efforts nécessaires."
-        },
-        {
-            question: "Quels sont les défis courants lors de la mise en œuvre du responsive design ?",
-            theme: "Le responsive design",
-            level: "Facile",
-            answers: [
-                "Lors de la mise en œuvre du responsive design, plusieurs défis courants peuvent survenir",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "Le responsive design en CSS permet de créer des mises en page adaptables à différentes tailles d'écran à l'aide des media queries",
+                "C’est une méthode consistant à utiliser uniquement des unités fixes pour contrôler les largeurs des éléments",
+                "C’est une technique qui consiste à créer plusieurs versions d’un même site pour chaque appareil",
+                "C’est une approche qui repose sur l'utilisation de JavaScript pour redimensionner les blocs dynamiquement"
             ],
             correct: 0,
-            explanation: "Lors de la mise en œuvre du responsive design, plusieurs défis courants peuvent survenir. - les Performances sur les appareils mobiles : il faut en effet optimiser les images et minimiser le code est essentiel pour garantir une expérience fluide sur des appareils aux ressources limitées. - La Compatibilité entre navigateurs : les différences d'interprétation du CSS entre navigateurs peuvent entraîner des incohérences d'affichage, nécessitant des tests approfondis. - La Complexité de la conception : la création d'une mise en page qui s'adapte à diverses tailles d'écran peut être complexe, et nécessiter une réflexion sur la réorganisation des éléments. - La Cohérence visuelle : le maintient une harmonie dans les styles et les typographies sur différents appareils est important pour une expérience utilisateur agréable. Surmonter ces défis est essentiel pour offrir une expérience utilisateur optimale sur tous les dispositifs."
+            explanation: "Le responsive design consiste à adapter la mise en page d’un site à la taille de l’écran en utilisant notamment les media queries."
         },
         {
-            question: "Comment le responsive design impacte-t-il le référencement naturel (SEO) d'un site web ?",
-            theme: "Le responsive design",
+            question: "Quelles sont les techniques CSS couramment utilisées pour créer un design responsive ?",
             level: "Facile",
+            theme: "Le responsive design",
             answers: [
-                "Le responsive design a un impact positif sur le SEO d'un site web pour plusieurs raisons : - les sites optimisés sont privilégiés par Google;\n - cela fluidifie la navigation sur mobile diminuant ainsi le taux de rebond ; - les utilisateurs passant plus de temps sur un site qui s'adapte, cela renforce l'indicateur de qualité pris en compte par les algorithmes",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C"
+                "L’utilisation de media queries, d’unités relatives (%, em, rem, vw, vh) et de grilles flexibles comme Flexbox ou CSS Grid",
+                "L’emploi exclusif de tableaux HTML pour organiser la mise en page",
+                "Le redimensionnement manuel des éléments via JavaScript à chaque chargement de page",
+                "L’utilisation de feuilles de style séparées pour chaque appareil sans media queries"
             ],
             correct: 0,
-            explanation: "Le responsive design a un impact positif sur le SEO d'un site web pour plusieurs raisons : - les sites optimisés sont privilégiés par Google;\n - cela fluidifie la navigation sur mobile diminuant ainsi le taux de rebond ; - les utilisateurs passant plus de temps sur un site qui s'adapte, cela renforce l'indicateur de qualité pris en compte par les algorithmes. - un site responsive évite les problèmes de contenu dupliqué pénalisés par Google. En résumé, le responsive design favorise une bonne expérience utilisateur sur mobile, ce qui se traduit par de meilleurs signaux de qualité pour le SEO."
+            explanation: "Les techniques CSS les plus courantes incluent l’usage de media queries, de Flexbox, de Grid et d’unités relatives."
         },
         {
-            question: "Comment le responsive design peut-il améliorer l'accessibilité d'un site web ?",
-            theme: "Le responsive design",
+            question: "Quelles sont les principales caractéristiques prises en charge dans les media queries ?",
             level: "Facile",
+            theme: "Le responsive design",
             answers: [
-                "Le responsive design améliore l'accessibilité d'un site web de plusieurs manières : - La Lisibilité sur tous les appareils garantit que le contenu reste lisible et navigable sur une variété d'appareils, y compris les mobiles",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
+                "La largeur, la hauteur, l’orientation de l’écran et la résolution",
+                "Le type de police et la couleur principale du site",
+                "La vitesse de connexion Internet de l’utilisateur",
+                "Le nombre de clics sur la page"
             ],
             correct: 0,
-            explanation: "Le responsive design améliore l'accessibilité d'un site web de plusieurs manières : - La Lisibilité sur tous les appareils garantit que le contenu reste lisible et navigable sur une variété d'appareils, y compris les mobiles. - L' Adaptation de la mise en page permet d'ajuster la mise en page pour répondre aux besoins des utilisateurs ayant des exigences spécifiques, comme ceux utilisant des technologies d'assistance. En favorisant une expérience utilisateur cohérente et accessible, le responsive design contribue à rendre le web plus inclusif."
+            explanation: "Les media queries permettent de cibler des caractéristiques telles que la largeur, la hauteur, l’orientation ou la résolution d’écran."
         },
         {
-            question: "Quelles sont les meilleures pratiques pour concevoir des formulaires responsives ?",
-            theme: "Le responsive design",
+            question: "Quels sont les différents médias pris en compte par les media queries ?",
             level: "Facile",
+            theme: "Le responsive design",
             answers: [
-                "Il est conseiller d'utiliser des champs de formulaire flexibles, l'étiquetage clair des champs, et la création de boutons de soumission adaptés",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
+                "Les médias screen, print, speech, et all",
+                "Uniquement les médias vidéo et audio",
+                "Les fichiers JSON et XML utilisés par les API",
+                "Les feuilles de style importées dynamiquement via JavaScript"
             ],
             correct: 0,
-            explanation: "Il est conseiller d'utiliser des champs de formulaire flexibles, l'étiquetage clair des champs, et la création de boutons de soumission adaptés. Il est également important de tester les formulaires sur différents appareils pour garantir une expérience utilisateur optimale."
+            explanation: "Les media queries peuvent cibler différents types de médias, comme screen (écran), print (impression) ou speech (lecture vocale)."
         },
         {
-            question: "Comment gérer les images et les médias dans un design responsive ?",
-            theme: "Le responsive design",
+            question: "Qu'est-ce qu'un breakpoint en responsive design ?",
             level: "Facile",
+            theme: "Le responsive design",
             answers: [
-                "Pour gérer les images dans un design responsive, utilisez des images adaptatives avec des attributs srcset et sizes pour charger des images appropriées en fonction de la taille de l'écran",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
+                "Une valeur de largeur d’écran où la mise en page s’ajuste pour améliorer l’affichage",
+                "Un effet d’animation qui s’active lors du redimensionnement de la fenêtre",
+                "Une fonction JavaScript déclenchée à chaque changement d’orientation d’écran",
+                "Un point de sauvegarde du code CSS avant déploiement"
             ],
             correct: 0,
-            explanation: "Pour gérer les images dans un design responsive, utilisez des images adaptatives avec des attributs srcset et sizes pour charger des images appropriées en fonction de la taille de l'écran. L'utilisation de formats d'image modernes, comme WebP ou AVIF , peut également améliorer les performances. Voici un exemple utilisant l'élément <picture> avec différentes sources en fonction de la taille de l'écran et du format d'image supporté : <picture>\n  <source\n    media=\"(min-width: 1200px)\"\n    srcset=\"image-large.webp\"\n    type=\"image/webp\">\n  <source\n    media=\"(min-width: 1200px)\"\n    srcset=\"image-large.jpg\">\n  <source\n    media=\"(min-width: 800px)\"\n    srcset=\"image-medium.webp\"\n    type=\"image/webp\">\n  <source\n    media=\"(min-width: 800px)\"\n    srcset=\"image-medium.jpg\">\n  <source\n    srcset=\"image-small.webp\"\n    type=\"image/webp\">\n  <img\n    src=\"image-small.jpg\"\n    alt=\"Description de l'image\"\n    loading=\"lazy\">\n</picture> Cet exemple montre comment fournir différentes versions d'une image en fonction de la taille de l'écran (large, medium, small) et du support du format WebP. L'attribut 'loading=\"lazy\"' est ajouté pour le chargement différé de l'image."
+            explanation: "Un breakpoint est une largeur d’écran à partir de laquelle la mise en page change via les media queries."
         },
         {
-            question: "Comment gérer les polices et la typographie dans un design responsive ?",
+            question: "Quels sont les différents breakpoints et les écrans qui leur sont associés ?",
+            level: "Facile",
+            theme: "Le responsive design",
+            answers: [
+                "Moins de 576px : smartphone, 768px : tablette, 992px : petit écran, 1200px : grand écran",
+                "600px : montres connectées, 700px : TV, 2000px : cinéma numérique",
+                "576px : micro-écran, 800px : console de jeu, 1800px : projecteur",
+                "256px : smartwatch, 512px : tablette, 1024px : télévision"
+            ],
+            correct: 0,
+            explanation: "Les breakpoints les plus utilisés sont : <576px pour les mobiles, 768px pour les tablettes, 992px pour les ordinateurs, et 1200px pour les grands écrans."
+        },
+        {
+            question: "Pourquoi est-il important de définir des breakpoints adaptés ?",
+            level: "Facile",
+            theme: "Le responsive design",
+            answers: [
+                "Parce qu’ils assurent une lisibilité et une navigation optimales sur tous les appareils",
+                "Parce qu’ils accélèrent le rendu CSS sur les navigateurs récents",
+                "Parce qu’ils empêchent le site de se déformer lors d’un zoom",
+                "Parce qu’ils limitent le nombre de fichiers CSS nécessaires"
+            ],
+            correct: 0,
+            explanation: "Des breakpoints bien choisis garantissent une lecture fluide et une mise en page adaptée à chaque appareil."
+        },
+        {
+            question: "Quelles sont les meilleures pratiques pour choisir des breakpoints efficaces ?",
             theme: "Le responsive design",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Pour gérer la typographie dans un design responsive, utilisez des unités relatives comme 'em' ou 'rem' pour les tailles de police, et ajustez les styles avec des media queries"
+                "Basés sur le contenu et non uniquement sur les tailles d’appareils standard",
+                "Définis uniquement selon les tailles d’écran des téléviseurs 4K",
+                "Fixés aléatoirement pour tester la réactivité du site",
+                "Déterminés à partir des préférences de couleur du navigateur"
             ],
-            correct: 3,
-            explanation: "Pour gérer la typographie dans un design responsive, utilisez des unités relatives comme 'em' ou 'rem' pour les tailles de police, et ajustez les styles avec des media queries. Il est également important de choisir des polices lisibles et de s'assurer qu'elles s'affichent correctement sur tous les appareils."
+            correct: 0,
+            explanation: "Les breakpoints doivent être définis selon le comportement du contenu et non en fonction de tailles d’appareils figées."
         },
         {
-            question: "Quel rôle jouent les images adaptatives dans le responsive design ?",
+            question: "Comment les media queries sont-elles utilisées pour gérer le responsive design ?",
             theme: "Le responsive design",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Les images adaptatives permettent de charger des images optimisées en fonction de la taille de l'écran, réduisant ainsi le temps de chargement et améliorant les performances",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "Elles appliquent des règles CSS spécifiques selon les caractéristiques de l’appareil, comme la largeur ou l’orientation de l’écran",
+                "Elles servent uniquement à importer des fichiers CSS externes",
+                "Elles permettent de masquer le JavaScript sur mobile",
+                "Elles remplacent automatiquement les images selon le type d’appareil"
             ],
-            correct: 1,
-            explanation: "Les images adaptatives permettent de charger des images optimisées en fonction de la taille de l'écran, réduisant ainsi le temps de chargement et améliorant les performances. Cela contribue également à une meilleure expérience utilisateur sur les appareils mobiles."
+            correct: 0,
+            explanation: "Les media queries appliquent des styles adaptés selon les caractéristiques du terminal utilisé."
         },
         {
-            question: "Qu'est-ce que l'UX et l'UI et quelles sont les différences ?",
+            question: "Comment tester l'affichage d'un site web sur différents appareils et tailles d'écran ?",
             theme: "Le responsive design",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "L' UX (User Experience) et l' UI (User Interface) sont deux aspects complémentaires du design numérique",
-                "Une réponse aléatoire A"
+                "En utilisant les outils de développement des navigateurs, des émulateurs ou des tests sur appareils physiques",
+                "En modifiant directement les fichiers HTML sans actualiser la page",
+                "En redimensionnant le navigateur sans utiliser d’outils",
+                "En réécrivant les media queries à chaque test"
             ],
-            correct: 2,
-            explanation: "L' UX (User Experience) et l' UI (User Interface) sont deux aspects complémentaires du design numérique. L'UX Design se concentre sur l'expérience globale de l'utilisateur, en analysant ses besoins et comportements, optimisant son parcours et sa satisfaction, et en travaillant sur la structure, la navigation et l'ergonomie du produit. L'UI Design, quant à lui, se focalise sur l'apparence visuelle de l'interface, créant les éléments graphiques et interactifs, définissant les couleurs, typographies et la mise en page, tout en assurant la cohérence visuelle et l'esthétique. Bien que distincts, ces deux domaines collaborent étroitement pour créer des produits numériques à la fois fonctionnels et attrayants, l'UX s'occupant du fonctionnement global et de la satisfaction de l'utilisateur, tandis que l'UI gère l'aspect visuel et l'interaction directe avec l'interface."
+            correct: 0,
+            explanation: "Les outils de développement (comme ceux de Chrome ou Firefox) permettent de simuler différents appareils et résolutions."
+        },
+        {
+            question: "Comment le responsive design améliore-t-il l'expérience utilisateur ?",
+            theme: "Le responsive design",
+            level: "Facile",
+            answers: [
+                "En rendant le contenu lisible, navigable et cohérent sur tout type d’appareil",
+                "En augmentant la densité de texte sur les petits écrans",
+                "En masquant automatiquement les sections non pertinentes",
+                "En forçant l’affichage horizontal sur tous les supports"
+            ],
+            correct: 0,
+            explanation: "Le responsive design garantit une expérience fluide et accessible quel que soit le support utilisé."
         },
 
         //ajout ---------------------------------
@@ -1896,332 +1883,375 @@ const questionsData = {
     ],
     "L'accessibilité": [
         {
-            question: "Qu'est-ce que l'accessibilité numérique ?",
+            question: "Qu'est-ce que l'accessibilité numérique ?",
             theme: "L'accessibilité",
             level: "Facile",
             answers: [
-                "L' accessibilité numérique désigne le fait de rendre les contenus et les services en ligne utilisables par tous, y compris les personnes en situation de handicap",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C"
+                "L'accessibilité numérique désigne le fait de rendre les contenus et les services en ligne utilisables par tous, y compris les personnes en situation de handicap",
+                "L'accessibilité numérique consiste à sécuriser les sites web contre les cyberattaques",
+                "L'accessibilité numérique vise à rendre les contenus disponibles uniquement hors ligne",
+                "L'accessibilité numérique concerne uniquement la compatibilité des navigateurs modernes"
             ],
             correct: 0,
-            explanation: "L' accessibilité numérique désigne le fait de rendre les contenus et les services en ligne utilisables par tous, y compris les personnes en situation de handicap. On pense alors aux sites web, aux applications, aux documents et aux médias numériques."
+            explanation: "L'accessibilité numérique désigne le fait de rendre les contenus et les services en ligne utilisables par tous, y compris les personnes en situation de handicap. On pense alors aux sites web, aux applications, aux documents et aux médias numériques."
         },
         {
-            question: "Pourquoi l'accessibilité est-elle importante ?",
+            question: "Pourquoi l'accessibilité est-elle importante ?",
             theme: "L'accessibilité",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
+                "Parce qu’elle améliore uniquement le référencement naturel (SEO) d’un site web",
+                "Parce qu’elle permet de réduire la taille des fichiers multimédias",
                 "L'accessibilité est importante pour plusieurs raisons fondamentales",
-                "Une réponse aléatoire A"
+                "Parce qu’elle simplifie la maintenance du code source du site"
             ],
             correct: 2,
-            explanation: "L'accessibilité est importante pour plusieurs raisons fondamentales. - L' inclusion numérique , car elle permet aux personnes en situation de handicap d'accéder à l'information et aux services en ligne. - L' Égalité des droits , car elle garantit que chacun puisse participer pleinement à la société numérique, sans discrimination. - La Responsabilité sociale , car elle démontre l'engagement d'une organisation envers l'inclusion et la diversité. - La Conformité légale , car dans de nombreux pays, l'accessibilité est une obligation légale pour les sites web publics et certains sites privés. - L' Amélioration de l'expérience utilisateur , car les pratiques d'accessibilité bénéficient à tous les utilisateurs en rendant le contenu plus facile à lire et à naviguer. - L' Adaptabilité , car elle facilite l'accès au contenu sur divers appareils et dans différents contextes d'utilisation. - L' Avantage commercial , car elle permet d'atteindre un public plus large, améliorant potentiellement la visibilité et les revenus."
+            explanation: "L'accessibilité est importante pour plusieurs raisons fondamentales. - L'inclusion numérique, ... (etc.)"
         },
         {
-            question: "Quels sont les principaux standards et référentiels d'accessibilité ?",
+            question: "Quels sont les principaux standards et référentiels d'accessibilité ?",
             theme: "L'accessibilité",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
+                "Les directives CSS3 qui définissent les couleurs contrastées à utiliser sur le web",
+                "Le protocole HTTPS qui sécurise la navigation des utilisateurs",
                 "Les WCAG (Web Content Accessibility Guidelines) sont des directives internationales qui fournissent des recommandations pour rendre le contenu web plus accessible",
-                "Une réponse aléatoire A"
+                "Le W3C HTML5 Framework pour le design réactif"
             ],
             correct: 2,
-            explanation: "Les WCAG (Web Content Accessibility Guidelines) sont des directives internationales qui fournissent des recommandations pour rendre le contenu web plus accessible. Le RGAA (Référentiel Général d'Amélioration de l'Accessibilité) est un cadre français qui s'inspire des WCAG et établit des critères spécifiques pour l'accessibilité des sites publics."
+            explanation: "Les WCAG (Web Content Accessibility Guidelines) ... (etc.)"
         },
         {
-            question: "Comment intégrer l'accessibilité dès la phase de conception d'un site web ?",
+            question: "Comment intégrer l'accessibilité dès la phase de conception d'un site web ?",
             theme: "L'accessibilité",
             level: "Facile",
             answers: [
                 "Pour intégrer l'accessibilité dès la phase de conception, il est essentiel de suivre une approche centrée sur l'utilisateur et de considérer les besoins des utilisateurs en situation de handicap",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "En ajoutant des plug-ins d’accessibilité uniquement après la mise en ligne",
+                "En limitant les tests utilisateurs à des personnes sans handicap",
+                "En réduisant le nombre d’images et d’icônes pour alléger le site"
             ],
             correct: 0,
-            explanation: "Pour intégrer l'accessibilité dès la phase de conception, il est essentiel de suivre une approche centrée sur l'utilisateur et de considérer les besoins des utilisateurs en situation de handicap. Cela passe par la création de maquettes accessibles, l'utilisation de balises sémantiques et la planification de tests d'accessibilité tout au long du processus de développement."
+            explanation: "Pour intégrer l'accessibilité dès la phase de conception, il est essentiel... (etc.)"
         },
         {
-            question: "Quelles sont les erreurs courantes à éviter ?",
+            question: "Quelles sont les erreurs courantes à éviter ?",
             theme: "L'accessibilité",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Les erreurs suivantes sont à éviter : - l'utilisation de couleurs à faible contraste, - l'absence de textes alternatifs pour les images, - les formulaires non accessibles, - les éléments cliquables non accessibles au clavier, - le manque de balises sémantiques appropriées"
+                "Utiliser exclusivement des animations et vidéos pour présenter les contenus",
+                "Se baser uniquement sur les tests automatisés sans vérification humaine",
+                "Créer des pages sans structure HTML claire ni balises sémantiques",
+                "Les erreurs suivantes sont à éviter : - l'utilisation de couleurs à faible contraste, - l'absence de textes alternatifs pour les images, - les formulaires non accessibles, - les éléments cliquables non accessibles au clavier, - le manque de balises sémantiques appropriées"
             ],
             correct: 3,
-            explanation: "Les erreurs suivantes sont à éviter : - l'utilisation de couleurs à faible contraste, - l'absence de textes alternatifs pour les images, - les formulaires non accessibles, - les éléments cliquables non accessibles au clavier, - le manque de balises sémantiques appropriées."
+            explanation: "Les erreurs suivantes sont à éviter : ... (etc.)"
         },
         {
-            question: "Comment les technologies d'assistance interagissent-elles avec le contenu web ?",
+            question: "Comment les technologies d'assistance interagissent-elles avec le contenu web ?",
             theme: "L'accessibilité",
             level: "Facile",
             answers: [
-                "Les technologies d'assistance , comme les lecteurs d'écran , interprètent le contenu HTML et le convertissent en audio ou en braille pour les utilisateurs",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C"
+                "Les technologies d'assistance, comme les lecteurs d'écran, interprètent le contenu HTML et le convertissent en audio ou en braille pour les utilisateurs",
+                "Elles utilisent des scripts JavaScript pour modifier automatiquement le design du site",
+                "Elles enregistrent la navigation de l'utilisateur pour améliorer les performances du site",
+                "Elles remplacent les images par des vidéos pour rendre le contenu plus attractif"
             ],
             correct: 0,
-            explanation: "Les technologies d'assistance , comme les lecteurs d'écran , interprètent le contenu HTML et le convertissent en audio ou en braille pour les utilisateurs. Elles dépendent de balises sémantiques appropriées et d' attributs ARIA pour fournir une navigation et une compréhension efficaces du contenu. Voici quelques exemples : <header>, <nav>, <main>, <article>, <section>, <footer>, <img alt=\"description\">, et les attributs ARIA comme role, aria-label, et aria-hidden."
+            explanation: "Les technologies d'assistance, comme les lecteurs d'écran... (etc.)"
         },
         {
-            question: "Quelles pratiques de design peuvent améliorer l'accessibilité d'un site web ?",
+            question: "Quelles pratiques de design peuvent améliorer l'accessibilité d'un site web ?",
             theme: "L'accessibilité",
             level: "Facile",
             answers: [
-                "Les pratiques de design qui améliorent l'accessibilité comprennent : - l'utilisation de polices lisibles (sans-serif), - le choix de couleurs avec un bon contraste, - la création de mises en page flexibles, - l'utilisation de balises sémantiques, - la structuration logique du contenu",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
+                "Les pratiques de design qui améliorent l'accessibilité comprennent : - l'utilisation de polices lisibles (sans-serif), - le choix de couleurs avec un bon contraste, - la création de mises en page flexibles, - l'utilisation de balises sémantiques, - la structuration logique du contenu",
+                "Utiliser des polices stylisées et des animations sur tous les textes pour capter l’attention",
+                "Supprimer les légendes et descriptions pour simplifier la mise en page",
+                "Employer uniquement des couleurs vives et saturées pour attirer l'œil"
             ],
             correct: 0,
-            explanation: "Les pratiques de design qui améliorent l'accessibilité comprennent : - l'utilisation de polices lisibles (sans-serif), - le choix de couleurs avec un bon contraste, - la création de mises en page flexibles, - l'utilisation de balises sémantiques, - la structuration logique du contenu."
+            explanation: "Les pratiques de design qui améliorent l'accessibilité comprennent : ... (etc.)"
         },
         {
-            question: "Comment tester l'accessibilité d'un site web ?",
+            question: "Comment tester l'accessibilité d'un site web ?",
             theme: "L'accessibilité",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Pour tester l'accessibilité d'un site web, vous pouvez utiliser des outils d'évaluation automatisés comme WAVE , ou le Lighthouse du navigateur Chrome"
+                "En demandant uniquement à l’équipe de développement de vérifier visuellement le site",
+                "En désactivant les fichiers CSS pour voir si le texte s’affiche correctement",
+                "En vérifiant si le site se charge rapidement sur les appareils mobiles",
+                "Pour tester l'accessibilité d'un site web, vous pouvez utiliser des outils d'évaluation automatisés comme WAVE, ou le Lighthouse du navigateur Chrome"
             ],
             correct: 3,
-            explanation: "Pour tester l'accessibilité d'un site web, vous pouvez utiliser des outils d'évaluation automatisés comme WAVE , ou le Lighthouse du navigateur Chrome. Des tests manuels avec des technologies d'assistance peuvent être réalisés. Il est également recommandé d'impliquer des utilisateurs en situation de handicap dans le processus de test."
+            explanation: "Pour tester l'accessibilité d'un site web, vous pouvez utiliser... (etc.)"
         },
         {
-            question: "Quelles sont les obligations légales pour les entreprises ?",
+            question: "Quelles sont les obligations légales pour les entreprises ?",
             theme: "L'accessibilité",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Les entreprises doivent respecter des lois sur l'accessibilité, telles que le RGAA en France ou l' ADA aux États-Unis",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
+                "Se conformer uniquement aux normes de cybersécurité en vigueur",
+                "Les entreprises doivent respecter des lois sur l'accessibilité, telles que le RGAA en France ou l'ADA aux États-Unis",
+                "Publier chaque année un rapport interne sur l’activité numérique",
+                "Garantir la compatibilité avec les anciens navigateurs sans exception"
             ],
             correct: 1,
-            explanation: "Les entreprises doivent respecter des lois sur l'accessibilité, telles que le RGAA en France ou l' ADA aux États-Unis. Les obligations comprennent : - Assurer l'accessibilité des sites web pour les personnes en situation de handicap, - Suivre les normes d'accessibilité définies par le RGAA ou l'ADA, - Fournir des contenus alternatifs pour les médias non textuels, - Rendre les formulaires et éléments interactifs accessibles au clavier, - Effectuer des tests d'accessibilité réguliers pour garantir la conformité."
+            explanation: "Les entreprises doivent respecter des lois sur l'accessibilité, telles que le RGAA... (etc.)"
+        },
+        //--------------------------------------- Intermédiaires
+        {
+            question: "Qu'est-ce que l'accessibilité numérique ?",
+            theme: "Accessibilité",
+            level: "Intermédiaire",
+            answers: [
+                "La capacité d'un site à être bien référencé par les moteurs de recherche",
+                "La pratique consistant à rendre les contenus et services numériques utilisables par toutes les personnes, y compris celles en situation de handicap",
+                "L'optimisation du code pour qu'il se charge plus vite",
+                "L'utilisation d'une charte graphique unique sur tout le site"
+            ],
+            correct: 1,
+            explanation: "L'accessibilité numérique consiste à rendre les contenus et services numériques utilisables par toutes les personnes, quelles que soient leurs capacités. Cela inclut les personnes avec des handicaps visuels, auditifs, moteurs ou cognitifs. L'objectif est de permettre à chacun d'accéder à l'information et d'interagir avec le contenu de manière équitable."
+        },
+        {
+            question: "Quel est l'objectif principal du RGAA (Référentiel Général d'Amélioration de l'Accessibilité) ?",
+            theme: "Accessibilité",
+            level: "Intermédiaire",
+            answers: [
+                "Garantir la conformité légale des sites publics en matière d'accessibilité",
+                "Améliorer la vitesse de chargement des sites web",
+                "Optimiser le référencement naturel (SEO) des sites web",
+                "Uniformiser le design des sites web français"
+            ],
+            correct: 0,
+            explanation: "Le RGAA est un référentiel français qui vise à garantir que les sites et services numériques publics soient accessibles à tous. Il s'appuie sur les WCAG (Web Content Accessibility Guidelines) et définit des critères précis pour assurer une accessibilité conforme à la loi française."
+        },
+        {
+            question: "Quel attribut HTML permet d’associer une étiquette à un champ de formulaire ?",
+            theme: "Accessibilité",
+            level: "Intermédiaire",
+            answers: [
+                "L’attribut ‘alt’",
+                "L’attribut ‘id’",
+                "L’attribut ‘for’ dans la balise <label>",
+                "L’attribut ‘aria-label’ sur le champ"
+            ],
+            correct: 2,
+            explanation: "L’attribut ‘for’ de la balise <label> permet d’associer une étiquette à un champ de formulaire via l’identifiant du champ (attribut ‘id’). Cette association aide les technologies d’assistance, comme les lecteurs d’écran, à annoncer le bon libellé lorsque l’utilisateur interagit avec le champ."
         }
+
+
     ],
     "Le DOM": [
         {
-            question: "Que signifie DOM ?",
+            question: "Que signifie DOM ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Le terme DOM se décompose comme suit : - D * : * Document - Cela fait référence à tout type de document structuré, tel qu'un fichier HTML ou XML , qui peut être manipulé par un programme",
-                "Une réponse aléatoire C"
+                "Un protocole de communication entre les serveurs et le navigateur web",
+                "Une base de données utilisée pour stocker les éléments HTML d’une page web",
+                "Le terme DOM se décompose comme suit : - D * : * Document - Cela fait référence à tout type de document structuré, tel qu'un fichier HTML ou XML , qui peut être manipulé par un programme",
+                "Un langage de balisage alternatif à HTML utilisé pour structurer les données"
             ],
             correct: 2,
-            explanation: "Le terme DOM se décompose comme suit : - D * : * Document - Cela fait référence à tout type de document structuré, tel qu'un fichier HTML ou XML , qui peut être manipulé par un programme. - O * : * Object - Dans le contexte du DOM, un objet représente une partie du document, comme un tableau, une image, ou un lien. Chaque élément du document est traité comme un objet dans une structure arborescente. - M * : * Model - Cela désigne la représentation abstraite de la structure du document. Le modèle permet aux développeurs d'interagir avec le document de manière standardisée, en utilisant des méthodes et des propriétés définies. Le Document Object Model (DOM) est donc une interface de programmation normalisée par le W3C , permettant d'interagir avec des documents HTML et XML . Il représente la structure arborescente d'un document, où chaque élément du document est un nœud . Grâce au DOM, il est possible de modifier dynamiquement, le contenu et la structure d'une page web à l'aide de langages de programmation comme JavaScript ."
+            explanation: "Le terme DOM se décompose comme suit : - D * : * Document - Cela fait référence à tout type de document structuré, tel qu'un fichier HTML ou XML , qui peut être manipulé par un programme..."
         },
         {
-            question: "Comment le DOM représente-t-il la structure d'un document HTML ?",
+            question: "Comment le DOM représente-t-il la structure d'un document HTML ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "Chaque élément HTML, tel qu'une div, un paragraphe ou une image, est représenté comme un nœud ",
-                "Une réponse aléatoire C"
+                "Sous forme d’un fichier texte contenant les balises et leur contenu",
+                "Sous forme de liste ordonnée d’éléments hiérarchisés dans le code source",
+                "Chaque élément HTML, tel qu'une div, un paragraphe ou une image, est représenté comme un nœud",
+                "Sous forme d’un tableau indexé où chaque ligne correspond à un élément HTML"
             ],
             correct: 2,
-            explanation: "Chaque élément HTML, tel qu'une div, un paragraphe ou une image, est représenté comme un nœud . Chacun de ces nœuds peut avoir des nœuds enfants, créant ainsi une structure en arbre. Le Document Object Model (DOM) représente ainsi la structure d'un document HTML sous la forme d'une arborescence d'objets. Document\n ├─ html\n │  ├─ head\n │  │  └─ title\n │  │     └─ 'Mon Titre'\n │  └─ body\n │     ├─ div\n │     │  └─ 'Contenu'\n │     │  └─ img src='image.jpg'\n │     └─ p\n │        └─ 'Texte de paragraphe'"
+            explanation: "Chaque élément HTML, tel qu'une div, un paragraphe ou une image, est représenté comme un nœud..."
         },
         {
-            question: "Qu'est-ce qu'un nœud dans le contexte du DOM ?",
+            question: "Qu'est-ce qu'un nœud dans le contexte du DOM ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
+                "Un identifiant unique attribué à chaque élément HTML d’une page",
+                "Une balise spéciale utilisée pour relier des fichiers JavaScript externes",
+                "Une variable JavaScript utilisée pour stocker les éléments d’une page web",
                 "Dans le DOM , les documents sont représentés par une structure arborescente composée de nœuds , qui sont reliés entre eux de manière hiérarchique"
             ],
             correct: 3,
-            explanation: "Dans le DOM , les documents sont représentés par une structure arborescente composée de nœuds , qui sont reliés entre eux de manière hiérarchique. Chaque nœud peut avoir 0, 1 ou plusieurs nœuds enfants dépendants. Les nœuds situés au même niveau et dépendant du même nœud parent sont appelés nœuds frères . Voici différents types de nœuds dans le DOM. - Le nœud Document est le nœud racine de l'arbre DOM, représentant l'ensemble du document. - Le nœud Élément représente une balise HTML, comme <div> ou <p>. - Le nœud Attribut représente un attribut d'un élément, comme id ou class. - Le nœud Texte représente le texte à l'intérieur d'un élément. - Le nœud Commentaire représente un commentaire dans le code HTML."
+            explanation: "Dans le DOM , les documents sont représentés par une structure arborescente composée de nœuds..."
         },
         {
-            question: "Qu'est-ce qu'un élément dans le DOM ?",
+            question: "Qu'est-ce qu'un élément dans le DOM ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
                 "Dans le DOM, chaque balise HTML forme un élément, qui est un type de nœud",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
+                "Un type de fonction JavaScript utilisée pour modifier le contenu d’un document",
+                "Une variable contenant les attributs CSS d’un élément HTML",
+                "Une structure conditionnelle utilisée pour parcourir l’arborescence du document"
             ],
             correct: 0,
-            explanation: "Dans le DOM, chaque balise HTML forme un élément, qui est un type de nœud. Les éléments sont les seuls nœuds pouvant contenir des attributs et à partir desquels d'autres nœuds peuvent dériver."
+            explanation: "Dans le DOM, chaque balise HTML forme un élément, qui est un type de nœud..."
         },
         {
-            question: "Quelles sont les principales méthodes pour accéder au DOM ?",
+            question: "Quelles sont les principales méthodes pour accéder au DOM ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Les principales méthodes pour accéder aux éléments du DOM sont les suivantes : - getElementById() - getElementsByClassName() - getElementsByTagName() - querySelector()",
-                "Une réponse aléatoire B"
+                "Les méthodes setTimeout() et setInterval()",
+                "Les propriétés document.URL et document.title",
+                "Les principales méthodes pour accéder aux éléments du DOM sont les suivantes : - getElementById() - getElementsByClassName() - getElementsByTagName() - querySelector()",
+                "Les fonctions fetch() et queryDatabase()"
             ],
             correct: 2,
-            explanation: "Les principales méthodes pour accéder aux éléments du DOM sont les suivantes : - getElementById() - getElementsByClassName() - getElementsByTagName() - querySelector()"
+            explanation: "Les principales méthodes pour accéder aux éléments du DOM sont les suivantes..."
         },
         {
-            question: "Comment modifier le contenu d'un élément ?",
+            question: "Comment modifier le contenu d'un élément ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Pour modifier le contenu d'un élément dans le DOM, vous pouvez utiliser des propriétés comme innerHTML ou textContent , ou des méthodes comme appendChild() et removeChild() ",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C"
+                "En réécrivant entièrement le code HTML de la page",
+                "Pour modifier le contenu d'un élément dans le DOM, vous pouvez utiliser des propriétés comme innerHTML ou textContent , ou des méthodes comme appendChild() et removeChild()",
+                "En utilisant uniquement des styles CSS dynamiques",
+                "En modifiant directement le code source du navigateur"
             ],
             correct: 1,
-            explanation: "Pour modifier le contenu d'un élément dans le DOM, vous pouvez utiliser des propriétés comme innerHTML ou textContent , ou des méthodes comme appendChild() et removeChild() ."
+            explanation: "Pour modifier le contenu d'un élément dans le DOM, vous pouvez utiliser des propriétés comme innerHTML ou textContent..."
         },
         {
-            question: "Comment ajouter un nouvel élément ?",
+            question: "Comment ajouter un nouvel élément ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
+                "En important un fichier HTML externe via une balise <import>",
+                "En dupliquant un élément existant avec la méthode cloneElement()",
                 "Pour ajouter un nouvel élément au DOM, vous pouvez utiliser la méthode createElement() pour créer l'élément, puis appendChild() ou insertBefore() pour l'insérer à l'endroit souhaité dans l'arbre",
-                "Une réponse aléatoire A"
+                "En exécutant une commande SQL via le navigateur"
             ],
             correct: 2,
-            explanation: "Pour ajouter un nouvel élément au DOM, vous pouvez utiliser la méthode createElement() pour créer l'élément, puis appendChild() ou insertBefore() pour l'insérer à l'endroit souhaité dans l'arbre."
+            explanation: "Pour ajouter un nouvel élément au DOM, vous pouvez utiliser la méthode createElement()..."
         },
         {
-            question: "Comment supprimer un élément ?",
+            question: "Comment supprimer un élément ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
                 "Pour supprimer un élément du DOM, vous pouvez utiliser la méthode removeChild() sur le nœud parent de l'élément à supprimer",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
+                "En masquant l’élément avec CSS via display:none",
+                "En supprimant manuellement la balise dans le code source HTML",
+                "En réinitialisant la page avec location.reload()"
             ],
             correct: 0,
-            explanation: "Pour supprimer un élément du DOM, vous pouvez utiliser la méthode removeChild() sur le nœud parent de l'élément à supprimer."
+            explanation: "Pour supprimer un élément du DOM, vous pouvez utiliser la méthode removeChild()..."
         },
         {
-            question: "Qu'est-ce qu'un événement ?",
+            question: "Qu'est-ce qu'un événement ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
+                "Un élément du DOM réservé aux interactions CSS",
+                "Un message envoyé du serveur au navigateur pour indiquer une mise à jour",
+                "Un composant React permettant de gérer les états d’une page",
                 "Les événements dans le DOM sont des scripts exécutés par le navigateur lorsque l'utilisateur interagit avec la page web, comme un clic de souris ou une saisie de clavier"
             ],
             correct: 3,
-            explanation: "Les événements dans le DOM sont des scripts exécutés par le navigateur lorsque l'utilisateur interagit avec la page web, comme un clic de souris ou une saisie de clavier. Voici un exemple de code JavaScript pour gérer un événement de clic sur un bouton :"
+            explanation: "Les événements dans le DOM sont des scripts exécutés par le navigateur..."
         },
         {
-            question: "Comment ajouter un événement ?",
+            question: "Comment ajouter un événement ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Pour ajouter un événements dans le DOM, vous pouvez utiliser la méthode addEventListener() "
+                "En insérant du code JavaScript directement dans le fichier CSS",
+                "En ajoutant un attribut onEvent dans le fichier HTML principal",
+                "En redéfinissant la fonction document.addEvent()",
+                "Pour ajouter un événements dans le DOM, vous pouvez utiliser la méthode addEventListener()"
             ],
             correct: 3,
-            explanation: "Pour ajouter un événements dans le DOM, vous pouvez utiliser la méthode addEventListener() . Cette méthode permet d'attacher une fonction à un élément, qui sera exécutée lorsque l'événement spécifié se produit. Voici un exemple de code : const button = document.getElementById('myButton');\nbutton.addEventListener('click', function() {\n    console.log('Bouton cliqué!');\n});"
+            explanation: "Pour ajouter un événements dans le DOM, vous pouvez utiliser la méthode addEventListener()..."
         },
         {
-            question: "Comment supprimer un événement ?",
+            question: "Comment supprimer un événement ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Pour supprimer un événements dans le DOM, vous pouvez utiliser la méthode removeEventListener() ",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
+                "En supprimant l'attribut onclick directement dans le HTML",
+                "Pour supprimer un événements dans le DOM, vous pouvez utiliser la méthode removeEventListener()",
+                "En vidant la console du navigateur",
+                "En actualisant la page pour réinitialiser les scripts"
             ],
             correct: 1,
-            explanation: "Pour supprimer un événements dans le DOM, vous pouvez utiliser la méthode removeEventListener() . Cette méthode retire un gestionnaire d'événements attaché à un élément. Voici un exemple de code : const button = document.getElementById('myButton');\nfunction handleClick() {\n    console.log('Bouton cliqué!');\n}\nbutton.addEventListener('click', handleClick);\n// Supprimer l'événement\nbutton.removeEventListener('click', handleClick);"
+            explanation: "Pour supprimer un événements dans le DOM, vous pouvez utiliser la méthode removeEventListener()..."
         },
         {
-            question: "Quels sont les différents événements que l'on peut gérer ?",
+            question: "Quels sont les différents événements que l'on peut gérer ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "L'évenement click est utilisé pour capter le cliq d'une souris lorsque l'utilisateur clique sur un élément",
-                "Une réponse aléatoire C"
+                "Uniquement les événements liés aux formulaires HTML",
+                "Tous les événements définis par le CSS et les animations",
+                "L'évenement click est utilisé pour capter le clic d'une souris lorsque l'utilisateur clique sur un élément",
+                "Les événements exclusivement associés aux serveurs API"
             ],
             correct: 2,
-            explanation: "L'évenement click est utilisé pour capter le cliq d'une souris lorsque l'utilisateur clique sur un élément. Il existe des variantes avec mousedown, mouseup et dblclick const button = document.getElementById('myButton');\nbutton.addEventListener('click', function() {\n    console.log('Bouton cliqué!');\n}); L'événement mouseover est utilisé lorsque le curseur de la souris passe sur l'élément sélectionner. Il existe des variantes avec mouseenter, mouseleave, mouseout et mousemove const box = document.getElementById('myBox');\nbox.addEventListener('mouseover', function() {\n    console.log('Souris sur la boîte!');\n}); L'événement load se produit lorsque la page est complètement chargée. window.addEventListener('load', function() {\n    console.log('Page chargée!');\n}); L'événement input se produit lorsque l'utilisateur tape dans un champ de texte. Il existe des variantes avec keydown et keyup. const input = document.getElementById('myInput');\ninput.addEventListener('input', function() {\n    console.log('Texte saisi :', this.value);\n}); L'événement change se produit lorsque la valeur d'un élément de formulaire change. const select = document.getElementById('mySelect');\nselect.addEventListener('change', function() {\n    console.log('Sélection changée :', this.value);\n});"
+            explanation: "L'évenement click est utilisé pour capter le clic d'une souris..."
         },
         {
-            question: "Qu'est-ce que la propagation d'événements ?",
+            question: "Qu'est-ce que la propagation d'événements ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
+                "Le mécanisme par lequel un événement reste bloqué sur un seul élément du DOM",
                 "La propagation d'événements dans le DOM fait référence au comportement par défaut des événements qui remonte dans l'arbre du DOM à partir de l'élément cible jusqu'à l'élément racine",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "Une méthode utilisée pour dupliquer un événement sur plusieurs éléments HTML",
+                "Le processus par lequel les événements sont convertis en requêtes serveur"
             ],
             correct: 1,
-            explanation: "La propagation d'événements dans le DOM fait référence au comportement par défaut des événements qui remonte dans l'arbre du DOM à partir de l'élément cible jusqu'à l'élément racine. Ce comportement peut être contrôlé avec des méthodes comme stopPropagation() ."
+            explanation: "La propagation d'événements dans le DOM fait référence au comportement par défaut..."
         },
         {
-            question: "Comment manipuler les styles CSS d'un élément ?",
+            question: "Comment manipuler les styles CSS d'un élément ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
+                "En modifiant directement le fichier style.css du projet",
+                "En ajoutant des attributs HTML supplémentaires dans la balise concernée",
+                "En utilisant uniquement des frameworks CSS externes comme Bootstrap",
                 "Pour manipuler les styles CSS d'un élément via le DOM, vous pouvez accéder à la propriété style de l'élément et définir les propriétés CSS souhaitées, en écrivant les lignes de codes suivantes"
             ],
             correct: 3,
-            explanation: "Pour manipuler les styles CSS d'un élément via le DOM, vous pouvez accéder à la propriété style de l'élément et définir les propriétés CSS souhaitées, en écrivant les lignes de codes suivantes. const element = document.querySelector(\"div\");\nelement.style.color = 'red';"
+            explanation: "Pour manipuler les styles CSS d'un élément via le DOM, vous pouvez accéder à la propriété style..."
         },
         {
-            question: "Comment peut-on naviguer dans le DOM ?",
+            question: "Comment peut-on naviguer dans le DOM ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
+                "En utilisant les flèches du clavier dans le navigateur",
                 "Pour naviguer dans le DOM (Document Object Model), plusieurs propriétés JavaScript peuvent être utilisées",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
+                "En consultant la structure du code source HTML du site",
+                "En exécutant une fonction de débogage dans la console"
             ],
             correct: 1,
-            explanation: "Pour naviguer dans le DOM (Document Object Model), plusieurs propriétés JavaScript peuvent être utilisées. Ces propriétés permettent de se déplacer entre les nœuds du document et d'interagir avec la structure HTML de manière dynamique. Parmi les propriétés les plus courantes, on trouve : - parentNode qui renvoie le nœud parent d'un nœud donné, permettant de remonter dans la hiérarchie du DOM;\n - childNodes qui renvoie une collection de tous les nœuds enfants d'un nœud donné, ce qui permet d'accéder à tous les éléments qui lui sont directement associés;\n - firstChild et lastChild qui permettent d'accéder respectivement au premier et au dernier enfant d'un nœud, facilitant ainsi la navigation vers les extrémités d'une liste d'éléments;\n - nextSibling et previousSibling qui permettent de naviguer entre les nœuds frères, en accédant respectivement au nœud suivant ou précédent dans la même hiérarchie."
+            explanation: "Pour naviguer dans le DOM (Document Object Model), plusieurs propriétés JavaScript peuvent être utilisées..."
         },
         {
-            question: "Qu'est-ce que le DOM virtuel et comment est-il utilisé dans des bibliothèques comme React ?",
+            question: "Qu'est-ce que le DOM virtuel et comment est-il utilisé dans des bibliothèques comme React ?",
             theme: "Le DOM",
             level: "Facile",
             answers: [
                 "Le DOM virtuel est une représentation en mémoire de l'arbre du DOM, utilisée par des bibliothèques comme React pour optimiser les mises à jour du DOM réel",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "Une base de données temporaire qui stocke les états des composants d’une application web",
+                "Un outil de navigation intégré à React pour afficher la structure des pages",
+                "Une extension du DOM classique utilisée uniquement pour les serveurs Node.js"
             ],
             correct: 0,
-            explanation: "Le DOM virtuel est une représentation en mémoire de l'arbre du DOM, utilisée par des bibliothèques comme React pour optimiser les mises à jour du DOM réel. Lorsque l'état de l'application change, React calcule les différences entre le DOM virtuel et le DOM réel, puis applique uniquement les changements nécessaires au DOM réel, améliorant ainsi les performances."
+            explanation: "Le DOM virtuel est une représentation en mémoire de l'arbre du DOM..."
         }
+
     ],
     "JS": [
         {
