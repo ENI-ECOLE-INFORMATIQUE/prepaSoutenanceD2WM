@@ -2763,10 +2763,10 @@ const questionsData = {
             theme: "Le Clean Code",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
+                "Un code qui s'exécute rapidement, peu importe sa lisibilité",
+                "Un ensemble de règles imposées par les langages de programmation modernes",
                 "Le Clean Code désigne un ensemble de pratiques et de principes qui visent à produire un code compréhensible, efficace et intuitif à manipuler",
-                "Une réponse aléatoire B"
+                "Un code qui utilise uniquement des commentaires pour être clair"
             ],
             correct: 2,
             explanation: "Le Clean Code désigne un ensemble de pratiques et de principes qui visent à produire un code compréhensible, efficace et intuitif à manipuler. Popularisé par Robert C. Martin dans son livre Clean Code: A Handbook of Agile Software Craftsmanship , ce concept souligne l'importance de la lisibilité et de la maintenabilité du code. Le Clean Code se concentre sur plusieurs aspects essentiels : - La simplicité du code , évitant la complexité inutile. - La cohérence et l'intentionnalité , où le code doit être lisible et compréhensible par d'autres développeurs. - La responsabilité du développeur envers son code, y compris la gestion éthique des données. En adoptant ces principes, le Clean Code permet de faciliter la collaboration entre développeurs, d'améliorer la durabilité du code et de réduire les coûts de maintenance à long terme."
@@ -2777,9 +2777,9 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "Pour garantir un code propre en Python, il est essentiel de donner des noms explicites aux variables et aux fonctions",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C"
+                "En utilisant des noms très courts pour écrire plus vite",
+                "En mélangeant majuscules et minuscules pour distinguer les fonctions",
+                "En utilisant des chiffres et symboles pour rendre les noms uniques"
             ],
             correct: 0,
             explanation: "Pour garantir un code propre en Python, il est essentiel de donner des noms explicites aux variables et aux fonctions. Voici quelques conseils : - Utilisez des noms significatifs qui décrivent clairement ce que fait la variable ou la fonction;\n - Suivez les conventions du nommage du langage en question;\n - Évitez les abréviations et les noms trop courts qui peuvent prêter à confusion;\n - Préférez des noms qui expriment le type et l'utilisation au premier coup d'œil, par exemple, totalObservations plutôt que tot_obs ; - Utilisez des verbes pour nommer les fonctions, par exemple, getArticles() plutôt que articles() . Exemple de bon nommage en Python : def calculate_total_price(items):\n    total_price = 0\n    for item in items:\n        total_price += item['price']\n    return total_price Exemple de mauvais nommage en Python : def proc(l):\n    t = 0\n    for i in l:\n        t += i['p']\n    return t"
@@ -2789,10 +2789,10 @@ const questionsData = {
             theme: "Le Clean Code",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Pour maintenir des fonctions lisibles et efficaces, suivez ces principes : - Les fonctions doivent être courtes, idéalement ne dépassant pas 20 lignes, - Chaque fonction doit effectuer une seule tâche et ne pas avoir d'effets de bord, c'est-à-dire qu'elle ne doit pas modifier des variables externes, - Évitez les niveaux d'abstraction mélangés dans une même fonction; chaque fonction doit être cohérente dans son niveau d'abstraction, - Utilisez des paramètres clairs et évitez d'avoir trop d'arguments pour une fonction",
-                "Une réponse aléatoire A"
+                "En regroupant plusieurs fonctionnalités dans une seule fonction pour gagner du temps",
+                "En écrivant des fonctions très longues afin d’éviter la duplication",
+                "Les fonctions doivent être courtes, idéalement ne dépassant pas 20 lignes, chaque fonction doit effectuer une seule tâche et ne pas avoir d'effets de bord.",
+                "En ajoutant un maximum de commentaires pour compenser un code complexe"
             ],
             correct: 2,
             explanation: "Pour maintenir des fonctions lisibles et efficaces, suivez ces principes : - Les fonctions doivent être courtes, idéalement ne dépassant pas 20 lignes, - Chaque fonction doit effectuer une seule tâche et ne pas avoir d'effets de bord, c'est-à-dire qu'elle ne doit pas modifier des variables externes, - Évitez les niveaux d'abstraction mélangés dans une même fonction; chaque fonction doit être cohérente dans son niveau d'abstraction, - Utilisez des paramètres clairs et évitez d'avoir trop d'arguments pour une fonction. Exemple de fonction en python avec du code illisible : def aff(n):\n    for i in range(2, n + 1):\n        p = True\n        for j in range(2, int(i ** 0.5) + 1):\n            if i % j == 0:\n                p = False\n                break\n        if p:\n            print(i, end=' ') Exemple de fonctions propres pour afficher les nombres premiers : def est_nombre_premier(nombre):\n    if nombre < 2:\n        return False\n    for diviseur in range(2, int(nombre ** 0.5) + 1):\n        if nombre % diviseur == 0:\n            return False\n    return True\n\ndef generer_nombres_premiers(limite):\n    return [nombre for nombre in range(2, limite + 1) if est_nombre_premier(nombre)]\n\ndef afficher_nombres_premiers(limite):\n    nombres_premiers = generer_nombres_premiers(limite)\n    print(' '.join(map(str, nombres_premiers)))"
@@ -2802,10 +2802,10 @@ const questionsData = {
             theme: "Le Clean Code",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
+                "Un modèle de gestion de bases de données relationnelles",
+                "Un format de code orienté performance pour les langages compilés",
                 "Le concept SOLID est un acronyme qui regroupe cinq principes de conception destinés à produire des architectures logicielles plus compréhensibles, flexibles et maintenables",
-                "Une réponse aléatoire A"
+                "Une méthode de compression de code utilisée en Java"
             ],
             correct: 2,
             explanation: "Le concept SOLID est un acronyme qui regroupe cinq principes de conception destinés à produire des architectures logicielles plus compréhensibles, flexibles et maintenables. - Le Single Responsibility Principle (SRP) (ou principe de responsabilité unique) stipule qu'une classe doit avoir une seule raison de changer. - Le Open/Closed Principle (OCP) (ou ouvert/fermé) affirment que les entités doivent être ouvertes à l'extension mais fermées à la modification. - Le Liskov Substitution Principle (LSP) (ou principe de substitution de Liskov) mentionne que les objets d'une classe dérivée doivent pouvoir remplacer ceux de la classe de base sans altérer le fonctionnement du programme. - Le Interface Segregation Principle (ISP) (ou principe de ségrégation des interfaces) considère qu'il est préférable d'avoir plusieurs interfaces spécifiques plutôt qu'une seule interface générale. - Le Dependency Inversion Principle (ou le principe d'inversion des dépendances) indique que les modules de haut niveau ne doivent pas dépendre des modules de bas niveau, mais des abstractions."
@@ -2815,10 +2815,10 @@ const questionsData = {
             theme: "Le Clean Code",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Le Single Responsibility Principle (SRP) (ou principe de responsabilité unique) indique qu'une classe doit avoir une seule raison de changer, c'est-à-dire qu'elle doit être responsable d'une seule fonctionnalité ou d'un seul aspect du comportement",
-                "Une réponse aléatoire B"
+                "Un principe qui recommande de diviser une fonction en plusieurs sous-fonctions identiques",
+                "Un concept qui favorise la duplication du code pour plus de clarté",
+                "Le Single Responsibility Principle (SRP) (ou principe de responsabilité unique) indique qu'une classe doit avoir une seule raison de changer...",
+                "Une règle qui impose d’avoir une seule fonction principale par fichier"
             ],
             correct: 2,
             explanation: "Le Single Responsibility Principle (SRP) (ou principe de responsabilité unique) indique qu'une classe doit avoir une seule raison de changer, c'est-à-dire qu'elle doit être responsable d'une seule fonctionnalité ou d'un seul aspect du comportement. Cela permet de réduire les dépendances et de rendre le code plus facile à maintenir et à tester. Exemple en Python avec violation du SRP : class Employe:\n    def __init__(self, nom, salaire):\n        self.nom = nom\n        self.salaire = salaire\n\n    def calculer_paie(self):\n        # Calcul simplifié\n        return self.salaire * 0.9\n\n    def sauvegarder_employe(self):\n        print(f'Sauvegarde de {self.nom}.') Exemple en Python respectant SRP : class Employe:\n    def __init__(self, nom, salaire):\n        self.nom = nom\n        self.salaire = salaire\n\nclass CalculateurPaie:\n    def calculer_paie(self, employe):\n        # Calcul simplifié\n        return employe.salaire * 0.9\n\nclass GestionnaireBaseDeDonnees:\n    def sauvegarder_employe(self, employe):\n        print(f'Sauvegarde de {employe.nom}.')"
@@ -2828,10 +2828,10 @@ const questionsData = {
             theme: "Le Clean Code",
             level: "Facile",
             answers: [
-                "L' Open/Closed Principle (OCP) (ou ouvert/fermé) stipule qu'une classe doit être ouverte à l'extension , mais fermée à la modification ",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
+                "L'Open/Closed Principle (OCP) (ou ouvert/fermé) stipule qu'une classe doit être ouverte à l'extension , mais fermée à la modification ",
+                "Un principe qui interdit d’utiliser des classes héritées dans un projet",
+                "Une méthode qui consiste à fermer le code source pour éviter les erreurs",
+                "Une règle qui impose d’utiliser uniquement du code open source"
             ],
             correct: 0,
             explanation: "L' Open/Closed Principle (OCP) (ou ouvert/fermé) stipule qu'une classe doit être ouverte à l'extension , mais fermée à la modification . Cela signifie que vous devez pouvoir ajouter de nouvelles fonctionnalités à une classe sans avoir à modifier son code existant. Ce principe favorise la réutilisabilité du code et aide à éviter les effets de bord lors de la modification du code existant. Par exemple, au lieu de modifier une méthode dans une classe pour ajouter une nouvelle fonctionnalité, vous pouvez créer une nouvelle classe qui étend la classe existante. L'héritage est une des méthodes les plus courantes pour appliquer ce principe, mais il existe également d'autres approches, comme l'utilisation de design patterns tels que le décorateur. En suivant ce principe, les développeurs peuvent créer des systèmes plus flexibles et maintenables, ce qui est essentiel dans le développement de logiciels évolutifs. Exemple en Python utilisant l'héritage : class Forme:\n    def aire(self):\n        pass\n\nclass Rectangle(Forme):\n    def __init__(self, largeur, hauteur):\n        self.largeur = largeur\n        self.hauteur = hauteur\n\n    def aire(self):\n        return self.largeur * self.hauteur\n\nclass Cercle(Forme):\n    def __init__(self, rayon):\n        self.rayon = rayon\n\n    def aire(self):\n        return 3.14 * self.rayon ** 2\n\ndef calculer_aire_totale(formes):\n    return sum(forme.aire() for forme in formes)\n\nformes = [Rectangle(3, 4), Cercle(2)]\nprint(calculer_aire_totale(formes))  # Calcule l'aire totale"
@@ -2841,10 +2841,10 @@ const questionsData = {
             theme: "Le Clean Code",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
+                "Un principe de test unitaire qui remplace les classes de base par des mocks",
                 "Le Liskov Substitution Principle (LSP) (ou le principe de substitution de Liskov) stipule que les objets d'une classe dérivée doivent pouvoir remplacer les objets de la classe de base sans altérer le fonctionnement du programme",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C"
+                "Une règle qui impose de remplacer toutes les classes par des interfaces",
+                "Une méthode d’optimisation de mémoire pour les classes dérivées"
             ],
             correct: 1,
             explanation: "Le Liskov Substitution Principle (LSP) (ou le principe de substitution de Liskov) stipule que les objets d'une classe dérivée doivent pouvoir remplacer les objets de la classe de base sans altérer le fonctionnement du programme. Cela garantit que les classes dérivées sont substituables à leurs classes de base, ce qui favorise la polymorphie et la réutilisation du code. Voici un exemple de code en python respectant le principe de Liskov : class Forme:\n    def aire(self):\n        pass\n\nclass Rectangle(Forme):\n    def __init__(self, largeur, hauteur):\n        self.largeur = largeur\n        self.hauteur = hauteur\n\n    def aire(self):\n        return self.largeur * self.hauteur\n\nclass Carre(Forme):\n    def __init__(self, cote):\n        self.cote = cote\n\n    def aire(self):\n        return self.cote * self.cote\n\ndef afficher_aire(forme):\n    print(f'Aire: {forme.aire()}')\n\nrectangle = Rectangle(5, 4)\ncarre = Carre(5)\n\nafficher_aire(rectangle)  # Aire: 20\nafficher_aire(carre)      # Aire: 25"
@@ -2854,23 +2854,23 @@ const questionsData = {
             theme: "Le Clean Code",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "L' Interface Segregation Principle (ISP) (ou principe de ségrégation des interfaces) stipule qu'il est préférable d'avoir plusieurs interfaces spécifiques plutôt qu'une seule interface générale"
+                "Un principe qui recommande d’avoir une seule interface globale pour tout le projet",
+                "Une règle de sécurité pour séparer les interfaces utilisateurs et administrateurs",
+                "Une méthode de chiffrement des interfaces réseaux",
+                "L'Interface Segregation Principle (ISP) (ou principe de ségrégation des interfaces) stipule qu'il est préférable d'avoir plusieurs interfaces spécifiques plutôt qu'une seule interface générale"
             ],
             correct: 3,
-            explanation: "L' Interface Segregation Principle (ISP) (ou principe de ségrégation des interfaces) stipule qu'il est préférable d'avoir plusieurs interfaces spécifiques plutôt qu'une seule interface générale. Cela signifie qu'une classe ne doit pas être forcée d'implémenter des méthodes qu'elle n'utilise pas. En respectant ce principe, on réduit le couplage et on améliore la flexibilité et la maintenabilité du code. Exemple en Java respectant le principe de ségrégation des interfaces : interface Printer {\n    void print(String document);\n}\n\ninterface Scanner {\n    void scan(String document);\n}\n\ninterface Fax {\n    void fax(String document);\n}\n\nclass MultiFunctionDevice implements Printer, Scanner, Fax {\n    public void print(String document) {\n        System.out.println(\"Printing: \" + document);\n    }\n\n    public void scan(String document) {\n        System.out.println(\"Scanning: \" + document);\n    }\n\n    public void fax(String document) {\n        System.out.println(\"Faxing: \" + document);\n    }\n}\n\nclass SimplePrinter implements Printer {\n    public void print(String document) {\n        System.out.println(\"Printing: \" + document);\n    }\n}"
+            explanation: "L'Interface Segregation Principle (ISP) (ou principe de ségrégation des interfaces) stipule qu'il est préférable d'avoir plusieurs interfaces spécifiques plutôt qu'une seule interface générale. Cela signifie qu'une classe ne doit pas être forcée d'implémenter des méthodes qu'elle n'utilise pas. En respectant ce principe, on réduit le couplage et on améliore la flexibilité et la maintenabilité du code. Exemple en Java respectant le principe de ségrégation des interfaces : interface Printer {\n    void print(String document);\n}\n\ninterface Scanner {\n    void scan(String document);\n}\n\ninterface Fax {\n    void fax(String document);\n}\n\nclass MultiFunctionDevice implements Printer, Scanner, Fax {\n    public void print(String document) {\n        System.out.println(\"Printing: \" + document);\n    }\n\n    public void scan(String document) {\n        System.out.println(\"Scanning: \" + document);\n    }\n\n    public void fax(String document) {\n        System.out.println(\"Faxing: \" + document);\n    }\n}\n\nclass SimplePrinter implements Printer {\n    public void print(String document) {\n        System.out.println(\"Printing: \" + document);\n    }\n}"
         },
         {
             question: "Qu'est-ce que le Dependency Inversion Principle ?",
             theme: "Le Clean Code",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Le Dependency Inversion Principle (DIP) (ou le principe d'inversion des dépendances) encourage l' injection des dépendances abstraites plutôt que de dépendre de classes concrètes"
+                "Une méthode de gestion des dépendances via les fichiers externes uniquement",
+                "Un principe qui impose que les classes haut niveau héritent toujours des classes bas niveau",
+                "Une approche qui supprime totalement les dépendances entre modules",
+                "Le Dependency Inversion Principle (DIP) (ou le principe d'inversion des dépendances) encourage l'injection des dépendances abstraites plutôt que de dépendre de classes concrètes"
             ],
             correct: 3,
             explanation: "Le Dependency Inversion Principle (DIP) (ou le principe d'inversion des dépendances) encourage l' injection des dépendances abstraites plutôt que de dépendre de classes concrètes. En d'autres termes, les modules de haut niveau ne devraient pas dépendre directement des modules de bas niveau, mais plutôt d'abstractions communes. Cela favorise la modularité, facilite les tests unitaires et réduit le couplage entre les modules, rendant le code plus flexible et réutilisable. Exemple en Java violant le principe d'inversion des dépendances : class MySQLDatabase {\n    public void save(String data) {\n        System.out.println(\"Saving \" + data + \" to MySQL database\");\n    }\n}\n\nclass UserService {\n    private MySQLDatabase db;\n\n    public UserService() {\n        this.db = new MySQLDatabase();\n    }\n\n    public void createUser(String userData) {\n        db.save(userData);\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        UserService userService = new UserService();\n        userService.createUser(\"John Doe\");\n    }\n} Exemple en Java respectant le principe d'inversion des dépendances : class MySQLDatabase {\n    public void save(String data) {\n        System.out.println(\"Saving \" + data + \" to MySQL database\");\n    }\n}\n\nclass UserService {\n    private MySQLDatabase db;\n\n    public UserService(MySQLDatabase database) {\n        this.db = database;\n    }\n\n    public void createUser(String userData) {\n        db.save(userData);\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        MySQLDatabase mysqlDb = new MySQLDatabase();\n        UserService userService = new UserService(mysqlDb);\n        userService.createUser(\"John Doe\");\n    }\n}"
@@ -2880,10 +2880,10 @@ const questionsData = {
             theme: "Le Clean Code",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
+                "Un concept qui consiste à inverser la hiérarchie des classes dans un programme orienté objet",
+                "Une technique d’optimisation de mémoire en programmation fonctionnelle",
                 "L' Inversion of Control (IoC) (ou inversion de contrôle) est un principe de conception qui inverse le flux de contrôle d'un programme",
-                "Une réponse aléatoire B"
+                "Un design pattern pour remplacer les classes héritées par des fonctions"
             ],
             correct: 2,
             explanation: "L' Inversion of Control (IoC) (ou inversion de contrôle) est un principe de conception qui inverse le flux de contrôle d'un programme. Au lieu que le programme principal contrôle le flux d'exécution, ce sont des frameworks ou des conteneurs qui gèrent le flux, permettant ainsi de déléguer certaines responsabilités. IoC est souvent associé à la programmation orientée objet (POO) car il favorise la modularité et la réutilisation du code. Par exemple, dans le cadre de l'injection de dépendances, un objet ne crée pas ses dépendances directement, mais les reçoit de l'extérieur, ce qui facilite les tests et la maintenance. Exemple sans IoC : public class UserService {\n    private Database database;\n\n    // Dépendance créée directement\n    public UserService() {\n        this.database = new MySQLDatabase();\n    }\n\n    public void saveUser(User user) {\n        database.save(user);\n    }\n} Exemple avec IoC : public class UserService {\n    private Database database;\n\n    // Injection de dépendance\n    public UserService(Database database) {\n        this.database = database;\n    }\n\n    public void saveUser(User user) {\n        database.save(user);\n    }\n}\n\n// Utilisation\nDatabase database = new MySQLDatabase();\nUserService userService = new UserService(database);"
@@ -2893,10 +2893,10 @@ const questionsData = {
             theme: "Le Clean Code",
             level: "Facile",
             answers: [
-                "Le principe de Separation of Concern (SoC) (ou séparation des préoccupations) stipule qu'un programme doit être divisé en sections distinctes, chacune gérant une préoccupation ou une fonctionnalité spécifique",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+               "Le principe de Separation of Concern (SoC) (ou séparation des préoccupations) stipule qu'un programme doit être divisé en sections distinctes...",
+               "Une technique qui regroupe les différentes couches d'une application pour simplifier le code",
+               "Une méthode pour stocker les préoccupations des utilisateurs dans la base de données",
+               "Une pratique consistant à regrouper toutes les fonctions dans un seul module"
             ],
             correct: 0,
             explanation: "Le principe de Separation of Concern (SoC) (ou séparation des préoccupations) stipule qu'un programme doit être divisé en sections distinctes, chacune gérant une préoccupation ou une fonctionnalité spécifique. Cela permet de réduire la complexité et d'améliorer la maintenabilité du code. En appliquant le SoC, les développeurs peuvent travailler sur différentes parties d'un système sans interférer avec d'autres, ce qui facilite les tests, les mises à jour et la collaboration. Par exemple, dans une application web, la logique de présentation, la logique métier et l'accès aux données peuvent être séparés en différentes couches. Exemple sans SoC : public class UserManager {\n    public void createUser(String username) {\n        // Business logic\n        String userId = \"USER_\" + username.toLowerCase();\n\n        // Data access\n        System.out.println(\"Saving user to database: \" + userId + \", \" + username);\n\n        // Logging\n        System.out.println(\"User created: \" + username);\n    }\n} Exemple avec SoC : // Business Object (BO)\npublic class User {\n    private String userId;\n    private String username;\n\n    public User(String userId, String username) {\n        this.userId = userId;\n        this.username = username;\n    }\n\n    // Getters and setters\n}\n\n// Data Access Layer (DAL)\npublic class UserDAL {\n    public void saveUser(User user) {\n        // Simulating database access\n        System.out.println(\n            \"Saving user to database: \" +\n            user.getUserId() + \", \" +\n            user.getUsername());\n    }\n}\n\n// Business Logic Layer (BLL)\npublic class UserService {\n    private UserDAL UserDAL;\n\n    public UserService(UserDAL UserDAL) {\n        this.UserDAL = UserDAL;\n    }\n\n    public void createUser(String username) {\n        String userId = \"USER_\" + username.toLowerCase();\n        User user = new User(userId, username);\n        UserDAL.saveUser(user);\n        System.out.println(\"User created: \" + username);\n    }\n}"
@@ -2907,9 +2907,9 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "Le principe Don't Repeat Yourself (DRY) (ou 'ne te répète pas) stipule qu'une information ou une logique ne doit pas être répétée dans le code",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
+                "Un principe visant à commenter le code à chaque répétition d’instruction",
+                "Une règle de performance qui interdit les boucles imbriquées",
+                "Une pratique consistant à écrire le même code dans plusieurs fichiers pour plus de sûreté"
             ],
             correct: 0,
             explanation: "Le principe Don't Repeat Yourself (DRY) (ou 'ne te répète pas) stipule qu'une information ou une logique ne doit pas être répétée dans le code. Cela favorise la réutilisation et réduit les risques d'erreurs, car une modification dans une seule instance de code se répercute automatiquement partout où elle est utilisée. Exemple non-DRY en Python : def calculate_square_area(side):\n    surface_area = side ** 2\n    print('-------------------------------------')\n    print(\"L'aire que vous avez demandé est de :\")\n    print(f\"Aire = {surface_area:.2f}\")\n\ndef calculate_rectangular_area(width, length):\n    surface_area = width ** length\n    print('-------------------------------------')\n    print(\"L'aire que vous avez demandé est de :\")\n    print(f\"Aire = {surface_area:.2f}\")\n\n# Utilisation\ncalculate_square_area(5)\ncalculate_rectangular_area(2, 5) Exemple DRY en Python : def print_area(value):\n    print('-------------------------------------')\n    print(\"L'aire que vous avez demandé est de :\")\n    print(f\"Aire = {value:.2f}\")\n\ndef calculate_square_area(side):\n    surface_area = side ** 2\n    print_area(surface_area)\n\ndef calculate_rectangular_area(width, length):\n    surface_area = width ** length\n    print_area(surface_area)\n\n# Utilisation\ncalculate_square_area(5)\ncalculate_rectangular_area(2, 5)"
@@ -2919,9 +2919,9 @@ const questionsData = {
             theme: "Le Clean Code",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
+                "Un concept d’interface utilisateur basée sur des interactions simples",
+                "Un principe de sécurité pour éviter les failles dans le code",
+                "Une approche pour condenser le code en une seule ligne",
                 "Le principe Keep It Simple, Stupid (KISS) (ou 'garde ça simple et idiot') encourage les développeurs à garder le code aussi simple que possible"
             ],
             correct: 3,
@@ -2939,7 +2939,75 @@ const questionsData = {
             ],
             correct: 1,
             explanation: "Le principe You Aren't Gonna Need It (YAGNI) (ou 'tu n'en auras pas besoin') suggère que les développeurs ne doivent pas ajouter de fonctionnalités tant qu'elles ne sont pas nécessaires. Cela aide à éviter la surcharge de fonctionnalités et à se concentrer sur les besoins réels du projet. Exemple non-YAGNI (surengineering) : class UserProfile:\n    def __init__(self, name, email):\n        self.name = name\n        self.email = email\n\n        # Pour les préférences\n        self.preferences = {}\n\n        # Pour les liens\n        self.social_media = []\n\n        # Pour des récompenses\n        self.achievements = [] Exemple YAGNI (simple et suffisant) : class UserProfile:\n    def __init__(self, name, email):\n        self.name = name\n        self.email = email"
+        },
+        //-----------------------------------
+        //Intermédiaire
+        {
+            question: "Pourquoi est-il important d'écrire du code lisible pour les autres développeurs ?",
+            theme: "Le Clean Code",
+            level: "Intermédiaire",
+            answers: [
+                "Parce que cela rend le code plus lent mais plus esthétique",
+                "Parce que le code sera plus facile à maintenir, à corriger et à faire évoluer dans le temps",
+                "Parce que cela augmente la taille du projet et impressionne les managers",
+                "Parce que cela rend inutile la documentation"
+            ],
+            correct: 1,
+            explanation: "La lisibilité du code est essentielle, car un programme n'est pas seulement écrit pour être exécuté par une machine, mais également pour être compris par d'autres humains. Un code lisible facilite la maintenance, la correction des bugs et l'évolution du projet. Dans une équipe, plusieurs développeurs peuvent être amenés à modifier la même base de code. Si celle-ci est claire, bien nommée et correctement structurée, cela réduit les risques d'erreurs et améliore la productivité globale. Le Clean Code insiste donc sur la clarté, la cohérence et la simplicité avant la 'performance esthétique' ou la complexité technique inutile."
+        },
+        {
+            question: "Que signifie la notion de 'refactoring' dans le Clean Code ?",
+            theme: "Le Clean Code",
+            level: "Intermédiaire",
+            answers: [
+                "C'est le processus consistant à réécrire totalement une application",
+                "C'est la suppression des tests unitaires pour gagner du temps",
+                "C'est l'amélioration du code existant sans en changer le comportement externe",
+                "C'est le remplacement du code par des bibliothèques tierces"
+            ],
+            correct: 2,
+            explanation: "Le refactoring désigne le processus d'amélioration du code sans en modifier le comportement visible. L’objectif est d’optimiser la structure interne du code pour le rendre plus clair, plus performant et plus facile à maintenir. Cela peut inclure la simplification de méthodes complexes, la suppression de duplications, ou encore le renommage de variables et de fonctions pour les rendre plus explicites. Par exemple, dans un projet Python, un développeur peut refactoriser une fonction de 50 lignes en plusieurs fonctions cohérentes, chacune ayant une seule responsabilité. Cette pratique est au cœur du Clean Code, car elle garantit un code durable et évolutif."
+        },
+        {
+            question: "Qu'est-ce qu'un 'code smell' ? ",
+            theme: "Le Clean Code",
+            level: "Intermédiaire",
+            answers: [
+                "Un code parfaitement optimisé",
+                "Une anomalie visuelle dans l'éditeur de code",
+                "Un signe qu'une partie du code pourrait être mal conçue ou difficile à maintenir",
+                "Une erreur de compilation courante"
+            ],
+            correct: 2,
+            explanation: "Un 'code smell' (ou 'mauvaise odeur de code') est un terme utilisé pour désigner un signe révélateur qu'une partie du code pourrait être problématique, même si elle fonctionne correctement. Cela indique souvent un design sous-optimal ou une dette technique à corriger. Exemples de code smells : des fonctions trop longues, des classes ayant trop de responsabilités, des duplications de code ou encore des noms de variables ambigus. Le Clean Code encourage à identifier et corriger ces mauvaises odeurs par des refactorings réguliers afin de préserver la santé du code sur le long terme."
+        },
+        {
+            question: "Pourquoi les commentaires excessifs peuvent nuire au Clean Code ?",
+            theme: "Le Clean Code",
+            level: "Intermédiaire",
+            answers: [
+                "Parce qu'ils rendent le code plus long à lire et peuvent masquer un manque de clarté",
+                "Parce qu'ils empêchent la compilation du programme",
+                "Parce qu'ils ralentissent l’exécution du code",
+                "Parce qu’ils sont interdits par les bonnes pratiques"
+            ],
+            correct: 0,
+            explanation: "Les commentaires sont utiles lorsqu'ils expliquent une intention complexe, mais leur utilisation excessive peut nuire à la lisibilité globale. Si un code nécessite de nombreux commentaires pour être compris, cela révèle souvent qu’il manque de clarté ou qu’il n’est pas suffisamment explicite par lui-même. Le Clean Code privilégie un code auto-documenté, où les noms de variables, fonctions et classes sont suffisamment explicites pour transmettre leur rôle. Les bons commentaires doivent être exceptionnels et expliquer le 'pourquoi', pas le 'comment'."
+        },
+        {
+            question: "Quelle est la différence entre la complexité essentielle et la complexité accidentelle ?",
+            theme: "Le Clean Code",
+            level: "Intermédiaire",
+            answers: [
+                "La complexité essentielle est liée à la nature du problème, tandis que la complexité accidentelle provient d'une mauvaise conception ou implémentation",
+                "Elles sont identiques et toutes deux inévitables",
+                "La complexité accidentelle vient du manque de documentation uniquement",
+                "La complexité essentielle dépend uniquement du langage de programmation"
+            ],
+            correct: 0,
+            explanation: "La complexité essentielle est inhérente au problème à résoudre — elle fait partie de la nature même du domaine (par exemple, la gestion de la sécurité ou des transactions bancaires). La complexité accidentelle, quant à elle, résulte des choix techniques ou de conception inappropriés qui compliquent inutilement le code (par exemple, une architecture trop rigide, des noms confus ou des dépendances mal gérées). Le Clean Code vise à réduire cette complexité accidentelle pour rendre le système plus simple et maintenable sans altérer la logique métier sous-jacente."
         }
+
     ],
     "Le projet et les méthodes": [
         {
