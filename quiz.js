@@ -2313,11 +2313,11 @@ const questionsData = {
             theme: "L'architecture",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B",
+                "Le MVC est un protocole réseau utilisé pour la communication entre serveurs et clients",
+                "Le MVC est un langage de programmation orienté objet utilisé dans le développement web",
                 "Le modèle Model-View-Controller (MVC) est un pattern architectural utilisé dans le développement d'applications, notamment pour les interfaces utilisateur",
-                "Une réponse aléatoire C"
-            ],
+                "Le MVC est une méthode de test utilisée pour vérifier la conformité du code source"
+                ],
             correct: 2,
             explanation: "Le modèle Model-View-Controller (MVC) est un pattern architectural utilisé dans le développement d'applications, notamment pour les interfaces utilisateur. Il divise une application en trois composants principaux. - Le modèle (Model) représente la logique métier et les données de l'application. Il gère la récupération, la manipulation et la validation des données, sans contenir d'informations sur la manière dont les données sont affichées à l'utilisateur. - La vue (View) représente l'interface utilisateur. Elle affiche les données provenant du modèle et réagit aux changements dans le modèle pour mettre à jour l'affichage. - Le contrôleur (Controller) agit comme un intermédiaire entre le modèle et la vue. Il gère les entrées de l'utilisateur et les commandes, met à jour le modèle en fonction des actions de l'utilisateur et notifie la vue des changements. En résumé, le MVC permet de séparer les préoccupations dans une application, facilitant ainsi la maintenance, la testabilité et la réutilisabilité du code."
         },
@@ -2327,9 +2327,9 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "Le modèle Model-View-Template (MVT) est un pattern architectural utilisé principalement dans le framework Django pour le développement web",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C"
+                "Le MVT est une méthode d'analyse statistique des données appliquée au machine learning",
+                "Le MVT est un modèle mathématique pour représenter les vecteurs et matrices dans un système linéaire",
+                "Le MVT est un protocole de transfert de fichiers inspiré du MVC"
             ],
             correct: 0,
             explanation: "Le modèle Model-View-Template (MVT) est un pattern architectural utilisé principalement dans le framework Django pour le développement web. Bien qu'il soit souvent présenté comme une variation du MVC, il a ses propres spécificités. - Le modèle (Model) est similaire au MVC. Il définit la structure des données, encapsule la logique métier et gère l'interaction avec la base de données. - La vue (View) dans MVT joue un rôle différent du MVC traditionnel. Elle contient la logique de contrôle : elle reçoit les requêtes HTTP, interagit avec le modèle, et détermine quelles données doivent être passées au template. - Le template (Template) est spécifique à MVT. C'est un fichier HTML contenant du code de template Django, qui définit comment les données doivent être présentées. Il remplace en partie la 'vue' du MVC classique. Django agit comme un contrôleur global, gérant le routage des URL vers les vues appropriées. Cette structure MVT permet une séparation claire des responsabilités, facilitant le développement, la maintenance et la réutilisation du code dans les applications web Django."
@@ -2339,10 +2339,11 @@ const questionsData = {
             theme: "L'architecture",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
+                "Le MVVM est une base de données relationnelle utilisée pour la persistance des objets",
+                "Le MVVM est un protocole réseau utilisé pour la communication entre microservices",
                 "Le Model-View-ViewModel (MVVM) est un pattern architectural qui sépare le développement de l'interface graphique (la Vue) des règles métier et de la logique de présentation (le ViewModel) et des données (le Modèle)",
-                "Une réponse aléatoire A"
+                "Le MVVM est une extension du modèle MVT utilisée dans les frameworks JavaScript modernes"
+   
             ],
             correct: 2,
             explanation: "Le Model-View-ViewModel (MVVM) est un pattern architectural qui sépare le développement de l'interface graphique (la Vue) des règles métier et de la logique de présentation (le ViewModel) et des données (le Modèle). - Le Modèle représente les données et la logique métier de l'application, indépendamment de l'interface utilisateur. - La Vue est responsable de définir la structure, la mise en page et l'apparence de ce que l'utilisateur voit à l'écran. Dans MVVM, la Vue est idéalement passive et ne contient pas de logique métier. - Le ViewModel agit comme un intermédiaire entre le Modèle et la Vue. Il encapsule la logique de présentation et l'état de la Vue. Le ViewModel expose des propriétés et des commandes auxquelles la Vue peut se lier. MVVM utilise un mécanisme de liaison de données (data binding) pour connecter le ViewModel à la Vue, ce qui permet une séparation claire des préoccupations et facilite les tests unitaires de la logique de présentation. Exemple en Python : # Modèle\nclass User:\n    def __init__(self, name):\n        self.name = name\n\n# ViewModel\nclass UserViewModel:\n    def __init__(self, user):\n        self._user = user\n\n    def get_display_name(self):\n        return self._user.name.upper()\n\n# Vue (simulée)\nclass UserView:\n    def __init__(self, view_model):\n        self.view_model = view_model\n\n    def display_user(self):\n        print(f\"Nom: {self.view_model.get_display_name()}\")\n\n# Utilisation\nuser = User(\"Alice\")\nview_model = UserViewModel(user)\nview = UserView(view_model)\n\nview.display_user()"
@@ -2352,10 +2353,10 @@ const questionsData = {
             theme: "L'architecture",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
+                "Un design pattern est un outil de mise en page graphique pour les interfaces utilisateur",
+                "Un design pattern est une méthodologie de développement agile centrée sur le client",
                 "Un design pattern est une solution réutilisable à un problème récurrent en conception logicielle",
-                "Une réponse aléatoire B"
+                "Un design pattern est une librairie de composants visuels pour le front-end"
             ],
             correct: 2,
             explanation: "Un design pattern est une solution réutilisable à un problème récurrent en conception logicielle. Il s'agit d'un modèle éprouvé qui peut être adapté pour résoudre des problèmes similaires. Les design patterns ne sont pas des portions de code prêtes à l'emploi, mais plutôt des guides pour structurer et organiser le code de manière efficace. L'utilisation des design patterns optimise le processus de développement en fournissant des approches testées et validées par l'expérience collective des développeurs. Ils améliorent la lisibilité du code et facilitent la communication au sein des équipes de développement en établissant un vocabulaire commun pour décrire les solutions architecturales."
@@ -2365,10 +2366,10 @@ const questionsData = {
             theme: "L'architecture",
             level: "Facile",
             answers: [
-                "Voici quelques exemples de design patterns couramment utilisés : CREATIONAL PATTERNS - La Factory Method (ou fabrique) crée une classe mère, tout en délégant le choix de l'instanciation aux classes filles",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
+                "Voici quelques exemples de design patterns couramment utilisés : CREATIONAL PATTERNS - La Factory Method (ou fabrique)...",
+                "Les design patterns incluent uniquement les algorithmes de tri et de recherche utilisés dans les bases de données",
+                "Les design patterns concernent exclusivement la conception graphique des interfaces utilisateur",
+                "Les design patterns sont des formats de fichiers utilisés pour structurer le code source en Java"
             ],
             correct: 0,
             explanation: "Voici quelques exemples de design patterns couramment utilisés : CREATIONAL PATTERNS - La Factory Method (ou fabrique) crée une classe mère, tout en délégant le choix de l'instanciation aux classes filles. Elle permet de déléguer l'instanciation à des sous-classes, offrant ainsi une flexibilité dans la création d'objets. - L' Abstract Factory (ou fabrique abstraite) fournit une interface pour créer des familles d'objets liés ou dépendants sans spécifier leurs classes concrètes. - Le Singleton assure qu'une classe n'a qu'une et une seule instance et fournit un accès généralisé à cette même instance. - Le Builder (ou moniteur) sépare la construction d'un objet complexe de sa représentation permettant l'élaboration d'objets complexes étape par étape, en utilisant un code de construction identique. STRUCTURAL PATTERNS - L' Adapter (ou adaptateur) fait fonctionner ensemble des interfaces incompatibles. Il permet à des classes de travailler ensemble malgré des interfaces incompatibles. - Le Decorator (ou décorateur) ajoute des responsabilités à des objets dynamiquement. Il permet d'ajouter de nouvelles fonctionnalités à un objet existant sans altérer sa structure. - La Facade (ou Façade) fournit une interface unifiée à un ensemble d'interfaces. Elle offre une interface simplifiée à un système complexe. BEHAVORIAL PATTERNS - L' Observer (ou observateur) définit une dépendance un-à-plusieurs entre objets. Il permet à un objet de notifier automatiquement un ensemble d'objets dépendants lorsque son état change. - La Strategy (ou strategy) encapsule des algorithmes interchangeables. Elle permet de définir une famille d'algorithmes, de les encapsuler et de les rendre interchangeables. - La Command (ou commande) encapsule une requête comme un objet. Elle transforme une demande en un objet autonome contenant toutes les informations sur cette demande."
@@ -2379,9 +2380,9 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "Une factory method est un design pattern qui permet de créer des objets sans spécifier explicitement leur classe exacte",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C"
+                "Une factory method est une commande du terminal permettant de compiler plusieurs classes Java",
+                "Une factory method est une fonction utilisée pour détruire des objets inutilisés dans la mémoire",
+                "Une factory method est un protocole utilisé pour échanger des données entre applications distantes"
             ],
             correct: 0,
             explanation: "Une factory method est un design pattern qui permet de créer des objets sans spécifier explicitement leur classe exacte. Au lieu d'utiliser directement l'opérateur new pour instancier un objet, on fait appel à une méthode appelée fabrique. Cette méthode fabrique encapsule la logique de création des objets, ce qui signifie que les objets sont toujours créés avec l'opérateur new, mais cette opération se déroule à l'intérieur de la méthode fabrique. Les objets ainsi créés sont souvent appelés produits. Une des caractéristiques clés du patron Fabrique est que les sous-classes peuvent redéfinir la méthode fabrique pour changer le type de produit qu'elles retournent. Cela permet une grande flexibilité dans le code, car il devient possible d'ajouter de nouveaux types de produits sans modifier le code client qui utilise la méthode fabrique. Cependant, il est important de noter que tous les produits doivent partager une interface ou une classe de base commune. Cela garantit que même si les sous-classes retournent des types différents, elles respectent toutes la même structure et peuvent être utilisées de manière interchangeable. En résumé, le patron de conception Fabrique offre une approche élégante et flexible pour la création d'objets. Il facilite l'extensibilité du code et permet un découplage entre le code client et les classes concrètes des produits, rendant ainsi le système plus modulaire et adaptable aux changements futurs. class Animal:\n    def speak(self):\n        pass\n\nclass Dog(Animal):\n    def speak(self):\n        return \"Woof!\"\n\nclass Cat(Animal):\n    def speak(self):\n        return \"Meow!\"\n\nclass AnimalFactory:\n    def create_animal(self, animal_type):\n        if animal_type == \"dog\":\n            return Dog()\n        elif animal_type == \"cat\":\n            return Cat()\n        else:\n            raise ValueError(\"Unknown animal type\")\n\n# Utilisation\nfactory = AnimalFactory()\ndog = factory.create_animal(\"dog\")\ncat = factory.create_animal(\"cat\")\nprint(dog.speak())  # Output: Woof!\nprint(cat.speak())  # Output: Meow!"
@@ -2391,10 +2392,10 @@ const questionsData = {
             theme: "L'architecture",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
+                "Le singleton est un modèle mathématique utilisé pour isoler les variables dans un système",
                 "Le singleton est un design pattern créationnel qui garantit qu'une classe n'a qu'une seule instance et fournit un point d'accès global à cette instance",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C"
+                "Le singleton est un type de base de données utilisée pour gérer les sessions utilisateurs",
+                "Le singleton est un protocole réseau de communication un-à-plusieurs"
             ],
             correct: 1,
             explanation: "Le singleton est un design pattern créationnel qui garantit qu'une classe n'a qu'une seule instance et fournit un point d'accès global à cette instance. Il est utile pour contrôler l'accès à une ressource partagée, comme une connexion à une base de données. Ci-dessous un exemple en Java public class Singleton {\n    private static Singleton instance;\n\n    private Singleton() {\n        // Constructeur privé pour empêcher\n        // l'instanciation directe\n    }\n\n    public static Singleton getInstance() {\n        if (instance == null) {\n            instance = new Singleton();\n        }\n        return instance;\n    }\n\n    public void showMessage() {\n        System.out.println(\"Hello, I am a singleton!\");\n    }\n}\n\n// Utilisation\nSingleton singleton = Singleton.getInstance();\nsingleton.showMessage();\n// Output: Hello, I am a singleton!"
@@ -2404,9 +2405,9 @@ const questionsData = {
             theme: "L'architecture",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
+                "Le couplage fort est une technique de chiffrement des échanges entre composants logiciels",
+                "Le couplage fort décrit un système où chaque composant peut être remplacé indépendamment",
+                "Le couplage fort est une architecture orientée microservices favorisant la modularité",
                 "Le couplage fort est un principe de conception qui décrit une relation où les composants d'un système sont très liés entre eux"
             ],
             correct: 3,
@@ -2417,10 +2418,10 @@ const questionsData = {
             theme: "L'architecture",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
+                "Le couplage faible est une technique de compression de données utilisée pour optimiser les échanges",
                 "Le couplage faible est un principe de conception qui vise à réduire les dépendances entre les composants d'un système",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
+                "Le couplage faible est un modèle d’intelligence artificielle basé sur des réseaux neuronaux",
+                "Le couplage faible est une méthode d’optimisation mémoire pour les applications embarquées"
             ],
             correct: 1,
             explanation: "Le couplage faible est un principe de conception qui vise à réduire les dépendances entre les composants d'un système. class IDatabaseManager:\n    def execute_query(self, query):\n        pass\n\nclass MySQLManager(IDatabaseManager):\n    def execute_query(self, query):\n        print(f\"Executing MySQL query: {query}\")\n\nclass PostgreSQLManager(IDatabaseManager):\n    def execute_query(self, query):\n        print(f\"Executing PostgreSQL query: {query}\")\n\nclass UserService:\n    def __init__(self, db_manager: IDatabaseManager):\n        self.db_manager = db_manager\n\n    def get_user(self, user_id):\n        query = f\"SELECT * FROM users WHERE id = {user_id}\"\n        self.db_manager.execute_query(query)\n\n# Utilisation\nmysql_manager = MySQLManager()\nuser_service = UserService(mysql_manager)\nuser_service.get_user(1) Dans un système à couplage faible, chaque composant peut donc évoluer indépendamment, ce qui signifie que des modifications dans les classes MySQLManager ou PostgreSQLManager n'affecteront pas directement la classe UserService, tant que l'interface IDatabaseManager reste la même. Le couplage faible favorise l' encapsulation , où les détails internes d'un composant sont cachés, réduisant ainsi les risques d'erreurs. Cette approche facilite également les tests, permettant de vérifier chaque composant indépendamment, par exemple en utilisant des mocks pour IDatabaseManager lors des tests de UserService. Enfin, elle améliore la flexibilité et la réutilisabilité , permettant d'utiliser UserService avec différents types de bases de données sans modification."
@@ -2430,10 +2431,10 @@ const questionsData = {
             theme: "L'architecture",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "On parle de couplage fort ou serré lorsque deux entités échanges beaucoup d'informations, de couplage faible lorsqu'elles échangent peu d'information"
+                "Le couplage fort est utilisé pour les applications front-end, le couplage faible pour le back-end",
+                "Le couplage fort nécessite une base de données centralisée alors que le couplage faible ne l’utilise pas",
+                "Le couplage fort implique des composants totalement indépendants, contrairement au couplage faible",
+                "On parle de couplage fort ou serré lorsque deux entités échangent beaucoup d'informations, de couplage faible lorsqu'elles échangent peu d'information"
             ],
             correct: 3,
             explanation: "On parle de couplage fort ou serré lorsque deux entités échanges beaucoup d'informations, de couplage faible lorsqu'elles échangent peu d'information. Exemple de couplage fort class DatabaseManager:\n    def __init__(self):\n        self.connection = \"Database connection\"\n\n    def execute_query(self, query):\n        print(f\"Executing query: {query}\")\n\nclass UserService:\n    def __init__(self):\n        self.db_manager = DatabaseManager()\n\n    def get_user(self, user_id):\n        query = f\"SELECT * FROM users WHERE id = {user_id}\"\n        self.db_manager.execute_query(query)\n\n# Utilisation\nuser_service = UserService()\nuser_service.get_user(1) Exemple de couplage faible class IDatabaseManager:\n    def execute_query(self, query):\n        pass\n\nclass MySQLManager(IDatabaseManager):\n    def execute_query(self, query):\n        print(f\"Executing MySQL query: {query}\")\n\nclass PostgreSQLManager(IDatabaseManager):\n    def execute_query(self, query):\n        print(f\"Executing PostgreSQL query: {query}\")\n\nclass UserService:\n    def __init__(self, db_manager: IDatabaseManager):\n        self.db_manager = db_manager\n\n    def get_user(self, user_id):\n        query = f\"SELECT * FROM users WHERE id = {user_id}\"\n        self.db_manager.execute_query(query)\n\n# Utilisation\nmysql_manager = MySQLManager()\npostgres_manager = PostgreSQLManager()\n\nuser_service_mysql = UserService(mysql_manager)\nuser_service_mysql.get_user(1)\n\nuser_service_postgres = UserService(postgres_manager)\nuser_service_postgres.get_user(1) Niveau encapsulation : Dans le couplage faible, la classe IDatabaseManager encapsule la méthode execute_query et les classes dérivées l'implémentent. Dans le couplage fort, DatabaseManager est directement utilisé. Niveau dépendance : Le couplage faible permet d'injecter différents types de gestionnaires de base de données dans UserService, le rendant moins dépendant d'une implémentation spécifique. Niveau flexibilité : Le couplage faible permet de changer facilement le type de base de données utilisé sans affecter UserService, tant que l'interface IDatabaseManager est respectée. Niveau testabilité : Le couplage faible facilite les tests unitaires en permettant d'injecter des mock objects pour IDatabaseManager. Niveau maintenabilité : Les changements dans les classes de gestion de base de données avec un couplage faible ont moins de chances d'affecter la classe UserService."
@@ -2445,9 +2446,9 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
+                "Une méthode de programmation basée sur les fonctions uniquement",
+                "Un langage de programmation spécifique utilisé pour développer des applications orientées web",
+                "Une manière de structurer le code sans utiliser de classes ni d'objets",
                 "La Programmation Orientée Objet (POO) est un paradigme de programmation qui organise le code en unités logiques réutilisables appelées objets"
             ],
             correct: 3,
@@ -2458,23 +2459,23 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Les quatre piliers fondamentaux de la Programmation Orientée Objet sont : - L' Abstraction consiste à se concentrer sur les informations essentielles et à ignorer les détails non pertinents",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
+                "L'abstraction, l'encapsulation, l'héritage et le polymorphisme",
+                "Les boucles, les conditions, les variables et les fonctions",
+                "Les attributs, les classes, les interfaces et les packages",
+                "Le typage fort, la compilation, l'encapsulation et la récursivité"
             ],
             correct: 0,
-            explanation: "Les quatre piliers fondamentaux de la Programmation Orientée Objet sont : - L' Abstraction consiste à se concentrer sur les informations essentielles et à ignorer les détails non pertinents. Elle permet de créer des classes qui représentent des concepts généraux. - L' Encapsulation est le processus qui consiste à regrouper les données et les méthodes dans une classe, cachant les détails d'implémentation. Cela permet de protéger les données et de garantir l'intégrité de l'objet. - L' Héritage est la capacité d'une classe (classe fille) à hériter des propriétés et des méthodes d'une autre classe (classe mère). Cela permet de créer une hiérarchie de classes et de réutiliser du code. - Le Polymorphisme est la capacité d'objets de différentes classes à répondre à un même message (méthode). Cela permet d'écrire du code générique qui peut fonctionner avec des objets de différents types."
+            explanation: "Les quatre piliers fondamentaux de la Programmation Orientée Objet sont :\n - L' Abstraction consiste à se concentrer sur les informations essentielles et à ignorer les détails non pertinents. Elle permet de créer des classes qui représentent des concepts généraux.\n - L' Encapsulation est le processus qui consiste à regrouper les données et les méthodes dans une classe, cachant les détails d'implémentation. Cela permet de protéger les données et de garantir l'intégrité de l'objet.\n - L' Héritage est la capacité d'une classe (classe fille) à hériter des propriétés et des méthodes d'une autre classe (classe mère). Cela permet de créer une hiérarchie de classes et de réutiliser du code.\n - Le Polymorphisme est la capacité d'objets de différentes classes à répondre à un même message (méthode). Cela permet d'écrire du code générique qui peut fonctionner avec des objets de différents types."
         },
         {
             question: "Qu'est-ce que l'abstraction ?",
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "L' abstraction consiste à se concentrer sur les informations essentielles et à ignorer les détails non pertinents : on parle de modèle",
-                "Une réponse aléatoire B"
+                "Une méthode permettant de cacher les erreurs dans le code",
+                "Une technique pour optimiser la mémoire utilisée par les objets",
+                "L'abstraction consiste à se concentrer sur les informations essentielles et à ignorer les détails non pertinents : on parle de modèle",
+                "Une façon d'empêcher l'héritage entre les classes"
             ],
             correct: 2,
             explanation: "L' abstraction consiste à se concentrer sur les informations essentielles et à ignorer les détails non pertinents : on parle de modèle. On l'utilise pour gérer la complexité et se concentrer sur l'essentiel. Voici des exemples simples d'abstraction dans différents langages : Exemple en JavaScript : class Voiture {\n  constructor(marque) {\n    this.marque = marque;\n  }\n\n  demarrer() {\n    console.log(`La ${this.marque} démarre.`);\n  }\n}\n\nconst maVoiture = new Voiture('Toyota');\n\n// Affiche : La Toyota démarre.\nmaVoiture.demarrer(); Exemple en Java : public class Voiture {\n  private String marque;\n\n  public Voiture(String marque) {\n    this.marque = marque;\n  }\n\n  public void demarrer() {\n    System.out.println(\"La \" + marque + \" démarre.\");\n  }\n}\n\n// Dans une autre classe ou méthode main\nVoiture maVoiture = new Voiture(\"Honda\");\n\n// Affiche : La Honda démarre.\nmaVoiture.demarrer(); Exemple en PHP : class Voiture {\n  private $marque;\n\n  public function __construct($marque) {\n    $this->marque = $marque;\n  }\n\n  public function demarrer() {\n    echo \"La {$this->marque} démarre.\";\n  }\n}\n\n$maVoiture = new Voiture('Renault');\n\n// Affiche : La Renault démarre.\n$maVoiture->demarrer(); Exemple en Python : class Voiture:\n  def __init__(self, marque):\n    self.marque = marque\n\n  def demarrer(self):\n    print(f\"La {self.marque} démarre.\")\n\nma_voiture = Voiture('Peugeot')\n\n# Affiche : La Peugeot démarre.\nma_voiture.demarrer()"
@@ -2484,10 +2485,10 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "L' encapsulation est un principe de la POO qui consiste à regrouper les données (attributs) et les méthodes qui les manipulent au sein d'une même unité (la classe), tout en restreignant l'accès direct à ces données",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
+                "L'encapsulation est un principe de la POO qui consiste à regrouper les données (attributs) et les méthodes qui les manipulent au sein d'une même unité (la classe), tout en restreignant l'accès direct à ces données",
+                "Un mécanisme permettant de créer plusieurs instances d'une même classe",
+                "Une méthode utilisée pour combiner plusieurs classes en une seule",
+                "Un processus qui empêche la création d’objets à partir d’une classe"
             ],
             correct: 0,
             explanation: "L' encapsulation est un principe de la POO qui consiste à regrouper les données (attributs) et les méthodes qui les manipulent au sein d'une même unité (la classe), tout en restreignant l'accès direct à ces données. On utilise généralement des attributs privés avec des méthodes publiques appelées getters (ou accesseurs) et setters (ou mutateurs) pour y accéder et les modifier. Exemple en JavaScript : // Classe Personne\nclass Personne {\n  // Attribut privé (à partir d'ES2022)\n  #nom;\n\n  // Constructeur\n  constructor(nom) {\n    this.#nom = nom;\n  }\n\n  // Getter pour obtenir le nom\n  getNom() {\n    return this.#nom;\n  }\n\n  // Setter pour modifier le nom\n  setNom(nouveauNom) {\n    if (nouveauNom.length > 0) {\n        this.#nom = nouveauNom;\n    }\n  }\n}\n\n// Utilisation de la classe\nconst personne = new Personne('Alice');\n\n// Affiche : Alice\nconsole.log(personne.getNom());\n\n// Affiche : Bob\npersonne.setNom('Bob');\nconsole.log(personne.getNom()); Exemple en Java : // Classe Personne\npublic class Personne {\n  private String nom;\n\n  // Constructeur\n  public Personne(String nom) {\n    this.nom = nom;\n  }\n\n  // Getter pour obtenir le nom\n  public String getNom() {\n    return nom;\n  }\n\n  // Setter pour modifier le nom\n  public void setNom(String nouveauNom) {\n    if (nouveauNom != null && !nouveauNom.isEmpty()) {\n        this.nom = nouveauNom;\n    }\n  }\n}\n\n// Utilisation de la classe\nPersonne personne = new Personne(\"Alice\");\n\n// Affiche : Alice\nSystem.out.println(personne.getNom());\n\npersonne.setNom(\"Bob\");\n\n// Affiche : Bob\nSystem.out.println(personne.getNom()); Exemple en PHP : // Classe Personne\nclass Personne {\n  private $nom;\n\n  // Constructeur\n  public function __construct($nom) {\n    $this->nom = $nom;\n  }\n\n  // Getter pour obtenir le nom\n  public function getNom() {\n    return $this->nom;\n  }\n\n  // Setter pour modifier le nom\n  public function setNom($nouveauNom) {\n    if (!empty($nouveauNom)) {\n        $this->nom = $nouveauNom;\n    }\n  }\n}\n\n// Utilisation de la classe\n$personne = new Personne(\"Alice\");\n\n// Affiche : Alice\necho $personne->getNom() . \"\\n\";\n$personne->setNom(\"Bob\");\n\n// Affiche : Bob\necho $personne->getNom() . \"\\n\"; Exemple en Python : // Classe Personne\nclass Personne:\n  # Constructeur\n  def __init__(self, nom):\n    self.__nom = nom  # Attribut privé\n\n  # Getter pour obtenir le nom\n  def get_nom(self):\n    return self.__nom\n\n  # Setter pour modifier le nom\n  def set_nom(self, nouveau_nom):\n    if nouveau_nom:\n        self.__nom = nouveau_nom\n\n# Utilisation de la classe\npersonne = Personne(\"Alice\")\n\n# Affiche : Alice\nprint(personne.get_nom())\n\npersonne.set_nom(\"Bob\")\n\n# Affiche : Bob\nprint(personne.get_nom())"
@@ -2497,11 +2498,11 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "L' héritage permet à une classe d'hériter des propriétés et méthodes d'une autre classe"
-            ],
+                "Une méthode permettant de copier automatiquement le code d'une autre classe",
+                "Un processus de duplication d’objets identiques",
+                "Un concept qui permet de créer plusieurs classes indépendantes sans lien entre elles",
+                "L'héritage permet à une classe d'hériter des propriétés et méthodes d'une autre classe"
+          ],
             correct: 3,
             explanation: "L' héritage permet à une classe d'hériter des propriétés et méthodes d'une autre classe. Il favorise la réutilisation du code et permet de créer des hiérarchies logiques. Cependant, il peut créer des dépendances fortes entre les classes s'il est mal utilisé. Exemple en JavaScript : class Animal {\n  manger() {\n    console.log(\"L'animal mange.\");\n  }\n}\n\nclass Chien extends Animal {\n  aboyer() {\n    console.log(\"Le chien aboie.\");\n  }\n}\n\nconst monChien = new Chien();\nmonChien.manger();\nmonChien.aboyer(); Exemple en Java : class Animal {\n  void manger() {\n    System.out.println(\"L'animal mange.\");\n  }\n}\n\nclass Chien extends Animal {\n  void aboyer() {\n    System.out.println(\"Le chien aboie.\");\n  }\n}\n\npublic class ExempleHéritage {\n  public static void main(String[] args) {\n    Chien monChien = new Chien();\n    monChien.manger();\n    monChien.aboyer();\n  }\n} Exemple en PHP : class Animal {\n  public function manger() {\n    echo \"L'animal mange.\\n\";\n  }\n}\n\nclass Chien extends Animal {\n  public function aboyer() {\n    echo \"Le chien aboie.\\n\";\n  }\n}\n\n$monChien = new Chien();\n$monChien->manger();\n$monChien->aboyer(); Exemple en Python : class Animal:\n  def manger(self):\n    print(\"L'animal mange.\")\n\nclass Chien(Animal):\n  def aboyer(self):\n    print(\"Le chien aboie.\")\n\n# Utilisation\nmon_chien = Chien()\nmon_chien.manger()\nmon_chien.aboyer()"
         },
@@ -2510,10 +2511,10 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
+                "La capacité d’une méthode à changer son type de retour dynamiquement",
+                "Une technique permettant de créer des objets à partir de plusieurs classes à la fois",
                 "Le polymorphisme permet à des objets de classes différentes d'être traités comme des objets d'une classe commune",
-                "Une réponse aléatoire A"
+                "Un concept qui empêche l’héritage entre les classes"
             ],
             correct: 2,
             explanation: "Le polymorphisme permet à des objets de classes différentes d'être traités comme des objets d'une classe commune. Il permet une grande flexibilité et extensibilité du code, mais peut rendre le code plus difficile à suivre s'il est mal utilisé. Voici des exemples dans différents langages illustrant le polymorphisme avec des quadrilatères. Exemple en JavaScript : class Forme {\n  dessiner() {\n    console.log(\"Forme\");\n  }\n}\n\nclass Rectangle extends Forme {\n  dessiner() {\n    console.log(\"Rectangle\");\n  }\n}\n\nclass Carre extends Forme {\n  dessiner() {\n    console.log(\"Carré\");\n  }\n}\n\n// Polymorphisme\nfunction dessinerForme(forme) {\n  forme.dessiner();\n}\n\nconst rectangle = new Rectangle();\nconst carre = new Carre();\ndessinerForme(rectangle);\ndessinerForme(carre); Exemple en Java : class Forme {\n  public void dessiner() {\n    System.out.println(\"Forme\");\n  }\n}\n\nclass Rectangle extends Forme {\n  public void dessiner() {\n    System.out.println(\"Rectangle\");\n  }\n}\n\nclass Carre extends Forme {\n  public void dessiner() {\n    System.out.println(\"Carré\");\n  }\n}\n\npublic class ExemplePolymorphisme {\n  // Polymorphisme\n  public static void dessinerForme(Forme forme) {\n    forme.dessiner();\n  }\n\n  public static void main(String[] args) {\n    Forme rectangle = new Rectangle();\n    Forme carre = new Carre();\n\n    dessinerForme(rectangle);\n    dessinerForme(carre);\n  }\n} Exemple en PHP : class Forme {\n  public function dessiner() {\n    echo \"Forme\\n\";\n  }\n}\n\nclass Rectangle extends Forme {\n  public function dessiner() {\n    echo \"Rectangle\\n\";\n  }\n}\n\nclass Carre extends Forme {\n  public function dessiner() {\n    echo \"Carré\\n\";\n  }\n}\n\n// Polymorphisme\nfunction dessinerForme(Forme $forme) {\n  $forme->dessiner();\n}\n\n$rectangle = new Rectangle();\n$carre = new Carre();\n\ndessinerForme($rectangle);\ndessinerForme($carre); Exemple en Python : class Forme():\n  def dessiner(self):\n    print(\"Forme\")\n\n# Classe Rectangle\nclass Rectangle(Forme):\n  def dessiner(self):\n    print(\"Rectangle\")\n\n# Classe Carre\nclass Carre(Forme):\n  def dessiner(self):\n    print(\"Carré\")\n\n# Polymorphisme\ndef dessiner_forme(forme):\n  forme.dessiner()\n\n# Utilisation\nrectangle = Rectangle()\ncarre = Carre()\n\ndessiner_forme(rectangle)\ndessiner_forme(carre)"
@@ -2524,9 +2525,9 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "Une classe est un modèle ou un plan pour créer des objets, tandis qu'un objet est une instance concrète de cette classe",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
+                "Une classe est un type de variable et un objet est une valeur numérique",
+                "Une classe représente un fichier de code, tandis qu’un objet est une fonction qui s’exécute",
+                "Une classe est créée à partir d’un objet déjà existant"
             ],
             correct: 0,
             explanation: "Une classe est un modèle ou un plan pour créer des objets, tandis qu'un objet est une instance concrète de cette classe. Par exemple, une 'Voiture' est une classe, tandis que 'maVoitureRouge' est un objet spécifique créé à partir de cette classe."
@@ -2536,10 +2537,11 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
+                "Une méthode qui peut être modifiée pendant l’exécution du programme",
+                "Une méthode utilisée pour créer automatiquement des objets",
                 "Une méthode abstraite est une méthode déclarée sans implémentation dans une classe abstraite",
-                "Une réponse aléatoire B"
+                "Une méthode qui ne peut être appelée qu’une seule fois"
+
             ],
             correct: 2,
             explanation: "Une méthode abstraite est une méthode déclarée sans implémentation dans une classe abstraite. Les classes dérivées doivent fournir une implémentation pour ces méthodes. Voici un exemple en Java. abstract class Animal {\n  abstract void faireDuBruit();\n}\n\nclass Chien extends Animal {\n  void faireDuBruit() {\n    System.out.println(\"Woof!\");\n  }\n}"
@@ -2549,10 +2551,10 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
+                "Une structure utilisée pour stocker les attributs d’un objet",
                 "Une interface en POO est un contrat qui spécifie un ensemble de méthodes qu'une classe doit implémenter",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C"
+                "Une méthode permettant d’interagir directement avec le système d’exploitation",
+                "Un outil graphique permettant de manipuler les objets d’un programme"
             ],
             correct: 1,
             explanation: "Une interface en POO est un contrat qui spécifie un ensemble de méthodes qu'une classe doit implémenter. Voici un exemple en Java. interface Nageable {\n  void nager();\n}\n\nclass Poisson implements Nageable {\n  public void nager() {\n    System.out.println(\"Le poisson nage.\");\n  }\n}"
@@ -2562,10 +2564,11 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Les principales différences sont : - Une classe abstraite peut avoir des méthodes concrètes et abstraites, une interface n'a que des méthodes abstraites sous la forme de signature",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C"
+                "Une classe abstraite est plus rapide à exécuter qu’une interface",
+                "Les principales différences sont : - Une classe abstraite peut avoir des méthodes concrètes et abstraites, une interface n'a que des méthodes abstraites sous la forme de signature",
+                "Une interface permet d'hériter d'une seule classe alors qu'une classe abstraite peut en implémenter plusieurs",
+                "Les classes abstraites ne peuvent pas contenir de méthodes, contrairement aux interfaces"
+
             ],
             correct: 1,
             explanation: "Les principales différences sont : - Une classe abstraite peut avoir des méthodes concrètes et abstraites, une interface n'a que des méthodes abstraites sous la forme de signature. - Une classe peut hériter d'une seule classe abstraite, mais peut implémenter plusieurs interfaces. - Les classes abstraites peuvent avoir des constructeurs, pas les interfaces. - Les classes abstraites peuvent avoir des attributs d'instance, les interfaces ne peuvent avoir que des constantes."
@@ -2575,10 +2578,10 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
+                "Une méthode d’instance appartient à la classe et ne peut pas être appelée via un objet",
                 "Une méthode de classe (statique) appartient à la classe et peut être appelée sans instance",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
+                "Une méthode de classe s’exécute automatiquement à la création de l’objet",
+                "Une méthode d’instance ne peut contenir aucun paramètre"
             ],
             correct: 1,
             explanation: "Une méthode de classe (statique) appartient à la classe et peut être appelée sans instance. Une méthode d'instance nécessite une instance pour être appelée. Voici des exemples : Exemple en JavaScript : class Exemple {\n  static methodeDeClasse() {\n    console.log(\"Méthode de classe.\");\n  }\n\n  methodeDInstance() {\n    console.log(\"Méthode d'instance.\");\n  }\n}\n\nExemple.methodeDeClasse();\n\nconst ex = new Exemple();\nex.methodeDInstance(); Exemple en Java : class Exemple {\n  static void methodeDeClasse() {\n    System.out.println(\"Méthode de classe.\");\n  }\n\n  void methodeDInstance() {\n    System.out.println(\"Méthode d'instance.\");\n  }\n}\n\npublic class Main {\n  public static void main(String[] args) {\n    Exemple.methodeDeClasse();\n\n    Exemple ex = new Exemple();\n    ex.methodeDInstance();\n  }\n} Exemple en PHP : class Exemple {\n  public static function methodeDeClasse() {\n    echo \"Méthode de classe.\\n\";\n  }\n\n  public function methodeDInstance() {\n    echo \"Méthode d'instance.\\n\";\n  }\n}\n\nExemple::methodeDeClasse();\n\n$ex = new Exemple();\n$ex->methodeDInstance(); Exemple en Python : class Exemple:\n  @classmethod\n  def methodeDeClasse(cls):\n    print(\"Méthode de classe.\")\n\n  def methodeDInstance(self):\n    print(\"Méthode d'instance.\")\n\nExemple.methodeDeClasse()\n\nex = Exemple()\nex.methodeDInstance()"
@@ -2588,9 +2591,9 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
+                "Des fonctions utilisées pour initialiser les objets lors de leur création",
+                "Des outils du compilateur pour vérifier les types de variables",
+                "Des méthodes utilisées pour calculer la taille d’une classe",
                 "Les getters (ou accesseurs) et setters (ou mutateurs) sont des méthodes utilisées pour accéder et modifier les attributs privés d'une classe, respectant ainsi le principe d'encapsulation"
             ],
             correct: 3,
@@ -2601,10 +2604,10 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
+                "Une fonction utilisée pour supprimer des objets de la mémoire",
+                "Un élément optionnel permettant de copier les propriétés d'une autre classe",
                 "Un constructeur est une méthode spéciale d'une classe qui est automatiquement appelée lors de la création d'un nouvel objet de cette classe",
-                "Une réponse aléatoire A"
+                "Un outil externe servant à compiler le code d’une classe"
             ],
             correct: 2,
             explanation: "Un constructeur est une méthode spéciale d'une classe qui est automatiquement appelée lors de la création d'un nouvel objet de cette classe. Il est utilisé pour initialiser les attributs de l'objet et effectuer toute configuration nécessaire. Voici des exemples dans différents langages : Exemple en JavaScript : class Voiture {\n  constructor(marque, modele) {\n    this.marque = marque;\n    this.modele = modele;\n  }\n\n  afficherInfo() {\n    console.log(`Voiture: ${this.marque} ${this.modele}`);\n  }\n}\n\nconst maVoiture = new Voiture('Toyota', 'Corolla');\nmaVoiture.afficherInfo(); Exemple en Java : public class Voiture {\n  private String marque;\n  private String modele;\n\n  public Voiture(String marque, String modele) {\n    this.marque = marque;\n    this.modele = modele;\n  }\n\n  public void afficherInfo() {\n    System.out.println(\"Voiture: \" + marque + \" \" + modele);\n  }\n}\n\nVoiture maVoiture = new Voiture(\"Honda\", \"Civic\");\nmaVoiture.afficherInfo(); Exemple en PHP : class Voiture {\n  private $marque;\n  private $modele;\n\n  public function __construct($marque, $modele) {\n    $this->marque = $marque;\n    $this->modele = $modele;\n  }\n\n  public function afficherInfo() {\n    echo \"Voiture: {$this->marque} {$this->modele}\";\n  }\n}\n\n$maVoiture = new Voiture('Renault', 'Clio');\n$maVoiture->afficherInfo(); Exemple en Python : class Voiture:\n  def __init__(self, marque, modele):\n    self.marque = marque\n    self.modele = modele\n\n  def afficher_info(self):\n    print(f\"Voiture: {self.marque} {self.modele}\")\n\nma_voiture = Voiture('Peugeot', '308')\nma_voiture.afficher_info()"
@@ -2614,10 +2617,10 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
+                "Un mot-clé réservé utilisé uniquement dans les fonctions statiques pour référencer la classe entière",
+                "Une variable temporaire utilisée pour stocker le nom d'une méthode",
                 "Le mot-clé this (en JavaScript et Java) ou self (en Python) ou $this (en PHP) fait référence à l'instance actuelle de la classe dans laquelle il est utilisé",
-                "Une réponse aléatoire A"
+                "Un alias utilisé pour importer une autre classe dans le même fichier"
             ],
             correct: 2,
             explanation: "Le mot-clé this (en JavaScript et Java) ou self (en Python) ou $this (en PHP) fait référence à l'instance actuelle de la classe dans laquelle il est utilisé. Il permet d'accéder aux attributs et méthodes de l'objet à l'intérieur de la classe. Voici des exemples dans différents langages : Exemple en JavaScript : class Personne {\n  constructor(nom) {\n    this.nom = nom;\n  }\n\n  sePresenter() {\n    console.log(`Hello ${this.nom}.`);\n  }\n} Exemple en Java : public class Personne {\n  private String nom;\n\n  public Personne(String nom) {\n    this.nom = nom;\n  }\n\n  public void sePresenter() {\n    System.out.println(\"Hello \" + this.nom + \".\");\n  }\n} Exemple en PHP : class Personne {\n  private $nom;\n\n  public function __construct($nom) {\n    $this->nom = $nom;\n  }\n\n  public function sePresenter() {\n    echo \"Hello {$this->nom}.\";\n  }\n} Exemple en Python : class Personne:\n  def __init__(self, nom):\n    self.nom = nom\n\n  def se_presenter(self):\n    print(f\"Hello {self.nom}.\")"
@@ -2627,9 +2630,9 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
+               "Le fait de remplacer une méthode héritée d'une classe par une nouvelle version avec le même nom et les mêmes paramètres",
+                "Une technique qui permet d'utiliser le même nom de variable dans plusieurs classes différentes",
+                "Une méthode qui appelle automatiquement d'autres méthodes du même nom dans les classes parentes",
                 "La surcharge de méthode est un concept en POO qui permet de définir plusieurs méthodes avec le même nom dans une classe, mais avec des paramètres différents"
             ],
             correct: 3,
@@ -2640,9 +2643,9 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
+               "Un processus qui permet d’ajouter de nouveaux opérateurs à un langage de programmation",
+                "Une méthode qui change automatiquement le type d’un opérateur selon le contexte d’exécution",
+                "Une technique utilisée pour fusionner plusieurs classes partageant les mêmes opérateurs",
                 "La surcharge d'opérateur est une fonctionnalité en POO qui permet de redéfinir le comportement des opérateurs standard pour des objets de classes personnalisées"
             ],
             correct: 3,
@@ -2653,9 +2656,9 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
+                "En limitant le code à une seule classe par application pour simplifier sa lecture",
+                "En évitant complètement la duplication de variables globales dans un projet",
+                "En imposant la programmation procédurale dans tous les projets orientés objet",
                 "La POO améliore la réutilisabilité du code de plusieurs façons"
             ],
             correct: 3,
@@ -2666,9 +2669,9 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
+                "En imposant que toutes les classes soient déclarées dans un seul fichier pour plus de cohérence",
+                "En réduisant la taille du code en supprimant automatiquement les méthodes inutilisées",
+                "En interdisant la création d'objets dynamiques pendant l'exécution",
                 "La POO facilite la maintenance du code de plusieurs manières essentielles"
             ],
             correct: 3,
@@ -2679,10 +2682,10 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "La composition est une relation entre classes où une classe (le composite ) est responsable de la création et de la destruction de ses parties (les composants )",
-                "Une réponse aléatoire A"
+                "Une méthode permettant d’hériter des classes sans utiliser le mot-clé 'extends'",
+                "Une approche qui consiste à exécuter plusieurs objets en parallèle dans un même thread",
+                "La composition est une relation entre classes où une classe (le composite) est responsable de la création et de la destruction de ses parties (les composants)",
+                "Une manière de convertir automatiquement les classes en fonctions pour améliorer la performance"
             ],
             correct: 2,
             explanation: "La composition est une relation entre classes où une classe (le composite ) est responsable de la création et de la destruction de ses parties (les composants ). Si le composite est détruit, tous ses composants le sont également. Cela implique une relation forte où les composants ne peuvent exister indépendamment du composite."
@@ -2692,10 +2695,10 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C",
+                "Dans l'agrégation, les objets partagent la même mémoire, tandis que dans la composition ils en ont une copie indépendante",
+                "L'agrégation est utilisée uniquement pour les classes abstraites alors que la composition ne l'est pas",
                 "La différence entre l'agrégation et la composition réside dans la force de la relation",
-                "Une réponse aléatoire A"
+                "L'agrégation empêche l'utilisation du mot-clé 'new' contrairement à la composition"
             ],
             correct: 2,
             explanation: "La différence entre l'agrégation et la composition réside dans la force de la relation. L'agrégation est une relation 'partie-tout' plus faible, où les parties peuvent exister indépendamment du tout. Par exemple, une classe 'Équipe' peut avoir des 'Joueurs', mais les 'Joueurs' peuvent exister sans l' 'Équipe'. En revanche, dans une composition, les parties ne peuvent pas exister sans le tout, comme une 'Maison' et ses 'Chambres'."
@@ -2705,10 +2708,10 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "L' héritage multiple est un mécanisme de POO qui permet à une classe de dériver de plusieurs classes parentes",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "L'héritage multiple est un mécanisme de POO qui permet à une classe de dériver de plusieurs classes parentes",
+                "Un mécanisme qui interdit à une classe d'avoir plusieurs méthodes du même nom",
+                "Un concept qui empêche la surcharge de méthodes dans les classes enfants",
+                "Une technique de duplication d'attributs entre classes indépendantes"
             ],
             correct: 0,
             explanation: "L' héritage multiple est un mécanisme de POO qui permet à une classe de dériver de plusieurs classes parentes. Cela signifie qu'une classe enfant peut hériter des attributs et des méthodes de plusieurs classes, combinant ainsi leurs fonctionnalités. Dans les faits, il est supporté par peu de langages de programmation comme C++, Eiffel ou Python. Bien que puissant, l'héritage multiple peut introduire des complexités, notamment le problème du diamant , où une classe hérite de deux classes qui ont un ancêtre commun. Cela crée une ambiguïté sur la méthode à utiliser si les classes parentes ont des implémentations différentes d'une même méthode. Pour gérer ces complexités, il est recommandé d'utiliser des interfaces ou des traits dans les langages qui les supportent, ce qui permet de combiner des comportements sans les complications de l'héritage multiple de classes."
@@ -2719,9 +2722,10 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "La POO gère les exceptions et les erreurs en utilisant une hiérarchie de classes d'exceptions",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire A"
+                "En supprimant automatiquement les méthodes qui génèrent des erreurs pendant la compilation",
+                "En créant un fichier de log pour chaque objet qui échoue à s'exécuter correctement",
+                "En arrêtant le programme dès qu'une exception est rencontrée, sans possibilité de gestion"
+
             ],
             correct: 0,
             explanation: "La POO gère les exceptions et les erreurs en utilisant une hiérarchie de classes d'exceptions. Lorsqu'une erreur se produit, une exception est lancée (thrown) et peut être attrapée (caught) et gérée par le code. Les exceptions sont lancées avec le mot-clé throw et attrapées dans des blocs try...catch . Les classes d'exceptions peuvent être personnalisées pour représenter différents types d'erreurs. Les exceptions permettent de propager les erreurs à travers la pile d'appels des méthodes jusqu'à ce qu'elles soient gérées. Cela évite de mélanger la logique métier avec la gestion des erreurs et rend le code plus lisible et maintenable."
@@ -2731,10 +2735,10 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
+                "Ils sont utilisés pour créer des objets qui peuvent être modifiés dynamiquement après leur instanciation",
+                "Ils servent principalement à stocker les variables globales partagées entre plusieurs classes",
                 "Un objet immuable est un objet dont l'état ne peut pas être modifié après sa création",
-                "Une réponse aléatoire B"
+                "Ils permettent de supprimer automatiquement les attributs inutilisés dans une classe"
             ],
             correct: 2,
             explanation: "Un objet immuable est un objet dont l'état ne peut pas être modifié après sa création. En POO, les objets immuables sont souvent utilisés pour représenter des données qui ne doivent pas changer, comme les chaînes de caractères ou les nombres. Les objets immuables offrent plusieurs avantages : - Ils sont thread-safe car leur état ne peut pas être modifié par plusieurs threads en même temps. - Ils sont plus sûrs car il est impossible de les corrompre accidentellement. - Ils sont plus faciles à comprendre et à raisonner car leur état ne change pas. - Ils peuvent être utilisés comme clés dans des collections comme les dictionnaires ou les sets."
@@ -2744,10 +2748,10 @@ const questionsData = {
             theme: "La POO",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire B",
+                "Un processus qui consiste à fusionner plusieurs classes en une seule pour optimiser le stockage",
                 "La sérialisation est le processus qui consiste à convertir un objet en une séquence de bits qui peut être stockée ou transmise, et à le désérialiser pour recréer l'objet original",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A"
+                "Une technique de chiffrement utilisée pour protéger les objets sensibles en mémoire",
+                "Une méthode utilisée pour créer des objets temporaires à partir d'une base de données"
             ],
             correct: 1,
             explanation: "La sérialisation est le processus qui consiste à convertir un objet en une séquence de bits qui peut être stockée ou transmise, et à le désérialiser pour recréer l'objet original. En POO, la sérialisation permet de : - Stocker l'état d'un objet sur disque ou dans une base de données, - Transmettre des objets sur un réseau, - Cloner des objets en mémoire, - Implémenter la persistance des objets. La sérialisation fonctionne en parcourant récursivement les champs de l'objet et en les convertissant en une représentation sérialisée. La désérialisation fait l'inverse en recréant l'objet à partir de cette représentation."
