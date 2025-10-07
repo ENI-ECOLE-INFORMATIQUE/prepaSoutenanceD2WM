@@ -1906,7 +1906,7 @@ const questionsData = {
                 "Parce qu’elle simplifie la maintenance du code source du site"
             ],
             correct: 2,
-            explanation: "L'accessibilité est importante pour plusieurs raisons fondamentales. - L'inclusion numérique, ... (etc.)"
+            explanation: "L'accessibilité est importante pour plusieurs raisons fondamentales. - L' inclusion numérique , car elle permet aux personnes en situation de handicap d'accéder à l'information et aux services en ligne. - L' Égalité des droits , car elle garantit que chacun puisse participer pleinement à la société numérique, sans discrimination. - La Responsabilité sociale , car elle démontre l'engagement d'une organisation envers l'inclusion et la diversité. - La Conformité légale , car dans de nombreux pays, l'accessibilité est une obligation légale pour les sites web publics et certains sites privés. - L' Amélioration de l'expérience utilisateur , car les pratiques d'accessibilité bénéficient à tous les utilisateurs en rendant le contenu plus facile à lire et à naviguer. - L' Adaptabilité , car elle facilite l'accès au contenu sur divers appareils et dans différents contextes d'utilisation. - L' Avantage commercial , car elle permet d'atteindre un public plus large, améliorant potentiellement la visibilité et les revenus"
         },
         {
             question: "Quels sont les principaux standards et référentiels d'accessibilité ?",
@@ -1919,7 +1919,7 @@ const questionsData = {
                 "Le W3C HTML5 Framework pour le design réactif"
             ],
             correct: 2,
-            explanation: "Les WCAG (Web Content Accessibility Guidelines) ... (etc.)"
+            explanation: "Les WCAG (Web Content Accessibility Guidelines) sont des directives internationales qui fournissent des recommandations pour rendre le contenu web plus accessible. Le RGAA (Référentiel Général d'Amélioration de l'Accessibilité) est un cadre français qui s'inspire des WCAG et établit des critères spécifiques pour l'accessibilité des sites publics."
         },
         {
             question: "Comment intégrer l'accessibilité dès la phase de conception d'un site web ?",
@@ -1932,7 +1932,7 @@ const questionsData = {
                 "En réduisant le nombre d’images et d’icônes pour alléger le site"
             ],
             correct: 0,
-            explanation: "Pour intégrer l'accessibilité dès la phase de conception, il est essentiel... (etc.)"
+            explanation: "Pour intégrer l'accessibilité dès la phase de conception, il est essentiel de suivre une approche centrée sur l'utilisateur et de considérer les besoins des utilisateurs en situation de handicap. Cela passe par la création de maquettes accessibles, l'utilisation de balises sémantiques et la planification de tests d'accessibilité tout au long du processus de développement"
         },
         {
             question: "Quelles sont les erreurs courantes à éviter ?",
@@ -1945,7 +1945,7 @@ const questionsData = {
                 "Les erreurs suivantes sont à éviter : - l'utilisation de couleurs à faible contraste, - l'absence de textes alternatifs pour les images, - les formulaires non accessibles, - les éléments cliquables non accessibles au clavier, - le manque de balises sémantiques appropriées"
             ],
             correct: 3,
-            explanation: "Les erreurs suivantes sont à éviter : ... (etc.)"
+            explanation: "Les erreurs suivantes sont à éviter : - l'utilisation de couleurs à faible contraste, - l'absence de textes alternatifs pour les images, - les formulaires non accessibles, - les éléments cliquables non accessibles au clavier, - le manque de balises sémantiques appropriées"
         },
         {
             question: "Comment les technologies d'assistance interagissent-elles avec le contenu web ?",
@@ -1958,7 +1958,7 @@ const questionsData = {
                 "Elles remplacent les images par des vidéos pour rendre le contenu plus attractif"
             ],
             correct: 0,
-            explanation: "Les technologies d'assistance, comme les lecteurs d'écran... (etc.)"
+            explanation: "Les technologies d'assistance , comme les lecteurs d'écran , interprètent le contenu HTML et le convertissent en audio ou en braille pour les utilisateurs. Elles dépendent de balises sémantiques appropriées et d' attributs ARIA pour fournir une navigation et une compréhension efficaces du contenu. Voici quelques exemples : <header>, <nav>, <main>, <article>, <section>, <footer>, <img alt=\"description\">, et les attributs ARIA comme role, aria-label, et aria-hidden."
         },
         {
             question: "Quelles pratiques de design peuvent améliorer l'accessibilité d'un site web ?",
@@ -1971,7 +1971,7 @@ const questionsData = {
                 "Employer uniquement des couleurs vives et saturées pour attirer l'œil"
             ],
             correct: 0,
-            explanation: "Les pratiques de design qui améliorent l'accessibilité comprennent : ... (etc.)"
+            explanation: "Les pratiques de design qui améliorent l'accessibilité comprennent : - l'utilisation de polices lisibles (sans-serif), - le choix de couleurs avec un bon contraste, - la création de mises en page flexibles, - l'utilisation de balises sémantiques, - la structuration logique du contenu."
         },
         {
             question: "Comment tester l'accessibilité d'un site web ?",
@@ -1984,7 +1984,7 @@ const questionsData = {
                 "Pour tester l'accessibilité d'un site web, vous pouvez utiliser des outils d'évaluation automatisés comme WAVE, ou le Lighthouse du navigateur Chrome"
             ],
             correct: 3,
-            explanation: "Pour tester l'accessibilité d'un site web, vous pouvez utiliser... (etc.)"
+            explanation: "Pour tester l'accessibilité d'un site web, vous pouvez utiliser des outils d'évaluation automatisés comme WAVE , ou le Lighthouse du navigateur Chrome. Des tests manuels avec des technologies d'assistance peuvent être réalisés. Il est également recommandé d'impliquer des utilisateurs en situation de handicap dans le processus de test."
         },
         {
             question: "Quelles sont les obligations légales pour les entreprises ?",
@@ -1997,7 +1997,7 @@ const questionsData = {
                 "Garantir la compatibilité avec les anciens navigateurs sans exception"
             ],
             correct: 1,
-            explanation: "Les entreprises doivent respecter des lois sur l'accessibilité, telles que le RGAA... (etc.)"
+            explanation: "Les entreprises doivent respecter des lois sur l'accessibilité, telles que le RGAA en France ou l' ADA aux États-Unis. Les obligations comprennent : - Assurer l'accessibilité des sites web pour les personnes en situation de handicap, - Suivre les normes d'accessibilité définies par le RGAA ou l'ADA, - Fournir des contenus alternatifs pour les médias non textuels, - Rendre les formulaires et éléments interactifs accessibles au clavier, - Effectuer des tests d'accessibilité réguliers pour garantir la conformité."
         },
         //--------------------------------------- Intermédiaires
         {
