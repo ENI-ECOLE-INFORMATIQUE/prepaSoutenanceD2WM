@@ -2255,9 +2255,9 @@ const questionsData = {
             theme: "JS - JavaScript",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B",
+                "Le lazy loading consiste à charger l'ensemble des ressources du site dès le premier affichage pour éviter des appels réseau ultérieurs. On l’implémente en regroupant tous les scripts dans un seul fichier.",
+                "Le lazy loading est une technique qui précharge toutes les images et vidéos d'une page dans le cache du navigateur avant que l'utilisateur ne les voie, pour accélérer la navigation.",
+                "Le lazy loading est une méthode de compression du code JavaScript et CSS, mise en place via des outils comme Webpack ou Babel, pour réduire la taille des fichiers.",
                 "Le lazy loading (chargement paresseux) est une technique d'optimisation qui consiste à retarder le chargement de ressources non essentielles jusqu'à ce qu'elles soient nécessaires"
             ],
             correct: 3,
@@ -2268,10 +2268,10 @@ const questionsData = {
             theme: "JS - JavaScript",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
+                "Le localStorage est une base de données externe utilisée par le navigateur pour stocker des fichiers volumineux comme des images et des vidéos.",
                 "Le localStorage est une API web qui permet de stocker des données sous forme de paires clé-valeur dans le navigateur de l'utilisateur",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire B"
+                "Le localStorage est un service cloud qui permet de sauvegarder automatiquement les données de l’utilisateur sur les serveurs de l’application",
+                "Le localStorage est une mémoire temporaire utilisée uniquement pendant la session de navigation et effacée dès que l’utilisateur ferme le navigateur."
             ],
             correct: 1,
             explanation: "Le localStorage est une API web qui permet de stocker des données sous forme de paires clé-valeur dans le navigateur de l'utilisateur.\nCes données persistent même après la fermeture du navigateur, contrairement aux sessions. Le <b>localStorage</b> a une capacité de stockage plus importante que les cookies (généralement 5-10 Mo).\nPour l'utiliser, on emploie les méthodes setItem(key, value) pour stocker une valeur, getItem(key) pour la récupérer, removeItem(key) pour la supprimer, et <b>clear()</b> pour tout effacer.\nIl est important de noter que localStorage ne stocke que des chaînes de caractères, donc les objets doivent être sérialisés (par exemple avec JSON.stringify() ) avant d'être stockés.\n\nExemple d'utilisation du localStorage :\n\n//Stocker une valeur simple\nlocalStorage.setItem('username', 'John');\n// Récupérer une valeur\nlet name = localStorage.getItem('username');\nconsole.log(name); // Affiche : John \n\n// Stocker un objet (après sérialisation)\nconst user = { name: 'Alice', age: 30 };\nlocalStorage.setItem('user', JSON.stringify(user));\n\n// Récupérer et désérialiser un objet\nconst storedUser = JSON.parse(localStorage.getItem('user'));\nconsole.log(storedUser.name);\n\n// Affiche : Alice \n// Supprimer un élément\nlocalStorage.removeItem('username');\n\n// Effacer tout le localStorage\nlocalStorage.clear();"
@@ -2282,9 +2282,9 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "Le sessionStorage est un mécanisme de stockage web côté client, similaire au localStorage, mais avec une durée de vie limitée à la session de navigation",
-                "Une réponse aléatoire C",
-                "Une réponse aléatoire A",
-                "Une réponse aléatoire B"
+                "Le sessionStorage est une base de données permanente du navigateur permettant de stocker des informations même après la fermeture du navigateur.",
+                "Le sessionStorage est un espace de stockage partagé entre plusieurs onglets et fenêtres du même navigateur, accessible par toutes les sessions ouvertes du site",
+                "Le sessionStorage est un service distant qui enregistre les données de session sur le serveur afin qu’elles soient disponibles pour tous les utilisateurs connectés"
             ],
             correct: 0,
             explanation: "Le sessionStorage est un mécanisme de stockage web côté client, similaire au localStorage, mais avec une durée de vie limitée à la session de navigation.\nLes données stockées persistent uniquement jusqu'à la fermeture de l'onglet ou de la fenêtre du navigateur, après quoi elles sont automatiquement effacées.\nCe mécanisme offre une capacité de stockage généralement plus importante que les cookies (environ 5-10 Mo) et est limité au domaine qui l'a créé, respectant le principe de même origine.\nIl stocke les données sous forme de paires clé-valeur de chaînes de caractères.\nLe sessionStorage est couramment utilisé pour stocker des données temporaires nécessaires pendant la navigation, sauvegarder l'état d'une application web entre les pages, ou gérer des informations de session sans recourir au serveur.\nIl offre ainsi un moyen pratique et sécurisé de gérer des données éphémères côté client, tout en garantissant qu'elles ne persistent pas au-delà de la session en cours."
@@ -2294,10 +2294,10 @@ const questionsData = {
             theme: "JS - JavaScript",
             level: "Facile",
             answers: [
-                "Une réponse aléatoire A",
+                "Un cookie est un fichier exécutable téléchargé sur l’ordinateur de l’utilisateur pour accélérer le chargement des sites web.",
                 "Un cookie est un petit fichier texte stocké par un site web sur l'appareil de l'utilisateur",
-                "Une réponse aléatoire B",
-                "Une réponse aléatoire C"
+                "Un cookie est une base de données locale utilisée par le navigateur pour stocker l’ensemble du contenu d’un site web.",
+                "Un cookie est un type de cache temporaire utilisé uniquement pour améliorer les performances graphiques du navigateur."
             ],
             correct: 1,
             explanation: "Un cookie est un petit fichier texte stocké par un site web sur l'appareil de l'utilisateur.\nIl contient des informations sur la navigation et est renvoyé au site lors des visites ultérieures.\nLes cookies servent à mémoriser les préférences de l'utilisateur, maintenir une session, et suivre le comportement à des fins d'analyse ou de publicité.\nIl existe deux types principaux : les cookies first-party créés par le site visité, et les cookies third-party créés par d'autres domaines, souvent pour la publicité.\nLes cookies peuvent être persistants (conservés après la fermeture du navigateur) ou de session (supprimés à la fin de la session).\nLeur utilisation est réglementée dans de nombreux pays pour protéger la vie privée des utilisateurs.\nLes cookies sont souvent nécessaires dans la personnalisation de l'expérience web, mais soulèvent également des questions de confidentialité et de sécurité."
@@ -2567,7 +2567,7 @@ const questionsData = {
 
             ],
             correct: 1,
-            explanation: "Les principales différences sont : - Une classe abstraite peut avoir des méthodes concrètes et abstraites, une interface n'a que des méthodes abstraites sous la forme de signature. - Une classe peut hériter d'une seule classe abstraite, mais peut implémenter plusieurs interfaces. - Les classes abstraites peuvent avoir des constructeurs, pas les interfaces. - Les classes abstraites peuvent avoir des attributs d'instance, les interfaces ne peuvent avoir que des constantes."
+            explanation: "Les principales différences sont :\n\t- Une classe abstraite peut avoir des méthodes concrètes et abstraites, une interface n'a que des méthodes abstraites sous la forme de signature.\n\t- Une classe peut hériter d'une seule classe abstraite, mais peut implémenter plusieurs interfaces.\n\t- Les classes abstraites peuvent avoir des constructeurs, pas les interfaces.\n\t- Les classes abstraites peuvent avoir des attributs d'instance, les interfaces ne peuvent avoir que des constantes."
         },
         {
             question: "Quelle est la différence entre une méthode de classe et une méthode d'instance ?",
@@ -2580,7 +2580,7 @@ const questionsData = {
                 "Une méthode d’instance ne peut contenir aucun paramètre"
             ],
             correct: 1,
-            explanation: "Une méthode de classe (statique) appartient à la classe et peut être appelée sans instance. Une méthode d'instance nécessite une instance pour être appelée. Voici des exemples : Exemple en JavaScript : class Exemple {\n  static methodeDeClasse() {\n    console.log(\"Méthode de classe.\");\n  }\n\n  methodeDInstance() {\n    console.log(\"Méthode d'instance.\");\n  }\n}\n\nExemple.methodeDeClasse();\n\nconst ex = new Exemple();\nex.methodeDInstance(); Exemple en Java : class Exemple {\n  static void methodeDeClasse() {\n    System.out.println(\"Méthode de classe.\");\n  }\n\n  void methodeDInstance() {\n    System.out.println(\"Méthode d'instance.\");\n  }\n}\n\npublic class Main {\n  public static void main(String[] args) {\n    Exemple.methodeDeClasse();\n\n    Exemple ex = new Exemple();\n    ex.methodeDInstance();\n  }\n} Exemple en PHP : class Exemple {\n  public static function methodeDeClasse() {\n    echo \"Méthode de classe.\\n\";\n  }\n\n  public function methodeDInstance() {\n    echo \"Méthode d'instance.\\n\";\n  }\n}\n\nExemple::methodeDeClasse();\n\n$ex = new Exemple();\n$ex->methodeDInstance();\n\n<b>Exemple en Python</b>:\nclass Exemple:\n  @classmethod\n  def methodeDeClasse(cls):\n    print(\"Méthode de classe.\")\n\n  def methodeDInstance(self):\n    print(\"Méthode d'instance.\")\n\nExemple.methodeDeClasse()\n\nex = Exemple()\nex.methodeDInstance()"
+            explanation: "Une méthode de classe (statique) appartient à la classe et peut être appelée sans instance.\nUne méthode d'instance nécessite une instance pour être appelée.\n\nVoici des exemples :\nExemple en <b>JavaScript</b>:\nclass Exemple {\n  static methodeDeClasse() {\n    console.log(\"Méthode de classe.\");\n  }\n\n  methodeDInstance() {\n    console.log(\"Méthode d'instance.\");\n  }\n}\n\nExemple.methodeDeClasse();\n\nconst ex = new Exemple();\nex.methodeDInstance();\n\nExemple en <b>Java</b> :\nclass Exemple {\n  static void methodeDeClasse() {\n    System.out.println(\"Méthode de classe.\");\n  }\n\n  void methodeDInstance() {\n    System.out.println(\"Méthode d'instance.\");\n  }\n}\n\npublic class Main {\n  public static void main(String[] args) {\n    Exemple.methodeDeClasse();\n\n    Exemple ex = new Exemple();\n    ex.methodeDInstance();\n  }\n}\n\nExemple en <b>PHP</b> :\nclass Exemple {\n  public static function methodeDeClasse() {\n    echo \"Méthode de classe.\\n\";\n  }\n\n  public function methodeDInstance() {\n    echo \"Méthode d'instance.\\n\";\n  }\n}\n\nExemple::methodeDeClasse();\n\n$ex = new Exemple();\n$ex->methodeDInstance();\n\n<b>Exemple en Python</b>:\nclass Exemple:\n  @classmethod\n  def methodeDeClasse(cls):\n    print(\"Méthode de classe.\")\n\n  def methodeDInstance(self):\n    print(\"Méthode d'instance.\")\n\nExemple.methodeDeClasse()\n\nex = Exemple()\nex.methodeDInstance()"
         },
         {
             question: "Qu'est-ce que le \"getter\" et le \"setter\" ?",
