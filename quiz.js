@@ -1258,7 +1258,7 @@ const questionsData = {
                 "Un gestionnaire de base de données"
             ],
             correct: 1,
-            explanation: "Les variables CSS , également connues sous le nom de Custom Properties , permettent de stocker et de réutiliser des valeurs dans une feuille de style. Définissez une variable avec -- et référencez-la avec var(). Elles peuvent être déclarées au niveau global ou local. Voici un exemple de déclaration et d'utilisation : :root {\n    --primary-color: #3498db;\n    --secondary-color: #2ecc71;\n}\n\nbody {\n    color: var(--primary-color);\n}\n\n.button {\n    color: var(--secondary-color);\n    color: white;\n    padding: 10px 20px;\n    border: none;\n    border-radius: 5px;\n    cursor: pointer;\n}"
+            explanation: "Les variables CSS , également connues sous le nom de Custom Properties , permettent de stocker et de réutiliser des valeurs dans une feuille de style.\nDéfinissez une variable avec -- et référencez-la avec var().\nElles peuvent être déclarées au niveau global ou local. \n\nVoici un exemple de déclaration et d'utilisation :\n:root {\n    --primary-color: #3498db;\n    --secondary-color: #2ecc71;\n}\n\nbody {\n    color: var(--primary-color);\n}\n\n.button {\n    color: var(--secondary-color);\n    color: white;\n    padding: 10px 20px;\n    border: none;\n    border-radius: 5px;\n    cursor: pointer;\n}"
         },
         {
             question: "Qu'est-ce qu'un préprocesseur CSS ?",
@@ -1271,7 +1271,7 @@ const questionsData = {
                 "Un gestionnaire de base de données"
             ],
             correct: 1,
-            explanation: "Un préprocesseur CSS est un langage qui étend les fonctionnalités de CSS, permettant d'utiliser des fonctionnalités avancées comme les variables, les mixins, les fonctions et l'imbrication. Ces langages sont compilés en CSS standard avant d'être utilisés dans le navigateur. Voici deux exemples : - Sass (Syntactically Awesome Style Sheets) est un préprocesseur qui offre des fonctionnalités avancées pour écrire du CSS de manière plus efficace. SCSS (Sassy CSS) est une syntaxe de Sass qui est plus proche du CSS traditionnel, permettant d'utiliser des fonctionnalités supplémentaires tout en conservant la syntaxe CSS. - LESS est un préprocesseur qui permet également d'utiliser des fonctionnalités avancées comme les variables, les mixins, les fonctions et l'imbrication, rendant le CSS plus dynamique et maintenable."
+            explanation: "Un préprocesseur CSS est un langage qui étend les fonctionnalités de CSS, permettant d'utiliser des fonctionnalités avancées comme les variables, les mixins, les fonctions et l'imbrication.\n\nCes langages sont compilés en CSS standard avant d'être utilisés dans le navigateur.\n\nVoici deux exemples :\n\t- Sass (Syntactically Awesome Style Sheets) est un préprocesseur qui offre des fonctionnalités avancées pour écrire du CSS de manière plus efficace.\nSCSS (Sassy CSS) est une syntaxe de Sass qui est plus proche du CSS traditionnel, permettant d'utiliser des fonctionnalités supplémentaires tout en conservant la syntaxe CSS.\n\t- LESS est un préprocesseur qui permet également d'utiliser des fonctionnalités avancées comme les variables, les mixins, les fonctions et l'imbrication, rendant le CSS plus dynamique et maintenable."
         },
         {
             question: "Qu'est-ce qu'un framework CSS ?",
@@ -1284,7 +1284,7 @@ const questionsData = {
                 "Un compilateur"
             ],
             correct: 0,
-            explanation: "Un framework CSS est une bibliothèque de styles préconçus qui facilite le développement de sites web en fournissant des composants et des styles réutilisables. Ils permettent de gagner du temps et d'assurer la cohérence visuelle. Voici quatre exemples : - Bootstrap est un framework CSS populaire qui fournit des composants et des styles préconçus pour faciliter le développement de sites web responsives, incluant une grille flexible, des boutons, des formulaires et d'autres éléments d'interface utilisateur. - Tailwind CSS est un framework CSS utilitaire qui permet de créer des designs personnalisés rapidement en utilisant des classes utilitaires. Contrairement à d'autres, il ne fournit pas de composants préconçus, mais offre une grande flexibilité pour construire des interfaces."
+            explanation: "Un framework CSS est une bibliothèque de styles préconçus qui facilite le développement de sites web en fournissant des composants et des styles réutilisables. Ils permettent de gagner du temps et d'assurer la cohérence visuelle.\nVoici quatre exemples :\n\t- Bootstrap est un framework CSS populaire qui fournit des composants et des styles préconçus pour faciliter le développement de sites web responsives, incluant une grille flexible, des boutons, des formulaires et d'autres éléments d'interface utilisateur.\n\t- Tailwind CSS est un framework CSS utilitaire qui permet de créer des designs personnalisés rapidement en utilisant des classes utilitaires.\nContrairement à d'autres, il ne fournit pas de composants préconçus, mais offre une grande flexibilité pour construire des interfaces."
         },
         {
             question: "Quelles sont les principales conventions de nommage CSS ?",
@@ -1297,7 +1297,7 @@ const questionsData = {
                 "Un gestionnaire de base de données"
             ],
             correct: 1,
-            explanation: "Lorsqu'un projet web prend de l'ampleur et que les fichiers CSS deviennent volumineux, il est souvent recommandé d'adopter une convention de nommage précise pour maintenir la cohérence et la lisibilité du code. Deux conventions largement utilisées dans l'industrie sont OOCSS (Object Oriented CSS) et BEM ( Block , Element , Modifier ). OOCSS est une approche qui applique les principes de la programmation orientée objet au CSS. Elle encourage la création de composants réutilisables et la séparation de la structure et de l'apparence. BEM , quant à elle, est une méthodologie qui divise l'interface utilisateur en blocs indépendants. Elle utilise une nomenclature spécifique pour définir les relations entre les éléments, facilitant ainsi la compréhension de la structure du code."
+            explanation: "Lorsqu'un projet web prend de l'ampleur et que les fichiers CSS deviennent volumineux, il est souvent recommandé d'adopter une convention de nommage précise pour maintenir la cohérence et la lisibilité du code.\nDeux conventions largement utilisées dans l'industrie sont OOCSS (Object Oriented CSS) et BEM ( Block , Element , Modifier ).\n\n<b>OOCSS</b> est une approche qui applique les principes de la programmation orientée objet au CSS.\nElle encourage la création de composants réutilisables et la séparation de la structure et de l'apparence.\n\n<b>BEM</b> , quant à elle, est une méthodologie qui divise l'interface utilisateur en blocs indépendants.\nElle utilise une nomenclature spécifique pour définir les relations entre les éléments, facilitant ainsi la compréhension de la structure du code."
         }
     ],
     "Le responsive design": [
