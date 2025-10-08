@@ -1136,7 +1136,7 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "Un compilateur",
-                "Il existe trois façons d'appliquer des styles CSS à un document HTML : - Styles en ligne : <p style=\"color: red;\">Texte rouge</p> - Balise <style> dans l'en-tête : <style> p { color: red; } </style> - Feuille de style externe : <link rel=\"stylesheet\" href=\"styles",
+                "Il existe trois façons d'appliquer des styles CSS à un document HTML :\n\t- Styles en ligne : &lt;p style=\"color: red;\">Texte rouge</p>\n\t- Balise &lt;style> dans l'en-tête : <style> p { color: red; } </style> \n\t- Feuille de style externe : &lt;link rel=\"stylesheet\" href=\"styles",
                 "Un langage de programmation orienté objet",
                 "Un gestionnaire de base de données"
             ],
@@ -1154,7 +1154,7 @@ const questionsData = {
                 "Un gestionnaire de base de données"
             ],
             correct: 1,
-            explanation: "Le modèle de boîte en HTML et en CSS décrit la façon dont les éléments sont affichés et dimensionnés sur une page. Chaque élément est considéré comme une boîte, avec des propriétés telles que la marge, la bordure, le remplissage et le contenu. En modulan, chacune d'entre-elles, vous pouvez faire évoluer votr emise en page."
+            explanation: "Le modèle de boîte en HTML et en CSS décrit la façon dont les éléments sont affichés et dimensionnés sur une page.\nChaque élément est considéré comme une boîte, avec des propriétés telles que la marge, la bordure, le remplissage et le contenu.\n\nEn modulant, chacune d'entre-elles, vous pouvez faire évoluer votre mise en page."
         },
         {
             question: "Comment fonctionne le positionnement en CSS (static, relative, absolute, fixed) ?",
@@ -1167,7 +1167,7 @@ const questionsData = {
                 "Un gestionnaire de base de données"
             ],
             correct: 2,
-            explanation: "Le CSS offre différentes options de positionnement : - Static (par défaut) : positionnement normal dans le flux du document. - Relative : positionnement par rapport à sa position normale. - Absolute : positionnement par rapport au parent positionné le plus proche. - Fixed : positionnement par rapport à la fenêtre du navigateur."
+            explanation: "Le CSS offre différentes options de positionnement :\n\t- Static (par défaut) : positionnement normal dans le flux du document.\n\t- Relative : positionnement par rapport à sa position normale.\n\t- Absolute : positionnement par rapport au parent positionné le plus proche.\n\t- Fixed : positionnement par rapport à la fenêtre du navigateur."
         },
         {
             question: "Qu'est-ce que Flexbox ?",
@@ -1180,7 +1180,7 @@ const questionsData = {
                 "Un compilateur"
             ],
             correct: 2,
-            explanation: "Flexbox (Flexible Box Layout) est un module CSS conçu pour faciliter la création de mises en page flexibles et réactives. Il introduit un modèle de disposition unidimensionnel, permettant d'organiser les éléments en lignes ou en colonnes. On peut retenir les caractéristiques suivantes : - la direction qui permet de définir l'axe principal (horizontal ou vertical) le long duquel les éléments sont disposés;\n - l' alignement qui offre un contrôle précis sur la position des éléments le long des axes principal et secondaire;\n - l' ordre qui permet de modifier l'ordre d'affichage des éléments indépendamment de leur ordre dans le DOM;\n - la flexibilité permettant aux éléments de grandir ou rétrécir en fonction de l'espace disponible;\n - la distribution de l'espace qui gère efficacement la répartition de l'espace entre et autour des éléments. Flexbox est particulièrement utile pour créer des mises en page responsives, des barres de navigation, des grilles simples, et pour centrer des éléments verticalement et horizontalement. Il simplifie considérablement de nombreux défis de mise en page qui étaient auparavant complexes avec les méthodes CSS traditionnelles."
+            explanation: "Flexbox (Flexible Box Layout) est un module CSS conçu pour faciliter la création de mises en page flexibles et réactives.\n\tIl introduit un modèle de disposition unidimensionnel, permettant d'organiser les éléments en lignes ou en colonnes.\n\nOn peut retenir les caractéristiques suivantes :\n\t- la direction qui permet de définir l'axe principal (horizontal ou vertical) le long duquel les éléments sont disposés;\n\t- l' alignement qui offre un contrôle précis sur la position des éléments le long des axes principal et secondaire;\n\t- l' ordre qui permet de modifier l'ordre d'affichage des éléments indépendamment de leur ordre dans le DOM;\n\t- la flexibilité permettant aux éléments de grandir ou rétrécir en fonction de l'espace disponible;\n\t- la distribution de l'espace qui gère efficacement la répartition de l'espace entre et autour des éléments. Flexbox est particulièrement utile pour créer des mises en page responsives, des barres de navigation, des grilles simples, et pour centrer des éléments verticalement et horizontalement. Il simplifie considérablement de nombreux défis de mise en page qui étaient auparavant complexes avec les méthodes CSS traditionnelles."
         },
         {
             question: "Qu'est-ce que CSS Grid ?",
@@ -1193,7 +1193,7 @@ const questionsData = {
                 "Le module CSS Grid est un système de mise en page en deux dimensions qui permet de diviser une page en lignes et colonnes"
             ],
             correct: 3,
-            explanation: "Le module CSS Grid est un système de mise en page en deux dimensions qui permet de diviser une page en lignes et colonnes. Il offre un contrôle précis sur la disposition des éléments dans un espace bidimensionnel. On peut retenir les caractéristiques suivantes : - les grilles explicites qui permettent de définir précisément le nombre et la taille des lignes et des colonnes;\n - les grilles implicites qui sont générées automatiquement lorsque le contenu déborde de la grille explicite;\n - le positionnement qui permet de placer des éléments dans des cellules spécifiques de la grille;\n - le contrôle de la taille des lignes et des colonnes, avec des unités flexibles comme fr (fraction);\n - les espaces (gutters) entre les lignes et les colonnes, facilement ajustables;\n - l' alignement du contenu à l'intérieur des cellules de la grille. CSS Grid est particulièrement efficace pour créer des mises en page complexes, des interfaces utilisateur responsives, et des structures de page entières. Il offre une flexibilité et un contrôle supérieurs à ceux des méthodes de mise en page traditionnelles, permettant des designs plus sophistiqués avec moins de code."
+            explanation: "Le module CSS Grid est un système de mise en page en deux dimensions qui permet de diviser une page en lignes et colonnes.\nIl offre un contrôle précis sur la disposition des éléments dans un espace bidimensionnel.\nOn peut retenir les caractéristiques suivantes :\n\t- les grilles explicites qui permettent de définir précisément le nombre et la taille des lignes et des colonnes;\n\t- les grilles implicites qui sont générées automatiquement lorsque le contenu déborde de la grille explicite;\n\t- le positionnement qui permet de placer des éléments dans des cellules spécifiques de la grille;\n\t- le contrôle de la taille des lignes et des colonnes, avec des unités flexibles comme fr (fraction);\n\t- les espaces (gutters) entre les lignes et les colonnes, facilement ajustables;\n\t- l' alignement du contenu à l'intérieur des cellules de la grille. CSS Grid est particulièrement efficace pour créer des mises en page complexes, des interfaces utilisateur responsives, et des structures de page entières.\nIl offre une flexibilité et un contrôle supérieurs à ceux des méthodes de mise en page traditionnelles, permettant des designs plus sophistiqués avec moins de code."
         },
         {
             question: "Comment gérer les polices et les typographies en CSS ?",
@@ -1206,7 +1206,7 @@ const questionsData = {
                 "Le CSS permet de contrôler les polices et les typographies de différentes manières : - Utiliser des propriétés comme font-family , font-size , font-weight , etc"
             ],
             correct: 3,
-            explanation: "Le CSS permet de contrôler les polices et les typographies de différentes manières : - Utiliser des propriétés comme font-family , font-size , font-weight , etc. - Importer des polices externes avec @font-face ou des services de polices en ligne. - Utiliser des unités relatives comme em et rem pour une mise à l'échelle flexible."
+            explanation: "Le CSS permet de contrôler les polices et les typographies de différentes manières :\n\t- Utiliser des propriétés comme font-family , font-size , font-weight , etc.\n\t- Importer des polices externes avec @font-face ou des services de polices en ligne.\n\t- Utiliser des unités relatives comme em et rem pour une mise à l'échelle flexible."
         },
         {
             question: "Qu'est-ce qu'une pseudo-classe et comment l'utiliser ?",
@@ -1219,7 +1219,7 @@ const questionsData = {
                 "Une pseudo-classe en CSS est un mot-clef ajouté à un sélecteur qui spécifie un état particulier de l'élément ciblé"
             ],
             correct: 3,
-            explanation: "Une pseudo-classe en CSS est un mot-clef ajouté à un sélecteur qui spécifie un état particulier de l'élément ciblé. L'exemple ci-dessous cible les liens lorsque l'utilisateur survole l'élément avec la souris. a:hover {\n  color: red;\n}"
+            explanation: "Une pseudo-classe en CSS est un mot-clef ajouté à un sélecteur qui spécifie un état particulier de l'élément ciblé.\n\nL'exemple ci-dessous cible les liens lorsque l'utilisateur survole l'élément avec la souris.\na:hover {\n  color: red;\n}"
         },
         {
             question: "Comment créer des animations et des transitions en CSS ?",
@@ -1232,7 +1232,7 @@ const questionsData = {
                 "Un langage de programmation orienté objet"
             ],
             correct: 1,
-            explanation: "Le CSS permet de créer des animations et des transitions de différentes manières. - Au travers des ransitions en utilisant les propriétés transition-property , transition-duration , etc. pour animer les changements d'état. - Au travers des animations en définissant des keyframes avec @keyframes et appliquez-les avec la propriété animation."
+            explanation: "Le CSS permet de créer des animations et des transitions de différentes manières.\n\t- Au travers des ransitions en utilisant les propriétés transition-property , transition-duration , etc. pour animer les changements d'état.\n\t- Au travers des animations en définissant des keyframes avec @keyframes et appliquez-les avec la propriété animation."
         },
         {
             question: "Qu'est-ce que la spécificité en CSS ? Comment fonctionne-t-elle ?",
@@ -1245,7 +1245,7 @@ const questionsData = {
                 "La spécificité en CSS est un système de points qui détermine quelle règle CSS a la priorité pour un élément donné"
             ],
             correct: 3,
-            explanation: "La spécificité en CSS est un système de points qui détermine quelle règle CSS a la priorité pour un élément donné. Elle se fonde sur le nombre et le type de sélecteurs utilisés. Les identifiants ont la priorité la plus élevée, suivis des classes, des attributs et des éléments. Voici comment la spécificité est calculée : - Identifiant avec 100 points, - Classe, attribut et pseudo-classe avec 10 points, - Élément et pseudo-élément avec 1 point. Par exemple, si vous avez les règles suivantes : #mon-id { color: red; }\n\n.ma-classe { color: blue; }\n\np { color: green; } Pour un élément <p class=\"ma-classe\" id=\"mon-id\">, la spécificité est calculée comme suit : - la règle #mon-id vaut 100 points, - la règle .ma-classe vaut 10 points, - la règle p vaut 1 point. L'élément <p class=\"ma-classe\" id=\"mon-id\"> aura la couleur de texte rouge, car l'identifiant a une spécificité plus élevée que la classe, qui a elle-même une spécificité plus élevée que l'élément."
+            explanation: "La spécificité en CSS est un système de points qui détermine quelle règle CSS a la priorité pour un élément donné.\nElle se fonde sur le nombre et le type de sélecteurs utilisés.\nLes identifiants ont la priorité la plus élevée, suivis des classes, des attributs et des éléments.\n\nVoici comment la spécificité est calculée :\n\t- Identifiant avec 100 points, \n\t- Classe, attribut et pseudo-classe avec 10 points, \n\t- Élément et pseudo-élément avec 1 point. \n\nPar exemple, si vous avez les règles suivantes :\n#mon-id { color: red; }\n\n.ma-classe { color: blue; }\n\np { color: green; }\nPour un élément <p class=\"ma-classe\" id=\"mon-id\">, la spécificité est calculée comme suit :\n\t- la règle #mon-id vaut 100 points,\n\t- la règle .ma-classe vaut 10 points,\n\t- la règle p vaut 1 point.\nL'élément <p class=\"ma-classe\" id=\"mon-id\"> aura la couleur de texte rouge, car l'identifiant a une spécificité plus élevée que la classe, qui a elle-même une spécificité plus élevée que l'élément."
         },
         {
             question: "Comment utiliser les variables CSS ?",
