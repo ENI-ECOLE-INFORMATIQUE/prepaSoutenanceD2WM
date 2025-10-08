@@ -1,31 +1,5 @@
 // === DONNÉES ===
 const questionsData = {
-    "JavaScript": [
-        {
-            question: "Comment déclarer une variable constante en JavaScript ES6+ ?",
-            theme: "JavaScript",
-            level: "Facile",
-            answers: ["var myVar", "let myVar", "const myVar", "constant myVar"],
-            correct: 2,
-            explanation: "Le mot-clé 'const' permet de déclarer une variable constante qui ne peut pas être réassignée après sa déclaration initiale."
-        },
-        {
-            question: "Quelle méthode permet d'ajouter un élément à la fin d'un tableau ?",
-            theme: "JavaScript",
-            level: "Intermédiaire",
-            answers: ["array.add()", "array.push()", "array.append()", "array.insert()"],
-            correct: 1,
-            explanation: "La méthode push() ajoute un ou plusieurs éléments à la fin d'un tableau et retourne la nouvelle longueur du tableau."
-        },
-        {
-            question: "Comment vérifier si une variable est de type 'string' ?",
-            theme: "JavaScript",
-            level: "Avancé",
-            answers: ["typeof variable === 'string'", "variable.isString()", "variable instanceof String", "String.isString(variable)"],
-            correct: 0,
-            explanation: "L'opérateur typeof retourne le type de la variable sous forme de chaîne.\n Pour vérifier si c'est une string, on compare avec 'string'."
-        }
-    ],
     "Base de données": [
         {
             question: "Quelle commande SQL permet de récupérer tous les enregistrements d'une table ?",
@@ -2253,10 +2227,34 @@ const questionsData = {
         }
 
     ],
-    "JS": [
+    "JS - JavaScript": [
+        {
+            question: "Comment déclarer une variable constante en JavaScript ES6+ ?",
+            theme: "JS - JavaScript",
+            level: "Facile",
+            answers: ["var myVar", "let myVar", "const myVar", "constant myVar"],
+            correct: 2,
+            explanation: "Le mot-clé 'const' permet de déclarer une variable constante qui ne peut pas être réassignée après sa déclaration initiale."
+        },
+        {
+            question: "Quelle méthode permet d'ajouter un élément à la fin d'un tableau ?",
+            theme: "JS - JavaScript",
+            level: "Intermédiaire",
+            answers: ["array.add()", "array.push()", "array.append()", "array.insert()"],
+            correct: 1,
+            explanation: "La méthode push() ajoute un ou plusieurs éléments à la fin d'un tableau et retourne la nouvelle longueur du tableau."
+        },
+        {
+            question: "Comment vérifier si une variable est de type 'string' ?",
+            theme: "JS - JavaScript",
+            level: "Avancé",
+            answers: ["typeof variable === 'string'", "variable.isString()", "variable instanceof String", "String.isString(variable)"],
+            correct: 0,
+            explanation: "L'opérateur typeof retourne le type de la variable sous forme de chaîne.\n Pour vérifier si c'est une string, on compare avec 'string'."
+        },
         {
             question: "Qu'est-ce que le lazy loading ? Comment l'implémenter dans une application web ?",
-            theme: "JS",
+            theme: "JS - JavaScript",
             level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
@@ -2269,7 +2267,7 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le localStorage ?",
-            theme: "JS",
+            theme: "JS - JavaScript",
             level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
@@ -2282,7 +2280,7 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce que le sessionStorage ?",
-            theme: "JS",
+            theme: "JS - JavaScript",
             level: "Facile",
             answers: [
                 "Le sessionStorage est un mécanisme de stockage web côté client, similaire au localStorage, mais avec une durée de vie limitée à la session de navigation",
@@ -2295,7 +2293,7 @@ const questionsData = {
         },
         {
             question: "Qu'est-ce qu'un cookie ?",
-            theme: "JS",
+            theme: "JS - JavaScript",
             level: "Facile",
             answers: [
                 "Une réponse aléatoire A",
