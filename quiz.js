@@ -1115,7 +1115,7 @@ const questionsData = {
                 "Un langage de programmation orienté objet"
             ],
             correct: 2,
-            explanation: "Un sélecteur en CSS est un motif utilisé pour sélectionner les éléments HTML que vous souhaitez styliser.\nLes sélecteurs permettent d'appliquer des styles spécifiques à des éléments particuliers ou à des groupes d'éléments.\n\nVoici quelques exemples de sélecteurs.\nLe sélecteur de balise cible tous les balises d'un type particulier. p {\n    color: blue;\n} \n\nLe sélecteur de classe cible tous les éléments ayant la classe indiquée.\n.ma-classe {\n    font-size: 16px;\n} \n\nLe sélecteur d'identifiant cible tous les éléments ayant l'id précisé.\n#mon-id {\n    background-color: yellow;\n} \n\nLe sélecteur d'attribut cible tous les éléments &lt;input> de type retenu.\ninput[type = 'text'] {\n    border: 1px solid black;\n} \n\nLe sélecteur descendant cible tous les éléments qui sont descendants d'un autre (ci-dessous tous les &lt;p> descendant de &lt;di>).\n div p {\n    margin: 10px;\n}"
+            explanation: "Un sélecteur en CSS est un motif utilisé pour sélectionner les éléments HTML que vous souhaitez styliser.\nLes sélecteurs permettent d'appliquer des styles spécifiques à des éléments particuliers ou à des groupes d'éléments.\n\nVoici quelques exemples de sélecteurs.\nLe sélecteur de balise cible tous les balises d'un type particulier.\np {\n    color: blue;\n} \n\nLe sélecteur de classe cible tous les éléments ayant la classe indiquée.\n.ma-classe {\n    font-size: 16px;\n} \n\nLe sélecteur d'identifiant cible tous les éléments ayant l'id précisé.\n#mon-id {\n    background-color: yellow;\n} \n\nLe sélecteur d'attribut cible tous les éléments &lt;input> de type retenu.\ninput[type = 'text'] {\n    border: 1px solid black;\n} \n\nLe sélecteur descendant cible tous les éléments qui sont descendants d'un autre (ci-dessous tous les &lt;p> descendant de &lt;di>).\n div p {\n    margin: 10px;\n}"
         },
         {
             question: "Quelle est la différence entre les sélecteurs de classes et d'identifiants en CSS ?",
@@ -1128,7 +1128,7 @@ const questionsData = {
                 "Un langage de programmation orienté objet"
             ],
             correct: 1,
-            explanation: "Les sélecteurs de classes en CSS permettent d'appliquer des styles à des éléments en fonction de leur classe, par exemple : .ma-classe { ... }. Les sélecteurs d'identifiants , quant à eux, ciblent des éléments uniques avec un identifiant unique, par exemple : #mon-id { ... }. Les identifiants ont une priorité plus élevée que les classes."
+            explanation: "Les sélecteurs de classes en CSS permettent d'appliquer des styles à des éléments en fonction de leur classe, par exemple :\n.ma-classe { ... }.\n\nLes sélecteurs d'identifiants , quant à eux, ciblent des éléments uniques avec un identifiant unique, par exemple :\n#mon-id { ... }. \n\nLes identifiants ont une priorité plus élevée que les classes."
         },
         {
             question: "Comment appliquer des styles CSS à un document HTML ?",
@@ -1141,7 +1141,7 @@ const questionsData = {
                 "Un gestionnaire de base de données"
             ],
             correct: 1,
-            explanation: "Il existe trois façons d'appliquer des styles CSS à un document HTML : - Styles en ligne : <p style=\"color: red;\">Texte rouge</p> - Balise <style> dans l'en-tête : <style> p { color: red; } </style> - Feuille de style externe : <link rel=\"stylesheet\" href=\"styles.css\">"
+            explanation: "Il existe trois façons d'appliquer des styles CSS à un document HTML :\n\t- Styles en ligne :\n&lt;p style=\"color: red;\">Texte rouge</p>\n\t- Balise &lt;style> dans l'en-tête :\n&lt;style> p { color: red; } </style>\n\t- Feuille de style externe :\n&lt;link rel=\"stylesheet\" href=\"styles.css\">"
         },
         {
             question: "Qu'est-ce que le modèle de boîte en CSS ?",
