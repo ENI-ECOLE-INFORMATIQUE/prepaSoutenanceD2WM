@@ -1893,7 +1893,7 @@ const questionsData = {
                 "Le W3C HTML5 Framework pour le design réactif"
             ],
             correct: 2,
-            explanation: "Les WCAG (Web Content Accessibility Guidelines) sont des directives internationales qui fournissent des recommandations pour rendre le contenu web plus accessible. Le RGAA (Référentiel Général d'Amélioration de l'Accessibilité) est un cadre français qui s'inspire des WCAG et établit des critères spécifiques pour l'accessibilité des sites publics."
+            explanation: "Les WCAG (Web Content Accessibility Guidelines) sont des directives internationales qui fournissent des recommandations pour rendre le contenu web plus accessible.\nLe RGAA (Référentiel Général d'Amélioration de l'Accessibilité) est un cadre français qui s'inspire des WCAG et établit des critères spécifiques pour l'accessibilité des sites publics."
         },
         {
             question: "Comment intégrer l'accessibilité dès la phase de conception d'un site web ?",
@@ -1906,7 +1906,7 @@ const questionsData = {
                 "En réduisant le nombre d’images et d’icônes pour alléger le site"
             ],
             correct: 0,
-            explanation: "Pour intégrer l'accessibilité dès la phase de conception, il est essentiel de suivre une approche centrée sur l'utilisateur et de considérer les besoins des utilisateurs en situation de handicap. Cela passe par la création de maquettes accessibles, l'utilisation de balises sémantiques et la planification de tests d'accessibilité tout au long du processus de développement"
+            explanation: "Pour intégrer l'accessibilité dès la phase de conception, il est essentiel de suivre une approche centrée sur l'utilisateur et de considérer les besoins des utilisateurs en situation de handicap.\nCela passe par la création de maquettes accessibles, l'utilisation de balises sémantiques et la planification de tests d'accessibilité tout au long du processus de développement"
         },
         {
             question: "Quelles sont les erreurs courantes à éviter ?",
@@ -1916,10 +1916,10 @@ const questionsData = {
                 "Utiliser exclusivement des animations et vidéos pour présenter les contenus",
                 "Se baser uniquement sur les tests automatisés sans vérification humaine",
                 "Créer des pages sans structure HTML claire ni balises sémantiques",
-                "Les erreurs suivantes sont à éviter : - l'utilisation de couleurs à faible contraste, - l'absence de textes alternatifs pour les images, - les formulaires non accessibles, - les éléments cliquables non accessibles au clavier, - le manque de balises sémantiques appropriées"
+                "Les erreurs suivantes sont à éviter :\n\t- l'utilisation de couleurs à faible contraste,\n\t- l'absence de textes alternatifs pour les images,\n\t- les formulaires non accessibles,\n\t- les éléments cliquables non accessibles au clavier,\n\t- le manque de balises sémantiques appropriées"
             ],
             correct: 3,
-            explanation: "Les erreurs suivantes sont à éviter : - l'utilisation de couleurs à faible contraste, - l'absence de textes alternatifs pour les images, - les formulaires non accessibles, - les éléments cliquables non accessibles au clavier, - le manque de balises sémantiques appropriées"
+            explanation: "Les erreurs suivantes sont à éviter :\n\t- l'utilisation de couleurs à faible contraste,\n\t- l'absence de textes alternatifs pour les images,\n\t- les formulaires non accessibles,\n\t- les éléments cliquables non accessibles au clavier,\n\t- le manque de balises sémantiques appropriées"
         },
         {
             question: "Comment les technologies d'assistance interagissent-elles avec le contenu web ?",
@@ -1932,20 +1932,20 @@ const questionsData = {
                 "Elles remplacent les images par des vidéos pour rendre le contenu plus attractif"
             ],
             correct: 0,
-            explanation: "Les technologies d'assistance , comme les lecteurs d'écran , interprètent le contenu HTML et le convertissent en audio ou en braille pour les utilisateurs. Elles dépendent de balises sémantiques appropriées et d' attributs ARIA pour fournir une navigation et une compréhension efficaces du contenu. Voici quelques exemples : <header>, <nav>, <main>, <article>, <section>, <footer>, <img alt=\"description\">, et les attributs ARIA comme role, aria-label, et aria-hidden."
+            explanation: "Les technologies d'assistance , comme les lecteurs d'écran , interprètent le contenu HTML et le convertissent en audio ou en braille pour les utilisateurs.\nElles dépendent de balises sémantiques appropriées et d' attributs ARIA pour fournir une navigation et une compréhension efficaces du contenu.\n\nVoici quelques exemples :\n<header>, <nav>, <main>, <article>, <section>, <footer>, <img alt=\"description\">, et les attributs ARIA comme role, aria-label, et aria-hidden."
         },
         {
             question: "Quelles pratiques de design peuvent améliorer l'accessibilité d'un site web ?",
             theme: "L'accessibilité",
             level: "Facile",
             answers: [
-                "Les pratiques de design qui améliorent l'accessibilité comprennent : - l'utilisation de polices lisibles (sans-serif), - le choix de couleurs avec un bon contraste, - la création de mises en page flexibles, - l'utilisation de balises sémantiques, - la structuration logique du contenu",
+                "Les pratiques de design qui améliorent l'accessibilité comprennent :\n\t- l'utilisation de polices lisibles (sans-serif),\n\t- le choix de couleurs avec un bon contraste,\n\t- la création de mises en page flexibles,\n\t- l'utilisation de balises sémantiques,\n\t- la structuration logique du contenu",
                 "Utiliser des polices stylisées et des animations sur tous les textes pour capter l’attention",
                 "Supprimer les légendes et descriptions pour simplifier la mise en page",
                 "Employer uniquement des couleurs vives et saturées pour attirer l'œil"
             ],
             correct: 0,
-            explanation: "Les pratiques de design qui améliorent l'accessibilité comprennent : - l'utilisation de polices lisibles (sans-serif), - le choix de couleurs avec un bon contraste, - la création de mises en page flexibles, - l'utilisation de balises sémantiques, - la structuration logique du contenu."
+            explanation: "Les pratiques de design qui améliorent l'accessibilité comprennent :\n\t- l'utilisation de polices lisibles (sans-serif),\n\t- le choix de couleurs avec un bon contraste,\n\t- la création de mises en page flexibles,\n\t- l'utilisation de balises sémantiques,\n\t- la structuration logique du contenu."
         },
         {
             question: "Comment tester l'accessibilité d'un site web ?",
@@ -1958,7 +1958,7 @@ const questionsData = {
                 "Pour tester l'accessibilité d'un site web, vous pouvez utiliser des outils d'évaluation automatisés comme WAVE, ou le Lighthouse du navigateur Chrome"
             ],
             correct: 3,
-            explanation: "Pour tester l'accessibilité d'un site web, vous pouvez utiliser des outils d'évaluation automatisés comme WAVE , ou le Lighthouse du navigateur Chrome. Des tests manuels avec des technologies d'assistance peuvent être réalisés. Il est également recommandé d'impliquer des utilisateurs en situation de handicap dans le processus de test."
+            explanation: "Pour tester l'accessibilité d'un site web, vous pouvez utiliser des outils d'évaluation automatisés comme WAVE , ou le Lighthouse du navigateur Chrome.\nDes tests manuels avec des technologies d'assistance peuvent être réalisés.\nIl est également recommandé d'impliquer des utilisateurs en situation de handicap dans le processus de test."
         },
         {
             question: "Quelles sont les obligations légales pour les entreprises ?",
@@ -1971,7 +1971,7 @@ const questionsData = {
                 "Garantir la compatibilité avec les anciens navigateurs sans exception"
             ],
             correct: 1,
-            explanation: "Les entreprises doivent respecter des lois sur l'accessibilité, telles que le RGAA en France ou l' ADA aux États-Unis. Les obligations comprennent : - Assurer l'accessibilité des sites web pour les personnes en situation de handicap, - Suivre les normes d'accessibilité définies par le RGAA ou l'ADA, - Fournir des contenus alternatifs pour les médias non textuels, - Rendre les formulaires et éléments interactifs accessibles au clavier, - Effectuer des tests d'accessibilité réguliers pour garantir la conformité."
+            explanation: "Les entreprises doivent respecter des lois sur l'accessibilité, telles que le RGAA en France ou l' ADA aux États-Unis.\nLes obligations comprennent :\n\t- Assurer l'accessibilité des sites web pour les personnes en situation de handicap,\n\t- Suivre les normes d'accessibilité définies par le RGAA ou l'ADA,\n\t- Fournir des contenus alternatifs pour les médias non textuels,\n\t- Rendre les formulaires et éléments interactifs accessibles au clavier,\n\t- Effectuer des tests d'accessibilité réguliers pour garantir la conformité."
         },
         //--------------------------------------- Intermédiaires
         {
@@ -1985,7 +1985,7 @@ const questionsData = {
                 "L'utilisation d'une charte graphique unique sur tout le site"
             ],
             correct: 1,
-            explanation: "L'accessibilité numérique consiste à rendre les contenus et services numériques utilisables par toutes les personnes, quelles que soient leurs capacités. Cela inclut les personnes avec des handicaps visuels, auditifs, moteurs ou cognitifs. L'objectif est de permettre à chacun d'accéder à l'information et d'interagir avec le contenu de manière équitable."
+            explanation: "L'accessibilité numérique consiste à rendre les contenus et services numériques utilisables par toutes les personnes, quelles que soient leurs capacités.\nCela inclut les personnes avec des handicaps visuels, auditifs, moteurs ou cognitifs.\nL'objectif est de permettre à chacun d'accéder à l'information et d'interagir avec le contenu de manière équitable."
         },
         {
             question: "Quel est l'objectif principal du RGAA (Référentiel Général d'Amélioration de l'Accessibilité) ?",
@@ -1998,7 +1998,7 @@ const questionsData = {
                 "Uniformiser le design des sites web français"
             ],
             correct: 0,
-            explanation: "Le RGAA est un référentiel français qui vise à garantir que les sites et services numériques publics soient accessibles à tous. Il s'appuie sur les WCAG (Web Content Accessibility Guidelines) et définit des critères précis pour assurer une accessibilité conforme à la loi française."
+            explanation: "Le RGAA est un référentiel français qui vise à garantir que les sites et services numériques publics soient accessibles à tous.\nIl s'appuie sur les WCAG (Web Content Accessibility Guidelines) et définit des critères précis pour assurer une accessibilité conforme à la loi française."
         },
         {
             question: "Quel attribut HTML permet d’associer une étiquette à un champ de formulaire ?",
@@ -2011,10 +2011,8 @@ const questionsData = {
                 "L’attribut ‘aria-label’ sur le champ"
             ],
             correct: 2,
-            explanation: "L’attribut ‘for’ de la balise <label> permet d’associer une étiquette à un champ de formulaire via l’identifiant du champ (attribut ‘id’). Cette association aide les technologies d’assistance, comme les lecteurs d’écran, à annoncer le bon libellé lorsque l’utilisateur interagit avec le champ."
+            explanation: "L’attribut ‘for’ de la balise <label> permet d’associer une étiquette à un champ de formulaire via l’identifiant du champ (attribut ‘id’).\nCette association aide les technologies d’assistance, comme les lecteurs d’écran, à annoncer le bon libellé lorsque l’utilisateur interagit avec le champ."
         }
-
-
     ],
     "Le DOM": [
         {
@@ -2024,11 +2022,11 @@ const questionsData = {
             answers: [
                 "Un protocole de communication entre les serveurs et le navigateur web",
                 "Une base de données utilisée pour stocker les éléments HTML d’une page web",
-                "Le terme DOM se décompose comme suit : - D * : * Document - Cela fait référence à tout type de document structuré, tel qu'un fichier HTML ou XML , qui peut être manipulé par un programme",
+                "Le terme DOM se décompose comme suit : - D : Document - Cela fait référence à tout type de document structuré, tel qu'un fichier HTML ou XML , qui peut être manipulé par un programme",
                 "Un langage de balisage alternatif à HTML utilisé pour structurer les données"
             ],
             correct: 2,
-            explanation: "Le terme DOM se décompose comme suit : - D * : * Document - Cela fait référence à tout type de document structuré, tel qu'un fichier HTML ou XML , qui peut être manipulé par un programme..."
+            explanation: "Le terme DOM se décompose comme suit :\n\t- D : Document - Cela fait référence à tout type de document structuré, tel qu'un fichier HTML ou XML , qui peut être manipulé par un programme.\n\t- O : Object - Dans le contexte du DOM, un objet représente une partie du document, comme un tableau, une image, ou un lien. Chaque élément du document est traité comme un objet dans une structure arborescente.\n\t- M  : Model - Cela désigne la représentation abstraite de la structure du document. Le modèle permet aux développeurs d'interagir avec le document de manière standardisée, en utilisant des méthodes et des propriétés définies.\nLe Document Object Model (DOM) est donc une interface de programmation normalisée par le W3C , permettant d'interagir avec des documents HTML et XML .\nIl représente la structure arborescente d'un document, où chaque élément du document est un nœud.\nGrâce au DOM, il est possible de modifier dynamiquement, le contenu et la structure d'une page web à l'aide de langages de programmation comme JavaScript."
         },
         {
             question: "Comment le DOM représente-t-il la structure d'un document HTML ?",
@@ -2041,7 +2039,7 @@ const questionsData = {
                 "Sous forme d’un tableau indexé où chaque ligne correspond à un élément HTML"
             ],
             correct: 2,
-            explanation: "Chaque élément HTML, tel qu'une div, un paragraphe ou une image, est représenté comme un nœud..."
+            explanation: "Chaque élément HTML, tel qu'une div, un paragraphe ou une image, est représenté comme un nœud.\nChacun de ces nœuds peut avoir des nœuds enfants, créant ainsi une structure en arbre.\nLe Document Object Model (DOM) représente ainsi la structure d'un document HTML sous la forme d'une arborescence d'objets.\nDocument\n ├─ html\n │ ├─ head\n │ │ └─ title\n │ │ └─ 'Mon Titre'\n │ └─ body\n │ ├─ div\n │ │ └─ 'Contenu'\n │ │ └─ img src='image.jpg'\n │ └─ p\n │ └─ 'Texte de paragraphe"
         },
         {
             question: "Qu'est-ce qu'un nœud dans le contexte du DOM ?",
@@ -2054,7 +2052,7 @@ const questionsData = {
                 "Dans le DOM , les documents sont représentés par une structure arborescente composée de nœuds , qui sont reliés entre eux de manière hiérarchique"
             ],
             correct: 3,
-            explanation: "Dans le DOM , les documents sont représentés par une structure arborescente composée de nœuds..."
+            explanation: "Dans le DOM , les documents sont représentés par une structure arborescente composée de nœuds , qui sont reliés entre eux de manière hiérarchique.\nChaque nœud peut avoir 0, 1 ou plusieurs nœuds enfants dépendants.\nLes nœuds situés au même niveau et dépendant du même nœud parent sont appelés nœuds frères.\n\nVoici différents types de nœuds dans le DOM.\n\t- Le nœud <b>Document</b> est le nœud racine de l'arbre DOM, représentant l'ensemble du document.\n\t- Le nœud <b>Élément</b> représente une balise HTML, comme <div> ou <p>.\n\t- Le nœud <b>Attribut</b> représente un attribut d'un élément, comme id ou class.\n\t- Le nœud <b>Texte</b> représente le texte à l'intérieur d'un élément.\n\t- Le nœud <b>Commentaire</b> représente un commentaire dans le code HTML."
         },
         {
             question: "Qu'est-ce qu'un élément dans le DOM ?",
@@ -2067,7 +2065,7 @@ const questionsData = {
                 "Une structure conditionnelle utilisée pour parcourir l’arborescence du document"
             ],
             correct: 0,
-            explanation: "Dans le DOM, chaque balise HTML forme un élément, qui est un type de nœud..."
+            explanation: "Dans le DOM, chaque balise HTML forme un élément, qui est un type de nœud.\nLes éléments sont les seuls nœuds pouvant contenir des attributs et à partir desquels d'autres nœuds peuvent dériver."
         },
         {
             question: "Quelles sont les principales méthodes pour accéder au DOM ?",
@@ -2080,7 +2078,7 @@ const questionsData = {
                 "Les fonctions fetch() et queryDatabase()"
             ],
             correct: 2,
-            explanation: "Les principales méthodes pour accéder aux éléments du DOM sont les suivantes..."
+            explanation: "Les principales méthodes pour accéder aux éléments du DOM sont les suivantes :\n\t- getElementById()\n\t- getElementsByClassName()\n\t- getElementsByTagName()\n\t- querySelector()"
         },
         {
             question: "Comment modifier le contenu d'un élément ?",
@@ -2093,7 +2091,7 @@ const questionsData = {
                 "En modifiant directement le code source du navigateur"
             ],
             correct: 1,
-            explanation: "Pour modifier le contenu d'un élément dans le DOM, vous pouvez utiliser des propriétés comme innerHTML ou textContent..."
+            explanation: "Pour modifier le contenu d'un élément dans le DOM, vous pouvez utiliser des propriétés comme innerHTML ou textContent , ou des méthodes comme appendChild() et removeChild()."
         },
         {
             question: "Comment ajouter un nouvel élément ?",
@@ -2106,7 +2104,7 @@ const questionsData = {
                 "En exécutant une commande SQL via le navigateur"
             ],
             correct: 2,
-            explanation: "Pour ajouter un nouvel élément au DOM, vous pouvez utiliser la méthode createElement()..."
+            explanation: "Pour ajouter un nouvel élément au DOM, vous pouvez utiliser la méthode createElement() pour créer l'élément, puis appendChild() ou insertBefore() pour l'insérer à l'endroit souhaité dans l'arbre."
         },
         {
             question: "Comment supprimer un élément ?",
@@ -2119,7 +2117,7 @@ const questionsData = {
                 "En réinitialisant la page avec location.reload()"
             ],
             correct: 0,
-            explanation: "Pour supprimer un élément du DOM, vous pouvez utiliser la méthode removeChild()..."
+            explanation: "Pour supprimer un élément du DOM, vous pouvez utiliser la méthode removeChild() sur le nœud parent de l'élément à supprimer."
         },
         {
             question: "Qu'est-ce qu'un événement ?",
@@ -2132,7 +2130,7 @@ const questionsData = {
                 "Les événements dans le DOM sont des scripts exécutés par le navigateur lorsque l'utilisateur interagit avec la page web, comme un clic de souris ou une saisie de clavier"
             ],
             correct: 3,
-            explanation: "Les événements dans le DOM sont des scripts exécutés par le navigateur..."
+            explanation: "Les événements dans le DOM sont des scripts exécutés par le navigateur lorsque l'utilisateur interagit avec la page web, comme un clic de souris ou une saisie de clavier.\n\nVoici un exemple de code JavaScript pour gérer un événement de clic sur un bouton."
         },
         {
             question: "Comment ajouter un événement ?",
@@ -2145,7 +2143,7 @@ const questionsData = {
                 "Pour ajouter un événements dans le DOM, vous pouvez utiliser la méthode addEventListener()"
             ],
             correct: 3,
-            explanation: "Pour ajouter un événements dans le DOM, vous pouvez utiliser la méthode addEventListener()..."
+            explanation: "Pour ajouter un événements dans le DOM, vous pouvez utiliser la méthode addEventListener().\nCette méthode permet d'attacher une fonction à un élément, qui sera exécutée lorsque l'événement spécifié se produit.\n\nVoici un exemple de code :\nconst button = document.getElementById('myButton');\nbutton.addEventListener('click', function() {\n console.log('Bouton cliqué!');\n});"
         },
         {
             question: "Comment supprimer un événement ?",
@@ -2158,7 +2156,7 @@ const questionsData = {
                 "En actualisant la page pour réinitialiser les scripts"
             ],
             correct: 1,
-            explanation: "Pour supprimer un événements dans le DOM, vous pouvez utiliser la méthode removeEventListener()..."
+            explanation: "Pour supprimer un événements dans le DOM, vous pouvez utiliser la méthode removeEventListener().\nCette méthode retire un gestionnaire d'événements attaché à un élément.\n\nVoici un exemple de code :\nconst button = document.getElementById('myButton');\nfunction handleClick() {\n console.log('Bouton cliqué!');\n}\nbutton.addEventListener('click', handleClick);\n// Supprimer l'événement\nbutton.removeEventListener('click', handleClick);"
         },
         {
             question: "Quels sont les différents événements que l'on peut gérer ?",
@@ -2171,7 +2169,7 @@ const questionsData = {
                 "Les événements exclusivement associés aux serveurs API"
             ],
             correct: 2,
-            explanation: "L'évenement click est utilisé pour capter le clic d'une souris..."
+            explanation: "L'évenement click est utilisé pour capter le cliq d'une souris lorsque l'utilisateur clique sur un élément.\nIl existe des variantes avec mousedown, mouseup et dblclick\n\nconst button = document.getElementById('myButton');\nbutton.addEventListener('click', function() {\n console.log('Bouton cliqué!');\n}); \n\nL'événement mouseover est utilisé lorsque le curseur de la souris passe sur l'élément sélectionner.\nIl existe des variantes avec mouseenter, mouseleave, mouseout et mousemove\nconst box = document.getElementById('myBox');\nbox.addEventListener('mouseover', function() {\n console.log('Souris sur la boîte!');\n});\n\nL'événement load se produit lorsque la page est complètement chargée.\nwindow.addEventListener('load', function() {\n console.log('Page chargée!');\n});\n\nL'événement input se produit lorsque l'utilisateur tape dans un champ de texte.\nIl existe des variantes avec keydown et keyup.\nconst input = document.getElementById('myInput');\ninput.addEventListener('input', function() {\n console.log('Texte saisi :', this.value);\n}); \n\nL'événement change se produit lorsque la valeur d'un élément de formulaire change.\nconst select = document.getElementById('mySelect');\nselect.addEventListener('change', function() {\n console.log('Sélection changée :', this.value);\n});"
         },
         {
             question: "Qu'est-ce que la propagation d'événements ?",
@@ -2184,7 +2182,7 @@ const questionsData = {
                 "Le processus par lequel les événements sont convertis en requêtes serveur"
             ],
             correct: 1,
-            explanation: "La propagation d'événements dans le DOM fait référence au comportement par défaut..."
+            explanation: "La propagation d'événements dans le DOM fait référence au comportement par défaut des événements qui remonte dans l'arbre du DOM à partir de l'élément cible jusqu'à l'élément racine.\nCe comportement peut être contrôlé avec des méthodes comme stopPropagation() ."
         },
         {
             question: "Comment manipuler les styles CSS d'un élément ?",
@@ -2197,7 +2195,7 @@ const questionsData = {
                 "Pour manipuler les styles CSS d'un élément via le DOM, vous pouvez accéder à la propriété style de l'élément et définir les propriétés CSS souhaitées, en écrivant les lignes de codes suivantes"
             ],
             correct: 3,
-            explanation: "Pour manipuler les styles CSS d'un élément via le DOM, vous pouvez accéder à la propriété style..."
+            explanation: "Pour manipuler les styles CSS d'un élément via le DOM, vous pouvez accéder à la propriété style de l'élément et définir les propriétés CSS souhaitées, en écrivant les lignes de codes suivantes.\nconst element = document.querySelector(\"div\");\nelement.style.color = 'red';"
         },
         {
             question: "Comment peut-on naviguer dans le DOM ?",
@@ -2210,7 +2208,7 @@ const questionsData = {
                 "En exécutant une fonction de débogage dans la console"
             ],
             correct: 1,
-            explanation: "Pour naviguer dans le DOM (Document Object Model), plusieurs propriétés JavaScript peuvent être utilisées..."
+            explanation: "Pour naviguer dans le DOM (Document Object Model), plusieurs propriétés JavaScript peuvent être utilisées.\nCes propriétés permettent de se déplacer entre les nœuds du document et d'interagir avec la structure HTML de manière dynamique.\nParmi les propriétés les plus courantes, on trouve :\n\t- parentNode qui renvoie le nœud parent d'un nœud donné, permettant de remonter dans la hiérarchie du DOM;\n\t- childNodes qui renvoie une collection de tous les nœuds enfants d'un nœud donné, ce qui permet d'accéder à tous les éléments qui lui sont directement associés;\n\t firstChild et lastChild qui permettent d'accéder respectivement au premier et au dernier enfant d'un nœud, facilitant ainsi la navigation vers les extrémités d'une liste d'éléments;\n\t- nextSibling et previousSibling qui permettent de naviguer entre les nœuds frères, en accédant respectivement au nœud suivant ou précédent dans la même hiérarchie."
         },
         {
             question: "Qu'est-ce que le DOM virtuel et comment est-il utilisé dans des bibliothèques comme React ?",
@@ -2223,7 +2221,7 @@ const questionsData = {
                 "Une extension du DOM classique utilisée uniquement pour les serveurs Node.js"
             ],
             correct: 0,
-            explanation: "Le DOM virtuel est une représentation en mémoire de l'arbre du DOM..."
+            explanation: "Le DOM virtuel est une représentation en mémoire de l'arbre du DOM, utilisée par des bibliothèques comme React pour optimiser les mises à jour du DOM réel.\nLorsque l'état de l'application change, React calcule les différences entre le DOM virtuel et le DOM réel, puis applique uniquement les changements nécessaires au DOM réel, améliorant ainsi les performances."
         }
 
     ],
