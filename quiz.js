@@ -108,7 +108,7 @@ const questionsData = {
                 "Un plugin installé sur un navigateur pour générer des données aléatoires"
             ],
             correct: 0,
-            explanation: "On utilise plusieurs clauses en SQL. En voici quelques unes.\nLa clause <b>SELECT</b> permet de sélectionner des enregistrements.\n\nCi-dessous, on sélectionne toutes les colonnes de la table utilisateurs.\nSELECT * FROM utilisateurs;\n\nLa clause <b>INSERT</b> permet d'insérer des enregistrements.\nCi-dessous, on insère un nouvel enregistrement dans la table utilisateurs\nINSERT INTO utilisateurs (nom, age)\nVALUES ('Alice', 30);\n\nLa clause <b>UPDATE</b> permet de mettre à jour des enregistrements.\nCi-dessous, on met à jour l'âge de l'utilisateur 'Alice'\nUPDATE utilisateurs\nSET age = 31\nWHERE nom = 'Alice';\n\nLa clause <b>DELETE</b> permet de supprimer des enregistrements.\nCi-dessous, on supprime l'enregistrement de l'utilisateur 'Alice'\nDELETE FROM utilisateurs\nWHERE nom = 'Alice';\n\nLa clause <b>CREATE</b> permet de créer une table.\nCi-dessous, on crée une nouvelle table utilisateurs\n CREATE TABLE utilisateurs (\n  id INT PRIMARY KEY,\n  nom VARCHAR(100),\n  age INT\n);\n\nLa clause <b>DROP</b> permet de supprimer une table.\nCi-dessous, on supprime la table utilisateurs\n DROP TABLE utilisateurs;"
+            explanation: "On utilise plusieurs clauses en SQL. En voici quelques unes.\nLa clause <b>SELECT</b> permet de sélectionner des enregistrements.\n\nCi-dessous, on sélectionne toutes les colonnes de la table utilisateurs.\nSELECT * FROM utilisateurs;\n\nLa clause <b>INSERT</b> permet d'insérer des enregistrements.\nCi-dessous, on insère un nouvel enregistrement dans la table utilisateurs\nINSERT INTO utilisateurs (nom, age)\nVALUES ('Alice', 30);\n\nLa clause <b>UPDATE</b> permet de mettre à jour des enregistrements.\nCi-dessous, on met à jour l'âge de l'utilisateur 'Alice'\nUPDATE utilisateurs\nSET age = 31\nWHERE nom = 'Alice';\n\nLa clause <b>DELETE</b> permet de supprimer des enregistrements.\nCi-dessous, on supprime l'enregistrement de l'utilisateur 'Alice'\nDELETE FROM utilisateurs\nWHERE nom = 'Alice';\n\nLa clause <b>CREATE</b> permet de créer une table.\nCi-dessous, on crée une nouvelle table utilisateurs\n CREATE TABLE utilisateurs (\n  id INT PRIMARY KEY,\n  nom VARCHAR(100),\n  age INT\n);\n\nLa clause <b>DROP</b> permet de supprimer une table.\nCi-dessous, on supprime la table utilisateurs\nDROP TABLE utilisateurs;"
         },
         {
             question: "Qu'est-ce qu'une clé primaire ?",
@@ -147,7 +147,7 @@ const questionsData = {
                 "Une jointure automatique entre deux vues stockées en base de données"
             ],
             correct: 1,
-            explanation: "Une relation one-to-one (ou un-à-un) est une relation qui unit deux tables.\nUn enregistrement dans une table est alors relié à un seul enregistrement dans une autre table. \nExemple :\nTable Utilisateur :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Profil :\n| id | age | id_user |\n|----|-----|---------|\n| 1  | 30  | 1       |\n| 2  | 25  | 2       |"
+            explanation: "Une relation one-to-one (ou un-à-un) est une relation qui unit deux tables.\nUn enregistrement dans une table est alors relié à un seul enregistrement dans une autre table.\n\nExemple :\n\nTable Utilisateur :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Profil :\n| id | age | id_user |\n|----|-----|---------|\n| 1  | 30  | 1       |\n| 2  | 25  | 2       |"
         },
         {
             question: "Qu'est-ce qu'une relation one-to-many ?",
@@ -160,7 +160,7 @@ const questionsData = {
                 "Une relation entre deux tables qui empêche la duplication des données"
             ],
             correct: 0,
-            explanation: "Une relation one-to-many (ou un-à-plusieurs) est une relation qui unit deux tables.\nUn enregistrement dans une table peut être relié à plusieurs enregistrements dans une autre table.\nIl existe à l'inverse une relation many-to-one . Plusieurs enregistrements dans une table sont reliés à un seul enregistrement dans une autre table. \nExemple :\nTable Auteur :\n| id | prénom  | nom      |\n|----|---------|----------|\n| 1  | Victor  | Hugo     |\n| 2  | Gustave | Flaubert |\n\nTable Livre :\n| id | titre          | id_aut |\n|----|----------------|--------|\n| 1  | Les Misérables | 1      |\n| 2  | Ruy-Blas       | 1      |\n| 3  | Madame Bovary  | 2      |"
+            explanation: "Une relation one-to-many (ou un-à-plusieurs) est une relation qui unit deux tables.\nUn enregistrement dans une table peut être relié à plusieurs enregistrements dans une autre table.\nIl existe à l'inverse une relation many-to-one . Plusieurs enregistrements dans une table sont reliés à un seul enregistrement dans une autre table.\n\nExemple :\n\nTable Auteur :\n| id | prénom  | nom      |\n|----|---------|----------|\n| 1  | Victor  | Hugo     |\n| 2  | Gustave | Flaubert |\n\nTable Livre :\n| id | titre          | id_aut |\n|----|----------------|--------|\n| 1  | Les Misérables | 1      |\n| 2  | Ruy-Blas       | 1      |\n| 3  | Madame Bovary  | 2      |"
         },
         {
             question: "Qu'est-ce qu'une relation many-to-many ?",
@@ -173,7 +173,7 @@ const questionsData = {
                 "Une jointure qui permet d’associer un utilisateur à plusieurs rôles dans une même colonne"
             ],
             correct: 2,
-            explanation: "Une relation many-to-many (ou plusieurs-à-plusieurs) est une relation qui unit deux tables.\nUn enregistrement dans une table peut être relié à plusieurs enregistrements dans une autre table, et vice versa.\nCela se traduit par une table d'association , où l'on insère pour chaque ligne, la référence à un enregistrement de chaque table.\nTable Étudiant :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Cours :\n| id | titre      |\n|----|------------|\n| 1  | Maths      |\n| 2  | Histoire   |\n\nTable Étudiant_Cours :\n| id_etud | id_cours |\n|---------|----------|\n| 1       | 1        |\n| 1       | 2        |\n| 2       | 1        |"
+            explanation: "Une relation many-to-many (ou plusieurs-à-plusieurs) est une relation qui unit deux tables.\nUn enregistrement dans une table peut être relié à plusieurs enregistrements dans une autre table, et vice versa.\nCela se traduit par une table d'association , où l'on insère pour chaque ligne, la référence à un enregistrement de chaque table.\n\nTable Étudiant :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Cours :\n| id | titre      |\n|----|------------|\n| 1  | Maths      |\n| 2  | Histoire   |\n\nTable Étudiant_Cours :\n| id_etud | id_cours |\n|---------|----------|\n| 1       | 1        |\n| 1       | 2        |\n| 2       | 1        |"
         },
        {
             question: "Qu'est-ce qu'une table d'association ?",
@@ -186,7 +186,7 @@ const questionsData = {
                 "Une table temporaire générée à chaque exécution d'une requête complexe"
             ],
             correct: 1,
-            explanation: "La table d'association est table utilisée dans le cadre d'une relation many-to-many.\nElle contient des clefs étrangères qui font référence aux clefs primaires des deux tables impliquées dans la relation.\nDans l'exemple ci-dessus, la table Étudiant_Cours associe les étudiants aux cours qu'ils suivent.\nTable Étudiant :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Cours :\n| id | titre         |\n|----|---------------|\n| 1  | Mathématiques |\n| 2  | Histoire      |\n\nTable Étudiant_Cours :\n| id_etud  | id_cours |\n|----------|----------|\n| 1        | 1        |\n| 1        | 2        |\n| 2        | 1        |"
+            explanation: "La table d'association est table utilisée dans le cadre d'une relation many-to-many.\nElle contient des clefs étrangères qui font référence aux clefs primaires des deux tables impliquées dans la relation.\nDans l'exemple ci-dessus, la table Étudiant_Cours associe les étudiants aux cours qu'ils suivent.\n\nTable Étudiant :\n| id | nom    |\n|----|--------|\n| 1  | Alice  |\n| 2  | Bob    |\n\nTable Cours :\n| id | titre         |\n|----|---------------|\n| 1  | Mathématiques |\n| 2  | Histoire      |\n\nTable Étudiant_Cours :\n| id_etud  | id_cours |\n|----------|----------|\n| 1        | 1        |\n| 1        | 2        |\n| 2        | 1        |"
         },
         {
             question: "Qu'est-ce qu'une jointure ?",
@@ -1893,7 +1893,7 @@ const questionsData = {
                 "Le W3C HTML5 Framework pour le design réactif"
             ],
             correct: 2,
-            explanation: "Les WCAG (Web Content Accessibility Guidelines) sont des directives internationales qui fournissent des recommandations pour rendre le contenu web plus accessible.\nLe RGAA (Référentiel Général d'Amélioration de l'Accessibilité) est un cadre français qui s'inspire des WCAG et établit des critères spécifiques pour l'accessibilité des sites publics."
+            explanation: "Les WCAG (Web Content Accessibility Guidelines) sont des directives internationales qui fournissent des recommandations pour rendre le contenu web plus accessible.\n\nLe RGAA (Référentiel Général d'Amélioration de l'Accessibilité) est un cadre français qui s'inspire des WCAG et établit des critères spécifiques pour l'accessibilité des sites publics."
         },
         {
             question: "Comment intégrer l'accessibilité dès la phase de conception d'un site web ?",
@@ -1906,7 +1906,7 @@ const questionsData = {
                 "En réduisant le nombre d’images et d’icônes pour alléger le site"
             ],
             correct: 0,
-            explanation: "Pour intégrer l'accessibilité dès la phase de conception, il est essentiel de suivre une approche centrée sur l'utilisateur et de considérer les besoins des utilisateurs en situation de handicap.\nCela passe par la création de maquettes accessibles, l'utilisation de balises sémantiques et la planification de tests d'accessibilité tout au long du processus de développement"
+            explanation: "Pour intégrer l'accessibilité dès la phase de conception, il est essentiel de suivre une approche centrée sur l'utilisateur et de considérer les besoins des utilisateurs en situation de handicap.\n\nCela passe par la création de maquettes accessibles, l'utilisation de balises sémantiques et la planification de tests d'accessibilité tout au long du processus de développement"
         },
         {
             question: "Quelles sont les erreurs courantes à éviter ?",
@@ -1932,7 +1932,7 @@ const questionsData = {
                 "Elles remplacent les images par des vidéos pour rendre le contenu plus attractif"
             ],
             correct: 0,
-            explanation: "Les technologies d'assistance , comme les lecteurs d'écran , interprètent le contenu HTML et le convertissent en audio ou en braille pour les utilisateurs.\nElles dépendent de balises sémantiques appropriées et d' attributs ARIA pour fournir une navigation et une compréhension efficaces du contenu.\n\nVoici quelques exemples :\n<header>, <nav>, <main>, <article>, <section>, <footer>, <img alt=\"description\">, et les attributs ARIA comme role, aria-label, et aria-hidden."
+            explanation: "Les technologies d'assistance , comme les lecteurs d'écran , interprètent le contenu HTML et le convertissent en audio ou en braille pour les utilisateurs.\n\nElles dépendent de balises sémantiques appropriées et d' attributs ARIA pour fournir une navigation et une compréhension efficaces du contenu.\n\nVoici quelques exemples :\n\n<header>, &lt;nav>, &lt;main>, &lt;article>, &lt;section>, &lt;footer>, &lt;img alt=\"description\">, et les attributs ARIA comme role, aria-label, et aria-hidden."
         },
         {
             question: "Quelles pratiques de design peuvent améliorer l'accessibilité d'un site web ?",
@@ -2248,7 +2248,7 @@ const questionsData = {
             level: "Avancé",
             answers: ["typeof variable === 'string'", "variable.isString()", "variable instanceof String", "String.isString(variable)"],
             correct: 0,
-            explanation: "L'opérateur typeof retourne le type de la variable sous forme de chaîne.\n Pour vérifier si c'est une string, on compare avec 'string'."
+            explanation: "L'opérateur typeof retourne le type de la variable sous forme de chaîne.\nPour vérifier si c'est une string, on compare avec 'string'."
         },
         {
             question: "Qu'est-ce que le lazy loading ? Comment l'implémenter dans une application web ?",
@@ -2261,7 +2261,7 @@ const questionsData = {
                 "Le lazy loading (chargement paresseux) est une technique d'optimisation qui consiste à retarder le chargement de ressources non essentielles jusqu'à ce qu'elles soient nécessaires"
             ],
             correct: 3,
-            explanation: "Le lazy loading (chargement paresseux) est une technique d'optimisation qui consiste à retarder le chargement de ressources non essentielles jusqu'à ce qu'elles soient nécessaires.\nDans le contexte web, cela s'applique généralement aux images, vidéos ou autres contenus lourds hors de la vue initiale de l'utilisateur.\nCette approche améliore les performances de chargement initial et économise la bande passante.\nPour implémenter le lazy loading dans une application web, on peut utiliser l'attribut HTML 'loading=\"lazy\"' sur les images."
+            explanation: "Le lazy loading (chargement paresseux) est une technique d'optimisation qui consiste à retarder le chargement de ressources non essentielles jusqu'à ce qu'elles soient nécessaires.\n\nDans le contexte web, cela s'applique généralement aux images, vidéos ou autres contenus lourds hors de la vue initiale de l'utilisateur.\n\nCette approche améliore les performances de chargement initial et économise la bande passante.\nPour implémenter le lazy loading dans une application web, on peut utiliser l'attribut HTML 'loading=\"lazy\"' sur les images."
         },
         {
             question: "Qu'est-ce que le localStorage ?",
@@ -2274,7 +2274,7 @@ const questionsData = {
                 "Le localStorage est une mémoire temporaire utilisée uniquement pendant la session de navigation et effacée dès que l’utilisateur ferme le navigateur."
             ],
             correct: 1,
-            explanation: "Le localStorage est une API web qui permet de stocker des données sous forme de paires clé-valeur dans le navigateur de l'utilisateur.\nCes données persistent même après la fermeture du navigateur, contrairement aux sessions. Le <b>localStorage</b> a une capacité de stockage plus importante que les cookies (généralement 5-10 Mo).\nPour l'utiliser, on emploie les méthodes setItem(key, value) pour stocker une valeur, getItem(key) pour la récupérer, removeItem(key) pour la supprimer, et <b>clear()</b> pour tout effacer.\nIl est important de noter que localStorage ne stocke que des chaînes de caractères, donc les objets doivent être sérialisés (par exemple avec JSON.stringify() ) avant d'être stockés.\n\nExemple d'utilisation du localStorage :\n\n//Stocker une valeur simple\nlocalStorage.setItem('username', 'John');\n// Récupérer une valeur\nlet name = localStorage.getItem('username');\nconsole.log(name); // Affiche : John \n\n// Stocker un objet (après sérialisation)\nconst user = { name: 'Alice', age: 30 };\nlocalStorage.setItem('user', JSON.stringify(user));\n\n// Récupérer et désérialiser un objet\nconst storedUser = JSON.parse(localStorage.getItem('user'));\nconsole.log(storedUser.name);\n\n// Affiche : Alice \n// Supprimer un élément\nlocalStorage.removeItem('username');\n\n// Effacer tout le localStorage\nlocalStorage.clear();"
+            explanation: "Le localStorage est une API web qui permet de stocker des données sous forme de paires clé-valeur dans le navigateur de l'utilisateur.\n\nCes données persistent même après la fermeture du navigateur, contrairement aux sessions. Le <b>localStorage</b> a une capacité de stockage plus importante que les cookies (généralement 5-10 Mo).\nPour l'utiliser, on emploie les méthodes setItem(key, value) pour stocker une valeur, getItem(key) pour la récupérer, removeItem(key) pour la supprimer, et <b>clear()</b> pour tout effacer.\nIl est important de noter que localStorage ne stocke que des chaînes de caractères, donc les objets doivent être sérialisés (par exemple avec JSON.stringify() ) avant d'être stockés.\n\nExemple d'utilisation du localStorage :\n\n//Stocker une valeur simple\nlocalStorage.setItem('username', 'John');\n// Récupérer une valeur\nlet name = localStorage.getItem('username');\nconsole.log(name); // Affiche : John \n\n// Stocker un objet (après sérialisation)\nconst user = { name: 'Alice', age: 30 };\nlocalStorage.setItem('user', JSON.stringify(user));\n\n// Récupérer et désérialiser un objet\nconst storedUser = JSON.parse(localStorage.getItem('user'));\nconsole.log(storedUser.name);\n\n// Affiche : Alice \n// Supprimer un élément\nlocalStorage.removeItem('username');\n\n// Effacer tout le localStorage\nlocalStorage.clear();"
         },
         {
             question: "Qu'est-ce que le sessionStorage ?",
@@ -2287,7 +2287,7 @@ const questionsData = {
                 "Le sessionStorage est un service distant qui enregistre les données de session sur le serveur afin qu’elles soient disponibles pour tous les utilisateurs connectés"
             ],
             correct: 0,
-            explanation: "Le sessionStorage est un mécanisme de stockage web côté client, similaire au localStorage, mais avec une durée de vie limitée à la session de navigation.\nLes données stockées persistent uniquement jusqu'à la fermeture de l'onglet ou de la fenêtre du navigateur, après quoi elles sont automatiquement effacées.\nCe mécanisme offre une capacité de stockage généralement plus importante que les cookies (environ 5-10 Mo) et est limité au domaine qui l'a créé, respectant le principe de même origine.\nIl stocke les données sous forme de paires clé-valeur de chaînes de caractères.\nLe sessionStorage est couramment utilisé pour stocker des données temporaires nécessaires pendant la navigation, sauvegarder l'état d'une application web entre les pages, ou gérer des informations de session sans recourir au serveur.\nIl offre ainsi un moyen pratique et sécurisé de gérer des données éphémères côté client, tout en garantissant qu'elles ne persistent pas au-delà de la session en cours."
+            explanation: "Le sessionStorage est un mécanisme de stockage web côté client, similaire au localStorage, mais avec une durée de vie limitée à la session de navigation.\n\nLes données stockées persistent uniquement jusqu'à la fermeture de l'onglet ou de la fenêtre du navigateur, après quoi elles sont automatiquement effacées.\n\nCe mécanisme offre une capacité de stockage généralement plus importante que les cookies (environ 5-10 Mo) et est limité au domaine qui l'a créé, respectant le principe de même origine.\n\nIl stocke les données sous forme de paires clé-valeur de chaînes de caractères.\n\nLe sessionStorage est couramment utilisé pour stocker des données temporaires nécessaires pendant la navigation, sauvegarder l'état d'une application web entre les pages, ou gérer des informations de session sans recourir au serveur.\nIl offre ainsi un moyen pratique et sécurisé de gérer des données éphémères côté client, tout en garantissant qu'elles ne persistent pas au-delà de la session en cours."
         },
         {
             question: "Qu'est-ce qu'un cookie ?",
@@ -2300,7 +2300,7 @@ const questionsData = {
                 "Un cookie est un type de cache temporaire utilisé uniquement pour améliorer les performances graphiques du navigateur."
             ],
             correct: 1,
-            explanation: "Un cookie est un petit fichier texte stocké par un site web sur l'appareil de l'utilisateur.\nIl contient des informations sur la navigation et est renvoyé au site lors des visites ultérieures.\nLes cookies servent à mémoriser les préférences de l'utilisateur, maintenir une session, et suivre le comportement à des fins d'analyse ou de publicité.\nIl existe deux types principaux : les cookies first-party créés par le site visité, et les cookies third-party créés par d'autres domaines, souvent pour la publicité.\nLes cookies peuvent être persistants (conservés après la fermeture du navigateur) ou de session (supprimés à la fin de la session).\nLeur utilisation est réglementée dans de nombreux pays pour protéger la vie privée des utilisateurs.\nLes cookies sont souvent nécessaires dans la personnalisation de l'expérience web, mais soulèvent également des questions de confidentialité et de sécurité."
+            explanation: "Un cookie est un petit fichier texte stocké par un site web sur l'appareil de l'utilisateur.\nIl contient des informations sur la navigation et est renvoyé au site lors des visites ultérieures.\nLes cookies servent à mémoriser les préférences de l'utilisateur, maintenir une session, et suivre le comportement à des fins d'analyse ou de publicité.\n\nIl existe deux types principaux : \n\tles cookies first-party créés par le site visité, \n\tet les cookies third-party créés par d'autres domaines, souvent pour la publicité.\n\nLes cookies peuvent être persistants (conservés après la fermeture du navigateur) ou de session (supprimés à la fin de la session).\nLeur utilisation est réglementée dans de nombreux pays pour protéger la vie privée des utilisateurs.\nLes cookies sont souvent nécessaires dans la personnalisation de l'expérience web, mais soulèvent également des questions de confidentialité et de sécurité."
         }
     ],
     "L'architecture": [
