@@ -506,7 +506,7 @@ const questionsData = {
                 "Un navigateur web spécialisé"
             ],
             correct: 1,
-            explanation: "Un IDE combine un éditeur de code, un compilateur/interpréteur, un débogueur et des outils de gestion de projet. Il facilite le développement avec des fonctionnalités comme l’autocomplétion et l’intégration Git."
+            explanation: "Un IDE combine un éditeur de code, un compilateur/interpréteur, un débogueur et des outils de gestion de projet.\nIl facilite le développement avec des fonctionnalités comme l’autocomplétion et l’intégration Git."
         },
         {
             question: "Citez des IDE couramment utilisés.",
@@ -519,7 +519,7 @@ const questionsData = {
                 "Uniquement Visual Studio"
             ],
             correct: 1,
-            explanation: "Les IDE populaires incluent la suite JetBrains, Visual Studio Code, Eclipse et NetBeans. Chacun est adapté à différents langages."
+            explanation: "Les IDE populaires incluent la suite JetBrains, Visual Studio Code, Eclipse et NetBeans.\nChacun est adapté à différents langages."
         },
         {
             question: "Quelles sont les principales fonctionnalités dans un IDE ?",
@@ -545,7 +545,7 @@ const questionsData = {
                 "Un navigateur spécialisé pour développeurs"
             ],
             correct: 1,
-            explanation: "Voici quelques plugins et extensions recommandés. - Prettier est un formateur de code qui assure une mise en forme cohérente du code. - ESLint est linter pour JavaScript qui aide à identifier et à corriger les problèmes de code. - Live Server permet de lancer un serveur local avec rechargement à chaud pour les projets web. - GitLens améliore les capacités de Git dans l'IDE en fournissant des informations sur les commits et les auteurs. - Emmet accélère le processus d'écriture de code HTML et CSS."
+            explanation: "Voici quelques plugins et extensions recommandés.\n\t- Prettier est un formateur de code qui assure une mise en forme cohérente du code.\n\t- ESLint est linter pour JavaScript qui aide à identifier et à corriger les problèmes de code.\n\t- Live Server permet de lancer un serveur local avec rechargement à chaud pour les projets web.\n\t- GitLens améliore les capacités de Git dans l'IDE en fournissant des informations sur les commits et les auteurs.\n\t- Emmet accélère le processus d'écriture de code HTML et CSS."
         },
         {
             question: "Qu'est-ce qu'Emmet ?",
@@ -558,7 +558,7 @@ const questionsData = {
                 "Un simple éditeur de texte sans compilation"
             ],
             correct: 1,
-            explanation: "Emmet est un outil de productivité pour les développeurs web qui permet d'écrire du code HTML et CSS de manière plus rapide et efficace. Grâce à sa syntaxe abrégée, les utilisateurs peuvent générer des blocs de code complexes en utilisant des raccourcis simples, ce qui réduit considérablement le temps de développement. Emmet s'intègre facilement dans de nombreux éditeurs de code et IDE, tels que Visual Studio Code, et Sublime Text, et offre des fonctionnalités comme l'expansion de snippets, la complétion automatique et la navigation rapide dans le code, rendant ainsi le processus de codage plus fluide et agréable."
+            explanation: "Emmet est un outil de productivité pour les développeurs web qui permet d'écrire du code HTML et CSS de manière plus rapide et efficace.\nGrâce à sa syntaxe abrégée, les utilisateurs peuvent générer des blocs de code complexes en utilisant des raccourcis simples, ce qui réduit considérablement le temps de développement.\nEmmet s'intègre facilement dans de nombreux éditeurs de code et IDE, tels que Visual Studio Code, et Sublime Text, et offre des fonctionnalités comme l'expansion de snippets, la complétion automatique et la navigation rapide dans le code, rendant ainsi le processus de codage plus fluide et agréable."
         },
         {
             question: "Qu'est-ce qu'un gestionnaire de paquets ? Donnez des exemples.",
@@ -571,7 +571,7 @@ const questionsData = {
                 "Un navigateur spécialisé pour développeurs"
             ],
             correct: 1,
-            explanation: "Un gestionnaire de paquets est un outil qui automatise l'installation, la mise à jour et la gestion des dépendances d'un projet. - npm (Node Package Manager) est utilisé pour gérer les paquets JavaScript. - Yarn est un gestionnaire de paquets alternatif pour JavaScript, plus rapide et avec des fonctionnalités avancées. - Composer permet de gérer les dépendances en PHP."
+            explanation: "Un gestionnaire de paquets est un outil qui automatise l'installation, la mise à jour et la gestion des dépendances d'un projet.\n\t- npm (Node Package Manager) est utilisé pour gérer les paquets JavaScript.\n\t- Yarn est un gestionnaire de paquets alternatif pour JavaScript, plus rapide et avec des fonctionnalités avancées.\n\t- Composer permet de gérer les dépendances en PHP."
         },
         {
             question: "Qu'est-ce qu'un outil de gestion de tâches ?",
@@ -584,7 +584,7 @@ const questionsData = {
                 "Un simple éditeur de texte sans compilation"
             ],
             correct: 1,
-            explanation: "Un outil de gestion de tâches est un logiciel qui automatise les tâches répétitives dans le processus de développement, permettant ainsi aux développeurs de se concentrer sur des tâches plus créatives et stratégiques. Ces outils facilitent des opérations telles que la compilation de fichiers, la minification, le bundling et l'optimisation des ressources. Parmi les outils de gestion de tâches les plus populaires, on trouve Webpack , Vite , Esbuild , Rollup et Parcel . Chacun de ces outils offre des fonctionnalités spécifiques adaptées à différents types de projets, améliorant ainsi l'efficacité et la productivité des équipes de développement."
+            explanation: "Un outil de gestion de tâches est un logiciel qui automatise les tâches répétitives dans le processus de développement, permettant ainsi aux développeurs de se concentrer sur des tâches plus créatives et stratégiques.\nCes outils facilitent des opérations telles que la compilation de fichiers, la minification, le bundling et l'optimisation des ressources.\nParmi les outils de gestion de tâches les plus populaires, on trouve Webpack , Vite , Esbuild , Rollup et Parcel.\nChacun de ces outils offre des fonctionnalités spécifiques adaptées à différents types de projets, améliorant ainsi l'efficacité et la productivité des équipes de développement."
         },
         {
             question: "Qu'est-ce que Webpack ?",
@@ -597,7 +597,7 @@ const questionsData = {
                 "Un simple éditeur de texte sans compilation"
             ],
             correct: 0,
-            explanation: "Webpack est un module bundler open-source pour JavaScript, conçu pour gérer et optimiser les ressources d'applications web modernes. Il permet de regrouper les JS, le CSS, les images et le HTML en un ou plusieurs bundles statiques, facilitant ainsi leur chargement par le navigateur. Webpack fonctionne sur le principe de modules et de dépendances, créant un graphique de dépendances qui permet aux développeurs d'utiliser une approche modulaire dans le développement de leurs applications. Grâce à un fichier de configuration, `webpack.config.js`, les développeurs peuvent définir des règles, des plugins et des tâches personnalisées pour le processus de bundling. L'un des principaux avantages de Webpack est sa capacité à effectuer le code splitting (ou division de code), ce qui permet de charger uniquement les parties nécessaires d'une application, améliorant ainsi les performances et l'expérience utilisateur. De plus, il propose un serveur de développement intégré avec le `hot module replacement` (HMR), permettant de mettre à jour le code sans recharger la page."
+            explanation: "Webpack est un module bundler open-source pour JavaScript, conçu pour gérer et optimiser les ressources d'applications web modernes.\nIl permet de regrouper les JS, le CSS, les images et le HTML en un ou plusieurs bundles statiques, facilitant ainsi leur chargement par le navigateur. Webpack fonctionne sur le principe de modules et de dépendances, créant un graphique de dépendances qui permet aux développeurs d'utiliser une approche modulaire dans le développement de leurs applications.\nGrâce à un fichier de configuration, `webpack.config.js`, les développeurs peuvent définir des règles, des plugins et des tâches personnalisées pour le processus de bundling.\nL'un des principaux avantages de Webpack est sa capacité à effectuer le code splitting (ou division de code), ce qui permet de charger uniquement les parties nécessaires d'une application, améliorant ainsi les performances et l'expérience utilisateur.\nDe plus, il propose un serveur de développement intégré avec le `hot module replacement` (HMR), permettant de mettre à jour le code sans recharger la page."
         },
         {
             question: "Qu'est-ce que Gulp ?",
@@ -610,7 +610,7 @@ const questionsData = {
                 "Un tableur pour gérer le code"
             ],
             correct: 1,
-            explanation: "Gulp est un outil d'automatisation des tâches de construction (task runner) basé sur Node.js. Il permet d'automatiser et d'optimiser les étapes répétitives du workflow de développement web, comme la minification, la concaténation, les tests unitaires, l'optimisation des images, etc. Gulp fonctionne sur le principe de pipelines. Vous définissez des tâches qui prennent des fichiers en entrée, appliquent une série de transformations à l'aide de plugins, puis écrivent les fichiers résultants à un endroit spécifié. Par exemple, une tâche pourrait récupérer tous les fichiers Sass, les compiler en CSS, ajouter les préfixes vendeurs, puis écrire le CSS final dans un dossier de distribution. L'avantage de Gulp est qu'il vous permet d'automatiser ces tâches répétitives et chronophages, vous faisant gagner un temps précieux. De plus, en définissant ces étapes dans un fichier de configuration, votre workflow devient reproductible et partageable au sein d'une équipe."
+            explanation: "Gulp est un outil d'automatisation des tâches de construction (task runner) basé sur Node.js.\nIl permet d'automatiser et d'optimiser les étapes répétitives du workflow de développement web, comme la minification, la concaténation, les tests unitaires, l'optimisation des images, etc.\n\nGulp fonctionne sur le principe de pipelines.\nVous définissez des tâches qui prennent des fichiers en entrée, appliquent une série de transformations à l'aide de plugins, puis écrivent les fichiers résultants à un endroit spécifié.\n\nPar exemple, une tâche pourrait récupérer tous les fichiers Sass, les compiler en CSS, ajouter les préfixes vendeurs, puis écrire le CSS final dans un dossier de distribution.\nL'avantage de Gulp est qu'il vous permet d'automatiser ces tâches répétitives et chronophages, vous faisant gagner un temps précieux.\nDe plus, en définissant ces étapes dans un fichier de configuration, votre workflow devient reproductible et partageable au sein d'une équipe."
         }
     ],
 
