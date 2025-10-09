@@ -902,7 +902,7 @@ const questionsData = {
                 "HTML n'existe plus il a été remplacé par XHTML"
             ],
             correct: 2,
-            explanation: "HTML est un langage de balisage plus permissif, tandis que XHTML (Extensible HyperText Markup Language) est une version plus stricte de HTML basée sur XML. XHTML impose des règles de syntaxe plus rigoureuses, comme la nécessité de fermer toutes les balises et d'utiliser des noms de balises en minuscules."
+            explanation: "HTML est un langage de balisage plus permissif, tandis que XHTML (Extensible HyperText Markup Language) est une version plus stricte de HTML basée sur XML.\nXHTML impose des règles de syntaxe plus rigoureuses, comme la nécessité de fermer toutes les balises et d'utiliser des noms de balises en minuscules."
         },
         {
             question: "Quelles sont les principales versions de HTML et quelles sont leurs différences ?",
@@ -922,10 +922,10 @@ const questionsData = {
             theme: "Le HTML",
             level: "Facile",
             answers: [
-                "Un logiciel de design graphique",
+                "Une balise HTML est une commande JavaScript permettant d’ajouter du style et des animations aux pages web.",
                 "Une balise HTML est un élément de base qui définit le contenu d'une page web",
-                "Un protocole réseau",
-                "Un langage de programmation"
+                "Une balise HTML est un fichier de configuration qui indique au navigateur comment exécuter le code CSS et JavaScript d’un site.",
+                "Une balise HTML est un symbole utilisé uniquement pour commenter le code et n’a aucun impact sur la structure ou le contenu d’une page web."
             ],
             correct: 1,
             explanation: "Une balise HTML est un élément de base qui définit le contenu d'une page web.\nElle est généralement structurée avec une balise d'ouverture et une balise de fermeture.\n&lt;balise propriete=\"valeur\">contenu&lt;/balise>"
@@ -935,10 +935,10 @@ const questionsData = {
             theme: "Le HTML",
             level: "Facile",
             answers: [
-                "Un protocole réseau",
-                "Un langage de programmation",
-                "Un attribut fournit des informations supplémentaires sur une balise HTML",
-                "Un logiciel de design graphique"
+                "Un attribut HTML est une fonction JavaScript intégrée utilisée pour créer des interactions dynamiques dans une page web.",
+                "Un attribut HTML est une balise spéciale servant à relier plusieurs pages entre elles via des liens internes.",
+                "Un attribut fournit des informations supplémentaires sur une balise HTML.",
+                "Un attribut HTML est un élément de style utilisé pour définir la couleur et la mise en page d’un texte sans passer par le CSS."
             ],
             correct: 2,
             explanation: "Un attribut fournit des informations supplémentaires sur une balise HTML.\nPar exemple, dans la balise ci-dessous type et readonly sont des attributs.\n&lt;input type=\"text\" readonly>"
@@ -948,10 +948,10 @@ const questionsData = {
             theme: "Le HTML",
             level: "Facile",
             answers: [
-                "Le DOCTYPE est une déclaration qui informe le navigateur du type de document et de la version de HTML utilisée",
-                "Un logiciel de design graphique",
-                "Un langage de programmation",
-                "Un protocole réseau"
+                "Le DOCTYPE est une déclaration qui informe le navigateur du type de document et de la version de HTML utilisée.",
+                "Le DOCTYPE est une balise utilisée pour définir le titre de la page qui s’affiche dans l’onglet du navigateur.",
+                "Le DOCTYPE est un attribut CSS qui permet de déterminer le style par défaut du document HTML.",
+                "Le DOCTYPE est une fonction JavaScript qui initialise le chargement du DOM avant l’exécution du script principal."
             ],
             correct: 0,
             explanation: "Le DOCTYPE est une déclaration qui informe le navigateur du type de document et de la version de HTML utilisée.\nIl est important, car il permet au navigateur de créer correctement la page en respectant les standards du web.\nVous pouvez le déclarer de cette manière-là :\n&lt;!DOCTYPE html>"
@@ -961,23 +961,23 @@ const questionsData = {
             theme: "Le HTML",
             level: "Facile",
             answers: [
-                "Un langage de programmation",
-                "La structure de base d'un fichier HTML comprend les éléments suivants : - La déclaration DOCTYPE;\n - L'élément <html> avec l'attribut de langue;\n - La section <head> contenant les métadonnées;\n - La section <body> contenant le contenu visible de la page",
-                "Un logiciel de design graphique",
-                "Un protocole réseau"
+                "Un fichier HTML commence toujours par une déclaration &lt;module> suivie d'une section &lt;content> qui contient le &lt;head> et le &lt;body>",
+                "La structure de base d'un fichier HTML comprend les éléments suivants :\n\t- La déclaration DOCTYPE;\n\t- L'élément &lt;html> avec l'attribut de langue;\n\t- La section &lt;head> contenant les métadonnées;\n\t- La section &lt;body> contenant le contenu visible de la page",
+                "La structure de base est composée uniquement d'un &lt;container> racine qui regroupe des &lt;block> pour le style et le contenu ; il n'y a pas besoin de balises &lt;html>, &lt;head> ou &lt;body>",
+                "Un fichier HTML standard démarre par &lt;doctype html5> en majuscules, puis une balise &lt;page> enveloppe &lt;meta> et &lt;view>"
             ],
             correct: 1,
-            explanation: "La structure de base d'un fichier HTML comprend les éléments suivants:\n\t- La déclaration DOCTYPE;\n\t- L'élément &lt;html> avec l'attribut de langue;\n\t- La section &lt;head> contenant les métadonnées;\n\t- La section &lt;body> contenant le contenu visible de la page.\n\nVoici un exemple de structure de base :\n&lt;!DOCTYPE html>\n&lt;html lang=\"fr\">\n&lt;head>\n  &lt;meta charset=\"UTF-8\">\n  &lt;meta\n    name=\"viewport\"\n    content=\"width=device-width, initial-scale=1.0\">\n  &lt;title>Document</title>\n&lt;/head>\n&lt;body>\n\n&lt;/body>\n&lt;/html>"
+            explanation: "La structure de base d'un fichier HTML comprend les éléments suivants:\n\t- La déclaration DOCTYPE;\n\t- L'élément &lt;html> avec l'attribut de langue;\n\t- La section &lt;head> contenant les métadonnées;\n\t- La section &lt;body> contenant le contenu visible de la page.\n\nVoici un exemple de structure de base :\n&lt;!DOCTYPE html>\n&lt;html lang=\"fr\">\n&lt;head>\n  &lt;meta charset=\"UTF-8\">\n  &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  &lt;title>Document&lt;/title>\n&lt;/head>\n&lt;body>\n\n&lt;/body>\n&lt;/html>"
         },
         {
             question: "Comment le HTML interagit-il avec le CSS et le JavaScript ?",
             theme: "Le HTML",
             level: "Facile",
             answers: [
-                "Le HTML structure le contenu d'une page, tandis que le CSS (Cascading Style Sheets) est utilisé pour la mise en forme et le style",
-                "Un langage de programmation",
-                "Un logiciel de design graphique",
-                "Un protocole réseau"
+                "Le HTML structure le contenu d'une page, tandis que le CSS (Cascading Style Sheets) est utilisé pour la mise en forme et le style.",
+                "Le HTML exécute directement le code CSS et JavaScript sans qu’il soit nécessaire de les lier ou de les importer dans la page.",
+                "Le HTML contient des fonctions internes qui remplacent totalement l’usage du CSS et du JavaScript pour gérer le style et les interactions.",
+                "Le HTML communique avec le CSS et le JavaScript uniquement par l’intermédiaire du serveur web, avant que la page ne soit envoyée au navigateur."
             ],
             correct: 0,
             explanation: "Le HTML structure le contenu d'une page, tandis que le CSS (Cascading Style Sheets) est utilisé pour la mise en forme et le style.\nLe JavaScript , quant à lui, permet d'ajouter de l'interactivité à la page en manipulant le DOM (Document Object Model) généré par HTML."
@@ -987,10 +987,10 @@ const questionsData = {
             theme: "Le HTML",
             level: "Facile",
             answers: [
-                "Un protocole réseau",
-                "Un langage de programmation",
+                "Les métadonnées servent à afficher du texte supplémentaire à l’utilisateur sous forme de commentaires visibles dans le navigateur.",
+                "Les métadonnées permettent de stocker des variables JavaScript utilisées pour exécuter des fonctions dynamiques sur la page.",
                 "Les métadonnées sont des informations sur la page qui ne sont pas affichées directement à l'utilisateur, mais qui fournissent des données importantes aux navigateurs et aux moteurs de recherche",
-                "Un logiciel de design graphique"
+                "Les métadonnées sont utilisées pour définir la structure visuelle de la page, comme la mise en page, les couleurs et la typographie."
             ],
             correct: 2,
             explanation: "Les métadonnées sont des informations sur la page qui ne sont pas affichées directement à l'utilisateur, mais qui fournissent des données importantes aux navigateurs et aux moteurs de recherche.\nElles sont généralement définies dans la section &lt;head> de la page HTML, principalement avec des balises &lt;meta>.\nCi-dessous sont présentés des exemples courants de métadonnées.\nEncodage des caractères :\n&lt;meta charset=\"UTF-8\">\nDescription de la page (importante pour le SEO) :\n&lt;meta\n  name=\"description\"\n  content=\"Description concise de la page pour les moteurs de recherche\"\n>\nMots-clefs (moins utilisés aujourd'hui pour le SEO) :\n&lt;meta\n  name=\"keywords\"\n  content=\"mot-clef1, mot-clef2, mot-clef3\">\nAuteur de la page :\n&lt;meta\n  name=\"author\"\n  content=\"Nom de l'auteur\">\nViewport pour le responsive design :\n&lt;meta\n  name=\"viewport\"\n  content=\"width=device-width, initial-scale=1.0\">\nRobots (instructions pour les moteurs de recherche) :\n&lt;meta\n  name=\"robots\"\n  content=\"index, follow\"\n>"
@@ -1000,10 +1000,10 @@ const questionsData = {
             theme: "Le HTML",
             level: "Facile",
             answers: [
-                "Le HTML sémantique désigne l'utilisation de balises HTML qui transmettent la signification du contenu qu'elles renferment",
-                "Un langage de programmation",
-                "Un logiciel de design graphique",
-                "Un protocole réseau"
+                "Le HTML sémantique désigne l'utilisation de balises HTML qui transmettent la signification du contenu qu'elles renferment.",
+                "Le HTML sémantique est une version spéciale du HTML utilisée uniquement pour créer des animations et des effets visuels avancés.",
+                "Le HTML sémantique est un langage dérivé du XML permettant de structurer les bases de données relationnelles directement dans le navigateur.",
+                "Le HTML sémantique est un ensemble de balises réservées à la mise en forme graphique des éléments sans utiliser de CSS."
             ],
             correct: 0,
             explanation: "Le HTML sémantique désigne l'utilisation de balises HTML qui transmettent la signification du contenu qu'elles renferment.\nIl est important, car il améliore l'accessibilité pour les technologies d'assistance.\nIl favorise aussi le référencement naturel (SEO) en permettant aux moteurs de recherche de mieux comprendre la structure et le contenu de la page."
@@ -1039,39 +1039,39 @@ const questionsData = {
             theme: "Le HTML",
             level: "Facile",
             answers: [
-                "Un protocole réseau",
-                "L'attribut data- * est un attribut personnalisé qui permet de stocker des données supplémentaires sur un élément HTML",
-                "Un logiciel de design graphique",
-                "Un langage de programmation"
+                "L’attribut data-* est utilisé pour importer automatiquement des fichiers externes (comme des scripts ou des images) dans une page HTML.",
+                "L'attribut data- * est un attribut personnalisé qui permet de stocker des données supplémentaires sur un élément HTML.",
+                "L’attribut data-* permet de définir le style CSS d’un élément directement dans la balise sans utiliser la propriété style.",
+                "L’attribut data-* sert à créer des animations HTML sans recourir à JavaScript ni à des bibliothèques externes."
             ],
             correct: 1,
-            explanation: "L'attribut data- * est un attribut personnalisé qui permet de stocker des données supplémentaires sur un élément HTML. Dans l'exemple ci-dessous, on peut utiliser le data-user-id afin de manipuler l'élément en question. <div data-user-id=\"12345\">Contenu</div>"
+            explanation: "L'attribut data- * est un attribut personnalisé qui permet de stocker des données supplémentaires sur un élément HTML.\n\nDans l'exemple ci-dessous, on peut utiliser le data-user-id afin de manipuler l'élément en question.\n&lt;div data-user-id=\"12345\">Contenu&lt;/div>"
         },
         {
             question: "Comment éviter les erreurs dans l'écriture du HTML ?",
             theme: "Le HTML",
             level: "Facile",
             answers: [
-                "Un logiciel de design graphique",
+                "En écrivant tout le code HTML en majuscules, car les navigateurs interprètent mieux les balises lorsqu’elles sont uniformisées.",
                 "Il est important de valider le code HTML avec des outils comme le validateur W3C pour détecter les erreurs de syntaxe",
-                "Un protocole réseau",
-                "Un langage de programmation"
+                "En désactivant la validation automatique du navigateur pour éviter que des messages d’erreurs n’interrompent l’affichage de la page.",
+                "En ajoutant systématiquement la balise &lt;validate> en haut du document pour forcer le navigateur à corriger automatiquement les erreurs."
             ],
             correct: 1,
-            explanation: "Il est important de valider le code HTML avec des outils comme le validateur W3C pour détecter les erreurs de syntaxe. Voici quelques conseils pour éviter les erreurs : - Utiliser des balises correctement fermées. - S'assurer que les attributs sont bien écrits. - Éviter les balises imbriquées incorrectement."
+            explanation: "Il est important de valider le code HTML avec des outils comme le validateur W3C pour détecter les erreurs de syntaxe.\n\nVoici quelques conseils pour éviter les erreurs :\n\t- Utiliser des balises correctement fermées.\n\t- S'assurer que les attributs sont bien écrits.\n\t- Éviter les balises imbriquées incorrectement."
         },
         {
             question: "Comment optimiser le chargement des ressources en HTML ?",
             theme: "Le HTML",
             level: "Facile",
             answers: [
-                "Un langage de programmation",
-                "Pour optimiser le chargement des ressources en HTML, vous pouvez : - Utiliser des balises <link> et <script> avec l'attribut defer ou async pour charger les scripts de manière asynchrone",
-                "Un protocole réseau",
-                "Un logiciel de design graphique"
+                "Regrouper tous les fichiers CSS et JavaScript dans un seul &lt;script> ou &lt;style> en ligne placé au début du &lt;head> pour que le navigateur télécharge tout en priorité.",
+                "Pour optimiser le chargement des ressources en HTML, vous pouvez :\n\t- Utiliser des balises &lt;link> et &lt;script> avec l'attribut defer ou async pour charger les scripts de manière asynchrone",
+                "Charger chaque image et police dans un &lt;iframe> séparé afin que le navigateur ouvre plusieurs connexions parallèles et accélère l'affichage global.",
+                "Dupliquer systématiquement les mêmes fichiers CSS et JS sur plusieurs URLs différentes pour forcer le navigateur à récupérer la version la plus rapide à chaque visite."
             ],
             correct: 1,
-            explanation: "Pour optimiser le chargement des ressources en HTML, vous pouvez : - Utiliser des balises <link> et <script> avec l'attribut defer ou async pour charger les scripts de manière asynchrone. - Minimiser le nombre de requêtes HTTP en combinant les fichiers CSS et JavaScript. - Compresser les images et utiliser des formats modernes comme WebP."
+            explanation: "Pour optimiser le chargement des ressources en HTML, vous pouvez :\n\t- Utiliser des balises &lt;link> et &lt;script> avec l'attribut defer ou async pour charger les scripts de manière asynchrone.\n\t- Minimiser le nombre de requêtes HTTP en combinant les fichiers CSS et JavaScript.\n\t- Compresser les images et utiliser des formats modernes comme WebP."
         }
     ],
     "Le CSS": [
