@@ -1416,7 +1416,7 @@ const questionsData = {
                 "Elles ajustent les transitions CSS pour les navigateurs anciens"
             ],
             correct: 0,
-            explanation: "Les media queries sont des règles CSS..."
+            explanation: "Les media queries sont des règles CSS qui appliquent des styles spécifiques en fonction des caractéristiques de l'appareil, comme la largeur de l'écran"
         },
         {
             question: "Comment tester l'affichage d'un site web sur différents appareils et tailles d'écran ?",
@@ -1641,7 +1641,7 @@ const questionsData = {
                 "L’attribut mobile-scale dans la balise head"
             ],
             correct: 1,
-            explanation: "La balise meta viewport permet de contrôler la mise à l’échelle et les dimensions d’une page sur les appareils mobiles. Par exemple : <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+            explanation: "La balise meta viewport permet de contrôler la mise à l’échelle et les dimensions d’une page sur les appareils mobiles.\n\nPar exemple :\n&lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
         },
         {
             question: "Quelle propriété CSS permet de définir la flexibilité d’un élément dans un conteneur flexbox ?",
@@ -1654,7 +1654,7 @@ const questionsData = {
                 "position: relative;"
             ],
             correct: 1,
-            explanation: "La propriété flex: 1; définit la flexibilité d’un élément dans un conteneur flexbox. Elle indique que l’élément peut grandir pour occuper l’espace disponible dans le conteneur."
+            explanation: "La propriété flex: 1; définit la flexibilité d’un élément dans un conteneur flexbox.\nElle indique que l’élément peut grandir pour occuper l’espace disponible dans le conteneur."
         },
         {
             question: "Quelle est la différence entre 'max-width' et 'min-width' dans une media query ?",
@@ -1667,7 +1667,7 @@ const questionsData = {
                 "Elles sont équivalentes et peuvent être utilisées indifféremment"
             ],
             correct: 2,
-            explanation: "max-width s’applique lorsque la largeur de l’écran est inférieure à une valeur donnée, tandis que min-width s’applique lorsqu’elle est supérieure. Elles permettent de cibler différents types d’appareils pour appliquer des styles adaptés."
+            explanation: "max-width s’applique lorsque la largeur de l’écran est inférieure à une valeur donnée, tandis que min-width s’applique lorsqu’elle est supérieure.\nElles permettent de cibler différents types d’appareils pour appliquer des styles adaptés."
         },
         {
             question: "Pourquoi utiliser des images adaptatives dans le responsive design ?",
@@ -1719,7 +1719,7 @@ const questionsData = {
                 "Une compatibilité accrue entre les navigateurs"
             ],
             correct: 1,
-            explanation: "Un responsive design mal implémenté peut rendre la lecture difficile, provoquer des chevauchements d’éléments ou forcer l’utilisateur à zoomer. Cela dégrade l’expérience utilisateur."
+            explanation: "Un responsive design mal implémenté peut rendre la lecture difficile, provoquer des chevauchements d’éléments ou forcer l’utilisateur à zoomer.\nCela dégrade l’expérience utilisateur."
         },
         //ajout intermediaire
         {
@@ -1733,7 +1733,7 @@ const questionsData = {
                 "Il n’existe aucune différence, ce sont deux termes synonymes"
             ],
             correct: 0,
-            explanation: "Le responsive design repose sur des grilles et unités flexibles, ce qui permet une adaptation fluide à toute taille d’écran. Le design adaptatif, quant à lui, utilise plusieurs mises en page fixes pour différentes résolutions spécifiques. Le premier est fluide, le second est par paliers."
+            explanation: "Le responsive design repose sur des grilles et unités flexibles, ce qui permet une adaptation fluide à toute taille d’écran.\nLe design adaptatif, quant à lui, utilise plusieurs mises en page fixes pour différentes résolutions spécifiques.\nLe premier est fluide, le second est par paliers."
         },
         {
             question: "Pourquoi utiliser la technique du 'mobile first' dans le responsive design ?",
@@ -1746,7 +1746,7 @@ const questionsData = {
                 "Parce que les navigateurs mobiles ne supportent pas les media queries inversées"
             ],
             correct: 0,
-            explanation: "La philosophie 'mobile first' consiste à concevoir d'abord la version mobile d’un site, puis à l’enrichir progressivement pour les écrans plus grands. Cela garantit une meilleure performance, une hiérarchisation claire du contenu et une compatibilité optimale sur les petits écrans."
+            explanation: "La philosophie 'mobile first' consiste à concevoir d'abord la version mobile d’un site, puis à l’enrichir progressivement pour les écrans plus grands.\nCela garantit une meilleure performance, une hiérarchisation claire du contenu et une compatibilité optimale sur les petits écrans."
         },
         {
             question: "Quelle est la meilleure pratique pour gérer les typographies en responsive design ?",
@@ -1759,7 +1759,7 @@ const questionsData = {
                 "Limiter l’utilisation de polices aux systèmes d’exploitation mobiles uniquement"
             ],
             correct: 0,
-            explanation: "Les unités relatives comme 'em', 'rem', ou 'vw' permettent d’adapter la taille du texte proportionnellement à la taille de l’écran ou à la police racine. Cela améliore la lisibilité et l’adaptabilité du site."
+            explanation: "Les unités relatives comme 'em', 'rem', ou 'vw' permettent d’adapter la taille du texte proportionnellement à la taille de l’écran ou à la police racine.\nCela améliore la lisibilité et l’adaptabilité du site."
         },
         {
             question: "Quel rôle jouent les breakpoints dans le responsive design ?",
@@ -1772,7 +1772,7 @@ const questionsData = {
                 "Les breakpoints permettent de forcer la rotation d’écran sur les appareils mobiles"
             ],
             correct: 0,
-            explanation: "Les breakpoints sont des seuils de largeur d’écran définis dans les media queries. Lorsqu’un écran franchit un de ces seuils, la mise en page s’ajuste pour rester lisible et fonctionnelle."
+            explanation: "Les breakpoints sont des seuils de largeur d’écran définis dans les media queries.\nLorsqu’un écran franchit un de ces seuils, la mise en page s’ajuste pour rester lisible et fonctionnelle."
         },
         {
             question: "Comment optimiser les performances d’un site responsive ?",
@@ -1785,7 +1785,7 @@ const questionsData = {
                 "En forçant les scripts JavaScript à s’exécuter en priorité"
             ],
             correct: 0,
-            explanation: "Un site responsive performant limite les ressources lourdes et adapte le contenu selon l’appareil (images, vidéos, polices). Le lazy loading et la compression sont des techniques efficaces pour améliorer la vitesse de chargement."
+            explanation: "Un site responsive performant limite les ressources lourdes et adapte le contenu selon l’appareil (images, vidéos, polices).\nLe lazy loading et la compression sont des techniques efficaces pour améliorer la vitesse de chargement."
         },
         {
             question: "Quelle différence existe entre les propriétés CSS 'flexbox' et 'grid' ?",
@@ -1798,7 +1798,7 @@ const questionsData = {
                 "Les deux systèmes sont identiques mais utilisent des syntaxes différentes"
             ],
             correct: 0,
-            explanation: "Flexbox se concentre sur l’alignement et la répartition des éléments sur un axe unique (horizontal ou vertical). CSS Grid, en revanche, permet une organisation sur deux axes, parfaite pour des mises en page complexes avec plusieurs zones."
+            explanation: "Flexbox se concentre sur l’alignement et la répartition des éléments sur un axe unique (horizontal ou vertical).\nCSS Grid, en revanche, permet une organisation sur deux axes, parfaite pour des mises en page complexes avec plusieurs zones."
         },
         {
             question: "Quel est l’avantage principal d’utiliser les 'container queries' par rapport aux 'media queries' classiques ?",
@@ -1811,7 +1811,7 @@ const questionsData = {
                 "Elles sont utilisées pour rendre le site compatible avec les anciens navigateurs"
             ],
             correct: 0,
-            explanation: "Les container queries ajustent le style d’un élément selon la taille de son conteneur parent, contrairement aux media queries qui se basent sur la taille du viewport. Cela rend les composants plus modulaires et réutilisables."
+            explanation: "Les container queries ajustent le style d’un élément selon la taille de son conteneur parent, contrairement aux media queries qui se basent sur la taille du viewport.\nCela rend les composants plus modulaires et réutilisables."
         },
         {
             question: "Quelle technique CSS permet de charger une image différente selon la résolution de l’écran ?",
@@ -1837,7 +1837,7 @@ const questionsData = {
                 "Empêcher les utilisateurs de redimensionner leur fenêtre"
             ],
             correct: 0,
-            explanation: "Dans les grandes applications, l’approche modulaire (par composants) permet d’assurer la maintenabilité, la réutilisation et la cohérence des styles. Chaque composant peut gérer sa propre adaptation responsive via des media ou container queries locales."
+            explanation: "Dans les grandes applications, l’approche modulaire (par composants) permet d’assurer la maintenabilité, la réutilisation et la cohérence des styles.\nChaque composant peut gérer sa propre adaptation responsive via des media ou container queries locales."
         },
         {
             question: "Quels outils peuvent être utilisés pour tester l’affichage responsive d’un site web ?",
@@ -1850,7 +1850,7 @@ const questionsData = {
                 "Les scripts PHP côté serveur"
             ],
             correct: 0,
-            explanation: "Les DevTools de Chrome, Firefox ou Safari permettent de simuler différents appareils et tailles d’écran. BrowserStack et Responsinator offrent des tests sur de vrais appareils et résolutions."
+            explanation: "Les DevTools de Chrome, Firefox ou Safari permettent de simuler différents appareils et tailles d’écran.\nBrowserStack et Responsinator offrent des tests sur de vrais appareils et résolutions."
         }
 
 
