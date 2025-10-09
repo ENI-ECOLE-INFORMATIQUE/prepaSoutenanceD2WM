@@ -881,25 +881,25 @@ const questionsData = {
                 "Un logiciel de design graphique"
             ],
             correct: 2,
-            explanation: "HTML (HyperText Markup Language) est le langage standard utilisé pour créer des pages web. Il sert à structurer le contenu sur le web, en utilisant des balises pour définir des éléments comme des titres, des paragraphes, des images et des liens. HTML a été créé par Tim Berners-Lee en 1989 au CERN (Organisation européenne pour la recherche nuclefaire)."
+            explanation: "HTML (HyperText Markup Language) est le langage standard utilisé pour créer des pages web.\nIl sert à structurer le contenu sur le web, en utilisant des balises pour définir des éléments comme des titres, des paragraphes, des images et des liens.\nHTML a été créé par <b>Tim Berners-Lee</b> en 1989 au CERN (Organisation européenne pour la recherche nuclefaire)."
         },
          {
             question: "Quelle balise HTML5 est utilisée pour définir un contenu principal d'une page ?",
             theme: "Le HTML",
             level: "Facile",
-            answers: ["<main>", "<content>", "<primary>", "<section>"],
+            answers: ["&lt;main>", "&lt;content>", "&lt;primary>", "&lt;section>"],
             correct: 0,
-            explanation: "La balise <main> est spécifiquement conçue en HTML5 pour marquer le contenu principal d'un document, celui qui est directement lié au sujet central de la page."
+            explanation: "La balise &lt;main> est spécifiquement conçue en HTML5 pour marquer le contenu principal d'un document, celui qui est directement lié au sujet central de la page."
         },
         {
             question: "Quelle est la différence entre HTML et XHTML ?",
             theme: "Le HTML",
             level: "Facile",
             answers: [
-                "Un protocole réseau",
-                "Un logiciel de design graphique",
+                "Aucune",
+                "XHTML permet de créer ses propres balises",
                 "HTML est un langage de balisage plus permissif, tandis que XHTML (Extensible HyperText Markup Language) est une version plus stricte de HTML basée sur XML",
-                "Un langage de programmation"
+                "HTML n'existe plus il a été remplacé par XHTML"
             ],
             correct: 2,
             explanation: "HTML est un langage de balisage plus permissif, tandis que XHTML (Extensible HyperText Markup Language) est une version plus stricte de HTML basée sur XML. XHTML impose des règles de syntaxe plus rigoureuses, comme la nécessité de fermer toutes les balises et d'utiliser des noms de balises en minuscules."
@@ -909,13 +909,13 @@ const questionsData = {
             theme: "Le HTML",
             level: "Facile",
             answers: [
-                "Un protocole réseau",
-                "Un langage de programmation",
-                "Voici les principales versions de HTML avec leur année de sortie et leurs changements majeurs : HTML 2",
-                "Un logiciel de design graphique"
+                "HTML, HTML2, HTML3, HTML4, HTML5, HTML6",
+                "HTML, XHTML, HTML4",
+                "HTML2, HTML3.2, HTML4.01, XHTML, HTML5 ",
+                "HTML2, XHTML, HTML5"
             ],
             correct: 2,
-            explanation: "Voici les principales versions de HTML avec leur année de sortie et leurs changements majeurs : HTML 2.0 (1995) introduit les formulaires et les tables, c'est la première version standardisée;\n HTML 3.2 (1997) ajoute du support pour les feuilles de style, les scripts et les applets;\n HTML 4.01 (1999) améliore de l'accessibilité, internationalisation, et séparation du contenu et de la présentation;\n XHTML 1.0 (2000) reformule le HTML 4.01 en XML, avec une syntaxe plus stricte;\n HTML5 (2014) introduit des éléments sémantiques, le support natif de l'audio et de la vidéo, le canvas pour le dessin, et l'amélioration des formulaires."
+            explanation: "Voici les principales versions de HTML avec leur année de sortie et leurs changements majeurs :\n\tHTML 2.0 (1995) introduit les formulaires et les tables, c'est la première version standardisée;\n\tHTML 3.2 (1997) ajoute du support pour les feuilles de style, les scripts et les applets;\n\tHTML 4.01 (1999) améliore de l'accessibilité, internationalisation, et séparation du contenu et de la présentation;\n XHTML 1.0 (2000) reformule le HTML 4.01 en XML, avec une syntaxe plus stricte;\n\tHTML5 (2014) introduit des éléments sémantiques, le support natif de l'audio et de la vidéo, le canvas pour le dessin, et l'amélioration des formulaires."
         },
         {
             question: "Qu'est-ce qu'une balise HTML ? Comment est-elle structurée ?",
@@ -928,7 +928,7 @@ const questionsData = {
                 "Un langage de programmation"
             ],
             correct: 1,
-            explanation: "Une balise HTML est un élément de base qui définit le contenu d'une page web. Elle est généralement structurée avec une balise d'ouverture et une balise de fermeture. <balise propriete=\"valeur\">contenu </balise>"
+            explanation: "Une balise HTML est un élément de base qui définit le contenu d'une page web.\nElle est généralement structurée avec une balise d'ouverture et une balise de fermeture.\n&lt;balise propriete=\"valeur\">contenu&lt;/balise>"
         },
         {
             question: "Qu'est-ce qu'un attribut dans une balise HTML ?",
@@ -941,7 +941,7 @@ const questionsData = {
                 "Un logiciel de design graphique"
             ],
             correct: 2,
-            explanation: "Un attribut fournit des informations supplémentaires sur une balise HTML. Par exemple, dans la balise ci-dessous type et readonly sont des attributs. <input type=\"text\" readonly>"
+            explanation: "Un attribut fournit des informations supplémentaires sur une balise HTML.\nPar exemple, dans la balise ci-dessous type et readonly sont des attributs.\n&lt;input type=\"text\" readonly>"
         },
         {
             question: "Qu'est-ce que le DOCTYPE en HTML ?",
@@ -954,7 +954,7 @@ const questionsData = {
                 "Un protocole réseau"
             ],
             correct: 0,
-            explanation: "Le DOCTYPE est une déclaration qui informe le navigateur du type de document et de la version de HTML utilisée. Il est important, car il permet au navigateur de créer correctement la page en respectant les standards du web. Vous pouvez le déclarer de cette manière-là : <!DOCTYPE html>"
+            explanation: "Le DOCTYPE est une déclaration qui informe le navigateur du type de document et de la version de HTML utilisée.\nIl est important, car il permet au navigateur de créer correctement la page en respectant les standards du web.\nVous pouvez le déclarer de cette manière-là :\n&lt;!DOCTYPE html>"
         },
         {
             question: "Quelle est la structure de base d'un fichier HTML ?",
@@ -967,7 +967,7 @@ const questionsData = {
                 "Un protocole réseau"
             ],
             correct: 1,
-            explanation: "La structure de base d'un fichier HTML comprend les éléments suivants : - La déclaration DOCTYPE;\n - L'élément <html> avec l'attribut de langue;\n - La section <head> contenant les métadonnées;\n - La section <body> contenant le contenu visible de la page. Voici un exemple de structure de base : <!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta\n    name=\"viewport\"\n    content=\"width=device-width, initial-scale=1.0\">\n  <title>Document</title>\n</head>\n<body>\n\n</body>\n</html>"
+            explanation: "La structure de base d'un fichier HTML comprend les éléments suivants:\n\t- La déclaration DOCTYPE;\n\t- L'élément &lt;html> avec l'attribut de langue;\n\t- La section &lt;head> contenant les métadonnées;\n\t- La section &lt;body> contenant le contenu visible de la page.\n\nVoici un exemple de structure de base :\n&lt;!DOCTYPE html>\n&lt;html lang=\"fr\">\n&lt;head>\n  &lt;meta charset=\"UTF-8\">\n  &lt;meta\n    name=\"viewport\"\n    content=\"width=device-width, initial-scale=1.0\">\n  &lt;title>Document</title>\n&lt;/head>\n&lt;body>\n\n&lt;/body>\n&lt;/html>"
         },
         {
             question: "Comment le HTML interagit-il avec le CSS et le JavaScript ?",
@@ -980,7 +980,7 @@ const questionsData = {
                 "Un protocole réseau"
             ],
             correct: 0,
-            explanation: "Le HTML structure le contenu d'une page, tandis que le CSS (Cascading Style Sheets) est utilisé pour la mise en forme et le style. Le JavaScript , quant à lui, permet d'ajouter de l'interactivité à la page en manipulant le DOM (Document Object Model) généré par HTML."
+            explanation: "Le HTML structure le contenu d'une page, tandis que le CSS (Cascading Style Sheets) est utilisé pour la mise en forme et le style.\nLe JavaScript , quant à lui, permet d'ajouter de l'interactivité à la page en manipulant le DOM (Document Object Model) généré par HTML."
         },
         {
             question: "Comment les métadonnées sont-elles utilisées dans une page HTML ?",
@@ -993,7 +993,7 @@ const questionsData = {
                 "Un logiciel de design graphique"
             ],
             correct: 2,
-            explanation: "Les métadonnées sont des informations sur la page qui ne sont pas affichées directement à l'utilisateur, mais qui fournissent des données importantes aux navigateurs et aux moteurs de recherche. Elles sont généralement définies dans la section <head> de la page HTML, principalement avec des balises <meta> . Ci-dessous sont présentés des exemples courants de métadonnées. Encodage des caractères : <meta charset=\"UTF-8\"> Description de la page (importante pour le SEO) : <meta\n  name=\"description\"\n  content=\"Description concise de la page pour les moteurs de recherche\"\n> Mots-clefs (moins utilisés aujourd'hui pour le SEO) : <meta\n  name=\"keywords\"\n  content=\"mot-clef1, mot-clef2, mot-clef3\"\n> Auteur de la page : <meta\n  name=\"author\"\n  content=\"Nom de l'auteur\"\n> Viewport pour le responsive design : <meta\n  name=\"viewport\"\n  content=\"width=device-width, initial-scale=1.0\"\n> Robots (instructions pour les moteurs de recherche) : <meta\n  name=\"robots\"\n  content=\"index, follow\"\n>"
+            explanation: "Les métadonnées sont des informations sur la page qui ne sont pas affichées directement à l'utilisateur, mais qui fournissent des données importantes aux navigateurs et aux moteurs de recherche.\nElles sont généralement définies dans la section &lt;head> de la page HTML, principalement avec des balises &lt;meta>.\nCi-dessous sont présentés des exemples courants de métadonnées.\nEncodage des caractères :\n&lt;meta charset=\"UTF-8\">\nDescription de la page (importante pour le SEO) :\n&lt;meta\n  name=\"description\"\n  content=\"Description concise de la page pour les moteurs de recherche\"\n>\nMots-clefs (moins utilisés aujourd'hui pour le SEO) :\n&lt;meta\n  name=\"keywords\"\n  content=\"mot-clef1, mot-clef2, mot-clef3\">\nAuteur de la page :\n&lt;meta\n  name=\"author\"\n  content=\"Nom de l'auteur\">\nViewport pour le responsive design :\n&lt;meta\n  name=\"viewport\"\n  content=\"width=device-width, initial-scale=1.0\">\nRobots (instructions pour les moteurs de recherche) :\n&lt;meta\n  name=\"robots\"\n  content=\"index, follow\"\n>"
         },
         {
             question: "Qu'est-ce que le HTML sémantique ?",
@@ -1006,33 +1006,33 @@ const questionsData = {
                 "Un protocole réseau"
             ],
             correct: 0,
-            explanation: "Le HTML sémantique désigne l'utilisation de balises HTML qui transmettent la signification du contenu qu'elles renferment. Il est important, car il améliore l'accessibilité pour les technologies d'assistance. Il favorise aussi le référencement naturel (SEO) en permettant aux moteurs de recherche de mieux comprendre la structure et le contenu de la page."
+            explanation: "Le HTML sémantique désigne l'utilisation de balises HTML qui transmettent la signification du contenu qu'elles renferment.\nIl est important, car il améliore l'accessibilité pour les technologies d'assistance.\nIl favorise aussi le référencement naturel (SEO) en permettant aux moteurs de recherche de mieux comprendre la structure et le contenu de la page."
         },
         {
             question: "Comment créer des liens internes et externes en HTML ?",
             theme: "Le HTML",
             level: "Facile",
             answers: [
-                "Un langage de programmation",
-                "Un logiciel de design graphique",
-                "Un protocole réseau",
-                "Pour créer un lien interne , utilisez la balise <a> avec l'attribut href pointant vers un identifiant dans la même page : <a href=\"#section1\">\n  Aller à la section 1\n</a> Pour créer un lien externe , utilisez également la balise <a> avec l'URL complète : <a href=\"https://www"
+                "Utilisez la balise lien &lt;lien src=\"mapage.html\">",
+                "Utilisez la balise &lt;a> avec l'attribut src pointant vers un identifiant dans la même page :\n&lt;a src=\"#section1\">\n Aller à la section 1\n</a> Pour créer un lien externe , utilisez également la balise &lt;a> avec l'URL complète : &lt;a href=\"https://www",
+                "Utilisez la balise link &lt;link src=\"mapage.html\">",
+                "Utilisez la balise &lt;a> avec l'attribut href pointant vers un identifiant dans la même page :\n&lt;a href=\"#section1\">\n  Aller à la section 1\n</a> Pour créer un lien externe , utilisez également la balise &lt;a> avec l'URL complète : &lt;a href=\"https://www"
             ],
             correct: 3,
-            explanation: "Pour créer un lien interne , utilisez la balise <a> avec l'attribut href pointant vers un identifiant dans la même page : <a href=\"#section1\">\n  Aller à la section 1\n</a> Pour créer un lien externe , utilisez également la balise <a> avec l'URL complète : <a href=\"https://www.example.com\">\n  Visitez Example\n</a>."
+            explanation: "Pour créer un lien interne , utilisez la balise &lt;a> avec l'attribut href pointant vers un identifiant dans la même page :\n&lt;a href=\"#section1\">\n  Aller à la section 1\n&lt;/a> Pour créer un lien externe , utilisez également la balise &lt;a> avec l'URL complète :\n&lt;a href=\"https://www.example.com\">\nVisitez Example\n&lt;/a>."
         },
         {
             question: "Comment utiliser les commentaires dans le code HTML ?",
             theme: "Le HTML",
             level: "Facile",
             answers: [
-                "Un langage de programmation",
-                "Un logiciel de design graphique",
-                "Un protocole réseau",
+                "ce n'est pas possible",
+                "en utilisant la balise &lt;comment>",
+                "en utilisant la balise &lt;code>",
                 "Les commentaires en HTML sont utilisés pour ajouter des notes ou des explications dans le code sans qu'elles soient affichées dans le navigateur"
             ],
             correct: 3,
-            explanation: "Les commentaires en HTML sont utilisés pour ajouter des notes ou des explications dans le code sans qu'elles soient affichées dans le navigateur. Ils sont écrits en utilisant la syntaxe suivante : <!-- Ceci est un commentaire -->."
+            explanation: "Les commentaires en HTML sont utilisés pour ajouter des notes ou des explications dans le code sans qu'elles soient affichées dans le navigateur.\nIls sont écrits en utilisant la syntaxe suivante : &lt;!-- Ceci est un commentaire -->."
         },
         {
             question: "Qu'est-ce que l'attribut data-* en HTML ?",
