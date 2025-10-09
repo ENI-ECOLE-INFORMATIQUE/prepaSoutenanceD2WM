@@ -1312,7 +1312,7 @@ const questionsData = {
                 "C’est un framework JavaScript utilisé pour animer les éléments d’un site"
             ],
             correct: 0,
-            explanation: "Le responsive design en CSS permet de créer des mises en page adaptables à différentes tailles d'écran..."
+            explanation: "Le responsive design en CSS permet de créer des mises en page adaptables à différentes tailles d'écran.\nUtilisez des unités de mesure flexibles (%, em, rem), des media queries et des grilles fluides pour créer des designs réactifs"
         },
         {
             question: "Quelles sont les techniques CSS couramment utilisées pour créer un design responsive ?",
@@ -1325,7 +1325,7 @@ const questionsData = {
                 "Définir des tailles en pixels pour tous les éléments"
             ],
             correct: 1,
-            explanation: "Pour créer un design responsive, plusieurs techniques CSS couramment utilisées existent..."
+            explanation: "Pour créer un design responsive, plusieurs techniques CSS couramment utilisées existent.\n\t- Le CSS Grid Layout ou (grilles CSS) permettent de créer des mises en page complexes et flexibles en définissant des lignes et des colonnes.\nElles offrent un contrôle précis sur l'agencement des éléments, facilitant l'adaptation du contenu à différentes tailles d'écran.\n\t- Le Flexible Box Layout ou (modèle Flexbox) est idéal pour créer des mises en page unidimensionnelles.\nIl permet de distribuer l'espace entre les éléments d'une interface et d'aligner les éléments de manière efficace, même lorsque leur taille est inconnue ou dynamique.\n\t- Les Media Queries sont des règles CSS qui appliquent des styles spécifiques en fonction des caractéristiques du dispositif, telles que la largeur de l'écran, la résolution ou l'orientation. Cela permet d'adapter le design en fonction des différentes tailles d'écran, garantissant ainsi une expérience utilisateur optimale sur tous les appareils.\n\t- Les Unités relatives , comme les pourcentages (%), les unités viewport (vw, vh) et les unités relatives (rem, em) sont recommandées pour garantir que les éléments s'ajustent proportionnellement à la taille de l'écran, offrant ainsi une meilleure adaptabilité.\nEn combinant ces techniques, les développeurs peuvent créer des sites web qui s'adaptent harmonieusement à une variété d'appareils, améliorant ainsi l'expérience utilisateur."
         },
         {
             question: "Quelles sont les principales caractéristiques prises en charge dans les médias queries ?",
@@ -1338,7 +1338,7 @@ const questionsData = {
                 "Elles permettent d’activer JavaScript selon la taille d’écran"
             ],
             correct: 0,
-            explanation: "Les médias queries permettent de cibler diverses caractéristiques des appareils..."
+            explanation: "Les médias queries permettent de cibler diverses caractéristiques des appareils.\nLes plus couramment utilisées sont :\n\t- width et height , qui représentent la largeur et la hauteur de la fenêtre du navigateur,\n\t- min-width et max-width pour la largeur minimale et maximale,\n\t- min-height et max-height pour la hauteur minimale et maximale,\n\t- orientation pour l'orientation de l'appareil (portrait ou paysage).\n\nVoici un exemple d'utilisation : @media (min-width: 768px) and (max-width: 1024px) {\n .container {\n width: 90%;\n }\n}\n\n@media (orientation: landscape) {\n .header {\n height: 50px;\n }\n}"
         },
         {
             question: "Quels sont les différents médias pris en compte par les médias queries ?",
@@ -1351,7 +1351,7 @@ const questionsData = {
                 "Les médias queries peuvent cibler différents types de médias, permettant d'adapter le contenu en fonction du dispositif d'affichage"
             ],
             correct: 3,
-            explanation: "Les médias queries peuvent cibler différents types de médias..."
+            explanation: "Les médias queries peuvent cibler différents types de médias, permettant d'adapter le contenu en fonction du dispositif d'affichage.\n\t- all s'applique à tous les types de médias (valeur par défaut),\n\t- print cible les documents imprimés et les aperçus d'impression,\n\t- screen s'applique aux écrans d'ordinateurs, tablettes, smartphones, etc.,\n\t- speech est destiné aux synthétiseurs vocaux.\n\nVoici un exemple d'utilisation :\n@media print {\n body {\n font-size: 12pt;\n color: black;\n }\n}\n\n@media screen and (max-width: 600px) {\n .sidebar {\n display: none;\n }\n}."
         },
         {
             question: "Qu'est-ce qu'un breakpoint en responsive design ?",
@@ -1364,7 +1364,7 @@ const questionsData = {
                 "Un breakpoint est une valeur de largeur d'écran définie dans les media queries"
             ],
             correct: 3,
-            explanation: "Un breakpoint est une valeur de largeur d'écran définie dans les media queries..."
+            explanation: "Un breakpoint est une valeur de largeur d'écran définie dans les media queries.\nIl détermine à quel moment le design d'une page web doit changer pour s'adapter à une autre taille d'écran.\n\nPar exemple, un breakpoint peut être fixé à 768 pixels pour passer d'une mise en page en colonne unique à une mise en page en colonnes.\nEn utilisant des breakpoints, les développeurs peuvent appliquer des styles CSS spécifiques qui garantissent que le contenu reste lisible et bien structuré.\nCela permet d'offrir une expérience utilisateur optimale sur les smartphones, les tablettes et les ordinateurs de bureau."
         },
         {
             question: "Quels sont les différents breakpoints et les écrans qui leur sont associés ?",
@@ -1377,7 +1377,7 @@ const questionsData = {
                 "Breakpoints avec 6 tailles : - < 576px : Petit smartphone ... 1200px : Ordinateurs de bureau"
             ],
             correct: 3,
-            explanation: "Breakpoints avec 6 tailles : ..."
+            explanation: "Breakpoints avec 6 tailles :\n\t- < 576px : Petit smartphone\n\t- < 768px : Grand Smartphone\n\t- < 992px : Petite tablette\n\t- < 1200px : Grande tablette\n\t- < 1400px : Ecran PC standard \n\t- >1400px : Ecran PC large \n\nBreakpoints avec 4 tailles : \n\t- < 750px : Smartphone \n\t- < 970px : Tablette \n\t- < 1170px : Ecran PC standard \n\t- > 1170px : Ecran PC large\n\nLes breakpoints courants incluent :\n\t- 320px : Smartphones en mode portrait\n\t- 480px : Smartphones en mode paysage\n\t- 768px : Tablettes en mode portrait\n\t- 1024px : Tablettes en mode paysage\n\t- 1200px : Ordinateurs de bureau"
         },
         {
             question: "Pourquoi est-il important de définir des breakpoints adaptés ?",
@@ -1390,7 +1390,7 @@ const questionsData = {
                 "Parce qu’ils réduisent automatiquement la taille des images"
             ],
             correct: 1,
-            explanation: "Définir des breakpoints adaptés..."
+            explanation: "Définir des breakpoints adaptés lors dès le début de la conception du site permet d'assurer que le contenu est lisible et accessible sur tous les appareils.\nCela améliore l'expérience utilisateur et réduit le taux de rebond"
         },
         {
             question: "Quelles sont les meilleures pratiques pour choisir des breakpoints efficaces ?",
@@ -1399,11 +1399,11 @@ const questionsData = {
             answers: [
                 "Choisir uniquement les tailles des téléviseurs 4K",
                 "Utiliser les breakpoints fournis par défaut sans adaptation",
-                "Pour choisir des breakpoints efficaces, plusieurs pratiques sont à suivre",
+                "Analyser les données d'utilisation, Tester sur différents appareils, Adapté au contenu",
                 "Définir un seul breakpoint pour tous les appareils"
             ],
             correct: 2,
-            explanation: "Pour choisir des breakpoints efficaces..."
+            explanation: "Pour choisir des breakpoints efficaces, plusieurs pratiques sont à suivre.\n\t- Analyser les données d'utilisation : il s'agit d'examinee les statistiques pour identifier les tailles d'écran les plus courantes parmi vos utilisateurs.\n\t- Tester sur différents appareils : il convient d'effectuer des tests sur une variété d'appareils pour déterminer les points de rupture nécessaires à une expérience utilisateur optimale.\n\t- Adapté au contenu : il est nécessaire d'utiliser des breakpoints fondés sur le contenu plutôt que sur des tailles d'écran fixes.\nCela permet d'adapter le design en fonction de la structure et de la disposition du contenu"
         },
         {
             question: "Comment les media queries sont-elles utilisées pour gérer le responsive design ?",
@@ -1429,7 +1429,7 @@ const questionsData = {
                 "En désactivant le JavaScript du site"
             ],
             correct: 0,
-            explanation: "Pour tester l'affichage d'un site web..."
+            explanation: "Les media queries sont des règles CSS qui appliquent des styles spécifiques en fonction des caractéristiques de l'appareil, comme la largeur de l'écran.\nElles permettent de modifier la mise en page et le style en fonction des breakpoints définis."
         },
         {
             question: "Comment le responsive design améliore-t-il l'expérience utilisateur ?",
@@ -1442,7 +1442,7 @@ const questionsData = {
                 "Le responsive design améliore l'expérience utilisateur en garantissant que le contenu est accessible et facile à naviguer sur tous les appareils"
             ],
             correct: 3,
-            explanation: "Le responsive design améliore l'expérience utilisateur..."
+            explanation: "Pour tester l'affichage d'un site web sur différents appareils et tailles d'écran, vous pouvez utiliser plusieurs méthodes.\nTout d'abord, les outils de développement intégrés dans les navigateurs, comme ceux de Chrome ou Firefox , permettent de simuler différentes tailles d'écran et de tester la réactivité du design.\n\nEnsuite, des services en ligne tels que BrowserStack et Responsinator offrent des environnements de test variés, vous permettant de visualiser votre site sur une large gamme d'appareils.\nEnfin, il est recommandé de tester physiquement votre site sur une sélection d'appareils réels pour vérifier le rendu final et l'expérience utilisateur.\nCes outils et méthodes facilitent l'évaluation de l'accessibilité et de la fonctionnalité de votre site sur différents dispositifs, garantissant ainsi une expérience utilisateur optimale pour tous."
         },
 
        //------------------------------------
@@ -1522,7 +1522,7 @@ const questionsData = {
                 "256px : smartwatch, 512px : tablette, 1024px : télévision"
             ],
             correct: 0,
-            explanation: "Les breakpoints les plus utilisés sont : <576px pour les mobiles, 768px pour les tablettes, 992px pour les ordinateurs, et 1200px pour les grands écrans."
+            explanation: "Les breakpoints les plus utilisés sont :\n<576px pour les mobiles, 768px pour les tablettes, 992px pour les ordinateurs, et 1200px pour les grands écrans."
         },
         {
             question: "Pourquoi est-il important de définir des breakpoints adaptés ?",
@@ -1602,7 +1602,7 @@ const questionsData = {
                 "L'UI concerne l’expérience de navigation de l’utilisateur, tandis que l’UX concerne uniquement le choix des couleurs et des polices"
             ],
             correct: 1,
-            explanation: "L'UX (User Experience) et l'UI (User Interface) sont deux aspects complémentaires du design numérique. L'UX se concentre sur la facilité d'utilisation, la fluidité de la navigation et la satisfaction globale de l'utilisateur, tandis que l'UI concerne la conception visuelle, les éléments graphiques et l'interaction visuelle. En somme, l'UI façonne l'apparence du produit, tandis que l'UX en définit la qualité d'expérience."
+            explanation: "L'UX (User Experience) et l'UI (User Interface) sont deux aspects complémentaires du design numérique.\nL'UX se concentre sur la facilité d'utilisation, la fluidité de la navigation et la satisfaction globale de l'utilisateur, tandis que l'UI concerne la conception visuelle, les éléments graphiques et l'interaction visuelle. En somme, l'UI façonne l'apparence du produit, tandis que l'UX en définit la qualité d'expérience."
         },
         {
             question: "Quel est l’objectif principal du responsive design ?",
