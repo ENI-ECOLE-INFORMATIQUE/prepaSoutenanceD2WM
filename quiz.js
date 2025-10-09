@@ -679,101 +679,101 @@ const questionsData = {
                 "C'est installé par défaut sur toutes les machines",
                 "Installer Docker Desktop",
                 "Installer obligatoirement Linux",
-                "Pour installer Git sur votre système d'exploitation :\n - Téléchargez la dernière version de Git depuis le site officiel : https://git-scm"
+                "Pour installer Git sur votre système d'exploitation :\n- Téléchargez la dernière version de Git depuis le site officiel : https://git-scm"
             ],
             correct: 3,
-            explanation: "Pour installer Git sur votre système d'exploitation :\n - Téléchargez la dernière version de Git depuis le site officiel : https://git-scm.com/downloads. - Suivez les instructions d'installation spécifiques à votre système (Windows, macOS, Linux). - Une fois installé, vous pouvez vérifier l'installation en exécutant `git --version` dans le terminal."
+            explanation: "Pour installer Git sur votre système d'exploitation :\n\t- Téléchargez la dernière version de Git depuis le site officiel : https://git-scm.com/downloads.\n\t- Suivez les instructions d'installation spécifiques à votre système (Windows, macOS, Linux).\n\t- Une fois installé, vous pouvez vérifier l'installation en exécutant :\n`git --version`\ndans le terminal."
         },
         {
-            question: "Comment configurer Git avec vos informations personnelles ?",
+            question: "Comment configurer Git avec vos informations personnelles ?",
             theme: "Le versioning",
             level: "Facile",
             answers: [
                 "C'est impossible",
-                "Un serveur web",
-                "Pour configurer Git avec vos informations personnelles, vous pouvez exécuter les commandes suivantes dans le terminal : git config --global user",
-                "Un logiciel de bureautique"
+                "il faut le configurer dans le fichier de conf du serveur web",
+                "Pour configurer Git avec vos informations personnelles, vous pouvez exécuter les commandes suivantes dans le terminal :\n git config --global user",
+                "Pour configurer Git avec vos informations personnelles, vous pouvez exécuter les commandes suivantes dans le terminal :\n git perso --global user"
             ],
             correct: 2,
-            explanation: "Pour configurer Git avec vos informations personnelles, vous pouvez exécuter les commandes suivantes dans le terminal :\n git config --global user.name \"Votre Nom\"\ngit config --global user.email \"votre_email@example.com\""
+            explanation: "Pour configurer Git avec vos informations personnelles, vous pouvez exécuter les commandes suivantes dans le terminal:\ngit config --global user.name \"Votre Nom\"\ngit config --global user.email \"votre_email@example.com\""
         },
         {
             question: "Quels sont les avantages d'utiliser un gestionnaire de versions comme Git ?",
             theme: "Le versioning",
             level: "Facile",
             answers: [
-                "Utiliser un gestionnaire de versions comme Git offre de nombreux avantages pour le développement de projets logiciels",
-                "Un serveur web",
-                "Un langage de programmation",
-                "Un logiciel de bureautique"
+                "Git permet de suivre les modifications, avoir un historique. Faire de la collaboration, Gérer les conflits, la sécurité et la portabilité.",
+                "Git permet de compiler automatiquement le code sans avoir besoin d’un environnement de développement installé sur la machine.",
+                "L’utilisation de Git garantit qu’aucune erreur ne peut être commise dans le code, car chaque commit est automatiquement validé par le système.",
+                "Git sert principalement à crypter les fichiers du projet afin d’en sécuriser l’accès pendant le développement collaboratif."
             ],
             correct: 0,
-            explanation: "Utiliser un gestionnaire de versions comme Git offre de nombreux avantages pour le développement de projets logiciels.\n - Le suivi des modifications : Git permet de suivre l'historique complet des changements apportés aux fichiers, facilitant la compréhension de l'évolution du projet et permettant de revenir à des versions antérieures si nécessaire.\n - La collaboration : Git facilite grandement la collaboration entre développeurs en permettant à plusieurs personnes de travailler simultanément sur le même projet. Les modifications de chacun sont enregistrées et peuvent être fusionnées sans conflits.\n - Les branches : Git encourage une approche de développement fondée sur les branches. Les développeurs peuvent en créer pour développer de nouvelles fonctionnalités ou corriger des bugs sans affecter le code principal. Celles-ci peuvent ensuite être fusionnées une fois le travail terminé.\n - La sécurité : Git offre une sécurité robuste avec son système de hachage cryptographique, garantissant l'intégrité du code source et empêchant toute modification non autorisée.\n - La portabilité : Les dépôts Git sont portables et peuvent être clonés sur différentes machines, permettant aux développeurs de travailler sur le projet depuis n'importe où."
+            explanation: "Utiliser un gestionnaire de versions comme Git offre de nombreux avantages pour le développement de projets logiciels.\n\t- Le suivi des modifications : Git permet de suivre l'historique complet des changements apportés aux fichiers, facilitant la compréhension de l'évolution du projet et permettant de revenir à des versions antérieures si nécessaire.\n\t- La collaboration : Git facilite grandement la collaboration entre développeurs en permettant à plusieurs personnes de travailler simultanément sur le même projet.\nLes modifications de chacun sont enregistrées et peuvent être fusionnées sans conflits.\n\t- Les branches : Git encourage une approche de développement fondée sur les branches.\nLes développeurs peuvent en créer pour développer de nouvelles fonctionnalités ou corriger des bugs sans affecter le code principal.\nCelles-ci peuvent ensuite être fusionnées une fois le travail terminé.\n\t- La sécurité : Git offre une sécurité robuste avec son système de hachage cryptographique, garantissant l'intégrité du code source et empêchant toute modification non autorisée.\n\t- La portabilité : Les dépôts Git sont portables et peuvent être clonés sur différentes machines, permettant aux développeurs de travailler sur le projet depuis n'importe où."
         },
         {
             question: "Quelle est la différence entre Git, GitHub et GitLab ?",
             theme: "Le versioning",
             level: "Facile",
             answers: [
-                "Un logiciel de bureautique",
-                "- Git est un système de contrôle de version distribué qui fonctionne localement sur votre machine",
-                "Un langage de programmation",
-                "Un serveur web"
+                "Git est une interface graphique permettant de gérer des dépôts hébergés sur GitHub et GitLab, qui sont des langages de programmation orientés versioning.",
+                "Git est un système de contrôle de version distribué qui fonctionne localement sur votre machine",
+                "GitHub et GitLab sont des extensions payantes de Git destinées uniquement au stockage de fichiers volumineux dans le cloud.",
+                "Git est un service en ligne, tandis que GitHub et GitLab sont des outils installés localement sur l’ordinateur pour exécuter des commandes Git."
             ],
             correct: 1,
-            explanation: "- Git est un système de contrôle de version distribué qui fonctionne localement sur votre machine. Il permet de suivre les modifications apportées au code source et de gérer l'historique des fichiers. - GitHub est une plateforme d'hébergement de dépôts Git qui permet de stocker et de partager des projets en ligne. Elle offre des outils de gestion de projet. - GitLab est également une plateforme d'hébergement, mais elle se concentre sur l'intégration continue (CI/CD) et offre des fonctionnalités de gestion de projet plus avancées, tout en étant open source pour son édition Community."
+            explanation: "- Git est un système de contrôle de version distribué qui fonctionne localement sur votre machine.\nIl permet de suivre les modifications apportées au code source et de gérer l'historique des fichiers.\n\n- GitHub est une plateforme d'hébergement de dépôts Git qui permet de stocker et de partager des projets en ligne.\nElle offre des outils de gestion de projet.\n\n- GitLab est également une plateforme d'hébergement, mais elle se concentre sur l'intégration continue (CI/CD) et offre des fonctionnalités de gestion de projet plus avancées, tout en étant open source pour son édition Community."
         },
         {
             question: "Comment cloner un dépôt Git existant sur votre machine locale ?",
             theme: "Le versioning",
             level: "Facile",
             answers: [
-                "Un logiciel de bureautique",
-                "Un langage de programmation",
-                "Un serveur web",
-                "Pour cloner un dépôt Git existant, vous pouvez utilisez la commande suivante dans le terminal :\n git clone https://url_du_depot"
+                "En copiant simplement l’URL du dépôt et en la collant dans le navigateur pour télécharger un fichier ZIP du projet.",
+                "En créant un nouveau dépôt vide sur votre ordinateur et en important manuellement tous les fichiers du projet via l’explorateur de fichiers.",
+                "En utilisant la commande git start clone suivie du nom du projet, ce qui crée automatiquement un dépôt distant et local synchronisé.",
+                "Pour cloner un dépôt Git existant, vous pouvez utilisez la commande suivante dans le terminal :\ngit clone https://url_du_depot"
             ],
             correct: 3,
-            explanation: "Pour cloner un dépôt Git existant, vous pouvez utilisez la commande suivante dans le terminal :\n git clone https://url_du_depot.git"
+            explanation: "Pour cloner un dépôt Git existant, vous pouvez utilisez la commande suivante dans le terminal :\ngit clone https://url_du_depot.git"
         },
         {
-            question: "Comment résoudre un conflit de fusion dans Git ?",
+            question: "Comment résoudre un conflit de fusion dans Git ?",
             theme: "Le versioning",
             level: "Facile",
             answers: [
-                "Pour résoudre un conflit de fusion dans Git :\n - Identifiez les fichiers en conflit en utilisant `git status`",
-                "Un serveur web",
-                "Un logiciel de bureautique",
-                "Un langage de programmation"
+                "Pour résoudre un conflit de fusion dans Git :\n - Identifiez les fichiers en conflit en utilisant `git status`",
+                "En supprimant entièrement le fichier en conflit et en le recréant à partir de zéro pour éviter toute confusion.",
+                "En exécutant la commande git merge --force qui résout automatiquement tous les conflits sans intervention de l’utilisateur.",
+                "En modifiant l’historique du dépôt avec git reset --hard pour revenir à une version antérieure et ignorer le conflit."
             ],
             correct: 0,
-            explanation: "Pour résoudre un conflit de fusion dans Git :\n - Identifiez les fichiers en conflit en utilisant `git status`.\n - Ouvrez les fichiers en conflit et modifiez-les pour résoudre les conflits. - Une fois résolus, ajoutez les fichiers avec `git add <fichier>` et terminez la fusion avec `git commit`."
+            explanation: "Pour résoudre un conflit de fusion dans Git :\n\t- Identifiez les fichiers en conflit en utilisant `git status`.\n\t- Ouvrez les fichiers en conflit et modifiez-les pour résoudre les conflits.\n\t- Une fois résolus, ajoutez les fichiers avec `git add &lt;fichier>` et terminez la fusion avec `git commit`."
         },
         {
             question: "Expliquez le concept de branches dans Git",
             theme: "Le versioning",
             level: "Facile",
             answers: [
-                "Un langage de programmation",
-                "Un logiciel de bureautique",
+                "Une branche dans Git est une copie complète et indépendante du dépôt qui nécessite de dupliquer tous les fichiers sur le disque dur pour chaque branche.",
+                "Les branches sont utilisées pour bloquer certaines parties du code afin que seuls certains utilisateurs puissent y accéder, comme un système de permissions.",
                 "Les branches dans Git permettent de créer des lignes de développement séparées",
-                "Un serveur web"
+                "Créer une branche fusionne automatiquement tous les commits existants du dépôt principal sans possibilité de modifications séparées."
             ],
             correct: 2,
-            explanation: "Les branches dans Git permettent de créer des lignes de développement séparées.\nCela permet de travailler sur des fonctionnalités ou des corrections sans affecter le code principal. Les branches peuvent être fusionnées une fois le travail terminé."
+            explanation: "Les branches dans Git permettent de créer des lignes de développement séparées.\nCela permet de travailler sur des fonctionnalités ou des corrections sans affecter le code principal.\nLes branches peuvent être fusionnées une fois le travail terminé."
         },
         {
             question: "Qu'est-ce qu'un fichier .gitignore et à quoi sert-il ? Comment le créer ?",
             theme: "Le versioning",
             level: "Facile",
             answers: [
-                "Un langage de programmation",
-                "Un serveur web",
-                "Un logiciel de bureautique",
-                "Un fichier "
+                "Un fichier .gitignore est un fichier spécial qui contient tous les commits que Git doit supprimer automatiquement du dépôt.",
+                "Le fichier .gitignore sert à stocker une copie locale de tous les fichiers du dépôt pour éviter de les télécharger depuis le serveur",
+                "On crée un fichier .gitignore en enregistrant une liste des utilisateurs autorisés à accéder au dépôt, afin de restreindre les droits d’écriture.",
+                "Un fichier qui indique à Git quels fichiers ou répertoires ignorer dans un projet."
             ],
             correct: 3,
-            explanation: "Un fichier .gitignore est un fichier qui indique à Git quels fichiers ou répertoires ignorer dans un projet. \nPour créer un fichier .gitignore :\n - Créez un fichier nommé .gitignore à la racine de votre dépôt. - Ajoutez les noms de fichiers ou de répertoires à ignorer, par exemple : node_modules/*.log"
+            explanation: "Un fichier .gitignore est un fichier qui indique à Git quels fichiers ou répertoires ignorer dans un projet.\nPour créer un fichier .gitignore :\n\t- Créez un fichier nommé .gitignore à la racine de votre dépôt.\n\t- Ajoutez les noms de fichiers ou de répertoires à ignorer, par exemple :\nnode_modules/*.log"
         }
     ],
     "Les maquettes": [
