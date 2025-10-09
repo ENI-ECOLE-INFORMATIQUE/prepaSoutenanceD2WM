@@ -1014,12 +1014,12 @@ const questionsData = {
             level: "Facile",
             answers: [
                 "Utilisez la balise lien &lt;lien src=\"mapage.html\">",
-                "Utilisez la balise &lt;a> avec l'attribut src pointant vers un identifiant dans la même page :\n&lt;a src=\"#section1\">\n Aller à la section 1\n</a> Pour créer un lien externe , utilisez également la balise &lt;a> avec l'URL complète : &lt;a href=\"https://www",
+                "Utilisez la balise &lt;a> avec l'attribut src pointant vers un identifiant dans la même page :\n&lt;a src=\"#section1\">\n Aller à la section 1\n</a>\n\nPour créer un lien externe , utilisez également la balise &lt;a> avec l'URL complète : &lt;a href=\"https://www\">www&lt;/a>",
                 "Utilisez la balise link &lt;link src=\"mapage.html\">",
-                "Utilisez la balise &lt;a> avec l'attribut href pointant vers un identifiant dans la même page :\n&lt;a href=\"#section1\">\n  Aller à la section 1\n</a> Pour créer un lien externe , utilisez également la balise &lt;a> avec l'URL complète : &lt;a href=\"https://www"
+                "Utilisez la balise &lt;a> avec l'attribut href pointant vers un identifiant dans la même page :\n&lt;a href=\"#section1\">\n  Aller à la section 1\n</a>\n\nPour créer un lien externe , utilisez également la balise &lt;a> avec l'URL complète : &lt;a href=\"https://www\">www&lt;/a>"
             ],
             correct: 3,
-            explanation: "Pour créer un lien interne , utilisez la balise &lt;a> avec l'attribut href pointant vers un identifiant dans la même page :\n&lt;a href=\"#section1\">\n  Aller à la section 1\n&lt;/a> Pour créer un lien externe , utilisez également la balise &lt;a> avec l'URL complète :\n&lt;a href=\"https://www.example.com\">\nVisitez Example\n&lt;/a>."
+            explanation: "Pour créer un lien interne , utilisez la balise &lt;a> avec l'attribut href pointant vers un identifiant dans la même page :\n&lt;a href=\"#section1\">\n  Aller à la section 1\n&lt;/a>\n\nPour créer un lien externe , utilisez également la balise &lt;a> avec l'URL complète :\n&lt;a href=\"https://www.example.com\">Visitez Example&lt;/a>."
         },
         {
             question: "Comment utiliser les commentaires dans le code HTML ?",
