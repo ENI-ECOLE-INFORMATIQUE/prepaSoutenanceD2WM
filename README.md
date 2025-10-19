@@ -1,7 +1,7 @@
-# 📋 Révision et Quiz Soutenance - D2WM (BAC+2)
+# 📋 Révision et Quiz Soutenance - D2WM (BAC+2) - CDA (BAC+3)
 
-Ce projet est une application **web interactive** permettant de tester ses connaissances pour le cursus D2WM.  
-Il est conçu pour préparer une **soutenance** devant des étudiants de niveau **BAC+2**.
+Ce projet est une application **web interactive** permettant de tester ses connaissances pour le cursus D2WM et CDA.  
+Il est conçu pour préparer une **soutenance** devant des étudiants de niveau **BAC+2** et **BAC+3**.
 
 ## 🎯 Objectif
 - Afficher des questions à choix multiples
@@ -30,7 +30,7 @@ Il est conçu pour préparer une **soutenance** devant des étudiants de niveau 
 
 3. **Accéder au quiz en ligne**  
    - Ouvrir le lien fourni par GitHub Pages
-   - Partager l’URL avec les futurs D2WM.
+   - Partager l’URL avec les futurs D2WM ou CDA.
   
 ## 🚀 Lancer le quiz
 
