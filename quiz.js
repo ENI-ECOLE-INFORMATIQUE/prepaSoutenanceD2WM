@@ -3136,5 +3136,163 @@ const questionsData = {
             correct: 3,
             explanation: "Il existe plusieurs types d' architectures logicielles couramment utilisés dans le développement de systèmes informatiques.\n\t1. L' Architecture monolithique est composée d'une application unique et autonome où tous les composants sont étroitement couplés.\nElle est simple à développer et à déployer, mais peut devenir difficile à maintenir et à faire évoluer à mesure que l'application grandit.\n\t2. L' Architecture en couches organise l'application système est divisé en couches horizontales, chacune ayant une responsabilité spécifique (par exemple, IHM, BO, DAL et BLL).\nCette approche favorise la séparation des préoccupations et la réutilisation du code.\n\t3. L' Architecture en microservices divise l'application en services plus petits et plus spécialisés, chacun fonctionnant de manière indépendante.\nCette approche offre une grande flexibilité et facilite le déploiement continu.\n\t4. L' Architecture événementielle est fondée sur la production, la détection et la consommation d'événements.\nElle est particulièrement adaptée aux systèmes réactifs et en temps réel.\n\t5. L' Architecture centrée sur les données met l'accent sur l'organisation et la gestion des données au cœur du système.\nElle est couramment utilisée dans les applications de gestion et les systèmes d'information.\n\t6. L' Architecture modulaire scinde l'application en modules indépendants et interchangeables, facilitant la maintenance et l'évolution du système.\nLe choix de l'architecture dépend souvent des besoins spécifiques du projet, de l'échelle de l'application, et des contraintes techniques et organisationnelles.\nIl n'est pas rare de combiner plusieurs de ces approches dans un même système pour tirer parti de leurs avantages respectifs."
         }
+    ],
+    "CI/CD & Déploiement": [
+        {
+            question: "Qu'est-ce que l'intégration continue (CI) ?",
+            theme: "CI/CD & Déploiement",
+            level: "Facile",
+            answers: [
+                "Déployer automatiquement en production",
+                "Fusionner régulièrement le code dans un dépôt avec des tests automatisés",
+                "Mettre à jour les serveurs manuellement",
+                "Créer des environnements de test uniquement"
+            ],
+            correct: 1,
+            explanation: "L'intégration continue consiste à intégrer fréquemment du code dans un dépôt partagé avec des tests automatisés pour détecter rapidement les erreurs."
+        },
+        {
+            question: "Quelle est la principale différence entre CI et CD ?",
+            theme: "CI/CD & Déploiement",
+            level: "Facile",
+            answers: [
+                "CI concerne le frontend et CD le backend",
+                "CI automatise les tests, CD automatise le déploiement",
+                "CI est manuel et CD est automatique",
+                "Il n'y a aucune différence"
+            ],
+            correct: 1,
+            explanation: "CI (Continuous Integration) automatise les tests et l'intégration, tandis que CD (Continuous Delivery/Deployment) automatise la livraison ou le déploiement."
+        },
+        {
+            question: "Qu'est-ce qu'un pipeline CI/CD ?",
+            theme: "CI/CD & Déploiement",
+            level: "Facile",
+            answers: [
+                "Un serveur de base de données",
+                "Une suite d'étapes automatisées pour tester et déployer une application",
+                "Un outil de versioning",
+                "Un langage de programmation"
+            ],
+            correct: 1,
+            explanation: "Un pipeline CI/CD est une chaîne automatisée qui inclut build, tests et déploiement."
+        },
+        {
+            question: "Quel est le rôle d'un outil comme Jenkins, GitLab CI ou GitHub Actions ?",
+            theme: "CI/CD & Déploiement",
+            level: "Facile",
+            answers: [
+                "Écrire du code automatiquement",
+                "Automatiser les pipelines CI/CD",
+                "Créer des bases de données",
+                "Gérer les utilisateurs"
+            ],
+            correct: 1,
+            explanation: "Ces outils permettent d'automatiser les étapes de build, test et déploiement."
+        },
+        {
+            question: "Qu'est-ce que le déploiement continu (Continuous Deployment) ?",
+            theme: "CI/CD & Déploiement",
+            level: "Moyen",
+            answers: [
+                "Déployer uniquement en environnement de test",
+                "Déployer automatiquement chaque changement validé en production",
+                "Déployer une fois par mois",
+                "Déployer manuellement après validation"
+            ],
+            correct: 1,
+            explanation: "Le Continuous Deployment déploie automatiquement en production chaque modification validée sans intervention humaine."
+        },
+        {
+            question: "À quoi sert Docker dans un processus de déploiement ?",
+            theme: "CI/CD & Déploiement",
+            level: "Moyen",
+            answers: [
+                "À écrire du code backend",
+                "À containeriser une application pour garantir la portabilité",
+                "À remplacer Git",
+                "À créer des interfaces utilisateur"
+            ],
+            correct: 1,
+            explanation: "Docker permet de créer des conteneurs contenant l'application et ses dépendances pour assurer un déploiement cohérent."
+        },
+        {
+            question: "Qu'est-ce qu'un environnement de staging ?",
+            theme: "CI/CD & Déploiement",
+            level: "Moyen",
+            answers: [
+                "Un environnement de production",
+                "Un environnement de test proche de la production",
+                "Un environnement local",
+                "Un serveur de base de données"
+            ],
+            correct: 1,
+            explanation: "Le staging est un environnement miroir de la production utilisé pour valider les fonctionnalités avant mise en ligne."
+        },
+        {
+            question: "Quel est l'intérêt du versioning dans un processus CI/CD ?",
+            theme: "CI/CD & Déploiement",
+            level: "Moyen",
+            answers: [
+                "Améliorer la performance",
+                "Suivre les modifications et permettre les retours arrière",
+                "Automatiser les tests",
+                "Réduire la taille du code"
+            ],
+            correct: 1,
+            explanation: "Le versioning permet de tracer les changements et de revenir à une version stable en cas de problème."
+        },
+        {
+            question: "Qu'est-ce qu'un rollback en déploiement ?",
+            theme: "CI/CD & Déploiement",
+            level: "Moyen",
+            answers: [
+                "Supprimer une base de données",
+                "Revenir à une version précédente de l'application",
+                "Mettre à jour un serveur",
+                "Redémarrer une application"
+            ],
+            correct: 1,
+            explanation: "Un rollback consiste à revenir à une version précédente en cas d'erreur après un déploiement."
+        },
+        {
+            question: "Pourquoi automatiser les tests dans une pipeline CI/CD ?",
+            theme: "CI/CD & Déploiement",
+            level: "Facile",
+            answers: [
+                "Pour ralentir le développement",
+                "Pour détecter rapidement les bugs",
+                "Pour éviter d'écrire du code",
+                "Pour remplacer les développeurs"
+            ],
+            correct: 1,
+            explanation: "Les tests automatisés permettent d'identifier rapidement les erreurs et d'assurer la qualité du code."
+        },
+        {
+            question: "Qu'est-ce que l'infrastructure as code (IaC) ?",
+            theme: "CI/CD & Déploiement",
+            level: "Difficile",
+            answers: [
+                "Écrire du code frontend",
+                "Gérer l'infrastructure via du code versionné",
+                "Créer des interfaces graphiques",
+                "Automatiser les tests uniquement"
+            ],
+            correct: 1,
+            explanation: "L'IaC permet de définir et gérer l'infrastructure (serveurs, réseaux) via du code."
+        },
+        {
+            question: "Quel est l'intérêt d'utiliser Kubernetes dans un déploiement ?",
+            theme: "CI/CD & Déploiement",
+            level: "Difficile",
+            answers: [
+                "Écrire du code JavaScript",
+                "Orchestrer des conteneurs et gérer leur scalabilité",
+                "Créer des bases de données",
+                "Gérer les utilisateurs"
+            ],
+            correct: 1,
+            explanation: "Kubernetes permet d'automatiser le déploiement, la gestion et la mise à l'échelle des conteneurs."
+        }
     ]
 };
