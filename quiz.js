@@ -260,6 +260,32 @@ const questionsData = {
             ],
             "correct": 2,
             "explanation": "Il existe au moins trois contraintes d'intégrité à appliquer dans une base de données. \n‑ <b>Intégrité de domaine</b> : garantit que les valeurs des attributs d’une colonne respectent un ensemble de règles définies (type, format, plage, etc.). \n‑ <b>Intégrité d’entité</b> : assure que chaque enregistrement est unique et identifiable, typiquement via une clé primaire. \n‑ <b>Intégrité référentielle</b> : s’assure que les valeurs des clés étrangères correspondent bien à des valeurs existantes dans la clé primaire d’une autre table. \nCes contraintes sont essentielles pour garantir la cohérence, la fiabilité et la validité des données stockées dans la base de données."
+        },
+        {
+            "theme": "Base de données",
+            "question": "Comment peut-on limiter les risques d'injections SQL ou de corruption directement au niveau de la base de données ?",
+            "level": "Avancé",
+            "answers": [
+                "En désactivant totalement l'utilisation des clés primaires et étrangères.",
+                "En chiffrant l'ensemble de la base de données avec une clé publique symétrique.",
+                "En ajoutant des contraintes strictes sur les colonnes (longueur adaptée au type de donnée comme name/email, formats de date stricts, etc.).",
+                "En remplaçant toutes les requêtes de sélection par des procédures stockées récursives."
+            ],
+            "correct": 2,
+            "explanation": "En plus des protections applicatives (comme les requêtes préparées), limiter la base de données en définissant des longueurs maximales réalistes (ex: éviter de mettre VARCHAR(255) partout par défaut pour des colonnes 'name' ou 'email'), des formats de date stricts ou des contraintes de vérification limite grandement l'impact des injections SQL ou des corruptions de données."
+        },
+        {
+            "theme": "Base de données",
+            "question": "Comment fonctionne une injection SQL ?",
+            "level": "Avancé",
+            "answers": [
+                "En insérant du code malveillant dans les fichiers CSS pour modifier l'apparence des formulaires de saisie.",
+                "En insérant du code SQL non filtré dans des champs de saisie utilisateur, qui est ensuite exécuté par la base de données.",
+                "En saturant le serveur de requêtes de connexion simultanées pour provoquer un déni de service.",
+                "En modifiant directement la structure des tables via le protocole FTP de l'hébergeur."
+            ],
+            "correct": 1,
+            "explanation": "L'injection SQL se produit lorsque des entrées utilisateur non sécurisées ou mal nettoyées sont directement concaténées dans une requête SQL. L'attaquant peut alors insérer ses propres commandes SQL pour contourner l'authentification, lire, modifier ou supprimer des données sensibles."
         }
     ],
     "Algorithmes": [
@@ -788,6 +814,32 @@ const questionsData = {
             ],
             "correct": 3,
             "explanation": "Un fichier .gitignore est un fichier qui indique à Git quels fichiers ou répertoires ignorer dans un projet.\nPour créer un fichier .gitignore :\n\t- Créez un fichier nommé .gitignore à la racine de votre dépôt.\n\t- Ajoutez les noms de fichiers ou de répertoires à ignorer, par exemple :\nnode_modules/*.log"
+        },
+        {
+            "theme": "Le versioning",
+            "question": "Dans le cadre professionnel (ex: avec JIRA), quelle est une bonne pratique pour gérer vos branches et vos commits avec Git ?",
+            "level": "Intermédiaire",
+            "answers": [
+                "Travailler tous ensemble directement sur la branche principale (main/master) pour éviter les fusions.",
+                "Développer chaque fonctionnalité sur sa propre branche nommée avec l'ID du ticket, et préfixer chaque commit par ce même ID.",
+                "Créer une nouvelle branche locale par jour et envoyer les commits uniquement en fin de projet par clé USB.",
+                "Ne faire des commits que lorsque le projet est entièrement validé et fonctionnel en production."
+            ],
+            "correct": 1,
+            "explanation": "Développer sur une branche dédiée par fonctionnalité (feature branch) liée à un ticket (ex: Jira) et préfixer les messages de commit avec l'identifiant du ticket permet d'assurer une traçabilité parfaite, de faciliter la revue de code (Pull Requests) et d'automatiser le suivi de projet avec des outils comme Bitbucket ou GitHub."
+        },
+        {
+            "theme": "Le versioning",
+            "question": "À quelle fréquence est-il recommandé d'effectuer des commits Git sur un projet de développement ?",
+            "level": "Facile",
+            "answers": [
+                "Uniquement une fois par semaine pour regrouper toutes les modifications.",
+                "À chaque ligne de code écrite pour conserver un historique extrêmement détaillé.",
+                "Au moins une fois par jour si possible, en veillant à commiter du code fonctionnel et cohérent à chaque étape logique.",
+                "Seulement lorsque l'application passe les tests d'intégration continue sur le serveur de staging."
+            ],
+            "correct": 2,
+            "explanation": "Il est conseillé de commiter régulièrement (au moins une fois par jour si possible) afin de ne pas perdre de travail et de faciliter la collaboration. Cependant, il faut veiller à ce que chaque commit représente une étape logique et contienne du code fonctionnel (qui ne casse pas le build) pour garder un historique propre et exploitable."
         }
     ],
     "Les maquettes": [
@@ -881,6 +933,19 @@ const questionsData = {
             ],
             "correct": 1,
             "explanation": "Pour rédiger un cahier des charges fonctionnel efficace, suivez ces étapes :\n\t- Définir clairement l'objectif et le contexte du projet;\n\t- Réaliser une analyse fonctionnelle pour identifier les besoins et les fonctions attendues;\n\t- Structurer le document de manière logique et concise;\n\t- Décrire les fonctionnalités attendues en termes de résultats mesurables;\n\t- Hiérarchiser les fonctions (principales, secondaires, contraintes);\n\t- Inclure les contraintes techniques, réglementaires et budgétaires;\n\t- Spécifier les critères d'acceptation pour chaque fonction;\n\t- Éviter de mentionner des solutions techniques spécifiques;\n\t- Utiliser un langage clair, simple et sans ambiguïté;\n\t- Impliquer toutes les parties prenantes dans la rédaction et la validation du document."
+        },
+        {
+            "theme": "Les maquettes",
+            "question": "Comment passe-t-on des wireframes aux maquettes lors de la conception d'une interface ?",
+            "level": "Facile",
+            "answers": [
+                "En écrivant directement le code HTML et CSS de la structure de base.",
+                "En demandant aux développeurs d'ajouter des fonctionnalités d'animation complexes.",
+                "En appliquant la charte graphique de l'entreprise (couleurs, typographies, logo, style visuel) sur la structure filaire.",
+                "En convertissant automatiquement les croquis papier en prototypes fonctionnels via un outil d'intelligence artificielle."
+            ],
+            "correct": 2,
+            "explanation": "Le passage du wireframe (schéma fonctionnel filaire basse fidélité) à la maquette se fait en y appliquant l'identité visuelle et la charte graphique de l'entreprise (couleurs, polices, styles, images) pour donner un rendu visuel fidèle du produit final."
         }
     ],
     "Le HTML": [
@@ -2033,6 +2098,19 @@ const questionsData = {
             ],
             "correct": 2,
             "explanation": "L’attribut ‘for’ de la balise <label> permet d’associer une étiquette à un champ de formulaire via l’identifiant du champ (attribut ‘id’).\nCette association aide les technologies d’assistance, comme les lecteurs d’écran, à annoncer le bon libellé lorsque l’utilisateur interagit avec le champ."
+        },
+        {
+            "theme": "L'accessibilité",
+            "question": "Comment peut-on s'assurer que notre application respecte les règles d'accessibilité numérique ?",
+            "level": "Intermédiaire",
+            "answers": [
+                "En s'assurant que le site est uniquement compatible avec les navigateurs mobiles.",
+                "En appliquant des règles d'accessibilité (contrastes de couleur, textes alternatifs alt, erreurs explicites en texte, légendes, aria-label) et en testant via Lighthouse (DevTools), le RGAA/RCAA ou des tests utilisateurs réels.",
+                "En utilisant exclusivement des polices serif et en désactivant le grossissement de la page par l'utilisateur.",
+                "En masquant tous les éléments textuels pour les remplacer par des fichiers audio pré-enregistrés."
+            ],
+            "correct": 1,
+            "explanation": "L'accessibilité (a11y) passe par de bons contrastes de couleurs, des alternatives textuelles (alt) pour les images, des structures sémantiques, et l'usage correct d'aria-label. Pour valider, on utilise le référentiel RGAA/RCAA, des outils automatisés comme Lighthouse dans les DevTools, et idéalement des tests d'usage par des personnes en situation de handicap."
         }
     ],
     "Le DOM": [
@@ -3031,6 +3109,32 @@ const questionsData = {
             ],
             "correct": 0,
             "explanation": "La complexité essentielle est inhérente au problème à résoudre\n— elle fait partie de la nature même du domaine (par exemple, la gestion de la sécurité ou des transactions bancaires).\nLa complexité accidentelle, quant à elle, résulte des choix techniques ou de conception inappropriés qui compliquent inutilement le code (par exemple, une architecture trop rigide, des noms confus ou des dépendances mal gérées).\n\nLe Clean Code vise à réduire cette complexité accidentelle pour rendre le système plus simple et maintenable sans altérer la logique métier sous-jacente."
+        },
+        {
+            "theme": "Le Clean Code",
+            "question": "Pourquoi est-il essentiel d'anticiper et d'implémenter les tests et cas d'erreurs au fur et à mesure du développement d'une application ?",
+            "level": "Intermédiaire",
+            "answers": [
+                "Pour ralentir volontairement le cycle de livraison afin de peaufiner le design.",
+                "Car le premier bug sur mobile peut mener à une désinstallation immédiate, il faut donc noter et implémenter les tests dès qu'on y pense.",
+                "Parce que les tests ne doivent être écrits qu'après la mise en production complète par l'équipe QA.",
+                "Uniquement pour remplir les critères de couverture de code imposés par les outils d'analyse statique."
+            ],
+            "correct": 1,
+            "explanation": "Les applications mobiles ou web subissent une forte concurrence. Un seul bug peut pousser l'utilisateur à désinstaller ou quitter définitivement l'application. Il est donc recommandé d'anticiper, de noter les cas d'erreur et les tests dès qu'on y pense, et de les implémenter au fil de l'eau."
+        },
+        {
+            "theme": "Le Clean Code",
+            "question": "Pourquoi doit-on éviter le mélange de langues (français et anglais) dans le code source et les schémas d'un projet ?",
+            "level": "Facile",
+            "answers": [
+                "Pour éviter les avertissements de compilation des langages de programmation modernes.",
+                "Pour maintenir la cohérence, la lisibilité et faciliter la maintenance du projet par d'autres développeurs.",
+                "Parce que les bases de données relationnelles ne supportent pas l'indexation de mots dans deux langues différentes.",
+                "Uniquement pour respecter les obligations légales de la loi Toubon sur l'usage du français."
+            ],
+            "correct": 1,
+            "explanation": "Le mélange de langues (comme nommer une fonction en français et ses variables en anglais) nuit gravement à la lisibilité et à la cohérence du code. Pour un projet professionnel, il est recommandé de choisir une seule langue (généralement l'anglais) pour l'intégralité du code et des schémas techniques."
         }
     ],
     "Le projet et les méthodes": [
@@ -3163,6 +3267,45 @@ const questionsData = {
             ],
             "correct": 3,
             "explanation": "Il existe plusieurs types d' architectures logicielles couramment utilisés dans le développement de systèmes informatiques.\n\t1. L' Architecture monolithique est composée d'une application unique et autonome où tous les composants sont étroitement couplés.\nElle est simple à développer et à déployer, mais peut devenir difficile à maintenir et à faire évoluer à mesure que l'application grandit.\n\t2. L' Architecture en couches organise l'application système est divisé en couches horizontales, chacune ayant une responsabilité spécifique (par exemple, IHM, BO, DAL et BLL).\nCette approche favorise la séparation des préoccupations et la réutilisation du code.\n\t3. L' Architecture en microservices divise l'application en services plus petits et plus spécialisés, chacun fonctionnant de manière indépendante.\nCette approche offre une grande flexibilité et facilite le déploiement continu.\n\t4. L' Architecture événementielle est fondée sur la production, la détection et la consommation d'événements.\nElle est particulièrement adaptée aux systèmes réactifs et en temps réel.\n\t5. L' Architecture centrée sur les données met l'accent sur l'organisation et la gestion des données au cœur du système.\nElle est couramment utilisée dans les applications de gestion et les systèmes d'information.\n\t6. L' Architecture modulaire scinde l'application en modules indépendants et interchangeables, facilitant la maintenance et l'évolution du système.\nLe choix de l'architecture dépend souvent des besoins spécifiques du projet, de l'échelle de l'application, et des contraintes techniques et organisationnelles.\nIl n'est pas rare de combiner plusieurs de ces approches dans un même système pour tirer parti de leurs avantages respectifs."
+        },
+        {
+            "theme": "Le projet et les méthodes",
+            "question": "Qu'est-ce que le RGPD et quelles sont ses implications majeures pour le développement d'une application ?",
+            "level": "Intermédiaire",
+            "answers": [
+                "Un protocole réseau pour sécuriser les transferts de fichiers entre l'Europe et l'Asie.",
+                "Le Règlement Général sur la Protection des Données, imposant le consentement, le droit à l'oubli, et de préférence l'hébergement en Europe.",
+                "Une norme CSS garantissant l'accessibilité des formulaires pour les personnes en situation de handicap.",
+                "Un framework JavaScript utilisé pour crypter automatiquement les bases de données SQL."
+            ],
+            "correct": 1,
+            "explanation": "Le RGPD (Règlement Général sur la Protection des Données) encadre le traitement des données personnelles en Europe. Ses piliers majeurs incluent le recueil du consentement clair de l'utilisateur, le droit à l'oubli (suppression complète des données sur demande) et le fait de stocker les données personnelles au sein de l'Union Européenne (ou pays assurant un niveau de protection adéquat)."
+        },
+        {
+            "theme": "Le projet et les méthodes",
+            "question": "Si un utilisateur exerce son 'droit à l'oubli' (RGPD) et demande la suppression de ses données personnelles, comment doit-on gérer ses factures et données comptables ?",
+            "level": "Avancé",
+            "answers": [
+                "On supprime immédiatement toutes ses factures pour effacer toute trace de son existence.",
+                "On conserve les factures telles quelles car la comptabilité est prioritaire sur les droits d'accès.",
+                "On anonymise les données personnelles sur les factures tout en conservant les pièces comptables pour respecter les obligations légales de conservation.",
+                "On transfère automatiquement les factures sur un serveur hors Union Européenne pour contourner le RGPD."
+            ],
+            "correct": 2,
+            "explanation": "Le droit à l'oubli n'est pas absolu. Les obligations légales et fiscales (comme la conservation des factures pendant 10 ans en France) l'emportent sur la suppression. La bonne pratique consiste à anonymiser les profils utilisateurs mais à conserver les données de facturation sous forme anonymisée ou à appliquer des règles de conservation spécifiques conformes aux exigences comptables."
+        },
+        {
+            "theme": "Le projet et les méthodes",
+            "question": "En gestion de projet, comment peut-on optimiser l'utilisation du diagramme de Gantt pour évaluer le déroulement réel des tâches ?",
+            "level": "Intermédiaire",
+            "answers": [
+                "En le supprimant dès que le développement commence pour ne pas stresser l'équipe.",
+                "En prenant une 'photo' (baseline) du diagramme initial pour la comparer avec le diagramme réel en fin de projet.",
+                "En modifiant quotidiennement les dates de début sans conserver d'historique des changements.",
+                "En affichant uniquement les tâches déjà terminées pour rassurer le client."
+            ],
+            "correct": 1,
+            "explanation": "Le diagramme de Gantt sert à planifier. Pour en tirer le meilleur parti, il est recommandé de figer la planification initiale (prendre une baseline ou 'photo' de départ) et de la comparer avec la planification réelle à la fin du projet. Cela permet d'identifier les écarts (retards, sous-estimations) et d'améliorer les estimations des futurs projets."
         }
     ],
     "CI/CD & Déploiement": [
@@ -3321,6 +3464,45 @@ const questionsData = {
             ],
             "correct": 1,
             "explanation": "Kubernetes permet d'automatiser le déploiement, la gestion et la mise à l'échelle des conteneurs."
+        },
+        {
+            "theme": "CI/CD & Déploiement",
+            "question": "Quelle ressource de référence est-il conseillé de consulter pour connaître et prévenir les failles de sécurité web les plus courantes ?",
+            "level": "Intermédiaire",
+            "answers": [
+                "Le site officiel du validateur W3C.",
+                "Le site de l'OWASP, en particulier son Top 10 des failles de sécurité applicatives.",
+                "Les forums de StackOverflow uniquement.",
+                "Le référentiel WCAG pour l'accessibilité."
+            ],
+            "correct": 1,
+            "explanation": "L'OWASP (Open Web Application Security Project) est une organisation à but non lucratif de référence. Son fameux 'Top 10' répertorie les failles de sécurité web les plus critiques et courantes (injections SQL, failles XSS, contrôles d'accès défaillants, etc.) et propose des guides pour s'en prémunir."
+        },
+        {
+            "theme": "CI/CD & Déploiement",
+            "question": "Quels types de tests logiciels devez-vous mettre en place pour valider une application, et quel outil de l'OWASP permet d'analyser la sécurité ?",
+            "level": "Avancé",
+            "answers": [
+                "Uniquement les tests d'acceptation utilisateur, et l'outil OWASP Dependency-Check pour tester le réseau.",
+                "Les tests unitaires, d'intégration, fonctionnels et d'acceptation, combinés à un outil comme OWASP ZAP pour scanner les failles.",
+                "Uniquement les tests de performance, et l'outil OWASP WebGoat pour héberger le site en production.",
+                "Des tests de régression visuelle, et l'outil OWASP SonarQube pour scanner les ports réseau."
+            ],
+            "correct": 1,
+            "explanation": "Une stratégie de test complète comprend : des tests unitaires (fonctions isolées), d'intégration (liaisons entre modules), fonctionnels (parcours utilisateur) et d'acceptation (critères métier). Pour la sécurité, OWASP ZAP (Zed Attack Proxy) est un outil de référence très populaire pour effectuer des scans de vulnérabilités dynamiques sur l'application."
+        },
+        {
+            "theme": "CI/CD & Déploiement",
+            "question": "Qu'est-ce que Docker et quel est son principal intérêt pour un projet de développement ?",
+            "level": "Intermédiaire",
+            "answers": [
+                "Un outil de gestion de bases de données distribuées pour remplacer MySQL.",
+                "Un langage de programmation compilé très performant utilisé pour le cloud computing.",
+                "Une technologie de conteneurisation permettant d'empaqueter une application et ses dépendances dans un conteneur isolé et reproductible.",
+                "Un gestionnaire de paquets JavaScript alternatif à npm."
+            ],
+            "correct": 2,
+            "explanation": "Docker permet de conteneuriser des applications. Contrairement à une machine virtuelle, un conteneur Docker partage le noyau de l'OS hôte, ce qui le rend léger et rapide. Cela garantit que l'application s'exécute de manière identique sur la machine locale du développeur, le serveur de test (staging) et le serveur de production."
         }
     ]
 };
