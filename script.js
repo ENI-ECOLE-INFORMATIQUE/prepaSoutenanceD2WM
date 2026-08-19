@@ -12,8 +12,9 @@
         document.addEventListener('DOMContentLoaded', function() {
             initializeThemeSelect();
             initializeNiveauSelect();
-            afficherTotalQuestions();;
+            afficherTotalQuestions();
             displayQuestionsList();
+            displayHistory();
         });
 
         function initializeThemeSelect() {
@@ -74,19 +75,31 @@
             });
             
             // Afficher la page demandée
-            document.getElementById(pageId).classList.add('active');
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+            }
             
-            // Mettre à jour la navigation
+            // Mettre à jour la navigation active de manière robuste
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('active');
+                const onClickAttr = link.getAttribute('onclick');
+                if (onClickAttr && onClickAttr.includes(`showPage('${pageId}')`)) {
+                    link.classList.add('active');
+                } else if ((pageId === 'quiz' || pageId === 'results' || pageId === 'quiz-setup') && 
+                           onClickAttr && onClickAttr.includes("showPage('quiz-setup')")) {
+                    link.classList.add('active');
+                }
             });
-            event.target.classList.add('active');
             
             // Arrêter le timer si on quitte le quiz
             if (pageId !== 'quiz' && timer) {
                 clearInterval(timer);
                 timer = null;
             }
+
+            // Déclencher l'animation d'entrée
+            animatePageEntry();
         }
 
         // === QUIZ ===
@@ -138,6 +151,13 @@
             // Mettre à jour l'en-tête
             document.getElementById('current-question').textContent = currentQuestionIndex + 1;
             document.getElementById('total-questions').textContent = currentQuiz.length;
+            
+            // Mettre à jour la barre de progression
+            const progressPercent = (currentQuestionIndex / currentQuiz.length) * 100;
+            const progressBar = document.getElementById('quiz-progress-bar');
+            if (progressBar) {
+                progressBar.style.width = `${progressPercent}%`;
+            }
             
             // Afficher la question
             document.getElementById('question-text').textContent = question.question;
@@ -222,10 +242,11 @@
             
             // Afficher l'explication
             const explanationElement = document.getElementById('explanation');
+            const formattedExplanation = question.explanation.replace(/\n/g, "<br>");
             explanationElement.innerHTML = `<strong>Explication :</strong> 
                 <div class="explanation-container">
                     <div class="explanation-content">
-                        <pre class="pre-display">${question.explanation.replace("/\n\g","<br>")}</pre>
+                        <div class="explanation-text">${formattedExplanation}</div>
                     </div>
                 </div>`;
             explanationElement.classList.add('show');
@@ -257,6 +278,9 @@
             const scoreCircle = document.getElementById('score-circle');
             scoreCircle.style.setProperty('--score-percentage', `${percentage}%`);
             
+            // Sauvegarder dans le localStorage
+            saveQuizResult();
+            
             // Afficher la page des résultats
             showPage('results');
         }
@@ -268,7 +292,7 @@
         }
 
         // === LISTE DES QUESTIONS ===
-       function displayQuestionsList() {
+        function displayQuestionsList() {
             const container = document.getElementById('questions-container');
             container.innerHTML = '';
             
@@ -287,10 +311,8 @@
                 // En-tête du thème
                 const themeHeader = document.createElement('div');
                 themeHeader.className = 'theme-header';
-                themeHeader.innerHTML = `<h3 title="(Cliquer pour afficher/cacher la liste des questions)">${theme} <small>(${questions.length} questions)</small></h3>`;
+                themeHeader.innerHTML = `<h3 title="(Cliquer pour afficher/cacher la liste des questions)">${theme} <small class="theme-count">(${questions.length} questions)</small></h3>`;
                 
-
-
                 // Contenu du thème
                 const themeContent = document.createElement('div');
                 themeContent.className = 'theme-content';
@@ -298,37 +320,99 @@
                 questions.forEach((question, index) => {
                     const questionItem = document.createElement('div');
                     questionItem.className = 'question-item';
-                    questionItem.style ='display:none';
+                    questionItem.setAttribute('data-level', question.level);
+                    questionItem.style.display = 'none';
                     
                     questionItem.innerHTML = `
                         <div class="question-text">${index + 1}. ${question.question}</div>
-                        <div class="question-meta"> <strong>Thème :</strong> ${question.theme} &nbsp; | &nbsp; 
-                        <strong>Niveau :</strong> ${question.level}</div>
+                        <div class="question-meta"> 
+                            <strong>Thème :</strong> ${question.theme} &nbsp; | &nbsp; 
+                            <strong>Niveau :</strong> <span class="badge badge-${question.level.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}">${question.level}</span>
+                        </div>
                         <div class="question-answer">
                             <div class="correct-answer">✓ Réponse : ${question.answers[question.correct]}</div>
                             <div class="explanation-container">
                                 <div class="explanation-content">
-                                    <pre class="pre-display">${question.explanation.replace("/\n\g","<br>")}</pre>
+                                    <div class="explanation-text">${question.explanation.replace(/\n/g, "<br>")}</div>
                                 </div>
                             </div>    
                         </div>
                     `;
                     
                     themeContent.appendChild(questionItem);
-                    themeHeader.querySelector("h3").addEventListener("click", () => {
-                        if (questionItem.style.display === "none") {
-                            questionItem.style.display = "block";
-                        } else {
-                            questionItem.style.display = "none";
-                        }
+                });
+                
+                // Gérer le clic pour ouvrir/fermer
+                themeHeader.querySelector("h3").addEventListener("click", () => {
+                    const query = document.getElementById('question-search-input').value.trim();
+                    const selectedLevel = document.getElementById('question-level-filter').value;
+                    if (query !== '' || selectedLevel !== 'all') return; // Ne rien faire en recherche active
+                    
+                    const isExpanded = themeSection.classList.toggle('expanded');
+                    const items = themeSection.querySelectorAll('.question-item');
+                    items.forEach(item => {
+                        item.style.display = isExpanded ? 'block' : 'none';
                     });
                 });
                 
                 themeSection.appendChild(themeHeader);
                 themeSection.appendChild(themeContent);
                 container.appendChild(themeSection);
+            });
+        }
 
-              
+        function filterQuestionsList() {
+            const query = document.getElementById('question-search-input').value.toLowerCase().trim();
+            const selectedLevel = document.getElementById('question-level-filter').value;
+            
+            const themeSections = document.querySelectorAll('.theme-section');
+            
+            themeSections.forEach(section => {
+                const questions = section.querySelectorAll('.question-item');
+                let matchCount = 0;
+                
+                questions.forEach(item => {
+                    const qText = item.querySelector('.question-text').textContent.toLowerCase();
+                    const expText = item.querySelector('.explanation-text').textContent.toLowerCase();
+                    const qLevel = item.getAttribute('data-level');
+                    
+                    const matchesSearch = query === '' || qText.includes(query) || expText.includes(query);
+                    const matchesLevel = selectedLevel === 'all' || qLevel === selectedLevel;
+                    
+                    if (matchesSearch && matchesLevel) {
+                        item.classList.add('search-match');
+                        item.style.display = 'block';
+                        matchCount++;
+                    } else {
+                        item.classList.remove('search-match');
+                        item.style.display = 'none';
+                    }
+                });
+                
+                const countBadge = section.querySelector('.theme-count');
+                if (countBadge) {
+                    if (query !== '' || selectedLevel !== 'all') {
+                        countBadge.textContent = `(${matchCount} trouvé(s) / ${questions.length})`;
+                    } else {
+                        countBadge.textContent = `(${questions.length} questions)`;
+                    }
+                }
+                
+                if (matchCount > 0 || (query === '' && selectedLevel === 'all')) {
+                    section.style.display = 'block';
+                    if (query !== '' || selectedLevel !== 'all') {
+                        section.classList.add('expanded');
+                    } else {
+                        section.classList.remove('expanded');
+                        // Remasquer les questions si on revient à la normale
+                        questions.forEach(item => {
+                            item.style.display = 'none';
+                        });
+                    }
+                } else {
+                    section.style.display = 'none';
+                    section.classList.remove('expanded');
+                }
             });
         }
 
@@ -387,19 +471,73 @@
             return `${remainingSeconds}s`;
         }
 
-        // === SAUVEGARDE DES RÉSULTATS (simulation) ===
+        // === SAUVEGARDE DES RÉSULTATS (localStorage) ===
         function saveQuizResult() {
+            const themeSelect = document.getElementById('theme-select');
             const result = {
-                date: new Date().toISOString(),
+                date: new Date().toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }),
                 score: score,
                 total: currentQuiz.length,
                 percentage: Math.round((score / currentQuiz.length) * 100),
-                timeSpent: totalTime,
-                theme: document.getElementById('theme-select').value
+                timeSpent: Math.round(totalTime / 1000),
+                theme: themeSelect ? (themeSelect.value === 'all' ? 'Tous les thèmes' : themeSelect.value) : 'Tous les thèmes'
             };
             
-            // Dans un vrai projet, on sauvegarderait en base de données
-            console.log('Résultat du quiz:', result);
+            let history = [];
+            try {
+                history = JSON.parse(localStorage.getItem('quiz_history')) || [];
+            } catch (e) {
+                history = [];
+            }
+            
+            history.unshift(result);
+            history = history.slice(0, 5); // Conserver les 5 derniers résultats
+            localStorage.setItem('quiz_history', JSON.stringify(history));
+            
+            displayHistory();
+        }
+
+        function displayHistory() {
+            const container = document.getElementById('history-container');
+            if (!container) return;
+            
+            let history = [];
+            try {
+                history = JSON.parse(localStorage.getItem('quiz_history')) || [];
+            } catch (e) {
+                history = [];
+            }
+            
+            if (history.length === 0) {
+                container.innerHTML = '<p class="no-history">Aucun historique disponible pour le moment.</p>';
+                return;
+            }
+            
+            let html = '<div class="history-list">';
+            history.forEach(item => {
+                const scoreClass = item.percentage >= 70 ? 'score-good' : (item.percentage >= 40 ? 'score-average' : 'score-bad');
+                html += `
+                    <div class="history-item">
+                        <div class="history-meta">
+                            <span class="history-date">${item.date}</span>
+                            <span class="history-theme" title="${item.theme}">${item.theme}</span>
+                        </div>
+                        <div class="history-stats">
+                            <span class="history-time">⏱ ${item.timeSpent}s</span>
+                            <span class="history-score ${scoreClass}">${item.score}/${item.total} (${item.percentage}%)</span>
+                        </div>
+                    </div>
+                `;
+            });
+            html += '</div>';
+            container.innerHTML = html;
+        }
+
+        function clearHistory() {
+            if (confirm("Voulez-vous vraiment effacer votre historique de scores ?")) {
+                localStorage.removeItem('quiz_history');
+                displayHistory();
+            }
         }
 
         // === GESTION DES ERREURS ===
@@ -443,16 +581,16 @@
 
         // === ANIMATIONS D'ENTRÉE ===
         function animatePageEntry() {
-            const activePagele = document.querySelector('.page.active');
+            const activePage = document.querySelector('.page.active');
             if (activePage) {
                 activePage.style.opacity = '0';
-                activePage.style.transform = 'translateY(20px)';
+                activePage.style.transform = 'translateY(15px)';
                 
                 setTimeout(() => {
-                    activePage.style.transition = 'all 0.3s ease';
+                    activePage.style.transition = 'opacity 0.35s ease, transform 0.35s cubic-bezier(0.1, 0.76, 0.55, 0.94)';
                     activePage.style.opacity = '1';
                     activePage.style.transform = 'translateY(0)';
-                }, 10);
+                }, 30);
             }
         }
 
