@@ -6,6 +6,7 @@
         let timePerQuestion = 30;
         let totalTime = 0;
         let questionStartTime = 0;
+        let currentQuizResults = [];
 
 
         // === INITIALISATION ===
@@ -15,6 +16,8 @@
             afficherTotalQuestions();
             displayQuestionsList();
             displayHistory();
+            updateProgressOverview();
+            renderRecommendations();
 
             const storedTarget = sessionStorage.getItem('targetPage');
             const searchParams = new URLSearchParams(window.location.search);
@@ -160,6 +163,7 @@
             currentQuestionIndex = 0;
             score = 0;
             totalTime = 0;
+            currentQuizResults = new Array(currentQuiz.length).fill(false);
             
             // Afficher le quiz
             showPage('quiz');
@@ -168,7 +172,13 @@
 
         function displayQuestion() {
             const question = currentQuiz[currentQuestionIndex];
-            console.log(question);
+            const seenState = getProgressState();
+            const questionId = `${question.theme}::${currentQuestionIndex}`;
+            const seenQuestions = new Set(seenState.seenQuestions || []);
+            seenQuestions.add(questionId);
+            seenState.seenQuestions = [...seenQuestions];
+            saveProgressState(seenState);
+            updateProgressOverview();
             
             // Mettre à jour l'en-tête
             document.getElementById('current-question').textContent = currentQuestionIndex + 1;
@@ -242,6 +252,8 @@
             const question = currentQuiz[currentQuestionIndex];
             const answersContainer = document.getElementById('answers-container');
             const buttons = answersContainer.querySelectorAll('.answer-btn');
+            const isCorrect = selectedIndex === question.correct;
+            currentQuizResults[currentQuestionIndex] = isCorrect;
             
             // Calculer le temps de réponse
             const responseTime = Date.now() - questionStartTime;
@@ -258,7 +270,7 @@
             });
             
             // Vérifier la réponse
-            if (selectedIndex === question.correct) {
+            if (isCorrect) {
                 score++;
             }
             
@@ -299,6 +311,8 @@
             // Animer le cercle de score
             const scoreCircle = document.getElementById('score-circle');
             scoreCircle.style.setProperty('--score-percentage', `${percentage}%`);
+
+            saveThemeProgress();
             
             // Sauvegarder dans le localStorage
             saveQuizResult();
@@ -343,6 +357,7 @@
                     const questionItem = document.createElement('div');
                     questionItem.className = 'question-item';
                     questionItem.setAttribute('data-level', question.level);
+                    questionItem.setAttribute('data-theme', question.theme);
                     questionItem.style.display = 'none';
                     
                     questionItem.innerHTML = `
@@ -396,9 +411,10 @@
                 questions.forEach(item => {
                     const qText = item.querySelector('.question-text').textContent.toLowerCase();
                     const expText = item.querySelector('.explanation-text').textContent.toLowerCase();
+                    const qTheme = item.getAttribute('data-theme').toLowerCase();
                     const qLevel = item.getAttribute('data-level');
                     
-                    const matchesSearch = query === '' || qText.includes(query) || expText.includes(query);
+                    const matchesSearch = query === '' || qText.includes(query) || expText.includes(query) || qTheme.includes(query);
                     const matchesLevel = selectedLevel === 'all' || qLevel === selectedLevel;
                     
                     if (matchesSearch && matchesLevel) {
@@ -493,6 +509,142 @@
             return `${remainingSeconds}s`;
         }
 
+        function getProgressState() {
+            try {
+                const state = JSON.parse(localStorage.getItem('quiz_progress')) || { seenQuestions: [], themeStats: {} };
+                return {
+                    seenQuestions: Array.isArray(state.seenQuestions) ? state.seenQuestions : [],
+                    themeStats: state.themeStats && typeof state.themeStats === 'object' ? state.themeStats : {}
+                };
+            } catch (e) {
+                return { seenQuestions: [], themeStats: {} };
+            }
+        }
+
+        function saveProgressState(state) {
+            localStorage.setItem('quiz_progress', JSON.stringify(state));
+        }
+
+        function getQuestionCountTotal() {
+            let total = 0;
+            Object.values(questionsData).forEach(themeQuestions => {
+                total += themeQuestions.length;
+            });
+            return total;
+        }
+
+        function updateProgressOverview() {
+            const state = getProgressState();
+            const totalQuestions = getQuestionCountTotal();
+            const seenQuestions = new Set(state.seenQuestions || []);
+            const seenCount = seenQuestions.size;
+            const masteredThemes = Object.values(state.themeStats || {}).filter(stats => stats.attempts > 0 && stats.attempts > 0 && (stats.correct / stats.attempts) >= 0.7).length;
+            const history = JSON.parse(localStorage.getItem('quiz_history') || '[]');
+            const recentResults = history.slice(0, 3);
+            const recentAverage = recentResults.length ? Math.round(recentResults.reduce((sum, item) => sum + item.percentage, 0) / recentResults.length) : 0;
+
+            const seenElement = document.getElementById('progress-seen');
+            const seenMetaElement = document.getElementById('progress-seen-meta');
+            const themesElement = document.getElementById('progress-themes');
+            const recentElement = document.getElementById('progress-recent');
+            const recentMetaElement = document.getElementById('progress-recent-meta');
+
+            if (seenElement) seenElement.textContent = `${seenCount}/${totalQuestions}`;
+            if (seenMetaElement) seenMetaElement.textContent = `${Math.round((seenCount / totalQuestions) * 100) || 0}% du programme`;
+            if (themesElement) themesElement.textContent = String(masteredThemes);
+            if (recentElement) recentElement.textContent = `${recentAverage}%`;
+            if (recentMetaElement) {
+                recentMetaElement.textContent = recentResults.length ? `${recentResults.length} quiz(s) enregistré(s)` : 'Aucun quiz enregistré';
+            }
+        }
+
+        function saveThemeProgress() {
+            const state = getProgressState();
+            const themeStats = state.themeStats || {};
+            const seenQuestions = new Set(state.seenQuestions || []);
+
+            currentQuiz.forEach((question, index) => {
+                const theme = question.theme;
+                const questionId = `${theme}::${index}`;
+                seenQuestions.add(questionId);
+
+                if (!themeStats[theme]) {
+                    themeStats[theme] = { attempts: 0, correct: 0 };
+                }
+
+                themeStats[theme].attempts += 1;
+                if (currentQuizResults[index]) {
+                    themeStats[theme].correct += 1;
+                }
+            });
+
+            state.seenQuestions = [...seenQuestions];
+            state.themeStats = themeStats;
+            saveProgressState(state);
+            updateProgressOverview();
+            renderRecommendations();
+        }
+
+        function getRecommendedThemes() {
+            const state = getProgressState();
+            const recommendations = Object.entries(state.themeStats || {})
+                .filter(([theme, stats]) => stats && stats.attempts > 0 && (stats.correct / stats.attempts) < 0.7)
+                .map(([theme, stats]) => ({
+                    theme,
+                    score: Math.round((stats.correct / stats.attempts) * 100),
+                    questions: questionsData[theme] || []
+                }))
+                .sort((a, b) => a.score - b.score)
+                .slice(0, 3);
+
+            return recommendations;
+        }
+
+        function focusRecommendedTheme(theme) {
+            showPage('questions-list');
+            const searchInput = document.getElementById('question-search-input');
+            if (searchInput) searchInput.value = theme;
+            const levelFilter = document.getElementById('question-level-filter');
+            if (levelFilter) levelFilter.value = 'all';
+            filterQuestionsList();
+
+            const targetSection = [...document.querySelectorAll('.theme-section')].find(section => {
+                const title = section.querySelector('.theme-header h3');
+                return title && title.textContent.toLowerCase().includes(theme.toLowerCase());
+            });
+
+            if (targetSection) {
+                targetSection.classList.add('expanded');
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        function renderRecommendations() {
+            const container = document.getElementById('recommendations-container');
+            if (!container) return;
+
+            const recommendations = getRecommendedThemes();
+            if (!recommendations.length) {
+                container.innerHTML = '<div class="recommendation-card empty"><p>Bonne progression ! Aucun thème ne nécessite une révision immédiate.</p></div>';
+                return;
+            }
+
+            container.innerHTML = recommendations.map((item) => {
+                const previewQuestions = item.questions.slice(0, 3).map((question, index) => `<li>${index + 1}. ${question.question}</li>`).join('');
+                return `
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <h3>${item.theme}</h3>
+                            <span class="recommendation-score">${item.score}%</span>
+                        </div>
+                        <p>Thème à revoir pour consolider les bases.</p>
+                        <ul class="recommendation-list">${previewQuestions}</ul>
+                        <button class="btn btn-secondary btn-sm" onclick="focusRecommendedTheme('${item.theme}')">Voir les questions</button>
+                    </div>
+                `;
+            }).join('');
+        }
+
         // === SAUVEGARDE DES RÉSULTATS (localStorage) ===
         function saveQuizResult() {
             const themeSelect = document.getElementById('theme-select');
@@ -517,6 +669,8 @@
             localStorage.setItem('quiz_history', JSON.stringify(history));
             
             displayHistory();
+            updateProgressOverview();
+            renderRecommendations();
         }
 
         function displayHistory() {
@@ -558,7 +712,10 @@
         function clearHistory() {
             if (confirm("Voulez-vous vraiment effacer votre historique de scores ?")) {
                 localStorage.removeItem('quiz_history');
+                localStorage.removeItem('quiz_progress');
                 displayHistory();
+                updateProgressOverview();
+                renderRecommendations();
             }
         }
 
