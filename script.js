@@ -7,6 +7,7 @@
         let totalTime = 0;
         let questionStartTime = 0;
         let currentQuizResults = [];
+        let currentQuizAnswers = [];
 
 
         // === INITIALISATION ===
@@ -90,6 +91,17 @@
             if (infoElement) {
                 infoElement.textContent = `Nombre total de questions disponibles : ${total}`;
             }
+
+            const themeCount = Object.keys(questionsData).length;
+            const homeTotal = document.getElementById('home-total-questions');
+            const homeThemeCount = document.getElementById('home-theme-count');
+            const homeDifficulty = document.getElementById('home-difficulty');
+            const homeTimeAverage = document.getElementById('home-time-average');
+
+            if (homeTotal) homeTotal.textContent = total;
+            if (homeThemeCount) homeThemeCount.textContent = themeCount;
+            if (homeDifficulty) homeDifficulty.textContent = 'Facile • Intermédiaire • Avancé';
+            if (homeTimeAverage) homeTimeAverage.textContent = '30s / question';
         }
 
         // === NAVIGATION ===
@@ -164,6 +176,7 @@
             score = 0;
             totalTime = 0;
             currentQuizResults = new Array(currentQuiz.length).fill(false);
+            currentQuizAnswers = new Array(currentQuiz.length).fill(null);
             
             // Afficher le quiz
             showPage('quiz');
@@ -253,6 +266,7 @@
             const answersContainer = document.getElementById('answers-container');
             const buttons = answersContainer.querySelectorAll('.answer-btn');
             const isCorrect = selectedIndex === question.correct;
+            currentQuizAnswers[currentQuestionIndex] = selectedIndex;
             currentQuizResults[currentQuestionIndex] = isCorrect;
             
             // Calculer le temps de réponse
@@ -313,6 +327,7 @@
             scoreCircle.style.setProperty('--score-percentage', `${percentage}%`);
 
             saveThemeProgress();
+            renderMissedQuestionsReview();
             
             // Sauvegarder dans le localStorage
             saveQuizResult();
@@ -321,10 +336,108 @@
             showPage('results');
         }
 
+        function renderMissedQuestionsReview() {
+            const container = document.getElementById('wrong-answers-review');
+            if (!container) return;
+
+            const missedQuestions = currentQuiz
+                .map((question, index) => ({
+                    ...question,
+                    selectedIndex: currentQuizAnswers[index],
+                    isCorrect: currentQuizResults[index],
+                    position: index + 1
+                }))
+                .filter(question => !question.isCorrect);
+
+            if (!missedQuestions.length) {
+                container.innerHTML = `
+                    <div class="review-empty">
+                        <h3>Révision réussie</h3>
+                        <p>Tu as répondu correctement à toutes les questions. Bravo !</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const buildReviewItem = (question) => {
+                const selectedAnswer = question.selectedIndex !== null && question.selectedIndex !== undefined && question.answers[question.selectedIndex]
+                    ? question.answers[question.selectedIndex]
+                    : 'Aucune réponse donnée';
+                const explanation = (question.explanation || '').replace(/\n/g, '<br>');
+
+                return `
+                    <div class="review-item">
+                        <div class="review-item-header">
+                            <span class="review-pill">Question ${question.position}</span>
+                            <span class="review-theme">${escapeHTML(question.theme)}</span>
+                        </div>
+                        <p class="review-question">${escapeHTML(question.question)}</p>
+                        <div class="review-answer-grid">
+                            <div><strong>Ta réponse :</strong> ${escapeHTML(selectedAnswer)}</div>
+                            <div><strong>Bonne réponse :</strong> ${escapeHTML(question.answers[question.correct])}</div>
+                        </div>
+                        <div class="review-explanation"><strong>Explication :</strong><br>${explanation}</div>
+                    </div>
+                `;
+            };
+
+            container.innerHTML = `
+                <h3>Questions ratées et rappels</h3>
+                ${missedQuestions.map(buildReviewItem).join('')}
+            `;
+        }
+
         function escapeHTML(str) {
             const div = document.createElement("div");
             div.textContent = str;
             return div.innerHTML;
+        }
+
+        function getThemeSummary(theme) {
+            const summary = themeSyntheses && (themeSyntheses[theme] || themeSyntheses.default)
+                ? (themeSyntheses[theme] || themeSyntheses.default)
+                : {
+                    definition: 'Synthèse à compléter selon le thème choisi.',
+                    keyFacts: ['Identifier le concept central du thème.', 'Connaître au moins un exemple concret.', 'Rester clair pendant l’oral.'],
+                    pitfalls: ['Rester trop vague.', 'Oublier les erreurs fréquentes.', 'Confondre concept et exemple.'],
+                    takeaways: ['Expliquer simplement.', 'Lier théorie et pratique.', 'Repérer les pièges fréquents.']
+                };
+
+            return summary;
+        }
+
+        function renderThemeSummary(theme, themeContent) {
+            const summary = getThemeSummary(theme);
+            const summaryBox = document.createElement('div');
+            summaryBox.className = 'theme-summary';
+
+            const buildList = (items) => items.map(item => `<li>${escapeHTML(item)}</li>`).join('');
+
+            summaryBox.innerHTML = `
+                <div class="theme-summary-header">
+                    <strong>📌 Synthèse rapide du thème</strong>
+                </div>
+                <div class="theme-summary-body">
+                    <div class="summary-block">
+                        <h4>Définition</h4>
+                        <p>${escapeHTML(summary.definition)}</p>
+                    </div>
+                    <div class="summary-block">
+                        <h4>Formules / commandes clés</h4>
+                        <ul>${buildList(summary.keyFacts)}</ul>
+                    </div>
+                    <div class="summary-block">
+                        <h4>Pièges fréquents</h4>
+                        <ul>${buildList(summary.pitfalls)}</ul>
+                    </div>
+                    <div class="summary-block">
+                        <h4>3 points à retenir</h4>
+                        <ul>${buildList(summary.takeaways)}</ul>
+                    </div>
+                </div>
+            `;
+
+            themeContent.appendChild(summaryBox);
         }
 
         // === LISTE DES QUESTIONS ===
@@ -352,6 +465,8 @@
                 // Contenu du thème
                 const themeContent = document.createElement('div');
                 themeContent.className = 'theme-content';
+
+                renderThemeSummary(theme, themeContent);
                 
                 questions.forEach((question, index) => {
                     const questionItem = document.createElement('div');

@@ -3623,3 +3623,348 @@ const questionsData = {
         }
     ]
 };
+
+const themeSyntheses = {
+    "Accessibilité": {
+        definition: "L'accessibilité consiste à rendre un site ou une application utilisable par le plus grand nombre, y compris avec clavier, lecteur d'écran et contrastes adaptés.",
+        keyFacts: [
+            "Le focus visible, les labels et les contrastes sont essentiels.",
+            "Les lecteurs d'écran lisent les balises, les textes alternatifs et les rôles ARIA avec précaution.",
+            "Les composants interactifs doivent être utilisables au clavier sans piège."
+        ],
+        pitfalls: [
+            "Oublier le focus visible ou le tabindex sur des éléments dynamiques.",
+            "Utiliser des contrastes trop faibles sur du texte important.",
+            "Rendre un contenu visible uniquement par couleur ou par image."
+        ],
+        takeaways: [
+            "Le code doit être compréhensible par les utilisateurs et les technologies d'assistance.",
+            "L'accessibilité est un devoir fonctionnel, pas seulement esthétique.",
+            "Testez avec clavier, zoom et lecteurs d'écran pour valider la navigation."
+        ]
+    },
+    "L'accessibilité": {
+        definition: "L'accessibilité consiste à rendre un site ou une application utilisable par le plus grand nombre, y compris avec clavier, lecteur d'écran et contrastes adaptés.",
+        keyFacts: [
+            "Le focus visible, les labels et les contrastes sont essentiels.",
+            "Les lecteurs d'écran lisent les balises, les textes alternatifs et les rôles ARIA avec précaution.",
+            "Les composants interactifs doivent être utilisables au clavier sans piège."
+        ],
+        pitfalls: [
+            "Oublier le focus visible ou le tabindex sur des éléments dynamiques.",
+            "Utiliser des contrastes trop faibles sur du texte important.",
+            "Rendre un contenu visible uniquement par couleur ou par image."
+        ],
+        takeaways: [
+            "Le code doit être compréhensible par les utilisateurs et les technologies d'assistance.",
+            "L'accessibilité est un devoir fonctionnel, pas seulement esthétique.",
+            "Testez avec clavier, zoom et lecteurs d'écran pour valider la navigation."
+        ]
+    },
+    "Algorithmes": {
+        definition: "Les algorithmes décrivent la manière logique de résoudre un problème, avec des étapes ordonnées, des conditions et des boucles.",
+        keyFacts: [
+            "La complexité temporelle et spatiale aide à comparer les solutions.",
+            "Un bon algorithme est lisible, correct et efficient.",
+            "Les structures de données et les boucles influence directement la performance."
+        ],
+        pitfalls: [
+            "Choisir une solution plus compliquée que nécessaire.",
+            "Oublier les cas limites, bordures et valeurs nulles.",
+            "Confondre logique métier et optimisation premature."
+        ],
+        takeaways: [
+            "Comprendre le problème avant de choisir l'algorithme.",
+            "Tester les cas limites fait gagner du temps et évite les erreurs.",
+            "La simplicité est souvent la meilleure solution."
+        ]
+    },
+    "Base de données": {
+        definition: "Une base de données stocke, organise et relie les informations de manière structurée pour les requêtes, la sécurité et la cohérence.",
+        keyFacts: [
+            "La clé primaire identifie de façon unique chaque enregistrement.",
+            "La clé étrangère relie deux tables entre elles.",
+            "SQL permet de sélectionner, insérer, mettre à jour et supprimer des données."
+        ],
+        pitfalls: [
+            "Oublier les jointures ou les dépendances entre tables.",
+            "Confondre clé primaire et clé étrangère.",
+            "Ignorer l'intégrité référentielle."
+        ],
+        takeaways: [
+            "Les tables doivent refléter des entités métier cohérentes.",
+            "Les relations structurent les données et évitent les doublons.",
+            "Le bon schéma est essentiel pour la stabilité d'une application."
+        ]
+    },
+    "CI/CD & Déploiement": {
+        definition: "La CI/CD vise à automatiser les tests, la validation et le déploiement d'une application pour livrer plus vite et plus sereinement.",
+        keyFacts: [
+            "La CI exécute des tests à chaque modification de code.",
+            "La CD publie automatiquement vers un environnement de test ou de production.",
+            "Docker et les environnements reproductibles réduisent les écarts de configuration."
+        ],
+        pitfalls: [
+            "Ne pas tester avant le déploiement.",
+            "Mettre en production sans environnement de validation.",
+            "Ignorer les versions de dépendances et les secrets."
+        ],
+        takeaways: [
+            "L'automatisation réduit les erreurs humaines et les retours de bug.",
+            "La reproductibilité est un enjeu majeur pour la fiabilité.",
+            "Le déploiement doit être surveillé, traçable et reversible."
+        ]
+    },
+    "JS - JavaScript": {
+        definition: "JavaScript permet de manipuler le DOM, gérer les interactions utilisateur et orchestrer la logique front-end d'une application web.",
+        keyFacts: [
+            "Les variables, fonctions, boucles et conditions structurent le code.",
+            "Le DOM représente la structure HTML modifiable en temps réel.",
+            "Les événements permettent d'interagir avec les boutons, formulaires et pages."
+        ],
+        pitfalls: [
+            "Oublier la différence entre var, let et const.",
+            "Manipuler le DOM sans vérifier ses éléments.",
+            "Ne pas gérer les cas d'erreur et la logique asynchrone."
+        ],
+        takeaways: [
+            "JavaScript est la couche de logique de l'interface.",
+            "La clarté du code évite les bugs et les oublis.",
+            "Les interactions doivent rester prévisibles et testables."
+        ]
+    },
+    "La POO": {
+        definition: "La programmation orientée objet structure le code autour d'objets, de classes, d'attributs et de méthodes afin de mieux organiser les responsabilités.",
+        keyFacts: [
+            "Une classe décrit un modèle, un objet en est une instance.",
+            "L'encapsulation protège les données internes.",
+            "L'héritage et le polymorphisme favorisent la réutilisation et la flexibilité."
+        ],
+        pitfalls: [
+            "Créer des classes trop larges avec trop de responsabilités.",
+            "Confondre hiérarchie et dépendance.",
+            "Négliger la lisibilité des noms."
+        ],
+        takeaways: [
+            "La POO aide à organiser des projets plus complexes.",
+            "Chaque classe doit avoir une responsabilité claire.",
+            "Le code orienté objet reste lisible si la conception est simple."
+        ]
+    },
+    "L'architecture": {
+        definition: "L'architecture logiciel décrit la manière dont les composants d'une application s'organisent et communiquent entre eux.",
+        keyFacts: [
+            "La séparation des responsabilités facilite la maintenance.",
+            "Les couches (présentation, métier, données) aident à structurer le code.",
+            "Une bonne architecture limite le couplage entre modules."
+        ],
+        pitfalls: [
+            "Tout mettre dans un seul fichier ou une seule classe.",
+            "Créer des dépendances circulaires entre modules.",
+            "Choisir une architecture trop lourde pour le besoin."
+        ],
+        takeaways: [
+            "L'architecture doit servir le projet, pas le contraire.",
+            "La clarté de structure reste un avantage pour les équipes.",
+            "Une bonne architecture réduit la dette technique."
+        ]
+    },
+    "Le Clean Code": {
+        definition: "Le Clean Code vise à écrire un logiciel lisible, maintenable et compréhensible par l'équipe, sans complexité inutile.",
+        keyFacts: [
+            "Les noms explicites améliorent la compréhension du code.",
+            "Le refactoring améliore la structure sans changer le comportement.",
+            "DRY, KISS et YAGNI sont des principes clés."
+        ],
+        pitfalls: [
+            "Multiplier les commentaires au lieu d'améliorer le code.",
+            "Écrire des fonctions trop longues ou trop complexes.",
+            "Duppliquer la logique dans plusieurs endroits."
+        ],
+        takeaways: [
+            "Le code lisible est maintenable sur le long terme.",
+            "Les principes sont là pour simplifier, pas pour compliquer.",
+            "La qualité du code se vérifie d'abord par sa clarté."
+        ]
+    },
+    "Le CSS": {
+        definition: "Le CSS détermine la présentation visuelle d'un site : layout, couleurs, espaces, typographie et états des éléments.",
+        keyFacts: [
+            "Les sélecteurs ciblent les éléments selon leur balise, classe ou attribut.",
+            "Le box model est fondamental pour comprendre marges, bordures et padding.",
+            "Flexbox et Grid organisent les pages de manière robuste."
+        ],
+        pitfalls: [
+            "Oublier la cohérence des espacements et du design system.",
+            "Poser des règles CSS trop spécifiques et difficiles à maintenir.",
+            "Ne pas tester les responsive breakpoints."
+        ],
+        takeaways: [
+            "Le CSS structure le rendu visuel et l'expérience utilisateur.",
+            "La cohérence visuelle renforce la crédibilité du produit.",
+            "Le responsive design doit être pensé dès le départ."
+        ]
+    },
+    "Le DOM": {
+        definition: "Le DOM est la représentation en mémoire de la page HTML manipulable en JavaScript pour modifier le contenu, la structure et le style.",
+        keyFacts: [
+            "Le DOM reflète l'arbre HTML de la page.",
+            "querySelector et addEventListener sont des outils essentiels.",
+            "Les modifications du DOM doivent être ciblées et lisibles."
+        ],
+        pitfalls: [
+            "Sélectionner un mauvais élément ou trop de nodes.",
+            "Modifier le DOM sans gestion des événements.",
+            "Créer du code duplicatif pour des actions simples."
+        ],
+        takeaways: [
+            "Le DOM est le point de contact entre HTML et JavaScript.",
+            "Une bonne manipulation du DOM évite les bugs visibles.",
+            "Les interactions doivent toujours rester cohérentes avec l'état applicatif."
+        ]
+    },
+    "Le HTML": {
+        definition: "Le HTML structure le contenu d'une page web avec des éléments, des balises et des relations sémantiques.",
+        keyFacts: [
+            "Les balises donnent du sens au contenu : header, main, section, article, footer.",
+            "Les formulaires et labels sont essentiels à l'interaction.",
+            "Les attributs alt, href et aria améliorent l'usage et l'accessibilité."
+        ],
+        pitfalls: [
+            "Utiliser des divs sans structure claire.",
+            "Ne pas renseigner les attributs de formulaire et d'image.",
+            "Ignorer la sémantique et la hiérarchie des titres."
+        ],
+        takeaways: [
+            "Le HTML donne la structure, le CSS le style, le JS la logique.",
+            "La sémantique aide l'utilisateur et les moteurs de recherche.",
+            "Un bon HTML rend le site plus robuste et accessible."
+        ]
+    },
+    "Le projet et les méthodes": {
+        definition: "Le management de projet et les méthodes de travail structurent la planification, les tâches, les priorités et la coopération en équipe.",
+        keyFacts: [
+            "Le diagramme de Gantt aide à visualiser les tâches sur le temps.",
+            "Le tableau Kanban permet de suivre le flux de travail visuellement.",
+            "Les méthodes agiles favorisent l'adaptation, la livraison progressive et les retours rapides."
+        ],
+        pitfalls: [
+            "Ne pas clarifier les responsabilités et les dépendances.",
+            "Gérer les tâches sans priorisation et sans suivi.",
+            "Oublier la communication et les risques."
+        ],
+        takeaways: [
+            "Le bon fonctionnement d'un projet repose sur la clarté et la communication.",
+            "Les outils de gestion servent à organiser, pas à compliquer.",
+            "Un bon planning réduit le stress de l'équipe."
+        ]
+    },
+    "Le responsive design": {
+        definition: "Le responsive design permet à une interface de s'adapter aux écrans mobiles, tablettes et ordinateurs sans casser l'expérience utilisateur.",
+        keyFacts: [
+            "Les media queries modifient le rendu selon la largeur de l'écran.",
+            "Les composants doivent rester lisibles et utilisables en mobile.",
+            "Des breakpoints bien choisis évitent les mauvaises redistributions."
+        ],
+        pitfalls: [
+            "Penser au desktop uniquement puis corriger trop tard.",
+            "Ne pas vérifier les tailles de texte et de boutons.",
+            "Utiliser des layouts rigides qui cassent sur petits écrans."
+        ],
+        takeaways: [
+            "Le design mobile-first réduit souvent les erreurs de conception.",
+            "L'expérience utilisateur guide les choix d'ergonomie.",
+            "Un site responsive est plus durable et plus accessible."
+        ]
+    },
+    "Le versioning": {
+        definition: "Le versioning permet de conserver l'historique du code, de collaborer et de revenir en arrière en cas de problème.",
+        keyFacts: [
+            "Git permet de suivre les modifications du projet.",
+            "Les branches séparent les travaux et les fonctionnalités.",
+            "Les commits doivent être lisibles et cohérents."
+        ],
+        pitfalls: [
+            "Faire des commits trop lourds ou trop peu explicites.",
+            "Oublier de créer des branches pour une fonctionnalité.",
+            "Ne pas vérifier les conflits avant fusion."
+        ],
+        takeaways: [
+            "Le versioning protège la qualité du projet et le travail d'équipe.",
+            "Les commits lisibles facilitent la revue de code.",
+            "La traçabilité est un gain important pour la maintenance."
+        ]
+    },
+    "L'environnement": {
+        definition: "L'environnement de développement regroupe les outils, dépendances, versions et paramètres nécessaires pour exécuter le projet dans des conditions cohérentes.",
+        keyFacts: [
+            "Les versions de Node, PHP ou Python doivent rester cohérentes.",
+            "Les variables d'environnement protègent les secrets et les paramètres spécifiques.",
+            "Les environnements local, test et production doivent être distincts."
+        ],
+        pitfalls: [
+            "Ignorer les dépendances cachées ou les versions de runtime.",
+            "Hardcoder des secrets dans le code source.",
+            "Confondre environnement de dev et de prod."
+        ],
+        takeaways: [
+            "Le bon environnement évite les erreurs de reproduction.",
+            "La cohérence des versions réduit les 'ça marche chez moi'.",
+            "La sécurité passe aussi par la maîtrise de l'environnement."
+        ]
+    },
+    "Les IDE": {
+        definition: "Un IDE est un environnement de développement intégré qui aide à écrire, tester, déboguer et organiser le code.",
+        keyFacts: [
+            "L'éditeur fournit coloration, auto-complétion et navigation rapide.",
+            "Le débogueur aide à suivre l'exécution pas à pas.",
+            "Les outils intégrés améliorent la productivité et la qualité."
+        ],
+        pitfalls: [
+            "Ne pas utiliser les raccourcis ou les outils de debug.",
+            "Oublier la configuration du projet dans l'IDE.",
+            "Négliger les extensions utiles ou les conventions d'équipe."
+        ],
+        takeaways: [
+            "Un bon IDE accélère le développement.",
+            "Les outils doivent servir la qualité du code et non le contraire.",
+            "Le confort de travail impacte la concentration et la fiabilité."
+        ]
+    },
+    "Les maquettes": {
+        definition: "Les maquettes sont des représentations visuelles d'une interface qui permettent de formaliser le design avant la mise en œuvre.",
+        keyFacts: [
+            "Les maquettes aident à valider le parcours utilisateur et la hiérarchie visuelle.",
+            "On distingue souvent maquette low-fidelity et high-fidelity.",
+            "Le design doit être pensé pour l'utilisateur avant le code."
+        ],
+        pitfalls: [
+            "Coder sans maquette ni structure claire.",
+            "Créer une interface belle mais peu compréhensible.",
+            "Ignorer les besoins métier et l'accessibilité."
+        ],
+        takeaways: [
+            "Le design UX commence par une clarification des besoins.",
+            "Une maquette réduit les erreurs et les retours entre équipes.",
+            "La qualité de l'interface vient du bon équilibre entre utilité et lisibilité."
+        ]
+    },
+    default: {
+        definition: "Ce thème demande une consolidation des fondamentaux : définition, cas d'usage, pièges fréquents et points à retenir pour l'oral.",
+        keyFacts: [
+            "Identifier le concept central du thème.",
+            "Connaître au moins un exemple concret.",
+            "Savoir expliquer en 1 à 2 phrases les points essentiels."
+        ],
+        pitfalls: [
+            "Rester trop vague dans la réponse.",
+            "Ne pas relier le concept à un exemple.",
+            "Oublier les cas limites ou les erreurs fréquentes."
+        ],
+        takeaways: [
+            "Le raisonnement compte autant que la formule ou le nom exact.",
+            "Une réponse claire vaut mieux qu'une réponse longue et floue.",
+            "L'oral repose sur la capacité à synthétiser avec précision."
+        ]
+    }
+};

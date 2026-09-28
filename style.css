@@ -201,6 +201,122 @@ main {
     margin: 2.5rem 0 1rem;
 }
 
+.orientation-panel {
+    margin: 2rem 0 2.5rem;
+}
+
+.orientation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+}
+
+.orientation-card {
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.6));
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 18px;
+    padding: 1.4rem 1.2rem;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 12px 24px rgba(2, 6, 23, 0.16);
+}
+
+.orientation-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(96, 165, 250, 0.5);
+    box-shadow: 0 18px 28px rgba(59, 130, 246, 0.12);
+}
+
+.orientation-card-primary {
+    border-color: rgba(96, 165, 250, 0.2);
+}
+
+.orientation-card-secondary {
+    border-color: rgba(52, 211, 153, 0.2);
+}
+
+.orientation-card-tertiary {
+    border-color: rgba(168, 85, 247, 0.2);
+}
+
+.orientation-badge {
+    display: inline-flex;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: rgba(96, 165, 250, 0.12);
+    color: var(--text-primary);
+    border: 1px solid rgba(96, 165, 250, 0.18);
+    margin-bottom: 0.8rem;
+}
+
+.orientation-card h3 {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-bottom: 0.55rem;
+}
+
+.orientation-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.home-summary-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 1rem;
+    margin: 0 auto 1.5rem;
+    max-width: 900px;
+}
+
+.summary-stat {
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.52));
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    border-radius: 16px;
+    padding: 1rem 1.1rem;
+    text-align: center;
+}
+
+.summary-label {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.45rem;
+}
+
+.summary-stat strong {
+    color: var(--text-primary);
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.quick-guide {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.09), rgba(139, 92, 246, 0.08));
+    border: 1px solid rgba(96, 165, 250, 0.25);
+    border-radius: 16px;
+    padding: 1rem 1.2rem;
+    margin: 0 auto 2rem;
+    max-width: 900px;
+}
+
+.quick-guide h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.4rem;
+    font-size: 1.15rem;
+}
+
+.quick-guide p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
 .menu-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -592,6 +708,87 @@ main {
     letter-spacing: 0.5px;
 }
 
+.results-review {
+    max-width: 900px;
+    margin: 2.2rem auto 0;
+    text-align: left;
+}
+
+.results-review h3 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.review-item {
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.54));
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    border-left: 4px solid rgba(248, 113, 113, 0.9);
+    border-radius: 14px;
+    padding: 1.2rem 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.review-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.review-pill {
+    display: inline-flex;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    color: #fca5a5;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.review-theme {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+.review-question {
+    color: var(--text-primary);
+    font-weight: 700;
+    margin: 0 0 0.9rem;
+    line-height: 1.5;
+}
+
+.review-answer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.review-explanation {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    background: rgba(15, 23, 42, 0.26);
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
+}
+
+.review-empty {
+    text-align: center;
+    padding: 1.5rem;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    background: rgba(34, 197, 94, 0.08);
+    border-radius: 14px;
+    color: var(--text-primary);
+}
+
 /* === LISTE DES QUESTIONS === */
 .questions-list {
     max-width: 1000px;
@@ -623,6 +820,58 @@ main {
     color: var(--text-primary);
     border-radius: 12px;
     box-shadow: inset 0 1px 1px rgba(255,255,255,0.02);
+}
+
+.theme-summary {
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.64), rgba(15, 23, 42, 0.46));
+    border-top: 1px solid rgba(148, 163, 184, 0.14);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+    padding: 1.4rem 1.5rem 0.4rem;
+}
+
+.theme-summary-header {
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.theme-summary-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.summary-block {
+    background: rgba(15, 23, 42, 0.38);
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.summary-block h4 {
+    margin: 0 0 0.7rem;
+    color: var(--text-primary);
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.summary-block p,
+.summary-block li {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 0.92rem;
+}
+
+.summary-block ul {
+    margin: 0;
+    padding-left: 1.15rem;
+}
+
+.summary-block li + li {
+    margin-top: 0.4rem;
 }
 
 .theme-section {
