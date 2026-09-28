@@ -286,6 +286,19 @@ const questionsData = {
             ],
             "correct": 1,
             "explanation": "L'injection SQL se produit lorsque des entrées utilisateur non sécurisées ou mal nettoyées sont directement concaténées dans une requête SQL. L'attaquant peut alors insérer ses propres commandes SQL pour contourner l'authentification, lire, modifier ou supprimer des données sensibles."
+        },
+        {
+            "theme": "Base de données",
+            "question": "Quel est le but d'un MCD et comment l'utiliser pour créer un MPD ?",
+            "level": "Avancé",
+            "answers": [
+                "Un MCD sert uniquement à créer des interfaces graphiques, et le MPD est une variante de design web.",
+                "Un MCD est un Modèle Conceptuel de Données qui décrit les entités, leurs attributs et leurs relations, puis permet de dériver un Modèle Physique de Données (MPD) adapté au SGBD.",
+                "Un MCD est un schéma de sécurité et le MPD est la version chiffrée des tables.",
+                "Le MCD et le MPD sont la même chose, ils ne diffèrent que par le nom."
+            ],
+            "correct": 1,
+            "explanation": "Le MCD (Modèle Conceptuel de Données) permet de représenter le besoin métier de manière abstraite : entités, attributs, relations et cardinalités. Le MPD (Modèle Physique de Données) est la traduction technique de ce modèle pour un SGBD spécifique, avec les tables, les clés primaires, les clés étrangères, les types de colonnes et les contraintes. L'exercice consiste à partir du MCD pour décider des tables, de leurs colonnes et des relations concrètes dans la base de données."
         }
     ],
     "Algorithmes": [
@@ -3306,6 +3319,45 @@ const questionsData = {
             ],
             "correct": 1,
             "explanation": "Le diagramme de Gantt sert à planifier. Pour en tirer le meilleur parti, il est recommandé de figer la planification initiale (prendre une baseline ou 'photo' de départ) et de la comparer avec la planification réelle à la fin du projet. Cela permet d'identifier les écarts (retards, sous-estimations) et d'améliorer les estimations des futurs projets."
+        },
+        {
+            "theme": "Le projet et les méthodes",
+            "question": "Quelles sont les réglementations principales à respecter sur un site web ?",
+            "level": "Intermédiaire",
+            "answers": [
+                "Seulement le référencement SEO et les normes de couleur.",
+                "L'accessibilité numérique (WCAG), la protection des données (RGPD), et la conformité aux règles commerciales et fiscales applicables.",
+                "Uniquement la compatibilité avec les navigateurs modernes.",
+                "La seule réglementation est la présence d'un certificat SSL."
+            ],
+            "correct": 1,
+            "explanation": "Un site web doit notamment respecter les règles d'accessibilité afin de permettre l'usage du service par le plus grand nombre, les obligations de protection des données personnelles (RGPD), ainsi que les règles commerciales, fiscales et de sécurité applicables au secteur concerné. La conformité n'est pas limitée au design ou au SEO : elle couvre aussi la gestion des données, la transparence et l'inclusivité."
+        },
+        {
+            "theme": "Le projet et les méthodes",
+            "question": "Quelles sont les trois choses essentielles à respecter pour être conforme au RGPD ?",
+            "level": "Facile",
+            "answers": [
+                "Le consentement, le droit à l'oubli et la minimisation des données.",
+                "Le chiffrement, la redondance et la disponibilité.",
+                "L'hébergement en France, le suivi des utilisateurs et la publicité ciblée.",
+                "Le nom de domaine, la charte graphique et le certificat SSL."
+            ],
+            "correct": 0,
+            "explanation": "Pour être conforme au RGPD, il faut en général : un consentement clair et libre pour la collecte des données, le respect du droit à l'oubli et de la suppression des données personnelles sur demande, et la minimisation des données collectées à ce qui est strictement nécessaire. Ces principes visent à protéger la vie privée et à limiter le traitement inutile des données."
+        },
+        {
+            "theme": "Le projet et les méthodes",
+            "question": "Si un utilisateur achète une arme sur un site et commet un crime, puis efface ses données sur le site marchand, comment la justice peut-elle encore retrouver sa trace ?",
+            "level": "Avancé",
+            "answers": [
+                "Le site peut simplement supprimer toutes ses données sans laisser d'empreinte visible.",
+                "La justice peut remonter à la personne via les données de transaction conservées, les logs, les factures et les éléments d'identification techniques, même si l'utilisateur tente d'effacer ses données utilisateur.",
+                "La justice ne peut rien faire car le RGPD impose de supprimer toutes les traces immédiatement.",
+                "Le site marchand n'a aucune obligation légale de conserver des preuves."
+            ],
+            "correct": 1,
+            "explanation": "Le droit à l'oubli ne supprime pas les obligations légales de conservation ou les preuves de transactions nécessaires pour la justice. Les données de paiement, les factures, les logs serveur, les adresses IP, les historiques de commande et les traces techniques peuvent être conservées dans le cadre d'une obligation légale ou d'une enquête. Le RGPD protège les données personnelles, mais il n'empêche pas la conservation de données nécessaires à la preuve, au respect de la loi ou à la prévention des infractions."
         }
     ],
     "CI/CD & Déploiement": [
@@ -3503,6 +3555,71 @@ const questionsData = {
             ],
             "correct": 2,
             "explanation": "Docker permet de conteneuriser des applications. Contrairement à une machine virtuelle, un conteneur Docker partage le noyau de l'OS hôte, ce qui le rend léger et rapide. Cela garantit que l'application s'exécute de manière identique sur la machine locale du développeur, le serveur de test (staging) et le serveur de production."
+        },
+        {
+            "theme": "CI/CD & Déploiement",
+            "question": "Si vous avez une équipe de 10 personnes qui travaillent avec des technologies, des langages et des versions différentes, comment installeriez-vous leur poste de travail ?",
+            "level": "Intermédiaire",
+            "answers": [
+                "En laissant chaque développeur installer manuellement ses outils, ce qui favorise l'autonomie totale.",
+                "En standardisant l'environnement via des outils de provisionnement automatisé, des conteneurs et des images réutilisables, avec un socle commun et des versions pinées.",
+                "En imposant une seule technologie pour tout le monde, même si elle ne convient pas à certains projets.",
+                "En demandant à chacun d'utiliser le même portable sans configuration spécifique."
+            ],
+            "correct": 1,
+            "explanation": "Avec une équipe hétérogène, le plus fiable est de standardiser le socle de base (outils, versions, variables d'environnement) puis d'isoler chaque projet dans son propre environnement. Cela peut passer par Docker, des fichiers de configuration, des scripts de provisionnement et des versions imposées par le dépôt. Ainsi, on évite les erreurs liées aux versions, les dépendances cachées et les conflits entre projets."
+        },
+        {
+            "theme": "CI/CD & Déploiement",
+            "question": "Pourquoi choisir Docker plutôt qu'une machine virtuelle pour un environnement de développement ?",
+            "level": "Intermédiaire",
+            "answers": [
+                "Parce que la VM est toujours plus rapide à démarrer et plus légère.",
+                "Parce que Docker est plus léger, plus rapide à provisionner et reproduit de façon cohérente les dépendances de l'application sans charger un système d'exploitation complet.",
+                "Parce que Docker remplace complètement la sécurité du système d'exploitation.",
+                "Parce qu'une VM ne peut pas être utilisée pour des services web."
+            ],
+            "correct": 1,
+            "explanation": "Une machine virtuelle nécessite son propre système d'exploitation complet, ce qui la rend plus lourde et plus lente à démarrer. Docker, lui, exécute des conteneurs qui partagent le noyau du système hôte. Cela permet de reproduire l'environnement de manière fiable, d'installer rapidement des dépendances et de limiter le coût système, tout en restant très portable entre environnements."
+        },
+        {
+            "theme": "CI/CD & Déploiement",
+            "question": "Qu'est-ce qu'une machine virtuelle embarque que Docker n'embarque pas ?",
+            "level": "Avancé",
+            "answers": [
+                "Un noyau de système d'exploitation complet et son propre environnement d'exécution, ce qui la rend plus isolée qu'un conteneur.",
+                "Un moteur de conteneurisation intégré dans le système.",
+                "Un dépôt Git de référence pour le code source.",
+                "Un outil de test automatisé intégré directement dans le système d'exploitation."
+            ],
+            "correct": 0,
+            "explanation": "Une machine virtuelle contient un système d'exploitation invité complet avec son propre noyau et ses propres services, ce qui la rend plus isolée. Docker ne virtualise pas un SO complet : il partage le noyau du système hôte et exécute des conteneurs de manière plus légère. C'est pourquoi Docker est plus rapide et plus léger, mais une VM apporte une isolation davantage au niveau du système."
+        },
+        {
+            "theme": "CI/CD & Déploiement",
+            "question": "Qu'est-ce que le hashage et peut-on le déhasher ?",
+            "level": "Intermédiaire",
+            "answers": [
+                "Le hashage est une transformation d'un message en une valeur de taille fixe, et il est généralement impossible à déchiffrer à partir de la valeur hachée seule.",
+                "Le hashage est une méthode pour compresser les données en base de données sans perte.",
+                "Le hashage consiste à écrire un mot de passe en clair dans un fichier de configuration.",
+                "Le hashage est un chiffrement symétrique reversible."
+            ],
+            "correct": 0,
+            "explanation": "Le hashage transforme une donnée en une empreinte numérique unique (digest) selon un algorithme comme SHA-256 ou bcrypt. Il est conçu pour être irréversible en pratique : on ne peut pas retrouver la donnée d'origine à partir du hash seul, sauf en utilisant des attaques de force brute ou des tables de rainbow sur des mots courants. C'est pourquoi le hashage est utilisé pour sécuriser les mots de passe et vérifier l'intégrité des données."
+        },
+        {
+            "theme": "CI/CD & Déploiement",
+            "question": "Quelles failles de sécurité pouvez-vous citer pour un site web ou une application ?",
+            "level": "Intermédiaire",
+            "answers": [
+                "Les injections SQL, les XSS, les CSRF, les failles d'authentification, les dépendances vulnérables et les erreurs de validation des entrées.",
+                "Uniquement les erreurs de typographie dans le code HTML.",
+                "Les erreurs de CSS et de mise en page uniquement.",
+                "Les failles de sécurité ne concernent que les applications mobiles, pas les sites web."
+            ],
+            "correct": 0,
+            "explanation": "Les failles de sécurité les plus connues incluent les injections SQL, les failles XSS (scripts cross-site), les attaques CSRF (requêtes forcées), les erreurs de gestion des accès, les mots de passe faibles, les dépendances non sécurisées et les problèmes de validation des entrées. Une application sécurisée doit combiner validation, chiffrement, gestion des droits et tests de sécurité."
         }
     ]
 };
