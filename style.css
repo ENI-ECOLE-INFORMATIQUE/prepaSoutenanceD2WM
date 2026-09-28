@@ -51,33 +51,6 @@ body {
     display: flex;
     flex-direction: column;
     letter-spacing: 0.01em;
-    position: relative;
-    overflow-x: hidden;
-}
-
-body::before,
-body::after {
-    content: "";
-    position: fixed;
-    width: 28rem;
-    height: 28rem;
-    border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.5;
-    pointer-events: none;
-    z-index: 0;
-}
-
-body::before {
-    background: rgba(59, 130, 246, 0.18);
-    top: -8rem;
-    right: -6rem;
-}
-
-body::after {
-    background: rgba(168, 85, 247, 0.18);
-    bottom: -10rem;
-    left: -7rem;
 }
 
 .container {
@@ -137,38 +110,18 @@ nav ul {
 nav a {
     text-decoration: none;
     color: var(--text-secondary);
-    font-weight: 600;
-    padding: 0.7rem 1.1rem;
-    border-radius: 10px;
+    font-weight: 500;
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
     transition: all 0.25s ease;
     font-size: 0.95rem;
     border: 1px solid transparent;
-    position: relative;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
     background: rgba(255, 255, 255, 0.05);
     color: var(--text-primary);
     border-color: var(--border-color);
-    transform: translateY(-1px);
-}
-
-nav a.active {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.18), rgba(139, 92, 246, 0.14));
-    color: var(--text-primary);
-    border-color: rgba(96, 165, 250, 0.45);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 8px 18px rgba(59, 130, 246, 0.12);
-}
-
-nav a.active::before {
-    content: "";
-    position: absolute;
-    left: 0.8rem;
-    right: 0.8rem;
-    bottom: 0.3rem;
-    height: 2px;
-    border-radius: 999px;
-    background: var(--primary-gradient);
 }
 
 /* === MAIN CONTENT === */
@@ -256,17 +209,16 @@ main {
 }
 
 .menu-card {
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0.76), rgba(15, 23, 42, 0.56));
-    border: 1px solid rgba(148, 163, 184, 0.18);
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.74), rgba(15, 23, 42, 0.5));
+    border: 1px solid rgba(148, 163, 184, 0.2);
     padding: 2.25rem 1.75rem;
-    border-radius: 24px;
+    border-radius: 20px;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 18px 35px rgba(2, 6, 23, 0.25), inset 0 1px 0 rgba(255,255,255,0.04);
+    box-shadow: 0 18px 35px rgba(2, 6, 23, 0.25);
     position: relative;
     overflow: hidden;
-    isolation: isolate;
 }
 
 .menu-card::before {
@@ -312,13 +264,13 @@ main {
 
 /* === FORMULAIRE QUIZ === */
 .quiz-setup {
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.62));
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.74), rgba(15, 23, 42, 0.6));
     border: 1px solid rgba(148, 163, 184, 0.18);
     padding: 2.5rem;
-    border-radius: 24px;
+    border-radius: 22px;
     max-width: 700px;
     margin: 2rem auto;
-    box-shadow: 0 18px 40px rgba(2, 6, 23, 0.28), inset 0 1px 0 rgba(255,255,255,0.04);
+    box-shadow: 0 18px 40px rgba(2, 6, 23, 0.28);
 }
 
 .form-group {
@@ -470,6 +422,7 @@ main {
     border-radius: 24px;
     margin-bottom: 2rem;
     box-shadow: 0 18px 40px rgba(2, 6, 23, 0.2), inset 0 1px 0 rgba(255,255,255,0.04);
+}
 
 .question-title {
     font-size: clamp(1.25rem, 2vw, 1.7rem);
@@ -1019,11 +972,11 @@ footer a:hover {
 }
 
 .retention-hero {
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.56));
-    border: 1px solid rgba(96, 165, 250, 0.22);
-    border-radius: 24px;
+    background: rgba(15, 23, 42, 0.55);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
     padding: 28px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255,255,255,0.04);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
     margin-bottom: 26px;
 }
 
@@ -1044,12 +997,11 @@ footer a:hover {
 }
 
 .retention-flash-box {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(139, 92, 246, 0.08));
-    border: 1px solid rgba(96, 165, 250, 0.38);
-    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.08));
+    border: 1px solid rgba(96, 165, 250, 0.35);
+    border-radius: 16px;
     padding: 22px 24px;
     margin-bottom: 30px;
-    box-shadow: 0 18px 34px rgba(59, 130, 246, 0.08);
 }
 
 .retention-flash-box h2 {
@@ -1071,17 +1023,11 @@ footer a:hover {
 }
 
 .retention-card {
-    background: rgba(15, 23, 42, 0.44);
-    border: 1px solid rgba(148, 163, 184, 0.18);
-    border-radius: 18px;
+    background: rgba(15, 23, 42, 0.42);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
     padding: 20px 18px;
-    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255,255,255,0.03);
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.retention-card:hover {
-    transform: translateY(-3px);
-    border-color: rgba(96, 165, 250, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .retention-card:nth-child(odd) {
