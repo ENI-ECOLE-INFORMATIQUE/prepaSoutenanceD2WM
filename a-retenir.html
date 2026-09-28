@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le plus important à retenir pour la soutenance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <main class="retention-page">
+        <div class="container">
+            <section class="retention-hero">
+                <h1>Le plus important à retenir pour la soutenance</h1>
+                <p class="retention-subtitle">15 questions clés + les points à mémoriser pour parler clairement devant le jury.</p>
+            </section>
+
+            <section class="retention-flash-box">
+                <h2>Les 5 idées à garder absolument</h2>
+                <ul>
+                    <li>Le MCD décrit le besoin métier, le MPD décrit le schéma technique de la base.</li>
+                    <li>Une clé étrangère relie deux tables en référence à une clé primaire.</li>
+                    <li>Docker est plus léger et plus rapide qu’une VM, car il partage le noyau du système hôte.</li>
+                    <li>Le RGPD impose le consentement, la minimisation et le droit à l’oubli.</li>
+                    <li>La CI/CD automatise les tests et le déploiement pour éviter les erreurs humaines.</li>
+                </ul>
+            </section>
+
+            <section class="retention-grid">
+                <article class="retention-card">
+                    <h3>1. Qu’est-ce qu’un MCD ?</h3>
+                    <p><strong>Réponse :</strong> Un Modèle Conceptuel de Données. Il montre les entités, leurs attributs et leurs relations pour représenter le besoin métier.</p>
+                </article>
+
+                <article class="retention-card">
+                    <h3>2. Qu’est-ce qu’un MPD ?</h3>
+                    <p><strong>Réponse :</strong> Un Modèle Physique de Données. C’est la version technique du MCD pour un SGBD précis : tables, colonnes, types, clés primaires et étrangères.</p>
+                </article>
+
+                <article class="retention-card">
+                    <h3>3. Qu’est-ce qu’une clé étrangère ?</h3>
+                    <p><strong>Réponse :</strong> Un champ d’une table qui référence la clé primaire d’une autre table afin d’établir une relation et garantir l’intégrité référentielle.</p>
+                </article>
+
+                <article class="retention-card">
+                    <h3>4. Pourquoi choisir Docker plutôt qu’une VM ?</h3>
+                    <p><strong>Réponse :</strong> Docker est plus léger, plus rapide et plus facile à reproduire. Une VM contient un système d’exploitation complet, ce qui la rend plus lourde.</p>
+                </article>
+
+                <article class="retention-card">
+                    <h3>5. Qu’est-ce qu’une VM embarque que Docker n’embarque pas ?</h3>
+                    <p><strong>Réponse :</strong> Une VM possède son propre système d’exploitation invité complet avec son noyau et ses services, ce qui la rend plus isolée.</p>
+                </article>
+
+                <article class="retention-card">
+                    <h3>6. Qu’est-ce que le hashage ?</h3>
+                    <p><strong>Réponse :</strong> C’est la transformation d’une donnée en une empreinte unique. Le hashage est généralement non réversible.</p>
+                </article>
+
+                <article class="retention-card">
+                    <h3>7. Hashage vs chiffrement : quelle différence ?</h3>
+                    <p><strong>Réponse :</strong> Le chiffrement est réversible, le hashage ne l’est pas. On utilise le hashage pour les mots de passe, et le chiffrement pour protéger des données qu’il faut réutiliser.</p>
+                </article>
+
+                <article class="retention-card">
+                    <h3>8. Quelles sont les 3 choses essentielles du RGPD ?</h3>
+                    <p><strong>Réponse :</strong> Consentement clair, minimisation des données, droit à l’oubli. On collecte uniquement ce qui est nécessaire et on respecte la vie privée.</p>
+                </article>
+
+                <article class="retention-card">
+                    <h3>9. Quelles réglementations doivent être respectées sur un site web ?</h3>
+                    <p><strong>Réponse :</strong> L’accessibilité numérique, la protection des données (RGPD), la sécurité des informations et les règles commerciales ou fiscales applicables.</p>
+                </article>
+
+                <article class="retention-card">
+                    <h3>10. Que faire si un client demande la suppression de ses données ?</h3>
+                    <p><strong>Réponse :</strong> On doit respecter le droit à l’oubli, mais certaines données comme les factures, les logs ou les preuves techniques peuvent être conservées pour des obligations légales.</p>
+                </article>
+
+                <article class="retention-card">
+                    <h3>11. Qu’est-ce que l’OWASP ?</h3>
+                    <p><strong>Réponse :</strong> L’Open Web Application Security Project. C’est la référence pour connaître les failles web les plus courantes et les bonnes pratiques de sécurité.</p>
+                </article>
+
+                <article class="retention-card">
+                    <h3>12. Quelles failles de sécurité pouvez-vous citer ?</h3>
+                    <p><strong>Réponse :</strong> Injections SQL, XSS, CSRF, failles d’authentification, dépendances vulnérables, validation insuffisante des entrées et mauvais gestion des permissions.</p>
+                </article>
+
+                <article class="retention-card">
+                    <h3>13. Qu’est-ce qu’une injection SQL ?</h3>
+                    <p><strong>Réponse :</strong> C’est l’insertion de requêtes SQL malveillantes dans des champs de saisie non sécurisés, souvent pour lire, supprimer ou modifier des données.</p>
+                </article>
+
+                <article class="retention-card">
+                    <h3>14. Qu’est-ce que la CI/CD ?</h3>
+                    <p><strong>Réponse :</strong> La CI (Intégration Continue) automatise les tests et la fusion du code. La CD (Continuous Delivery/Deployment) automatise la livraison ou le déploiement.</p>
+                </article>
+
+                <article class="retention-card">
+                    <h3>15. Qu’est-ce qu’une maquette et en quoi est-elle différente d’un prototype ?</h3>
+                    <p><strong>Réponse :</strong> Une maquette représente le visuel et la structure. Un prototype permet d’imiter l’interaction. Une application réelle est fonctionnelle et exploitable.</p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="layout.js"></script>
+</body>
+</html>

@@ -7,24 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="#" class="logo" onclick="showPage('accueil')">
-                    <img src="img/logo_eni.png" alt="LOGO ENI Ecole Informatique" title="ENI Ecole Informatique">
-                    <span class="text-header">Quiz D2WM - CDA</span>
-                </a>
-                <nav>
-                    <ul>
-                        <li><a href="#" onclick="showPage('accueil')" class="nav-link active">Accueil</a></li>
-                        <li><a href="#" onclick="showPage('quiz-setup')" class="nav-link">Quiz</a></li>
-                        <li><a href="#" onclick="showPage('questions-list')" class="nav-link">Questions</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <div id="site-header"></div>
 
     <!-- MAIN CONTENT -->
     <main>
@@ -178,14 +161,10 @@
         </div>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025-2026 Quiz D2WM - CDA - Plateforme de révision pour stagiaires en développement logiciel </p>
-            <p>ENI Ecole Informatique - <a href="https://www.linkedin.com/in/sanchezdenis/" target="_blank">Denis Sanchez</a> - V1.1 - 2026/09/28</p>
-        </div>
-    </footer>
+    <div id="site-footer"></div>
+
     <script src="quiz.js"></script>
     <script src="script.js"></script>
+    <script src="layout.js"></script>
 </body>
 </html>
