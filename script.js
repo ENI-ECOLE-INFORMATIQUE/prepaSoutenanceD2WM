@@ -9,13 +9,35 @@
 
 
         // === INITIALISATION ===
-        document.addEventListener('DOMContentLoaded', function() {
+        function initializePageState() {
             initializeThemeSelect();
             initializeNiveauSelect();
             afficherTotalQuestions();
             displayQuestionsList();
             displayHistory();
-        });
+
+            const storedTarget = sessionStorage.getItem('targetPage');
+            const searchParams = new URLSearchParams(window.location.search);
+            const pageFromQuery = searchParams.get('page');
+            const hash = window.location.hash.replace('#', '');
+            const pageToOpen = storedTarget || pageFromQuery || hash;
+
+            if (pageToOpen && ['accueil', 'quiz-setup', 'quiz', 'results', 'questions-list'].includes(pageToOpen)) {
+                showPage(pageToOpen);
+                sessionStorage.removeItem('targetPage');
+                if (!window.location.search.includes(`page=${pageToOpen}`)) {
+                    history.replaceState(null, '', `?page=${pageToOpen}`);
+                }
+            } else {
+                showPage('accueil');
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializePageState);
+        } else {
+            initializePageState();
+        }
 
         function initializeThemeSelect() {
             const select = document.getElementById('theme-select');

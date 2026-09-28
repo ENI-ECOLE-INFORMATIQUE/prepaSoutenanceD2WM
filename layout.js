@@ -8,9 +8,9 @@
                 </a>
                 <nav>
                     <ul>
-                        <li><a href="index.html" class="nav-link" data-page="accueil">Accueil</a></li>
-                        <li><a href="#quiz-setup" class="nav-link" data-page="quiz-setup">Quiz</a></li>
-                        <li><a href="#questions-list" class="nav-link" data-page="questions-list">Questions</a></li>
+                        <li><a href="index.html?page=accueil" class="nav-link" data-page="accueil">Accueil</a></li>
+                        <li><a href="index.html?page=quiz-setup" class="nav-link" data-page="quiz-setup">Quiz</a></li>
+                        <li><a href="index.html?page=questions-list" class="nav-link" data-page="questions-list">Questions</a></li>
                         <li><a href="a-retenir.html" class="nav-link">À retenir</a></li>
                     </ul>
                 </nav>
@@ -31,9 +31,24 @@
         document.querySelectorAll('.nav-link[data-page]').forEach(link => {
             link.addEventListener('click', function (event) {
                 const page = this.dataset.page;
-                if (!page || typeof showPage !== 'function') return;
+                if (!page) return;
+
+                const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+
+                if (isIndexPage && typeof showPage === 'function') {
+                    event.preventDefault();
+                    showPage(page);
+                    const query = `?page=${page}`;
+                    const currentSearch = window.location.search;
+                    if (currentSearch !== query) {
+                        history.replaceState(null, '', query);
+                    }
+                    return;
+                }
+
                 event.preventDefault();
-                showPage(page);
+                sessionStorage.setItem('targetPage', page);
+                window.location.href = `index.html?page=${page}`;
             });
         });
     }
