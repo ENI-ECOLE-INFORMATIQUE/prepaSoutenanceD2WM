@@ -1419,3 +1419,175 @@ footer a:hover {
         padding: 20px 18px;
     }
 }
+
+/* === PAGE VADEMECUM === */
+.vademecum-page {
+    padding: 30px 0 50px;
+}
+
+.vademecum-hero {
+    background: rgba(15, 23, 42, 0.55);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+    margin-bottom: 26px;
+}
+
+.vademecum-hero h1 {
+    margin: 0 0 10px;
+    font-size: clamp(2rem, 4vw, 2.7rem);
+    color: var(--text-primary);
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.vademecum-subtitle {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 1.08rem;
+}
+
+.vademecum-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 26px;
+}
+
+.vademecum-actions .btn {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.vademecum-viewer {
+    background: rgba(15, 23, 42, 0.42);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.vademecum-pdf {
+    width: 100%;
+    height: clamp(420px, 75vh, 900px);
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.vademecum-fallback {
+    padding: 24px;
+    margin: 0;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .vademecum-hero {
+        padding: 20px 18px;
+    }
+
+    .vademecum-actions {
+        flex-direction: column;
+    }
+}
+
+/* === SYNTHÈSE DU VADEMECUM (EXTRAITE DU PDF) === */
+.vademecum-summary {
+    margin-top: 40px;
+}
+
+.vademecum-summary h2 {
+    margin: 0 0 8px;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--text-primary);
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.vademecum-summary-intro {
+    margin: 0 0 20px;
+    color: var(--text-secondary);
+}
+
+.vademecum-chapter {
+    background: rgba(15, 23, 42, 0.42);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    margin-bottom: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.vademecum-chapter summary {
+    cursor: pointer;
+    padding: 16px 20px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    transition: background 0.2s ease;
+}
+
+.vademecum-chapter summary::-webkit-details-marker {
+    display: none;
+}
+
+.vademecum-chapter summary::after {
+    content: "+";
+    font-size: 1.4rem;
+    line-height: 1;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.vademecum-chapter[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.vademecum-chapter summary:hover {
+    background: rgba(59, 130, 246, 0.08);
+}
+
+.vademecum-chapter-body {
+    padding: 4px 20px 18px;
+    border-top: 1px solid var(--border-color);
+}
+
+.vademecum-chapter-body p {
+    color: var(--text-secondary);
+    margin: 12px 0 6px;
+}
+
+.vademecum-chapter-body p:first-child {
+    margin-top: 14px;
+}
+
+.vademecum-chapter-body strong {
+    color: var(--primary-color);
+}
+
+.vademecum-chapter-body a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.vademecum-chapter-body ul {
+    margin: 8px 0 4px 18px;
+    padding: 0;
+    color: var(--text-secondary);
+}
+
+.vademecum-chapter-body li {
+    margin-bottom: 6px;
+}
