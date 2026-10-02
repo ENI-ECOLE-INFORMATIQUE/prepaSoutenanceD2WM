@@ -161,13 +161,19 @@
                 availableQuestions = availableQuestions.filter(q => q.level === selectedNiveau);
             }       
 
+            // Filtrer selon la filière
+            const selectedFiliere = document.getElementById("filiere-select").value;
+            if (selectedFiliere !== "all") {
+                availableQuestions = availableQuestions.filter(q => q.filiere === "Toute" || q.filiere === selectedFiliere);
+            }
+
             // Mélanger et sélectionner les questions
             availableQuestions.sort(() => Math.random() - 0.5);
             currentQuiz = availableQuestions.slice(0, Math.min(questionCount, availableQuestions.length));
 
             // Vérifier si pas assez de questions
             if (currentQuiz.length === 0) {
-                alert("Aucune question trouvée pour ce thème et ce niveau.");
+                alert("Aucune question trouvée pour ce thème, ce niveau et cette filière.");
                 return;
             }
             
